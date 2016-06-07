@@ -1,2 +1,2 @@
 # OSLO
-OSLO²
+OSLO² 
