@@ -97,9 +97,8 @@ Enkele use cases die het nut van een kern vocabularium rond organisaties demonst
 
 Om te kunnen evolueren naar een basisregister is datakwaliteit en herkomst ook belangrijk. Zo telt KBO bijvoorbeeld organisaties die niet langer bestaan, die omwille van de betalende afsluitprocedure niet up to date zijn.
 
-<a href="{{site.github.url}}/img/organisatie/2016-06-16/model-layers.png">
-<img src="{{site.github.url}}/img/organisatie/2016-06-16/model-layers.png" style="width: 400px;"/>
-</a>
+
+{% include img_clickable.html alt="Verschillende lagen van een model: kern, domein, informatie uitwisseling." imgpath="organisatie/2016-06-16/model-layers.png" style="height: 200px;" %}
 
 Bij een kern vocabularium is de essentie niet om zo weinig mogelijk velden te hebben, maar juist om zoveel mogelijk velden te hebben waaronder we hetzelfde begrijpen. Rond deze kern staat dan een schil waar je contextuele uitbreidingen voorziet (bijvoorbeeld voor rijksregister, bijvoorbeeld voor onderwijs…). In de derde schil daarrond wordt de (praktische) implementatie gedekt, waarin bepaalde restricties worden ingebouwd. In deze derde laag hoort volgens onze recente inzichten ook het concept “applicatieprofiel” thuis.
 
@@ -111,9 +110,7 @@ Updates aan het kern vocabularium zullen geleid worden door de behoeften van de 
 
 Het overkoepelende project “Wegwijs Vlaamse overheid” wenst de Vlaamse overheid in kaart brengen door kwaliteitsvolle data ter beschikking stellen over organisatiegegevens, informatie en processen. Het luik Wegwijs Organisatie is alvast uitgerold, met het volgende datamodel:
 
-<a href="{{site.github.url}}/img/organisatie/2016-06-16/domeinmodel-wegwijs.jpg">
-<img src="{{site.github.url}}/img/organisatie/2016-06-16/domeinmodel-wegwijs.jpg" style="width: 600px;"/>
-</a>
+{% include img_clickable.html alt="UML van datamodel Wegwijs Organisatie." imgpath="organisatie/2016-06-16/domeinmodel-wegwijs.jpg" style="height: 500px;" %}
 
 We geven volgende verduidelijkingen bij het model:
 
@@ -144,9 +141,7 @@ Het OSLO² model zal de blauwdruk worden voor het onderliggende datamodel  van W
 
 Binnen OSLO1 heeft een persoon een contact (e-mail, telefoon, fax…). Een persoon is gelinkt met een organisatie via een hoedanigheid (een rol) die zijn eigen contact heeft. Net als bij Wegwijs worden adressen apart beschouwd van contactinformatie. De gebouweenheid was ingevoerd in OSLO1 omdat een adres niet stabiel genoeg beschouwd werd.
 
-<a href="{{site.github.url}}/img/organisatie/2016-06-16/oslo-uml.png">
-<img src="{{site.github.url}}/img/organisatie/2016-06-16/oslo-uml.png" style="width: 600px;"/>
-</a>
+{% include img_clickable.html alt="UML van datamodel OSLO1." imgpath="organisatie/2016-06-16/oslo-uml.png" style="height: 500px;" %}
 
 # Actiepunten
 
