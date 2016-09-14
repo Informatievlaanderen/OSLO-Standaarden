@@ -30,8 +30,9 @@ url: "" # the base hostname & protocol for your site
 # Temporarily needed to have correct URLs in the minima theme.
 # See https://github.com/benbalter/jekyll-style-guide/issues/27
 # and https://github.com/jekyll/github-metadata/pull/50
-github:
-  url: http://localhost:4000/OSLO
+# Do not push to github.
+# github:
+#  url: http://localhost:4000/OSLO
 
 # Build settings
 markdown: kramdown
