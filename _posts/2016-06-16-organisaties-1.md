@@ -27,7 +27,7 @@ permalink: /:categories/:year-:month-:day/
 | Geert Thijs|GT|AIV|
 | Dieter De Paepe|DDP|iMinds|
 | Dries Beheydt|DB|AIV|
-| Marie-Kristine Van der Meersch|MVDM|||
+| Marie-Kristine Van der Meersch|MVDM||
 
 
 
