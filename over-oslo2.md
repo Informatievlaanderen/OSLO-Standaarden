@@ -4,6 +4,9 @@ title: Over OSLO²
 permalink: /over-oslo2/
 ---
 
+* TOC
+{:toc}
+
 ## Open Standaarden voor Linkende Organisaties
 
 **Open Standaarden voor Linkende Organisaties** (OSLO), vormen éénduidige standaarden voor de uitwisseling van informatie zoals adressen, personen, organisaties e.a. OSLO² neemt daarbij **focus op de betekenis van de begrippen**. Twee organisaties of systemen die hun informatie afstemmen op OSLO² zijn **semantisch interoperabel**: ze weten precies hoe ze de gegevens van de ander moeten interpreteren en kunnen elkaars informatie direct hergebruiken.

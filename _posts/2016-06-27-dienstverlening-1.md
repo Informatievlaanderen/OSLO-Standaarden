@@ -5,6 +5,9 @@ categories: dienstverlening
 permalink: /:categories/:year-:month-:day/
 ---
 
+* TOC
+{:toc}
+
 ## Details
 
 * Locatie: AIV Gent, Koningin Maria Hendrikaplein, Zaal Karel Miry

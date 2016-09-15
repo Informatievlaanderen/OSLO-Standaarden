@@ -5,6 +5,9 @@ categories: organisatie
 permalink: /:categories/:year-:month-:day/
 ---
 
+* TOC
+{:toc}
+
 ## Details
 
 * Locatie: AIV, Boudewijngebouw, Brussel - D5.01
