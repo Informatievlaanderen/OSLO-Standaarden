@@ -1,5 +1,5 @@
 # OSLO
-OSLO² 
+[OSLO² public dissemination pages](http://informatievlaanderen.github.io/OSLO/)
 
 ## subprojects
  * docker-ontop
