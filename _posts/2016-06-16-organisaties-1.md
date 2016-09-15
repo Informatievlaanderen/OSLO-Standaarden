@@ -5,13 +5,13 @@ categories: organisatie
 permalink: /:categories/:year-:month-:day/
 ---
 
-# Details
+## Details
 
 * Locatie: AIV, Boudewijngebouw, Brussel - D5.01
 * Gerelateerde documenten: [Core Public Organisation Vocabulary - Draft 4](https://joinup.ec.europa.eu/asset/cpov/asset_release/core-public-organisation-vocabulary-draft-4)
 * Notulen: Dries Beheydt, Dieter De Paepe
 
-## Aanwezigen
+### Aanwezigen
 
 | Naam         | Afkorting | Organisatie |
 |:-------------|:----------|:------------|
@@ -32,11 +32,11 @@ permalink: /:categories/:year-:month-:day/
 
 
 
-## Verontschuldigd
+### Verontschuldigd
 
 Luk Verschooren, Hannes Lombaert, Farah Decamps, Peter Vandenneucker, Maarten Vermeyen, Laurens De Vocht
 
-# Agenda
+## Agenda
 
 * Intro: over OSLO en OSLO²
     * Historiek OSLO
@@ -47,13 +47,13 @@ Luk Verschooren, Hannes Lombaert, Farah Decamps, Peter Vandenneucker, Maarten Ve
 * Use cases & (kern) vocabularium
 * Domeinmodel Wegwijs
 
-# Verslag
+## Verslag
 
-## Intro: Over OSLO en OSLO²
+### Intro: Over OSLO en OSLO²
 
 Hiervoor verwijzen we naar de [intro pagina over OSLO²]({{site.github.url}}/oslo2/).
 
-## Organisaties
+### Organisaties
 
 > Discussie
 
@@ -63,7 +63,7 @@ Organisaties worden momenteel zowel federaal (Kruispuntbank van Ondernemingen - 
 
 In 2016 wil AIV de eerste stappen zetten om een basisregister te maken voor organisaties. In 2017 wordt vervolgens een samenwerking in verband met organisaties gepland met andere overheden.
 
-## Wat is een kern vocabularium
+### Wat is een kern vocabularium
 
 > Discussie
 
@@ -83,7 +83,7 @@ Wat met andere agentschappen die momenteel niet mee aan tafel zitten? Hoe worden
 
 Belangrijk is dat het OSLO²-initiatief duidelijk gecommuniceerd wordt richting VDI en GDI zodat er geen initiatief op 2 sporen wordt genomen.
 
-## Use cases & (kern) vocabularium
+### Use cases & (kern) vocabularium
 
 > Discussie
 
@@ -104,7 +104,7 @@ Bij een kern vocabularium is de essentie niet om zo weinig mogelijk velden te he
 
 Updates aan het kern vocabularium zullen geleid worden door de behoeften van de gebruikers. Het is de bedoeling dat het model stabiel is maar wel, na discussie, kan evolueren in de toekomst. Uitbreidingen kunnen uiteraard toegepast worden zonder problemen te vormen voor bestaande applicaties (wanneer de uitbreidingen niet relevant zijn voor de toepassing in kwestie).
 
-## Domeinmodel Wegwijs
+### Domeinmodel Wegwijs
 
 > Discussie
 
@@ -133,7 +133,7 @@ Verder stellen we ook nog enkele open vragen:
 * Gebeurtenis: kan een gebeurtenis bij meerdere organisaties horen? Bijvoorbeeld: een fusie heeft betrekking op 2 of meer organisaties.
 * Contactpunt en adres worden apart gemodelleerd, wat zijn de concrete gevolgen hiervan? Een adres kan context gebonden zijn, bijvoorbeeld als loket adres of als organisatie adres. Verschillende loketten zouden gemodelleerd worden als verschillende organisaties. De burgerlijke diensten bus van stad Gent rijdt rond, dus deze heeft wel een e-mail en telefoon, maar geen vast adres.
 
-## Weergave van model OSLO1 in UML
+### Weergave van model OSLO1 in UML
 
 > Discussie
 
@@ -143,6 +143,6 @@ Binnen OSLO1 heeft een persoon een contact (e-mail, telefoon, fax…). Een perso
 
 {% include img_clickable.html alt="UML van datamodel OSLO1." imgpath="organisatie/2016-06-16/oslo-uml.png" style="height: 500px;" %}
 
-# Actiepunten
+## Actiepunten
 
 1. RB: Paper opstellen met verslag over dynamiek en belang van OSLO²-oefening en de uitwerking van de governance in samenwerking met informatiebeleid.

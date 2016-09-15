@@ -5,13 +5,13 @@ categories: adres-gebouw
 permalink: /:categories/:year-:month-:day/
 ---
 
-# Details
+## Details
 
 * Locatie: AIV Gent, Koningin Maria Hendrikaplein, Zaal Albert Servaes
 * Gerelateerde documenten: [MappingOSLO-VBR_v03.xlsx]({{site.github.url}}/assets/adres-gebouw/2016-06-08/MappingOSLO-VBR_v03.xlsx)
 * Notulen: Dries Beheydt, Dieter De Paepe
 
-## Aanwezigen
+### Aanwezigen
 
 | Naam         | Afkorting | Organisatie |
 |:-------------|:----------|:------------|
@@ -27,11 +27,11 @@ permalink: /:categories/:year-:month-:day/
 | Ziggy Vanlishout | ZV | AIV |
 | Geert Thijs | GT | AIV |
 
-## Verontschuldigd
+### Verontschuldigd
 
 Veerle Beyaert, Liesbet De Wolf, Hans Vliebergh
 
-# Agenda
+## Agenda
 
 * OSLO en OSLO²
   * Historiek OSLO
@@ -48,14 +48,14 @@ Veerle Beyaert, Liesbet De Wolf, Hans Vliebergh
   * Waar moeten we het over hebben tussen beide projecten
   * Vaststellingen en afgeleide actiepunten
 
-# Verslag
+## Verslag
 
-## Inleiding
+### Inleiding
 Er wordt een korte [intro gegeven over OSLO²]({{site.github.url}}/oslo2/).
 
 Gezien het feit dat de geplande CRAB-LOD proof of concept zich focust op het adres domein, is het behandelen van dit domein iets dringender dan de ander. Op zich zou dit geen probleem mogen vormen aangezien er reeds een stabiele basis is en dit het meest gebruikte product van AIV is tot op heden.
 
-## Proof of concept: CRAB-LOD
+### Proof of concept: CRAB-LOD
 
 
 Discussie
@@ -84,7 +84,7 @@ De ontwikkeling gebeurt op een kopie van de adressen van het gebouwenregister ge
 
 Na de POC moeten we bekijken of geoSPARQL geschikt is voor onze nodes op gebied van geografische zaken, dit wordt immers de industrie standaard.
 
-## Semantisch kader
+### Semantisch kader
 
 > Discussie
 
@@ -104,21 +104,21 @@ De specifieke verschillen opgemerkt in de mismatch zullen behandeld worden in (a
 
 Een volledig overzicht van de conflicten tussen OSLO1 en VBR is te vinden in de spreadsheet “[MappingOSLO-VBR_v03.xlsx]({{site.github.url}}/assets/adres-gebouw/2016-06-08/MappingOSLO-VBR_v03.xlsx)”, tabblad “MappingOSLO2VBR”.
 
-## Project gebouwenregister
+### Project gebouwenregister
 
 > Beslissing
 
 Er is reeds een project lopend over het modelleren binnen het gebouwenregister. Hierdoor is het moeilijk om af te stemmen voor OSLO². Om de vooruitgang van het gebouwregister project niet te verstoren zal OSLO² zelf de gevonden issues uitklaren en achteraf (vanaf oktober) afstemmen zodat zij als klankbord kunnen dienen. Ook voor de CRAB proof of concept zal er afstemming nodig zijn.
 
-# Besluit en acties
+## Besluit en acties
 
-## Besluit
+### Besluit
 
 We moeten eerst de oefening intern houden om dan achteraf met het team van het Gebouwenregister af te stemmen. Zo kunnen de project resources voor het Gebouwregister gefocust blijven. Pas vanaf oktober is afstemming mogelijk omdat ook het datamodel daar nog gewijzigd wordt. De groep van het Gebouwenregister zal vooral als klankbord dienen. Dit betekent ook dat oktober de richtdatum wordt om een ontwerpmodel klaar te hebben voor OSLO² om te kunnen voorleggen aan de groep van het Gebouwenregister.
 
 Ook de infrastructuur/architectuur van het Gebouwenregister is nog niet finaal, er zal afstemming nodig blijven tussen het team van CRAB-LOD en het Gebouwenregister.
 
-## Acties
+### Acties
 
 * Mikken op oktober 2016 als eerste moment waarop de OSLO²-modellering van gebouw en adres wordt voorgelegd aan de bestaande werkgroep Gebouwenregister. Deze zal fungeren als klankbord om de uitkomst van de interne workshops te laten valideren.
 * Samen met de betrokken consultants van Tenforce en ProXML wordt voor de piloot van CRAB-LOD een planning opgemaakt van de bouw en oplevering. Deze planning kunnen we vervolgens toetsen aan de releaseplanning van het gebouwenregister. Verder is het ook belangrijk dat voor de uiteindelijke CRAB-LOD – vanuit de non-functional requirements – een zicht wordt gegeven op de benodigde infrastructuur. Dit heeft namelijk ook impact op de database van het Gebouwenregister. Deze oefening loopt momenteel: de POC die PH nu doet met een aantal tools heeft als doel om de non-functionals zinvol te kunnen formuleren.

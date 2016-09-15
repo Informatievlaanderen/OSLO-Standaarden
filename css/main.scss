@@ -39,6 +39,8 @@ $on-laptop:        800px;
 @import "minima";
 
 // Our own theming
+h1, h2, h3 { color: #005A9C; }
+
 .footer-col-1 {
     width: -webkit-calc(45% - (#{$spacing-unit} / 2));
     width:         calc(45% - (#{$spacing-unit} / 2));

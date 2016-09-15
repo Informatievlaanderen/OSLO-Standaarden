@@ -4,7 +4,7 @@ title: Oslo²
 permalink: /oslo2/
 ---
 
-# Open Standaarden voor Linkende Organisaties
+## Open Standaarden voor Linkende Organisaties
 
 *Open Standaarden voor Linkende Organisaties* (OSLO), vormen éénduidige standaarden voor de uitwisseling van informatie zoals adressen, personen, organisaties e.a. OSLO² neemt daarbij *focus op de betekenis van de begrippen*. Twee organisaties of systemen die hun informatie afstemmen op OSLO² zijn *semantisch interoperabel*: ze weten precies hoe ze de gegevens van de ander moeten interpreteren en kunnen elkaars informatie direct hergebruiken.
 
@@ -14,9 +14,9 @@ Wereldwijd zijn er over de meest uiteenlopende begrippen afspraken gemaakt en om
 
 Dankzij een afstemming met internationale *linked data* principes, zorgt OSLO² er voor dat gegevens *vlot uitwisselbaar zijn, binnen en buiten de overheid*.
 
-# Aanleiding
+## Aanleiding
 
-## Waarom een standaard voor gegevensuitwisseling
+### Waarom een standaard voor gegevensuitwisseling
 
 Integratie van gegevens en processen binnen overheden in Vlaanderen blijft een belangrijke voorwaarde voor een geïntegreerde dienstverlening. E-government in Vlaanderen is per definitie interbestuurlijk e-government.
 
@@ -26,7 +26,7 @@ Daarom wordt er vanuit het Agentschap Informatie Vlaanderen ingezet op een coher
 
 Het standaardiseren van informatie past binnen het programma Vlaanderen Radicaal Digitaal, dat de Vlaamse overheid moet transformeren tot een informatiegedreven overheid. Informatie is daarbij de belangrijkste grondstof waarover de overheid beschik. Het verzamelen en ontsluiten van data is duidelijk een kerntaak van de overheid, alsook het verwerken van die data tot bruikbare informatie. Integratie van gegevens uit verschillende bronnen en processen zinvol combineren binnen overheden in Vlaanderen blijft een belangrijke voorwaarde voor een geïntegreerde dienstverlening.
 
-## Historiek OSLO - draagvlak bij lokale overheden
+### Historiek OSLO - draagvlak bij lokale overheden
 
 In 2012 startte de Vlaamse ICT-organisatie (V-ICT-OR) het initiatief [Open Standaarden voor Lokale Overheden](http://purl.org/oslo).  De directe aanleiding voor dit project was dat de informatie uit de verschillende toepassingen van lokale besturen niet uitgewisseld kon worden, waardoor gegevens meervoudig geregistreerd werden en dikwijls onvolledig en verouderd waren.
 
@@ -34,7 +34,7 @@ De Vlaamse en Federale autoritatieve bronnen worden dikwijls in een één-op-é�
 
 Daarom werd de basis gelegd voor een semantische informatiestandaard die met de steun van het Europese ISA programma (Interoperability Solutions for European public Administrations) zorgde voor een politiek draagvlak op Vlaams niveau. Met de steun van de Vlaamse Overheid, werd dit project in een latere fase omgedoopt tot Open Standaarden voor Linkende Organisaties (OSLO). Dit was immers niet langer een verhaal van lokale besturen en overheden alleen.
 
-## Focus van OSLO²
+### Focus van OSLO²
 
 De focus van OSLO² ligt op het ontwikkelen van *context-neutrale semantische informatiebouwstenen*. Een voorbeeld hiervan is ‘het object gebouw’ dat maximaal generiek, en dus zo slank mogelijk, wordt gedefinieerd, waarbij een sleutel die het gebouw uniek identificeert de essentie vormt. In concrete toepassingen kunnen deze bouwstenen dan  uitgebreid worden tot context-specifieke datamodellen.  Het “OSLO Core Gebouw” kan dan bijvoorbeeld in een vastgoeddatabank gekoppeld worden aan gegevens m.b.t. ruimtegebruik, energie- en waterverbruik, enz.
 
@@ -42,7 +42,7 @@ In dit proces focussen we eerst op de *semantiek van de gegevens uit de basisreg
 
 OSLO² zal hierbij een *methodiek en een governance* aanreiken die entiteiten in Vlaanderen toelaat om OSLO² uit te breiden met sectorspecifieke informatieproducten.
 
-## Relatie tot basisregisters
+### Relatie tot basisregisters
 
 Informatie Vlaanderen is bezig met de ontwikkeling van basisregisters. De basisregisters vormen een stelsel van onderling verbonden authentieke gegevensbronnen waarvan de semantiek vanaf de bron in lijn gebracht wordt met de semantiek uit OSLO². Ze maken het mogelijk dat overheden in Vlaanderen gegevens vlot kunnen combineren. Ze vormen het fundament voor een vlotte gegevensuitwisseling binnen en buiten de overheid in lijn met de Europese informatiestandaarden.
 
@@ -57,9 +57,9 @@ Definitie basisregisters:
 
 Deze strategie zorgt er voor dat de gegevens vlot uitwisselbaar zijn binnen en buiten de overheid. Een afstemming met internationale linked data standaarden en principes moet er voor zorgen dat we informatie van overheden in Vlaanderen vlot kunnen combineren met datasets op het web en moet anderzijds toelaten dat ook de geografische informatie van de Vlaamse Overheid kan geadopteerd worden binnen het wereldwijde semantisch web.
 
-# Visie
+## Visie
 
-## Semantische interoperabiliteit: “dezelfde taal spreken”
+### Semantische interoperabiliteit: “dezelfde taal spreken”
 
 Om de ambitie van samenwerking en gegevensuitwisseling tussen de verschillende Vlaamse entiteiten en bestuursniveau’s te vertalen naar een werkbaar model, werken we op basis van een ‘interoperability framework’. Dit raamwerk biedt de mogelijkheid om naast technische aspecten, ook de semantische vraagstukken, organisatorische kwesties en beheersaspecten (governance) binnen één kader te integreren en beheersbaar te houden.
 
@@ -79,9 +79,9 @@ Een afstemming op internationale linked data standaarden en principes moet er du
 
 {% include img_clickable.html alt="Verschillende lagen van standaardisatie: internationaal, Europees, Belgisch en Vlaams." imgpath="gelaagd-model.png" %}
 
-# OSLO² - componenten
+## OSLO² - componenten
 
-## Inleiding
+### Inleiding
 
 In 2016 werkt informatie Vlaanderen samen met haar partners een methodologie uit die de basis moet leggen voor (semantische) informatiestandaarden in Vlaanderen.
 
@@ -93,7 +93,7 @@ We onderscheiden de volgende stromen:
 * *Semantiek*: er wordt ingezet op de standaardisatie van kerndata en hun onderlinge relaties. De objecten die prioritair uitgewerkt worden zijn enerzijds ‘persoon, publieke organisatie, adres, gebouw en contactinformatie’ die de basis vormen voor digitale interactie met burgers en ondernemers en is cruciaal voor lokale besturen. Daarnaast wordt er ingezet op het domein dienstverlening, dat betrekking heeft tot interactie van burgers en ondernemers met de overheid.
 * *Productontwikkeling ‘CRAB als gelinkte Open Data’*: het product dat binnen dit project in 2016 zal worden ontwikkeld en ontsloten wordt is het product 'CRAB LOD'. Hiermee zet het agentschap Informatie Vlaanderen een belangrijke stap in de richting van het aanbieden van de typische “5 sterren” linked open data, een belangrijke doelstelling van het Vlaams actieplan Open Data.
 
-## Overzicht van de technische werkgroepen
+### Overzicht van de technische werkgroepen
 
 De standaardisatie wordt aangepakt vanuit een netwerkbenadering naar het model van de internationale standaardisatieorganen. Verschillende ‘domeinexperten’ worden verantwoordelijk voor de standaardisatie van een deel van de kerndata in Vlaanderen. Elke verantwoordelijke zal een (thematische) groep van experten uit de publieke en private sector rond zich verzamelen die continuïteit geeft aan het proces van standaardisatie.
 
@@ -144,7 +144,7 @@ De belangrijkste meerwaarde is uniformiteit creëren via een publieke identifica
 
 Gebruik makend van de vormregels voor URI’s zal via de URI-standaard een lijst van resource-classificaties toegelicht worden die dienen gebruikt te worden door alle resource-aanbieders binnen de Vlaamse overheden bij het opzetten van nieuwe URI’s om hun resources uniek en persistent te ontsluiten.
 
-## Overzicht van de thematische werkgroepen
+### Overzicht van de thematische werkgroepen
 
 ### Verantwoordelijken thematische werkgroepen
 
@@ -189,7 +189,7 @@ In dit traject wordt een OSLO² Core vocabularium uitgewerkt. In overleg met ISA
 
 In dit traject wordt een OSLO² Core vocabularium uitgewerkt, in lijn met het [ISA Core Public Service Vocabularium](https://joinup.ec.europa.eu/asset/core_public_service/description) en de ISA Core Criterion and [Core Evidence Vocabulary](https://joinup.ec.europa.eu/node/148216) (in ontwikkeling)
 
-## CRAB als gelinkte Open Data
+### CRAB als gelinkte Open Data
 
 Een eerste product dat binnen dit project in 2016 zal worden ontwikkeld en ontsloten is het product 'CRAB LOD'. Hiermee zet het agentschap Informatie Vlaanderen een belangrijke stap in de richting van het aanbieden van “5 sterren” gelinkte open data, een belangrijke doelstelling van het Vlaams actieplan Open Data.
 
@@ -207,29 +207,29 @@ We werken iteratief met drie belangrijke mijlpalen voor het opzetten van “CRAB
 * I2: eerste publieke BETA-versie van het product, voor het publiek beschikbaar als Open Data
 * I3: stabiele versie van het product, voor het publiek beschikbaar als Open Data en als dusdanig ontsloten op het Open Data Portaal van de Vlaamse overheid.
 
-# Deelname aan de OSLO² werkgroepen
+## Deelname aan de OSLO² werkgroepen
 
 Contact  opnemen met het projectteam kan via [oslo@kb.vlaanderen.be](mailto:oslo@kb.vlaanderen.be). Om deel te nemen aan de werkgroepen (start najaar 2016) kan je inschrijven via [volgend formulier](http://bit.ly/naarOSLO).
 
-# OSLO² projectdocumentatie
+## OSLO² projectdocumentatie
 
 De werkdocumenten worden gepubliceerd op de [OSLO² GitHub repository](https://github.com/Informatievlaanderen/OSLO) en de [OSLO² Joinup community](https://joinup.ec.europa.eu/community/oslo2/home).
 
-# Veelgestelde vragen
+## Veelgestelde vragen
 
-## Welke rol kunnen partners vanaf 2017 opnemen inzake standaardisatie?
+### Welke rol kunnen partners vanaf 2017 opnemen inzake standaardisatie?
 
 De standaardisatie wordt aangepakt vanuit een netwerkbenadering naar het model van de internationale standaardisatie-organen, zoals ISO, ISA, OGC, W3C.
 
 Binnen overheden in Vlaanderen zullen verschillende ‘domeinexperten’ verantwoordelijk worden voor de standaardisatie van een deel van de kerndata in Vlaanderen. Deze verantwoordelijke zal een (thematische) groep van experten uit de publieke en private sector rond zich verzamelen die continuïteit geven aan dit proces, dit vanuit een netwerkbenadering naar het model van de internationale standaardisatie-organen. Vanaf 2017 zal er een transparante governance zijn, die moet zorgen voor maximaal stabiele en interoperabele standaarden.
 
-## Ik wens OSLO² uit te breiden met een nieuw domein. Welke ondersteuning kan Informatie Vlaanderen me vandaag bieden?
+### Ik wens OSLO² uit te breiden met een nieuw domein. Welke ondersteuning kan Informatie Vlaanderen me vandaag bieden?
 
 Op dit moment is er jammer genoeg nog geen uitgewerkte methodologie en governance beschikbaar. Hierdoor kan Informatie Vlaanderen nog geen garanties bieden inzake ontwikkelingen in andere domeinen. Wel kan Informatie Vlaanderen nu al een klankbord zijn en een aantal richtingevende adviezen formuleren.
 
 De uitgewerkte methodologie wordt voorzien tegen het voorjaar 2017.
 
-## Wat is de relatie met OSLO1?
+### Wat is de relatie met OSLO1?
 
 In 2012 startte de Vlaamse ICT-organisatie (V-ICT-OR) het initiatief Open Standaarden voor Lokale Overheden. Hier werd de basis gelegd voor een open semantische informatiestandaard. Met de steun van de Vlaamse overheid, werd dit project in een latere fase omgedoopt tot Open Standaarden voor Linkende Organisaties (OSLO). Dit was immers niet langer een verhaal van lokale besturen alleen.
 

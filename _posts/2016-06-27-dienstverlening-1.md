@@ -5,13 +5,13 @@ categories: dienstverlening
 permalink: /:categories/:year-:month-:day/
 ---
 
-# Details
+## Details
 
 * Locatie: AIV Gent, Koningin Maria Hendrikaplein, Zaal Karel Miry
 * Gerelateerde documenten: [Evaluatie OSLO tov MAGDA 0819.xlsx]({{site.github.url}}/assets/personen/2016-06-15/{{ "Evaluatie OSLO tov MAGDA 0819.xlsx" | uri_escape}})
 * Notulen: Dries Beheydt, Dieter De Paepe
 
-## Aanwezigen
+### Aanwezigen
 
 | Naam         | Afkorting | Organisatie |
 |:-------------|:----------|:------------|
@@ -26,11 +26,11 @@ permalink: /:categories/:year-:month-:day/
 | Thomas D’haenens | TD | AIV |
 | Dries Beheydt | DB | AIV |
 
-## Verontschuldigd
+### Verontschuldigd
 
 Ziggy Vanlishout, Laurens De Vocht
 
-# Agenda
+## Agenda
 
 * Intro: over OSLO en OSLO²
   * Historiek OSLO
@@ -42,9 +42,9 @@ Ziggy Vanlishout, Laurens De Vocht
   * Wat is OSLO1: UML-domeinmodel
   * Definitie: Wat is dienstverlening en wat gaan we daar rond doen?
 
-# Verslag
+## Verslag
 
-## Intro: over OSLO en OSLO²
+### Intro: over OSLO en OSLO²
 
 Hiervoor verwijzen we naar de [intro pagina over OSLO²]({{site.github.url}}/oslo2/).
 
@@ -56,7 +56,7 @@ Hiervoor verwijzen we naar de [intro pagina over OSLO²]({{site.github.url}}/osl
 **Vraag BM**: Is OSLO² een praktische oefening? We kunnen niet voor elk nieuw inzicht een nieuwe iteratie van het model starten.  
 **Antwoord RB**: Het is nodig vooral toekomstgericht te denken. We willen effectief de bronnen afstellen op dit model, dus als praktische toevoeging van de huidige bronnen. Bronnen die niet onder ons beheer zijn, kunnen getransformeerd worden.
 
-## Kern vocabularium Dienstverlening
+### Kern vocabularium Dienstverlening
 
 > Discussie
 
@@ -81,7 +81,7 @@ Een kern vocabularium beschrijft een minimale set van context-neutrale termen ro
 
 [ISA definieert publieke dienstverlening](http://joinup.ec.europa.eu/site/core_vocabularies/registry/corevoc/PublicService/) als volgt: “a set of deeds and acts performed by or on behalf of a public agency for the benefit of a citizen, a business or another public agency”. Deze definitie staat momenteel onder revisie, maar zal wellicht weinig veranderd worden.
 
-Onderstaand schema is een UML voorstelling van het [core public service vocabulary application profile v1.1](https://joinup.ec.europa.eu/asset/cpsv-ap/asset_release/core-public-service-vocabulary-application-profile-v11-2nd-interim-versi#download-links) (CPSV-AP v1.1), een applicatie profiel van [Core Public Service Vocabulary (CPSV) V1.01](https://joinup.ec.europa.eu/catalogue/distribution/core-public-service-v101-rdfhtml) dat momenteel verder ontwikkeld wordt. Een applicatie profiel is een specificatie die termen hergebruikt van basis vocabularia en verdere specificaties toevoegt. Net als bij kern vocabularia is het de bedoeling dat applicaties dit model als basis kunnen gebruiken. De huidige versie van dit applicatie profiel focust zich op dienstverlening naar bedrijven toe. Momenteel is er een oefening bezig om dienstverlening naar personen toe mee te omvatten, hier zijn TD en KDS in betrokken.
+Onderstaand schema is een UML voorstelling van het [core public service vocabulary application profile v1.1](https://joinup.ec.europa.eu/asset/cpsv-ap/asset_release/core-public-service-vocabulary-application-profile-v11-2nd-interim-versi##download-links) (CPSV-AP v1.1), een applicatie profiel van [Core Public Service Vocabulary (CPSV) V1.01](https://joinup.ec.europa.eu/catalogue/distribution/core-public-service-v101-rdfhtml) dat momenteel verder ontwikkeld wordt. Een applicatie profiel is een specificatie die termen hergebruikt van basis vocabularia en verdere specificaties toevoegt. Net als bij kern vocabularia is het de bedoeling dat applicaties dit model als basis kunnen gebruiken. De huidige versie van dit applicatie profiel focust zich op dienstverlening naar bedrijven toe. Momenteel is er een oefening bezig om dienstverlening naar personen toe mee te omvatten, hier zijn TD en KDS in betrokken.
 
 {% include img_clickable.html alt="Schematische voorstelling van core public service vocabulary application profile v1.1." imgpath="dienstverlening/2016-06-27/CPSV-AP_v1.1.png" style="height: 400px;" %}
 
@@ -96,13 +96,13 @@ Onderstaand schema is een UML voorstelling van het [core public service vocabula
 
 **Opmerking RB**: We kunnen use cases gebruiken om door het ISA model te lopen. Het model zal je wel kunnen toepassen/mappen, maar het vocabularium kan op verschillende manieren geïnterpreteerd worden.
 
-## Wat is OSLO1: UML-domeinmodel
+### Wat is OSLO1: UML-domeinmodel
 
 {% include img_clickable.html alt="UML diagram van OSLO1." imgpath="dienstverlening/2016-06-27/OSLO1-UML.png" style="height: 400px;" %}
 
 Dit is een alternatief vertrekpunt, in plaats van het ISA core vocabularium.
 
-## Definitie: Wat is dienstverlening en wat gaan we daar rond doen?
+### Definitie: Wat is dienstverlening en wat gaan we daar rond doen?
 
 Volgende definities bestaan reeds over publieke dienstverlening:
 
@@ -131,7 +131,7 @@ Het volgen van een gemeenschappelijk model versimpelt ook het afleiden van ander
 
 Aan het einde van het verhaal moeten we over een zeer concrete DOSIS en een zeer concrete IPDC beschikken die op dezelfde manier begrepen en gebruikt wordt door de meest diverse afnemers (burgers, ondernemingen, overheden). Dit leidt naar een getrapt model: ISA Core (AP) vocabularium – OSLO² datamodel – applicatieprofiel.
 
-# Actiepunten
+## Actiepunten
 
 * Iedereen: opstellen van een kleine use case als procesbeschrijving met input en output. Bijvoorbeeld: identiteitskaart aanvragen, subsidie aanvragen, belastingen innen, ...
 * TD: maken van een model voor dienstverlening en dienstverleningdossier op basis van OSLO1.1 en ISA. GT kan vanaf september 2016 hierin ondersteuning bieden.
