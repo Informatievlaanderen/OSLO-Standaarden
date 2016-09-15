@@ -1,18 +1,18 @@
 ---
 layout: page
-title: Oslo²
-permalink: /oslo2/
+title: Over OSLO²
+permalink: /over-oslo2/
 ---
 
 ## Open Standaarden voor Linkende Organisaties
 
-*Open Standaarden voor Linkende Organisaties* (OSLO), vormen éénduidige standaarden voor de uitwisseling van informatie zoals adressen, personen, organisaties e.a. OSLO² neemt daarbij *focus op de betekenis van de begrippen*. Twee organisaties of systemen die hun informatie afstemmen op OSLO² zijn *semantisch interoperabel*: ze weten precies hoe ze de gegevens van de ander moeten interpreteren en kunnen elkaars informatie direct hergebruiken.
+**Open Standaarden voor Linkende Organisaties** (OSLO), vormen éénduidige standaarden voor de uitwisseling van informatie zoals adressen, personen, organisaties e.a. OSLO² neemt daarbij **focus op de betekenis van de begrippen**. Twee organisaties of systemen die hun informatie afstemmen op OSLO² zijn **semantisch interoperabel**: ze weten precies hoe ze de gegevens van de ander moeten interpreteren en kunnen elkaars informatie direct hergebruiken.
 
 Semantische interoperabiliteit schept de mogelijkheid om informatie uit te wisselen en te delen zonder te moeten weten welke systemen de data beheren. Twee organisaties zijn semantisch interoperabel als ze weten hoe ze de gegevens van de ander precies moeten interpreteren en ze elkaars informatie direct kunnen hergebruiken. Hoe gaat dit nu in zijn werk? Als jij en je collega adressen bijhouden in een spreadsheet weten jullie beiden dat dit over adressen gaat. Maar als jij een kolomtitel ‘adres’ hebt, en je collega ‘straat’, kan een programma niet afleiden dat dit over hetzelfde gaat.
 
 Wereldwijd zijn er over de meest uiteenlopende begrippen afspraken gemaakt en omgezet in machineleesbare begrippen. Deze worden onderling ook gelinkt, zodat het concept ‘kapel’ en het concept ‘kerk’ onder het concept ‘religieus gebouw’ vallen.
 
-Dankzij een afstemming met internationale *linked data* principes, zorgt OSLO² er voor dat gegevens *vlot uitwisselbaar zijn, binnen en buiten de overheid*.
+Dankzij een afstemming met internationale **linked data** principes, zorgt OSLO² er voor dat gegevens **vlot uitwisselbaar zijn, binnen en buiten de overheid**.
 
 ## Aanleiding
 
@@ -36,11 +36,11 @@ Daarom werd de basis gelegd voor een semantische informatiestandaard die met de 
 
 ### Focus van OSLO²
 
-De focus van OSLO² ligt op het ontwikkelen van *context-neutrale semantische informatiebouwstenen*. Een voorbeeld hiervan is ‘het object gebouw’ dat maximaal generiek, en dus zo slank mogelijk, wordt gedefinieerd, waarbij een sleutel die het gebouw uniek identificeert de essentie vormt. In concrete toepassingen kunnen deze bouwstenen dan  uitgebreid worden tot context-specifieke datamodellen.  Het “OSLO Core Gebouw” kan dan bijvoorbeeld in een vastgoeddatabank gekoppeld worden aan gegevens m.b.t. ruimtegebruik, energie- en waterverbruik, enz.
+De focus van OSLO² ligt op het ontwikkelen van **context-neutrale semantische informatiebouwstenen**. Een voorbeeld hiervan is ‘het object gebouw’ dat maximaal generiek, en dus zo slank mogelijk, wordt gedefinieerd, waarbij een sleutel die het gebouw uniek identificeert de essentie vormt. In concrete toepassingen kunnen deze bouwstenen dan  uitgebreid worden tot context-specifieke datamodellen.  Het “OSLO Core Gebouw” kan dan bijvoorbeeld in een vastgoeddatabank gekoppeld worden aan gegevens m.b.t. ruimtegebruik, energie- en waterverbruik, enz.
 
-In dit proces focussen we eerst op de *semantiek van de gegevens uit de basisregisters*: een gedeeld begrippenkader voor personen, organisaties, contactinformatie, adressen, gebouwen en dienstverlening. Daarna volgen de meest gebruikte informatieproducten en tot slot de sectorspecifieke data. Voor datasets onder federale bevoegdheid wordt een (inter)federale samenwerking opgestart met als doel om ook daar tot een gedeelde semantiek te komen.
+In dit proces focussen we eerst op de **semantiek van de gegevens uit de basisregisters**: een gedeeld begrippenkader voor personen, organisaties, contactinformatie, adressen, gebouwen en dienstverlening. Daarna volgen de meest gebruikte informatieproducten en tot slot de sectorspecifieke data. Voor datasets onder federale bevoegdheid wordt een (inter)federale samenwerking opgestart met als doel om ook daar tot een gedeelde semantiek te komen.
 
-OSLO² zal hierbij een *methodiek en een governance* aanreiken die entiteiten in Vlaanderen toelaat om OSLO² uit te breiden met sectorspecifieke informatieproducten.
+OSLO² zal hierbij een **methodiek en een governance** aanreiken die entiteiten in Vlaanderen toelaat om OSLO² uit te breiden met sectorspecifieke informatieproducten.
 
 ### Relatie tot basisregisters
 
@@ -89,9 +89,9 @@ In 2016 werkt informatie Vlaanderen samen met haar partners een methodologie uit
 
 We onderscheiden de volgende stromen:
 
-* *Methodologie en governance*: er wordt een methodologie en governance  ontwikkeld die partners van Informatie Vlaanderen zal ondersteunen bij het ontwikkelen van coherente standaarden met betrekking tot hun eigen domein.
-* *Semantiek*: er wordt ingezet op de standaardisatie van kerndata en hun onderlinge relaties. De objecten die prioritair uitgewerkt worden zijn enerzijds ‘persoon, publieke organisatie, adres, gebouw en contactinformatie’ die de basis vormen voor digitale interactie met burgers en ondernemers en is cruciaal voor lokale besturen. Daarnaast wordt er ingezet op het domein dienstverlening, dat betrekking heeft tot interactie van burgers en ondernemers met de overheid.
-* *Productontwikkeling ‘CRAB als gelinkte Open Data’*: het product dat binnen dit project in 2016 zal worden ontwikkeld en ontsloten wordt is het product 'CRAB LOD'. Hiermee zet het agentschap Informatie Vlaanderen een belangrijke stap in de richting van het aanbieden van de typische “5 sterren” linked open data, een belangrijke doelstelling van het Vlaams actieplan Open Data.
+* **Methodologie en governance**: er wordt een methodologie en governance  ontwikkeld die partners van Informatie Vlaanderen zal ondersteunen bij het ontwikkelen van coherente standaarden met betrekking tot hun eigen domein.
+* **Semantiek**: er wordt ingezet op de standaardisatie van kerndata en hun onderlinge relaties. De objecten die prioritair uitgewerkt worden zijn enerzijds ‘persoon, publieke organisatie, adres, gebouw en contactinformatie’ die de basis vormen voor digitale interactie met burgers en ondernemers en is cruciaal voor lokale besturen. Daarnaast wordt er ingezet op het domein dienstverlening, dat betrekking heeft tot interactie van burgers en ondernemers met de overheid.
+* **Productontwikkeling ‘CRAB als gelinkte Open Data’**: het product dat binnen dit project in 2016 zal worden ontwikkeld en ontsloten wordt is het product 'CRAB LOD'. Hiermee zet het agentschap Informatie Vlaanderen een belangrijke stap in de richting van het aanbieden van de typische “5 sterren” linked open data, een belangrijke doelstelling van het Vlaams actieplan Open Data.
 
 ### Overzicht van de technische werkgroepen
 
