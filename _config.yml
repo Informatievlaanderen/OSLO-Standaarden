@@ -15,11 +15,10 @@
 # in the templates via {{ site.myvariable }}.
 title: "OSLO²: Open Standaarden voor Linkende Organisaties"
 email: oslo@kb.vlaanderen.be
-description: > # this means to ignore newlines until "baseurl:"
+description: > # this means to ignore newlines
   Open Standaarden voor Linkende Organisaties (OSLO), vormen éénduidige
   standaarden voor de uitwisseling van informatie zoals adressen, personen,
-  organisaties e.a. OSLO² neemt daarbij focus op de betekenis van de
-  begrippen. Dankzij een afstemming met internationale linked data principes,
+  organisaties e.a. Dankzij een afstemming met internationale linked data principes,
    zorgt OSLO² er voor dat gegevens vlot uitwisselbaar zijn, binnen en
    buiten de overheid.
 author: Agentschap Informatie Vlaanderen
