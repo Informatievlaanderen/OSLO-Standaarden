@@ -134,7 +134,7 @@ Verder stellen we ook nog enkele open vragen:
 * Wat is de precieze definitie van een publieke organisatie? De ISA core public organisation draft heeft een brede definitie: “it is defined as part of the public sector by a legal framework”.
 * Geografisch toepassingsgebied: is dit ook geen soort relatie? Dit heeft immers ook een formeel kader.
 * Gebeurtenis: kan een gebeurtenis bij meerdere organisaties horen? Bijvoorbeeld: een fusie heeft betrekking op 2 of meer organisaties.
-* Contactpunt en adres worden apart gemodelleerd, wat zijn de concrete gevolgen hiervan? Een adres kan context gebonden zijn, bijvoorbeeld als loket adres of als organisatie adres. Verschillende loketten zouden gemodelleerd worden als verschillende organisaties. De burgerlijke diensten bus van stad Gent rijdt rond, dus deze heeft wel een e-mail en telefoon, maar geen vast adres.
+* Contactpunt en adres worden apart gemodelleerd, wat zijn de concrete gevolgen hiervan? Een adres kan context gebonden zijn, bijvoorbeeld als loket adres of als organisatie adres. Verschillende loketten zouden gemodelleerd worden als verschillende contactpunten. De burgerlijke diensten bus van stad Gent rijdt rond, dus deze heeft wel een e-mail en telefoon, maar geen vast adres.
 
 ### Weergave van model OSLO1 in UML
 
