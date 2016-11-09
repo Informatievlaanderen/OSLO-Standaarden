@@ -6,6 +6,9 @@ permalink: /vocabularia/
 
 Op deze pagina geven we een overzicht van de voornaamste vocabularia die een invloed hebben gehad op OSLO².
 
+* TOC
+{:toc}
+
 ## Core Public Organisation (CPO - ISA)
 
 The Core Public Organisation Vocabulary aspires to become a common data model for describing public organisations in the European Union.
