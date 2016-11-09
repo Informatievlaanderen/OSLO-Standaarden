@@ -6,7 +6,7 @@ permalink: /vocabularia/
 
 Op deze pagina geven we een overzicht van de voornaamste vocabularia die een invloed hebben gehad op OSLO².
 
-## Core Public Organisation (ISA)
+## Core Public Organisation (CPO - ISA)
 
 The Core Public Organisation Vocabulary aspires to become a common data model for describing public organisations in the European Union.
 
@@ -17,7 +17,7 @@ The Core Public Organisation Vocabulary aspires to become a common data model fo
 - [Documentatie (Draft 4)](https://joinup.ec.europa.eu/system/files/project/core_public_organisation_vocabulary_draft_4_0.01.pdf)
 - Vocabularium: niet gepubliceerd
 
-## Core Public Service Vocabulary (ISA)
+## Core Public Service Vocabulary (CPSV - ISA)
 
 The Core Public Service Vocabulary is a simplified, reusable and extensible data model that captures the fundamental characteristics of a service offered by public administration.
 
@@ -28,7 +28,7 @@ The Core Public Service Vocabulary is a simplified, reusable and extensible data
 - [Documentatie](https://joinup.ec.europa.eu/system/files/project/7e/8d/ae/Core%20Public%20Service%20Vocabulary%20specification%20v1.01.pdf)
 - Vocabularium: [(RDF)](http://purl.org/vocab/cpsv#)
 
-## Core Public Service Vocabulary Application Profile (ISA)
+## Core Public Service Vocabulary Application Profile (CPSV-AP - ISA)
 
 The Core Public Service Vocabulary Application Profile (CPSV-AP) is a data model that has been developed in the context of a Working Group for describing public services and grouping them in business events.
 
@@ -39,7 +39,7 @@ The Core Public Service Vocabulary Application Profile (CPSV-AP) is a data model
 - [Documentatie](https://joinup.ec.europa.eu/system/files/project/cc_di07171_cs270_d04.01_cpsv-ap-2.0_v1.05.pdf)
 - Vocabularium: Geen, definieert geen eigen termen.
 
-## ISA Programma Location Core Vocabulary (ISA)
+## ISA Programma Location Core Vocabulary (LOCN - ISA)
 
 The ISA Programme Location Core Vocabulary provides a minimum set of classes and properties for describing any place in terms of its name, address or geometry. The vocabulary is specifically designed to aid the publication of data that is interoperable with EU INSPIRE Directive. It is closely integrated with the Business and Person Core Vocabularies of the EU ISA Programme, now available in W3C space as, respectively, the Registered Organization vocabulary and ISA Person Core Vocabulary.
 
@@ -47,7 +47,16 @@ The ISA Programme Location Core Vocabulary provides a minimum set of classes and
 - [Documentatie](http://www.w3.org/ns/locn#)
 - Vocabularium: [(Turtle)](https://www.w3.org/ns/locn.ttl) [(RDF)](https://www.w3.org/ns/locn.rdf)
 
-## Registered Organization Vocabulary (W3C)
+## Open Standaard voor Linked Overheden (OSLO - AIV)
+
+The OSLO Vocabulary is a simplified, reusable and extensible data model that captures the fundamental characteristics of information exchanged by public administration in the domains: contact information, localisation and public services.
+
+- Versie op moment van schrijven: 1.1
+- [Joinup](https://joinup.ec.europa.eu/catalogue/repository/oslo-open-standards-local-administrations-flanders)
+- [Documentatie](https://www.v-ict-or.be/assets/5384d510ce3fb57c500006ad/OSLO1.1-specificaties.pdf)
+- [Figuur](https://raw.githubusercontent.com/rafbuyle/oslo_xml_schemas/master/OSLO_model_v1_1_0.png)
+
+## Registered Organization Vocabulary (ROV - W3C)
 
 The Registered Organization Vocabulary is a profile of the Organization Ontology for describing organizations that have gained legal entity status through a formal registration process, typically in a national or regional register.
 
@@ -63,7 +72,7 @@ Schema.org is a collaborative, community activity with a mission to create, main
 - [Documentatie](https://schema.org)
 - Vocabularium: [(Turtle)](https://schema.org/version/latest/schema.ttl)
 
-## The Organization Ontology (W3C)
+## The Organization Ontology (ORG - W3C)
 
 This document describes a core ontology for organizational structures, aimed at supporting linked data publishing of organizational information across a number of domains. It is designed to allow domain-specific extensions to add classification of organizations and roles, as well as extensions to support neighbouring information such as organizational activities.
 
