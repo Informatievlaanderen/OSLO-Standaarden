@@ -57,6 +57,7 @@ The OSLO Vocabulary is a simplified, reusable and extensible data model that cap
 - Versie op moment van schrijven: 1.1
 - [Joinup](https://joinup.ec.europa.eu/catalogue/repository/oslo-open-standards-local-administrations-flanders)
 - [Documentatie](https://www.v-ict-or.be/assets/5384d510ce3fb57c500006ad/OSLO1.1-specificaties.pdf)
+- Vocabularium: [(RDF)](http://purl.org/oslo/ns/localgov#)
 - [Figuur](https://raw.githubusercontent.com/rafbuyle/oslo_xml_schemas/master/OSLO_model_v1_1_0.png)
 
 ## Registered Organization Vocabulary (ROV - W3C)
