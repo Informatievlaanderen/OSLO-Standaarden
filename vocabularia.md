@@ -37,9 +37,13 @@ The Core Public Service Vocabulary Application Profile (CPSV-AP) is a data model
 
 **Onder ontwikkeling**
 
-- Versie op moment van schrijven: [2.0](https://joinup.ec.europa.eu/asset/cpsv-ap/asset_release/core-public-service-vocabulary-application-profile-20-version-public-rev)
+- Versie op moment van schrijven:
+  - [2.0 - Version for public review](https://joinup.ec.europa.eu/asset/cpsv-ap/asset_release/core-public-service-vocabulary-application-profile-20-version-public-rev)
+  - [2.0 - Final draft](https://joinup.ec.europa.eu/asset/cpsv-ap/asset_release/core-public-service-vocabulary-application-profile-v20-final-draft)
 - [Joinup](https://joinup.ec.europa.eu/asset/cpsv-ap/description)
-- [Documentatie](https://joinup.ec.europa.eu/system/files/project/cc_di07171_cs270_d04.01_cpsv-ap-2.0_v1.05.pdf)
+- Documentatie:
+  - [2.0 - Version for public review](https://joinup.ec.europa.eu/system/files/project/cc_di07171_cs270_d04.01_cpsv-ap-2.0_v1.05.pdf)
+  - [2.0 - Final draft](https://joinup.ec.europa.eu/system/files/project/cc_di07171_cs270_d04.02_cpsv-ap-2.0_v1.01.docx)
 - Vocabularium: Geen, definieert geen eigen termen.
 
 ## ISA Programma Location Core Vocabulary (LOCN - ISA)
