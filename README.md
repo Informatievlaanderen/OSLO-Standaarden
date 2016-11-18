@@ -17,6 +17,6 @@ Deze repository dient:
 
 ## Gerelateerde repositories
 
-- [https://github.com/Informatievlaanderen/OSLO-Annotated-Data-POC]()
-- [https://github.com/Informatievlaanderen/OSLO-EA-to-RDF]()
-- [https://github.com/Informatievlaanderen/OSLO-Vocabularia]()
+- [OSLO-Annotated-Data-POC](https://github.com/Informatievlaanderen/OSLO-Annotated-Data-POC)
+- [OSLO-EA-to-RDF](https://github.com/Informatievlaanderen/OSLO-EA-to-RDF)
+- [OSLO-Vocabularia](https://github.com/Informatievlaanderen/OSLO-Vocabularia)
