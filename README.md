@@ -12,7 +12,7 @@ Zie ook [OSLO² op Vlaanderen.be](https://overheid.vlaanderen.be/producten-diens
 
 Deze repository dient:
 
-- om de interne en externe issues bij te houden en publiek te maken;
+- om de interne en externe [issues](https://github.com/Informatievlaanderen/OSLO/issues) bij te houden en publiek te maken;
 - om de bron van de [Github pages van OSLO²](informatievlaanderen.github.io/OSLO) bij te houden.
 
 ## Gerelateerde repositories
