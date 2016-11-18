@@ -1,9 +1,0 @@
-/var/log/tomcat7/catalina.out {
-  copytruncate
-  daily
-  rotate 8
-  nocompress
-  missingok
-  create 640 tomcat7 adm
-  size 500m
-}
