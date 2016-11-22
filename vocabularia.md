@@ -9,6 +9,15 @@ Op deze pagina geven we een overzicht van de voornaamste vocabularia die een inv
 * TOC
 {:toc}
 
+## Core Person Vocabulary (person - ISA)
+
+The Person Core Vocabulary provides a minimum set of classes and properties for describing a natural person, i.e. the individual as opposed to any role they may play in society or the relationships they have to other people, organisations and property; all of which contribute significantly to the broader concept of identity. The vocabulary is closely integrated with the Location and Business Core Vocabularies.
+
+- Versie op moment van schrijven: [Final Draft - v1.00 - 07 May 2012](https://joinup.ec.europa.eu/asset/core_person/asset_release/core-person-vocabulary)
+- [Joinup](https://joinup.ec.europa.eu/asset/core_person/description)
+- [Documentatie](https://www.w3.org/ns/person#)
+- Vocabularium: [(Turtle)](https://www.w3.org/ns/person.ttl)
+
 ## Core Public Organisation (CPO - ISA)
 
 The Core Public Organisation Vocabulary aspires to become a common data model for describing public organisations in the European Union.
