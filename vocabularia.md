@@ -15,7 +15,7 @@ The Person Core Vocabulary provides a minimum set of classes and properties for 
 
 - Versie op moment van schrijven: [Final Draft - v1.00 - 07 May 2012](https://joinup.ec.europa.eu/asset/core_person/asset_release/core-person-vocabulary)
 - [Joinup](https://joinup.ec.europa.eu/asset/core_person/description)
-- [Documentatie](https://www.w3.org/ns/person#)
+- Documentatie: [nieuwe termen](https://www.w3.org/ns/person#), [interactie met andere vocabularia](https://joinup.ec.europa.eu/site/core_person/rdfs.html)
 - Vocabularium: [(Turtle)](https://www.w3.org/ns/person.ttl)
 
 ## Core Public Organisation (CPO - ISA)
