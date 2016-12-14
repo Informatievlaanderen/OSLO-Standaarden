@@ -83,9 +83,9 @@ Hierbij werd OSLO1 als vertrekpunt genomen met als doel te integreren met CPSV e
 
 #### 2.2 Analyse CPSV
 
-- [x]@DieterDePaepe Figuur 1: CPSV-model TODO
+{% include img_clickable.html alt="Het CPSV model." imgpath="dienstverlening/2016-10-03/cpsv.png" %}
 
-- [x]@DieterDePaepe Figuur 2: CPSV - Refactored TODO
+{% include img_clickable.html alt="Het CPSV model met niet zelfstandige entiteiten als datatypes." imgpath="dienstverlening/2016-10-03/cpsv-refactored.png" %}
 
 ##### 2.2.1 Geïnventariseerde issues
 
@@ -121,7 +121,8 @@ De voorgestelde issues en oplossingen worden vervolgens voorgesteld voor feedbac
 * Relatie agent en public service
 * Relatie agent en dossier (in OSLO zat er een rol op), in csvap hadden ze dit verder uitgebreid
 Dit wordt gevisualiseerd in een nieuw model:
-- [x]@DieterDePaepe Figuur 3 TODO
+
+{% include img_clickable.html alt="Het CPSV model geïntegreerd met het OSLO model." imgpath="dienstverlening/2016-10-03/cpsv-integrated.png" %}
 
 **Opmerking KDS:**  Dienst wordt vaak verkeerd geïnterpreteerd (bvb: beschrijvingen als: wat doet een sportdienst).  Voorgesteld benamingen zijn Dossier en Dienstverlening.
 Hieruit volgen nieuwe kwesties:
