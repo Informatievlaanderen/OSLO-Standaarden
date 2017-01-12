@@ -232,4 +232,12 @@
             font-size: 18px;
         }
     }
+	
+	h5 {
+        font-size: 16px;
+
+        @include media-query($on-laptop) {
+            font-size: 14px;
+        }
+    }
 }
