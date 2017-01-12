@@ -26,13 +26,14 @@ baseurl: "/OSLO" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 twitter_username: info_vlaanderen
 github_username:  informatievlaanderen/oslo
+repository: Informatievlaanderen/OSLO
+# Needed to have correct URLs when working locally (in eg: asset links).
 
-# Neded to have correct URLs in the minima theme when working locally.
 # See https://github.com/benbalter/jekyll-style-guide/issues/27
 # and https://github.com/jekyll/github-metadata/pull/50
 # Do not push to github.
 # github:
-#  url: http://localhost:4000/OSLO
+#   url: http://localhost:4000/OSLO
 
 # Build settings
 markdown: kramdown
