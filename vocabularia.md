@@ -18,16 +18,19 @@ The Person Core Vocabulary provides a minimum set of classes and properties for 
 - Documentatie: [nieuwe termen](https://www.w3.org/ns/person#), [interactie met andere vocabularia](https://joinup.ec.europa.eu/site/core_person/rdfs.html)
 - Vocabularium: [(Turtle)](https://www.w3.org/ns/person.ttl)
 
-## Core Public Organisation (CPO - ISA)
+## Core Public Organisation Vocabulary (CPOV - ISA)
 
 The Core Public Organisation Vocabulary aspires to become a common data model for describing public organisations in the European Union.
 
-**Onder ontwikkeling**
-
-- Versie op moment van schrijven: [Draft 4](https://joinup.ec.europa.eu/asset/cpov/asset_release/core-public-organisation-vocabulary-draft-4)
+- Versie op moment van schrijven: 
+  - [Draft 4](https://joinup.ec.europa.eu/asset/cpov/asset_release/core-public-organisation-vocabulary-draft-4)
+  - [1.0.0](https://joinup.ec.europa.eu/asset/cpov/asset_release/core-public-organisation-vocabulary-v100)
 - [Joinup](https://joinup.ec.europa.eu/asset/cpov/description)
-- [Documentatie (Draft 4)](https://joinup.ec.europa.eu/system/files/project/core_public_organisation_vocabulary_draft_4_0.01.pdf)
-- Vocabularium: niet gepubliceerd
+- Documentatie 
+  - [Draft 4](https://joinup.ec.europa.eu/system/files/project/core_public_organisation_vocabulary_draft_4_0.01.pdf)
+  - [1.0.0](https://joinup.ec.europa.eu/system/files/project/core_public_organisation_vocabulary_version_1.0.0.pdf)
+- Vocabularium (1.0.0): [(Turtle)](https://joinup.ec.europa.eu/system/files/project/cpov_rdf_schema_turtle_v0.02.ttl)
+- [Mailing lijst](http://joinup.ec.europa.eu/mailman/archives/cpov/)
 
 ## Core Public Service Vocabulary (CPSV - ISA)
 
@@ -44,16 +47,17 @@ The Core Public Service Vocabulary is a simplified, reusable and extensible data
 
 The Core Public Service Vocabulary Application Profile (CPSV-AP) is a data model that has been developed in the context of a Working Group for describing public services and grouping them in business events.
 
-**Onder ontwikkeling**
-
 - Versie op moment van schrijven:
   - [2.0 - Version for public review](https://joinup.ec.europa.eu/asset/cpsv-ap/asset_release/core-public-service-vocabulary-application-profile-20-version-public-rev)
   - [2.0 - Final draft](https://joinup.ec.europa.eu/asset/cpsv-ap/asset_release/core-public-service-vocabulary-application-profile-v20-final-draft)
+  - [2.0](https://joinup.ec.europa.eu/asset/cpsv-ap/asset_release/core-public-service-vocabulary-application-profile-v20)
 - [Joinup](https://joinup.ec.europa.eu/asset/cpsv-ap/description)
 - Documentatie:
   - [2.0 - Version for public review](https://joinup.ec.europa.eu/system/files/project/cc_di07171_cs270_d04.01_cpsv-ap-2.0_v1.05.pdf)
   - [2.0 - Final draft](https://joinup.ec.europa.eu/system/files/project/cc_di07171_cs270_d04.02_cpsv-ap-2.0_v1.01.docx)
-- Vocabularium: Geen, definieert geen eigen termen.
+  - [2.0](https://joinup.ec.europa.eu/system/files/project/sc270di07171_d04.02_cpsv-ap-2.0_final_v1.01.pdf)
+- Vocabularium (2.0): [(Turtle)](https://joinup.ec.europa.eu/system/files/project/cpsv-ap_rdf_schema_v0.05_0.ttl)
+- [Mailing lijst](http://joinup.ec.europa.eu/mailman/archives/cpsv-ap/)
 
 ## ISA Programma Location Core Vocabulary (LOCN - ISA)
 
