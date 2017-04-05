@@ -66,6 +66,7 @@ The ISA Programme Location Core Vocabulary provides a minimum set of classes and
 - Versie op moment van schrijven: Second version in w3.org/ns space - 2015-03-23
 - [Documentatie](http://www.w3.org/ns/locn#)
 - Vocabularium: [(Turtle)](https://www.w3.org/ns/locn.ttl) [(RDF)](https://www.w3.org/ns/locn.rdf)
+- [Mailing lijst](https://lists.w3.org/Archives/Public/public-locadd/)
 
 ## Open Standaard voor Linked Overheden (OSLO - AIV)
 
