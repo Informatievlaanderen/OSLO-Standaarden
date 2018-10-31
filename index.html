@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <title>OSLO Standaardenregister | Vlaanderen.be</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://dij151upo6vad.cloudfront.net/2.latest/css/vlaanderen-ui.css" />
+  <link rel="stylesheet" href="https://dij151upo6vad.cloudfront.net/2.latest/css/vlaanderen-ui-corporate.css" />
+
+  <link rel="icon" sizes="192x192" href="https://dij151upo6vad.cloudfront.net/2.latest/icons/app-icon/icon-highres-precomposed.png">
+  <link rel="apple-touch-icon" href="https://dij151upo6vad.cloudfront.net/2.latest/icons/app-icon/touch-icon-iphone-precomposed.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://dij151upo6vad.cloudfront.net/2.latest/icons/app-icon/touch-icon-ipad-precomposed.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="https://dij151upo6vad.cloudfront.net/2.latest/icons/app-icon/touch-icon-iphone-retina-precomposed.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="https://dij151upo6vad.cloudfront.net/2.latest/icons/app-icon/touch-icon-ipad-retina-precomposed.png">
+
+  <meta name="msapplication-square70x70logo" content="https://dij151upo6vad.cloudfront.net/2.latest/icons/app-icon/tile-small.png" />
+  <meta name="msapplication-square150x150logo" content="https://dij151upo6vad.cloudfront.net/2.latest/icons/app-icon/tile-medium.png" />
+  <meta name="msapplication-wide310x150logo" content="https://dij151upo6vad.cloudfront.net/2.latest/icons/app-icon/tile-wide.png" />
+  <meta name="msapplication-square310x310logo" content="https://dij151upo6vad.cloudfront.net/2.latest/icons/app-icon/tile-large.png" />
+  <meta name="msapplication-TileColor" content="#FFE615" />
+</head>
+
+<body>
+  <div style="min-height:44px;;" id="vlaanderen-header">
+    <!-- insert your global header here -->
+    <script type="text/javascript" src="//widgets-dev.hbplus.be/widget/live/5ec9879de3e5488bba00a8c1c63b030e"></script>
+    <!-- end global header-->
+  </div>
+
+  <!-- Start page content -->
+  <div class="page">
+    <div class="layout layout--wide">
+      <div class="skiplink">
+        <a href="#main">Overslaan en naar de algemene inhoud gaan</a>
+      </div>
+    </div>
+
+    <!-- header here -->
+    <!-- end header -->
+    <div id="main" itemprop="mainContentOfPage" role="main" tabindex="-1" class="main-content">
+	    <header class="content-header content-header--small content-header--half-image u-spacer--large">
+	      <div class="content-header__wrapper">
+	        <picture class="content-header__bg">
+	          <img sizes="50vw" src="https://www.vlaanderen.be/sites/default/files/ip_acm/page_banner_wide_alt/header.jpg" srcset="https://www.vlaanderen.be/sites/default/files/ip_acm/page_banner_mobile_alt/header.jpg 320w, https://www.vlaanderen.be/sites/default/files/ip_acm/page_banner_narrow/header.jpg 1024w, https://www.vlaanderen.be/sites/default/files/ip_acm/page_banner_wide_alt/header.jpg 1600w"
+	            alt="" title="">
+	        </picture>
+	        <div class="layout layout--wide">
+	          <div class="content-header__content">
+	            <div class="content-header__logo-wrapper">
+	              <a href="#" class="content-header__entity-logo">
+	                <span class="content-header__entity-logo__prefix">OSLO</span>
+	                <span class="content-header__entity-logo__title">Standaardenregister</span>
+	              </a>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	    </header>
+		<div class="region">
+	    	<div class="layout layout--wide">
+	    		<!-- intro -->
+	    		<div id="introductie" class="introduction u-spacer--large">
+	    			<p>
+	    				Dit standaardenregister geeft een overzicht van alle lopende en afgewerkte trajecten die deel uitmaken van het initiatief Open Standaarden voor Linkende Organisaties (OSLO) van de Vlaamse overheid.
+	    			</p>
+	    		</div>
+	    		<!-- end intro -->
+	    		<!-- cijfers -->
+	    	<div align="right">
+		        <div class="grid u-spacer--large">
+		          <div class="col--3-12 col--6-12--s">
+		            <div class="infotext-links">
+		              <div class="infotext-wrapper">
+		                <a href="#erkende_standaarden" class="infotext infotext--badge">
+		                  <div class="infotext__value js-infotext__value" id="count_erkende"></div>
+		                  <div class="infotext__text">Erkende standaarden</div>
+		                </a>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col--3-12 col--6-12--s">
+		            <div class="infotext-links">
+		              <div class="infotext-wrapper">
+		                <a href="#kandidaat-standaarden" class="infotext infotext--badge">
+		                  <div class="infotext__value js-infotext__value" id="count_kandidaat"></div>
+		                  <div class="infotext__text">Kandidaat-standaarden</div>
+		                </a>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col--3-12 col--6-12--s">
+		            <div class="infotext-links">
+		              <div class="infotext-wrapper">
+		                <a href="#standaarden_in_ontwikkeling" class="infotext infotext--badge">
+		                  <div class="infotext__value js-infotext__value" id="count_ontwikkeling"></div>
+		                  <div class="infotext__text">Standaarden in ontwikkeling</div>
+		                </a>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+		    </div>
+		        <!-- end cijfers -->
+		        <!-- begeleidende tekst -->
+		        <div id="standaarden" class="u-spacer--large">
+					<p>
+		        		Overheden op lokaal, Vlaams, interfederaal en Europees niveau moeten in het kader van hun dienstverlening vaak samenwerken. In praktijk moeten bijgevolg heel wat gegevens uitgewisseld worden tussen de verschillende administraties. Deze gegevens zijn afkomstig uit verschillende systemen, zijn mogelijks niet in hetzelfde technische formaat beschikbaar, en volgen niet noodzakelijk dezelfde semantiek. Zonder het maken van afspraken, wordt kwaliteitsvolle gegevensuitwisseling onmogelijk. Dit onderstreept het belang van de ontwikkeling van datastandaarden. De verschillende standaarden kunnen onderverdeeld worden op basis van waar ze zich bevinden in de levenscyclus, namelijk:
+		        	</p>
+		        </div> 
+		        <div id="standaarden" class="u-spacer--large">		        
+		        		<ul>
+		        			<li><strong>Erkende standaarden</strong>: werden na het doorlopen van een erkenningsprocedure goedgekeurd door de Werkgroep Datastandaarden van het Stuurorgaan Vlaams Informatie- en ICT-beleid als standaard binnen de Vlaamse overheid.</li>
+		        			<li><strong>Kandidaat-standaarden</strong>: een stabiele specificatie voor de standaard werd ontwikkeld, aan de hand van een publieke reviewperiode wordt implementatie-ervaring opgedaan en feedback van buiten de thematische werkgroep verzameld.</li>
+		        			<li><strong>Standaarden in ontwikkeling</strong>: werden reeds aangemeld bij de Werkgroep Datastandaarden en worden uitgewerkt door een thematische werkgroep aan de hand van publieke werksessies.</li>
+		        		</ul>
+		        	</p>
+		        </div>
+		        <div id="standaarden" class="u-spacer--large">
+		        	<p>
+		        		Bij de ontwikkeling van een datastandaard is het van belang om de verschillende stakeholders te aligneren, ook binnen de hiërarchie van een organisatie. Om dit draagvlak bij de verschillende belanghebbenden te kunnen garanderen, is vanuit OSLO een 
+		        		<a href="https://data.vlaanderen.be/cms/Proces_en_methode_voor_de_erkenning_van_datastandaarden_v1.0.pdf">ontwikkelproces</a> 
+		        		uiteengezet, gebaseerd op internationale best practices zoals onder meer ISA, W3C en OpenStand. 
+		        		<br>
+		        	</p>
+		        	<p>
+		        		Het proces en de methode zijn geënt op principes van openheid en transparantie, het stimuleren van hoge betrokkenheid, en het bieden van de nodige garanties op vlak van stabiliteit, kwaliteit en toepasbaarheid. Bovendien bestaan standaarden in een wijzigende omgeving, en dient er dus ruimte te zijn voor beheerde wijzigingen en onderhoud van de afspraken en standaarden. 
+		        	</p>		        
+		        </div>
+		        <!-- end begeleidende tekst -->
+		        <!-- dropdown navigatie -->
+		        <nav class="dropdown-navigation">
+		          <h2 class="h2 dropdown-navigation__title">Filter standaarden</h2>
+		          <div class="dropdown-navigation__wrapper js-popover" id="openCloseDropdown">
+		            <button class="dropdown-navigation__toggle js-popover__toggle" id="openCloseDropdownButton">Open navigatie</button>
+		            <ul class="dropdown-navigation__dropdown">
+		              <li>
+		                <a class="dropdown-navigation__link dropdown-navigation__link--active" id="Alle-standaarden">Alle standaarden</a>
+		              </li>
+		              <li>
+		                <a class="dropdown-navigation__link" id="Vocabularia-en-applicatieprofielen">Vocabularia en applicatieprofielen</a>
+		              </li>
+		              <li>
+		                <a class="dropdown-navigation__link" id="Technische-standaard">Technische standaarden</a>
+		              </li>
+		              <li>
+		                <a class="dropdown-navigation__link" id="Standaarden-voor-organisatorische-interoperabiliteit">Standaarden voor organisatorische interoperabiliteit</a>
+		              </li>
+		            </ul>
+		          </div>
+		        </nav>
+		        <!-- end dropdown navigatie -->
+				<!-- erkende standaarden -->
+				 <h1 id="erkende_standaarden" class="h1">Erkende standaarden</h1>
+				    <div class="col--1-1 u-spacer--large">
+				        <div data-table>
+				          <div class="u-table-overflow">
+				            <table class="data-table" id="tabel_erkende">
+				              <thead>
+				              <tr class="data-table__header">
+				                <th>
+				                	Details
+				                </th>
+				                <th class="data-table__header-title">
+				                    Titel
+				                </th>
+				                <th class="data-table__header-title">
+				                    Categorie
+				                </th>
+				                <th class="data-table__header-title">
+				                    Verantwoordelijke organisatie
+				                </th>
+				                <th class="data-table__header-title">
+				                    Type toepassing
+				                </th>
+				                <th class="data-table__header-title">
+				                    Publicatiedatum
+				                </th>
+				              </tr>
+				              </thead>
+				              <tbody>
+				              <tr data-table-selectable class="Technische-standaard">
+				                <td>
+				                	<div class="badge badge--border badge--m badge--icon">
+						              <i class="badge__icon vi vi-arrow vi-u-m" aria-hidden="true"></i>
+						            </div>
+				                </td>
+				                <td><a href="Erkende%20Standaarden/Vlaamse%20URI-Standaard%20voor%20Data/uri-standaard.html">Vlaamse URI-Standaard voor Data</a></td>
+				                <td>Technische standaard</td>
+				                <td><a href="http://data.vlaanderen.be/id/organisatie/OVO002949">Agentschap Informatie Vlaanderen</a></td>
+				                <td>Aanbevolen (vrijwillig)</td>
+				                <td>2017-03-23</td>
+				              </tr>
+				              <!-- Voc Generiek en AP Generiek Basis momenteel nog geen traject -->
+				              <!--tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
+				                <td>
+				                	<div class="badge badge--border badge--m badge--icon">
+						              <i class="badge__icon vi vi-arrow vi-u-m" aria-hidden="true"></i>
+						            </div>
+				                </td>
+				            	<td><a href="Erkende%20Standaarden/Vocabularium%20Generiek/Vocabularium%20Generiek.html">Vocabularium Generiek</a></td>
+				                <td>Vocabularia en applicatieprofielen</td>
+				                <td><a href="http://data.vlaanderen.be/id/organisatie/OVO002949">Agentschap Informatie Vlaanderen</a></td>
+				                <td>Aanbevolen (vrijwillig)</td>
+				                <td>2017-03-31</td>
+				              </tr-->
+				              <!--tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
+				                <td>
+				                	<div class="badge badge--border badge--m badge--icon">
+						              <i class="badge__icon vi vi-arrow vi-u-m" aria-hidden="true"></i>
+						            </div>
+				                </td>
+				            	<td><a href="Erkende%20Standaarden/Applicatieprofiel%20Generiek%20basis/Applicatieprofiel%20Generiek%20basis.html">Applicatieprofiel Generiek basis</a></td>
+				                <td>Vocabularia en applicatieprofielen</td>
+				                <td><a href="http://data.vlaanderen.be/id/organisatie/OVO002949">Agentschap Informatie Vlaanderen</a></td>
+				                <td>Aanbevolen (vrijwillig)</td>
+				                <td>2017-03-31</td>
+				              </tr-->		
+
+				              <tr data-table-selectable class="Standaarden-voor-organisatorische-interoperabiliteit">
+				                <td>
+				                	<div class="badge badge--border badge--m badge--icon">
+						              <i class="badge__icon vi vi-arrow vi-u-m" aria-hidden="true"></i>
+						            </div>
+				                </td>
+				                <td><a href="Erkende%20Standaarden/Proces-Methode%20Ontwikkeling%20standaarden/Proces-MethodeOntwikkeling.html"> Proces en methode voor de ontwikkeling en erkenning van data standaarden</a></td>
+				                <td>Standaard voor organisatorische interoperabiliteit</td>
+				                <td><a href="http://data.vlaanderen.be/id/organisatie/OVO002949">Agentschap Informatie Vlaanderen</a></td>
+				                <td>Pas toe of leg uit</td>
+				                <td>2018-04-04</td>
+				              </tr>
+				              <tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
+				                <td>
+				                	<div class="badge badge--border badge--m badge--icon">
+						              <i class="badge__icon vi vi-arrow vi-u-m" aria-hidden="true"></i>
+						            </div>
+				                </td>
+				                <td><a href="Erkende%20Standaarden/Vocabularium%20Adres/Vocabularium%20Adres.html">Vocabularium Adres</a></td>
+				                <td>Vocabularia en applicatieprofielen</td>
+				                <td><a href="http://data.vlaanderen.be/id/organisatie/OVO002949">Agentschap Informatie Vlaanderen</a></td>
+				                <td>Aanbevolen (vrijwillig)</td>
+				                <td>2017-03-31</td>
+				              </tr>
+				              <tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
+				                <td>
+				                	<div class="badge badge--border badge--m badge--icon">
+						              <i class="badge__icon vi vi-arrow vi-u-m" aria-hidden="true"></i>
+						            </div>
+				                </td>
+				                <td><a href="Erkende%20Standaarden/Vocabularium%20Dienst/Vocabularium%20Dienst.html">Vocabularium Dienst</a></td>
+				                <td>Vocabularia en applicatieprofielen</td>
+				                <td><a href="http://data.vlaanderen.be/id/organisatie/OVO002949">Agentschap Informatie Vlaanderen</a></td>
+				                <td>Aanbevolen (vrijwillig)</td>
+				                <td>2017-03-31</td>
+				              </tr>			              
+				              <tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
+				                <td>
+				                	<div class="badge badge--border badge--m badge--icon">
+						              <i class="badge__icon vi vi-arrow vi-u-m" aria-hidden="true"></i>
+						            </div>
+				                </td>
+				                <td><a href="Erkende%20Standaarden/Vocabularium%20Organisatie/Vocabularium%20Organisatie.html">Vocabularium Organisatie</a></td>
+				                <td>Vocabularia en applicatieprofielen</td>
+				                <td><a href="http://data.vlaanderen.be/id/organisatie/OVO002949">Agentschap Informatie Vlaanderen</a></td>
+				                <td>Aanbevolen (vrijwillig)</td>
+				                <td>2017-03-31</td>
+				              </tr>		              
+				              <tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
+				                <td>
+				                	<div class="badge badge--border badge--m badge--icon">
+						              <i class="badge__icon vi vi-arrow vi-u-m" aria-hidden="true"></i>
+						            </div>
+				                </td>
+				                <td><a href="Erkende%20Standaarden/Vocabularium%20Persoon/Vocabularium%20Persoon.html">Vocabularium Persoon</a></td>
+				                <td>Vocabularia en applicatieprofielen</td>
+				                <td><a href="http://data.vlaanderen.be/id/organisatie/OVO002949">Agentschap Informatie Vlaanderen</a></td>
+				                <td>Aanbevolen (vrijwillig)</td>
+				                <td>2017-03-31</td>
+				              </tr>			              
+				              <tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
+				                <td>
+				                	<div class="badge badge--border badge--m badge--icon">
+						              <i class="badge__icon vi vi-arrow vi-u-m" aria-hidden="true"></i>
+						            </div>
+				                </td>
+				                <td><a href="Erkende%20Standaarden/Vocabularium%20Besluit/Vocabularium%20Besluit.html">Vocabularium Besluit</a></td>
+				                <td>Vocabularia en applicatieprofielen</td>
+				                <td><a href="http://data.vlaanderen.be/id/organisatie/OVO001835">Agentschap Binnenlands Bestuur</a></td>
+				                <td>Aanbevolen (vrijwillig)</td>
+				                <td>2017-10-11</td>
+				              </tr>
+				              <tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
+				              	<td>
+				                	<div class="badge badge--border badge--m badge--icon">
+						              <i class="badge__icon vi vi-arrow vi-u-m" aria-hidden="true"></i>
+						            </div>
+				                </td>
+				                <td><a href="Erkende%20Standaarden/Vocabularium%20Mandaat/Vocabularium%20Mandaat.html">Vocabularium Mandaat</a></td>
+				                <td>Vocabularia en applicatieprofielen</td>
+				                <td><a href="http://data.vlaanderen.be/id/organisatie/OVO001835">Agentschap Binnenlands Bestuur</a></td>
+				                <td>Aanbevolen (vrijwillig)</td>
+				                <td>2017-10-11</td>
+				              </tr>
+				              <tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
+				                <td>
+				                	<div class="badge badge--border badge--m badge--icon">
+						              <i class="badge__icon vi vi-arrow vi-u-m" aria-hidden="true"></i>
+						            </div>
+				                </td>
+				                <td><a href="Erkende%20Standaarden/Applicatieprofiel%20Besluit%20Publicatie/Applicatieprofiel%20Besluit%20Publicatie.html">Applicatieprofiel Besluit Publicatie</a></td>
+				                <td>Vocabularia en applicatieprofielen</td>
+				                <td><a href="http://data.vlaanderen.be/id/organisatie/OVO001835">Agentschap Binnenlands Bestuur</a></td>
+				                <td>Aanbevolen (vrijwillig)</td>
+				                <td>2017-10-11</td>
+				              </tr>
+				              <tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
+				                <td>
+				                	<div class="badge badge--border badge--m badge--icon">
+						              <i class="badge__icon vi vi-arrow vi-u-m" aria-hidden="true"></i>
+						            </div>
+				                </td>
+				                <td><a href="Erkende%20Standaarden/Applicatieprofiel%20Mandatendatabank/Applicatieprofiel%20Mandatendatabank.html">Applicatieprofiel Mandatendatabank</a></td>
+				                <td>Vocabularia en applicatieprofielen</td>
+				                <td><a href="http://data.vlaanderen.be/id/organisatie/OVO001835">Agentschap Binnenlands Bestuur</a></td>
+				                <td>Aanbevolen (vrijwillig)</td>
+				                <td>2017-10-11</td>
+				              </tr>
+				              </tbody>
+				            </table>
+				        </div>
+				    </div>
+				</div>
+				<!-- end erkende standaarden -->
+				<!-- kandidaat-standaarden -->
+				 <h1 id="kandidaat-standaarden" class="h1">Kandidaat-standaarden</h1>
+				    <div class="col--1-1 u-spacer--large">
+				        <div data-table>
+				          <div class="u-table-overflow">
+				            <table class="data-table" id="tabel_kandidaat">
+				              <thead>
+				              <tr class="data-table__header">
+				                <th>
+				                	Details
+				                </th>
+				                <th class="data-table__header-title">
+				                    Titel
+				                </th>
+				                <th class="data-table__header-title">
+				                    Categorie
+				                </th>
+				                <th class="data-table__header-title">
+									Verantwoordelijke organisatie
+				                </th>
+								<th class="data-table__header-title">
+									Einde publieke review periode
+								</th>
+								<th class="data-table__header-title">
+									Publicatiedatum
+								</th>								
+								</tr>
+								</thead>
+								<tbody>
+								<tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
+								<td>
+									<div class="badge badge--border badge--m badge--icon">
+									<i class="badge__icon vi vi-arrow vi-u-m" aria-hidden="true"></i>
+									</div>
+								</td>
+								<td><a href="Kandidaat%20Standaarden/Gegevensmodel%20Inventarisatie%20Openbaar%20Domein/openbaar-domein.html">Gegevensmodel Inventarisatie Openbaar Domein</a></td>
+								<td>Vocabularia en applicatieprofielen</td>
+								<td><a href="http://data.vlaanderen.be/id/organisatie/OVO002949">Agentschap Informatie Vlaanderen</a></td>
+				                <td>Aanbevolen (vrijwillig)</td>								
+								<td>2018-09-30</td>
+								</tr>
+				              <tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
+				                <td>
+				                	<div class="badge badge--border badge--m badge--icon">
+						              <i class="badge__icon vi vi-arrow vi-u-m" aria-hidden="true"></i>
+						            </div>
+				                </td>
+				                <td><a href="Kandidaat%20Standaarden/Applicatieprofiel%20Persoon%20basis/Applicatieprofiel%20Persoon%20basis.html">Applicatieprofiel Persoon basis</a></td>
+				                <td>Vocabularia en applicatieprofielen</td>
+				                <td><a href="http://data.vlaanderen.be/id/organisatie/OVO002949">Agentschap Informatie Vlaanderen</a></td>
+				                <td>Aanbevolen (vrijwillig)</td>
+				                <td>TBD</td>
+				              </tr>	
+				              <tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
+				                <td>
+				                	<div class="badge badge--border badge--m badge--icon">
+						              <i class="badge__icon vi vi-arrow vi-u-m" aria-hidden="true"></i>
+						            </div>
+				                </td><!-- verplaatsen naar kandidaat standaarden -->
+				                <td><a href="Kandidaat%20Standaarden/Applicatieprofiel%20Dienstencataloog/Applicatieprofiel%20Dienstencataloog.html">Applicatieprofiel Dienstencataloog</a></td>
+				                <td>Vocabularia en applicatieprofielen</td>
+				                <td><a href="http://data.vlaanderen.be/id/organisatie/OVO002949">Agentschap Informatie Vlaanderen</a></td>
+				                <td>Aanbevolen (vrijwillig)</td>
+				                <td>TBD</td>
+				              </tr>					              
+				              <tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
+				                <td>
+				                	<div class="badge badge--border badge--m badge--icon">
+						              <i class="badge__icon vi vi-arrow vi-u-m" aria-hidden="true"></i>
+						            </div>
+				                </td>
+				                <td><a href="Kandidaat%20Standaarden/Applicatieprofiel%20Adresregister/Adresregister.html">Applicatieprofiel Adresregister</a></td>
+				                <td>Vocabularia en applicatieprofielen</td>
+				                <td><a href="http://data.vlaanderen.be/id/organisatie/OVO002949">Agentschap Informatie Vlaanderen</a></td>
+				                <td>Aanbevolen (vrijwillig)</td>
+				                <td>TBD</td>
+				              </tr>				              
+				              <tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
+				                <td>
+				                	<div class="badge badge--border badge--m badge--icon">
+						              <i class="badge__icon vi vi-arrow vi-u-m" aria-hidden="true"></i>
+						            </div>
+				                </td>
+				                <td><a href="Kandidaat%20Standaarden/Applicatieprofiel%20Organisatie%20basis/Applicatieprofiel%20Organisatie%20basis.html">Applicatieprofiel Organisatie basis</a></td>
+				                <td>Vocabularia en applicatieprofielen</td>
+				                <td><a href="http://data.vlaanderen.be/id/organisatie/OVO002949">Agentschap Informatie Vlaanderen</a></td>
+				                <td>Aanbevolen (vrijwillig)</td>
+				                <td>TBD</td>
+				              </tr>										
+				              <tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
+				                <td>
+				                	<div class="badge badge--border badge--m badge--icon">
+						              <i class="badge__icon vi vi-arrow vi-u-m" aria-hidden="true"></i>
+						            </div>
+				                </td>
+				                <td><a href="Kandidaat%20Standaarden/Vocabularium%20Wegen/Vocabularium%20Wegen.html">Vocabularium Wegen</a></td>
+				                <td>Vocabularia en applicatieprofielen</td>
+				                <td><a href="http://data.vlaanderen.be/id/organisatie/OVO002949">Agentschap Informatie Vlaanderen</a></td>
+				                <td>Aanbevolen (vrijwillig)</td>				                
+				                <td>2018-06-30</td>
+				              </tr>
+				              <tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
+				                <td>
+				                	<div class="badge badge--border badge--m badge--icon">
+						              <i class="badge__icon vi vi-arrow vi-u-m" aria-hidden="true"></i>
+						            </div>
+				                </td>
+				                <td><a href="Kandidaat%20Standaarden/Applicatieprofiel%20Wegenregister/Applicatieprofiel%20Wegenregister.html">Applicatieprofiel Wegenregister</td>
+				                <td>Vocabularia en applicatieprofielen</td>
+				                <td><a href="http://data.vlaanderen.be/id/organisatie/OVO002949">Agentschap Informatie Vlaanderen</a></td>
+				                <td>Aanbevolen (vrijwillig)</td>				                
+				                <td>2018-06-30</td>
+				              </tr>
+				              <tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
+				                <td>
+				                	<div class="badge badge--border badge--m badge--icon">
+						              <i class="badge__icon vi vi-arrow vi-u-m" aria-hidden="true"></i>
+						            </div>
+				                </td>			                
+				                <td><a href="Kandidaat%20Standaarden/Vocabularium%20Melding/Vocabularium%20Melding.html">Vocabularium Melding</a></td>
+				                <td>Vocabularia en applicatieprofielen</td>
+				                <td><a href="http://data.vlaanderen.be/id/organisatie/OVO002949">Agentschap Informatie Vlaanderen</a></td>
+				                <td>Aanbevolen (vrijwillig)</td>				                
+				                <td>2018-09-30</td>				                
+				              </tr>		
+				              <tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
+				                <td>
+				                	<div class="badge badge--border badge--m badge--icon">
+						              <i class="badge__icon vi vi-arrow vi-u-m" aria-hidden="true"></i>
+						            </div>
+				                </td>
+				                <td><a href="Kandidaat%20Standaarden/Applicatieprofiel%20Issue%20tracking%20voor%20burgers%20en%20organisaties/Applicatieprofiel%20Issue%20tracking%20voor%20burgers%20en%20organisaties.html">Applicatieprofiel Issue tracking voor burgers en organisaties</a></td>
+				                <td>Vocabularia en applicatieprofielen</td>
+				                <td><a href="http://data.vlaanderen.be/id/organisatie/OVO002949">Agentschap Informatie Vlaanderen</a></td>
+				                <td>Aanbevolen (vrijwillig)</td>				                
+				                <td>2018-09-30</td>					                
+				              </tr>	
+				              <tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
+				                <td>
+				                	<div class="badge badge--border badge--m badge--icon">
+						              <i class="badge__icon vi vi-arrow vi-u-m" aria-hidden="true"></i>
+						            </div>
+				                </td>					                
+				                <td><a href="Kandidaat%20Standaarden/Applicatieprofiel%20Generieke%20Terugmeldfaciliteit/Applicatieprofiel%20Generieke%20Terugmeldfaciliteit.html">Applicatieprofiel Generieke Terugmeldfaciliteit</a></td>
+				                <td>Vocabularia en applicatieprofielen</td>
+				                <td><a href="http://data.vlaanderen.be/id/organisatie/OVO002949">Agentschap Informatie Vlaanderen</a></td>
+				                <td>Aanbevolen (vrijwillig)</td>				                
+				                <td>2018-09-30</td>					                
+				              </tr>		
+					              <tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
+					                <td>
+					                	<div class="badge badge--border badge--m badge--icon">
+							              <i class="badge__icon vi vi-arrow vi-u-m" aria-hidden="true"></i>
+							            </div>
+					                </td>
+					                <td><a href="Kandidaat%20Standaarden/Vocabularium%20Toestemming/Vocabularium%20Toestemming.html">Vocabularium Toestemming</a></td>
+					                <td>Vocabularia en applicatieprofielen</td>
+					                <td><a href="http://data.vlaanderen.be/id/organisatie/OVO002949">Agentschap Informatie Vlaanderen</a></td>
+					                <td>Aanbevolen (vrijwillig)</td>				                
+					                <td>2018-09-30</td>						                
+					              </tr>
+					              <tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
+					                <td>
+					                	<div class="badge badge--border badge--m badge--icon">
+							              <i class="badge__icon vi vi-arrow vi-u-m" aria-hidden="true"></i>
+							            </div>
+					                </td>
+					                <td><a href="Kandidaat%20Standaarden/Applicatieprofiel%20Contactvoorkeuren/Applicatieprofiel%20Contactvoorkeuren.html">Applicatieprofiel Contactvoorkeuren</a></td>
+					                <td>Vocabularia en applicatieprofielen</td>
+					                <td><a href="http://data.vlaanderen.be/id/organisatie/OVO002949">Agentschap Informatie Vlaanderen</a></td>
+					                <td>Aanbevolen (vrijwillig)</td>				                
+					                <td>2018-09-30</td>						                
+					              </tr>					              
+					              <tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
+					                <td>
+					                	<div class="badge badge--border badge--m badge--icon">
+							              <i class="badge__icon vi vi-arrow vi-u-m" aria-hidden="true"></i>
+							            </div>
+					                </td>
+					                <td><a href="Kandidaat%20Standaarden/Vocabularium%20Notificatie/Vocabularium%20Notificatie.html">Vocabularium Notificatie</a></td>
+					                <td>Vocabularia en applicatieprofielen</td>
+					                <td><a href="http://data.vlaanderen.be/id/organisatie/OVO002949">Agentschap Informatie Vlaanderen</a></td>
+					                <td>Aanbevolen (vrijwillig)</td>				                
+					                <td>2018-09-30</td>						                
+					              </tr>
+					              <tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
+					                <td>
+					                	<div class="badge badge--border badge--m badge--icon">
+							              <i class="badge__icon vi vi-arrow vi-u-m" aria-hidden="true"></i>
+							            </div>
+					                </td>
+					                <td><a href="Kandidaat%20Standaarden/Applicatieprofiel%20Notificatiecomponent/Applicatieprofiel%20Notificatiecomponent.html">Applicatieprofiel Notificatiecomponent</a></td>
+					                <td>Vocabularia en applicatieprofielen</td>
+					                <td><a href="http://data.vlaanderen.be/id/organisatie/OVO002949">Agentschap Informatie Vlaanderen</a></td>
+					                <td>Aanbevolen (vrijwillig)</td>				                
+					                <td>2018-09-30</td>						                
+					              </tr>					              
+					              <tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
+					                <td>
+					                	<div class="badge badge--border badge--m badge--icon">
+							              <i class="badge__icon vi vi-arrow vi-u-m" aria-hidden="true"></i>
+							            </div>
+					                </td>
+					                <td><a href="Kandidaat%20Standaarden/Vocabularium%20Transactie/Vocabularium%20Transactie.html">Vocabularium Transactie</a></td>
+					                <td>Vocabularia en applicatieprofielen</td>
+					                <td><a href="http://data.vlaanderen.be/id/organisatie/OVO002949">Agentschap Informatie Vlaanderen</a></td>
+					                <td>Aanbevolen (vrijwillig)</td>				                
+					                <td>2018-09-30</td>						                
+					              </tr>
+					              <tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
+					                <td>
+					                	<div class="badge badge--border badge--m badge--icon">
+							              <i class="badge__icon vi vi-arrow vi-u-m" aria-hidden="true"></i>
+							            </div>
+					                </td>
+					                <td><a href="Kandidaat%20Standaarden/Applicatieprofiel%20Dienst%20Transactiemodel/Applicatieprofiel%20Dienst%20Transactiemodel.html">Applicatieprofiel Dienst Transactiemodel</td>
+					                <td>Vocabularia en applicatieprofielen</td>
+					                <td><a href="http://data.vlaanderen.be/id/organisatie/OVO001835">Agentschap Informatie Vlaanderen</a></td>
+					                <td>Aanbevolen (vrijwillig)</td>				                
+					                <td>2018-09-30</td>						                
+					              </tr>		
+					              <tr data-table-selectable class="Technische-standaard">
+					                <td>
+					                	<div class="badge badge--border badge--m badge--icon">
+							              <i class="badge__icon vi vi-arrow vi-u-m" aria-hidden="true"></i>
+							            </div>
+					                </td>
+					                <td><a href="Kandidaat%20Standaarden/Generieke%20Hypermedia%20API/Generieke%20Hypermedia%20API.html">Generieke Hypermedia API</a></td>
+					                <td>Technische standaard</td>
+					                <td><a href="http://data.vlaanderen.be/id/organisatie/OVO002949">Agentschap Informatie Vlaanderen</a></td>
+					                <td>Aanbevolen (vrijwillig)</td>				                
+					                <td>2018-09-30</td>							                
+					              </tr>
+					              <tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
+					                <td>
+					                	<div class="badge badge--border badge--m badge--icon">
+							              <i class="badge__icon vi vi-arrow vi-u-m" aria-hidden="true"></i>
+							            </div>
+					                </td>
+					                <td><a href="Kandidaat%20Standaarden/Vocabularium%20Besluiten%20Mobiliteit/Vocabularium%20Besluiten%20Mobiliteit.html">Vocabularium Besluiten Mobiliteit</td>
+					                <td>Vocabularia en applicatieprofielen</td>
+					                <td><a href="http://data.vlaanderen.be/id/organisatie/OVO001835">Agentschap Binnenlands Bestuur</a></td>
+					                <td>Aanbevolen (vrijwillig)</td>				                
+					                <td>2018-09-30</td>							                
+					              </tr>						              					              		              				              		              
+				              </tbody>
+				            </table>
+				          </div>
+				        </div>
+				    </div>
+				    <!-- end kandidaat-standaarden -->
+					<!-- standaarden in ontwikkeling -->
+					 <h1 id="standaarden_in_ontwikkeling" class="h1">Standaarden in ontwikkeling</h1>
+					    <div class="col--1-1 u-spacer--large">
+					        <div data-table>
+					          <div class="u-table-overflow">
+					            <table class="data-table" id="tabel_ontwikkeling">
+					              <thead>
+					              <tr class="data-table__header">
+					                <th>
+					                	Details
+					                </th>
+					                <th class="data-table__header-title">
+					                    Titel
+					                </th>
+					                <th class="data-table__header-title">
+					                    Categorie
+					                </th>
+					                <th class="data-table__header-title">
+					                    Verantwoordelijke organisatie
+					                </th>
+					              </tr>
+					              </thead>
+					              <tbody>
+					              <!-- Pipeline - nog niet confirmed
+					              <tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
+					                <td>
+					                	<div class="badge badge--border badge--m badge--icon">
+							              <i class="badge__icon vi vi-arrow vi-u-m" aria-hidden="true"></i>
+							            </div>
+					                </td>
+					                <td><a href="Standaarden%20in%20Ontwikkeling/Applicatieprofiel%20Subsidieregister/Applicatieprofiel%20Subsidieregister.html">Applicatieprofiel Subsidieregister</a></td>
+					                <td>Vocabularia en applicatieprofielen</td>
+					                <td><a href="http://data.vlaanderen.be/id/organisatie/OVO002949">Agentschap Informatie Vlaanderen</a></td>
+					              </tr>
+					              <tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
+					                <td>
+					                	<div class="badge badge--border badge--m badge--icon">
+							              <i class="badge__icon vi vi-arrow vi-u-m" aria-hidden="true"></i>
+							            </div>
+					                </td>
+					                <td><a href="Standaarden%20in%20Ontwikkeling/Vocabularium%20Subsidie/Vocabularium%20Subsidie.html">Vocabularium Subsidieregister</a></td>
+					                <td>Vocabularia en applicatieprofielen</td>
+					                <td><a href="http://data.vlaanderen.be/id/organisatie/OVO002949">Agentschap Informatie Vlaanderen</a></td>			
+					              </tr>		 -->               				              
+					              <!--tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
+					                <td>
+					                	<div class="badge badge--border badge--m badge--icon">
+							              <i class="badge__icon vi vi-arrow vi-u-m" aria-hidden="true"></i>
+							            </div>
+					                </td>
+					                <td><a href="Standaarden%20in%20Ontwikkeling/Vocabularium%20Gebouw/Vocabularium%20Gebouw.html">Vocabularium Gebouw</a></td>
+					                <td>Vocabularia en applicatieprofielen</td>
+					                <td><a href="http://data.vlaanderen.be/id/organisatie/OVO002949">Agentschap Informatie Vlaanderen</a></td>
+					              </tr> -->
+					              <!--tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
+					                <td>
+					                	<div class="badge badge--border badge--m badge--icon">
+							              <i class="badge__icon vi vi-arrow vi-u-m" aria-hidden="true"></i>
+							            </div>
+					                </td>
+					                <td><a href="Standaarden%20in%20Ontwikkeling/Applicatieprofiel%20Gebouwregister/Applicatieprofiel%20Gebouwregister.html">Applicatieprofiel Gebouwregister</a></td>
+					                <td>Vocabularia en applicatieprofielen</td>
+					                <td><a href="http://data.vlaanderen.be/id/organisatie/OVO002949">Agentschap Informatie Vlaanderen</a></td>
+					              </tr-->					              			              
+					              <tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
+					                <td>
+					                	<div class="badge badge--border badge--m badge--icon">
+							              <i class="badge__icon vi vi-arrow vi-u-m" aria-hidden="true"></i>
+							            </div>
+					                </td>
+					                <td><a href="Standaarden%20in%20Ontwikkeling/Toerisme%20Vlaanderen%20Logies/Toerisme%20Vlaanderen%20-%20Logies.html">Toerisme Vlaanderen</td>
+					                <td>Vocabularia en applicatieprofielen</td>
+					                <td><a href="http://data.vlaanderen.be/id/organisatie/OVO001835">Toerisme Vlaanderen</a></td>
+					              </tr>	
+					              <tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
+					                <td>
+					                	<div class="badge badge--border badge--m badge--icon">
+							              <i class="badge__icon vi vi-arrow vi-u-m" aria-hidden="true"></i>
+							            </div>
+					                </td>
+					                <td><a href="Standaarden%20in%20Ontwikkeling/Applicatieprofiel%20DCAT/Applicatieprofiel%20DCAT.html">Applicatieprofiel DCAT</td>
+					                <td>Vocabularia en applicatieprofielen</td>
+					                <td><a href="http://data.vlaanderen.be/id/organisatie/OVO001835">Agentschap Informatie Vlaanderen</a></td>
+					              </tr>						              					              							              		              
+					              </tbody>
+					            </table>
+					          </div>
+					        </div>
+					    </div>
+					    <!-- end standaarden in ontwikkeling -->					  
+	    	</div>
+		</div>
+    </div>
+  </div>
+  <!-- End page content -->
+
+
+  <div id="vlaanderen-footer">
+    <!-- insert your Vlaanderen-footer-code here -->
+    <script type="text/javascript" src="//widgets-dev.hbplus.be/widget/live/70f9c938e7d94f4796131909296812c4"></script>
+    <!-- End global footer-->
+  </div>
+
+  <script src="https://dij151upo6vad.cloudfront.net/2.latest/js/vlaanderen-ui.js"></script>
+  <!-- Script om de dropdown elements te hiden/showen -->  
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+</script>
+<script type="text/javascript">
+var countErkende = $("#tabel_erkende tbody tr").length;
+var countOntwikkeling = $('#tabel_ontwikkeling tbody tr').length;
+var countKantdidaat = $('#tabel_kandidaat tbody tr').length;
+
+document.getElementById("count_erkende").innerHTML = countErkende; 
+document.getElementById("count_ontwikkeling").innerHTML = countOntwikkeling;
+document.getElementById("count_kandidaat").innerHTML = countKantdidaat;
+
+</script>
+  <script type="text/javascript">
+
+  	// Definieer variabele rows -> verwijzing naar de rijen binnen de verschillende tabellen
+  	var rows = $('tbody tr');
+
+  	// Hide/show All
+  	$('#Alle-standaarden').click(function(){
+  		var AlleStandaarden = rows.show();
+			// Close dropdown on click
+  		  	document.getElementById("popover-0").classList.remove('js-popover--open');
+  		  	document.getElementById("openCloseDropdownButton").setValue("aria-expanded",false);
+  	});  	
+  	// Hide/show Technische standaarden
+  	$('#Technische-standaard').click(function(){
+  		var TechStandaard = rows.filter('.Technische-standaard').show();
+  		rows.not(TechStandaard).hide();
+  		  	document.getElementById("popover-0").classList.remove('js-popover--open');
+  		  	document.getElementById("openCloseDropdownButton").setValue("aria-expanded",false);
+  	});
+  	// Hide/show Vocabularia en applicatieprofielen
+  	$('#Vocabularia-en-applicatieprofielen').click(function(){
+  		var VocApplicatieprof = rows.filter('.Vocabularia-en-applicatieprofielen').show();
+  		rows.not(VocApplicatieprof).hide();
+  		  	document.getElementById("popover-0").classList.remove('js-popover--open');
+  		  	document.getElementById("openCloseDropdownButton").setValue("aria-expanded",false);
+  	});
+  	// Hide/show Standaarden voor organisatorische interoperabiliteit
+  	$('#Standaarden-voor-organisatorische-interoperabiliteit').click(function(){
+  		var OrganisatorischeInterop = rows.filter('.Standaarden-voor-organisatorische-interoperabiliteit').show();
+  		rows.not(OrganisatorischeInterop).hide();
+  		  	document.getElementById("popover-0").classList.remove('js-popover--open');
+  		  	document.getElementById("openCloseDropdownButton").setValue("aria-expanded",false);
+  	}); 
+
+
+
+  </script>
+
+</body>
+
+</html>
