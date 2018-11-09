@@ -18,6 +18,6 @@ Deze repository dient om documentatie met betrekking tot de verschillende OSLO s
 - [OSLO-Public-Discussion](https://github.com/Informatievlaanderen/OSLO-Public-Discussion): inhoudelijke en semantische vragen en issues met betrekking tot de verschillende OSLO standaarden.
 - [Data.Vlaanderen.be](https://github.com/Informatievlaanderen/Data.Vlaanderen.be): bevat alle bronbestanden die compileerd worden tot de specificaties die terug te vinden zijn op https://data.vlaanderen.be/
 - [OSLO-EA-to-RDF](https://github.com/Informatievlaanderen/OSLO-EA-to-RDF): de tool die RDF genereert op basis van de OSLO UML diagrammen.
-- [OSLO-SpecificatioGenerator](https://github.com/Informatievlaanderen/OSLO-SpecificationGenerator): de tool die de HTML pagina's voor de standaarden op https://data.vlaanderen.be/ genereert.
+- [OSLO-SpecificationGenerator](https://github.com/Informatievlaanderen/OSLO-SpecificationGenerator): de tool die de HTML pagina's voor de standaarden op https://data.vlaanderen.be/ genereert.
 - [OSLO-Validator](https://github.com/Informatievlaanderen/OSLO-Validator): een tool om data te valideren tegen de [OSLO applicatieprofielen](https://data.vlaanderen.be/ns#Applicatieprofielen).
 - [OSLO-Annotated-Data-POC](https://github.com/Informatievlaanderen/OSLO-Annotated-Data-POC): een proof-of-concept van data geannoteerd met de OSLO vocabularia.
