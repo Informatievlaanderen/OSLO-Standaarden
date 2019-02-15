@@ -21,3 +21,4 @@ Deze repository dient om documentatie met betrekking tot de verschillende OSLO s
 - [OSLO-SpecificationGenerator](https://github.com/Informatievlaanderen/OSLO-SpecificationGenerator): de tool die de HTML pagina's voor de standaarden op https://data.vlaanderen.be/ genereert.
 - [OSLO-Validator](https://github.com/Informatievlaanderen/OSLO-Validator): een tool om data te valideren tegen de [OSLO applicatieprofielen](https://data.vlaanderen.be/ns#Applicatieprofielen).
 - [OSLO-Annotated-Data-POC](https://github.com/Informatievlaanderen/OSLO-Annotated-Data-POC): een proof-of-concept van data geannoteerd met de OSLO vocabularia.
+ 
