@@ -566,13 +566,13 @@
                                     <tbody>
                                         <!-- Pipeline - nog niet confirmed-->
                                         <tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
-                                            <td><a href="standaarden-in-ontwikkeling/vocabularium-mobiliteit-trips-en-aanbod/index.html">Vocabularium Mobiliteit Trips & Aanbod</td>
+                                            <td><a href="standaarden-in-ontwikkeling/vocabularium-mobiliteit/vocabularium-mobiliteit.html">Vocabularium Mobiliteit Trips & Aanbod</td>
 					                        <td>Vocabularia en applicatieprofielen</td>
 					                        <td><a href="https://data.vlaanderen.be/doc/organisatie/OVO000096">Departement Mobiliteit en Openbare Werken</a></td>
                                         </tr>
 
                                         <tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
-                                            <td><a href="standaarden-in-ontwikkeling/applicatieprofiel-mobiliteit-trips-en-aanbod/index.html">Applicatieprofiel Mobiliteit Trips & Aanbod</td>
+                                            <td><a href="standaarden-in-ontwikkeling/applicatieprofiel-mobiliteit/applicatieprofiel-mobiliteit.html">Applicatieprofiel Mobiliteit Trips en Aanbod</td>
 					                        <td>Vocabularia en applicatieprofielen</td>
                                             <td><a href="https://data.vlaanderen.be/doc/organisatie/OVO000096">Departement Mobiliteit en Openbare Werken</a></td>
                                         </tr>
