@@ -62,7 +62,7 @@
 	    	<div class="layout layout--wide">
 	    		<!-- intro -->
 	    		<a class="button u-spacer--large" href="../../">Terug naar het overzicht</a> 
-	    		<h1 class="h1">Applicatieprofiel Organisatie basis</h1>
+	    		<h1 class="h1">Applicatieprofiel Dienstencataloog</h1>
 		        <!-- component -->
 		        <div class="description-data u-spacer--large">
 		          <div class="grid grid--is-stacked">
@@ -72,7 +72,7 @@
 		              </div>
 		              <div class="col--1-4 col--1-3--s col--1-2--xs">
 		                <div class="description-data__label">Publicatiedatum</div>
-		                <div class="description-data__value" itemprop="datePublished" content="2017-03-23">2017-03-31</div>
+		                <div class="description-data__value" itemprop="datePublished" content="TBD">TBD</div>
 		              </div>
 		              <div class="col--1-4 col--1-3--s col--1-2--xs">
 		                <div class="description-data__label">Type toepassing</div>
@@ -87,7 +87,7 @@
 		        <!-- end component -->
 	    		<div id="introductie" class="introduction u-spacer--large">
 	    			<p>
-	    				Het OSLO-Organisatie applicatieprofiel is een profiel op bestaande vocabularia mbt organisaties waaronder het <a href="http://data.vlaanderen.be/ns/organisatie">OSLO-Organisatie vocabularium</a>.<br>Normaal brengt een applicatieprofiel termen samen nodig voor een bepaalde toepassing (incl. bijkomende constraints zoals kardinaliteiten en codelijsten). In dit geval hebben we echter geen bepaalde toepassing voor ogen, dit is m.a.w. een basisprofiel. Het geeft aan welke termen binnen OSLO relevant geacht worden voor het uitwisselen van informatie over organisaties.
+	    				Dit is een applicatieprofiel op het <a href="https://data.vlaanderen.be/ns/dienst">OSLO-Dienst vocabularium</a>.<br>Een profiel voegt in principe termen samen uit verschillende RDF-vocabularia met het oog op een bepaalde toepassing (inclusief beperkingen en/of voorwaarden zoals kardinaliteiten en codelijsten). Voor het OSLO-Dienst vocabularium baseerden we ons echter volledig op het vocabularium dat door ISA werd gemaakt om het <a href="https://joinup.ec.europa.eu/release/core-public-service-vocabulary-application-profile-v20">Core Public Service applicatieprofiel</a> te ondersteunen. Dat is een applicatieprofiel voor het beschrijven van een dienstencataloog, meer concreet een cataloog voor publieke dienstverlening. Het OSLO-Dienst applicatieprofiel neemt het ISA applicatieprofiel over, d.w.z. dezelfde constraints zijn van toepassing.
 	    			</p>
 	    		</div>
 	    		<!-- end intro -->
@@ -98,7 +98,7 @@
 		                <h1 class="spotlight__title">Specificatiedocument</h1>
 		                <h2 class="spotlight__subtitle">Normatief</h2>
 		                <div class="spotlight__data">
-		                  <div class="spotlight__data__value"><a href="https://data.vlaanderen.be/doc/applicatieprofiel/organisatie-basis/">Applicatieprofiel Organisatie basis</a></div>
+		                  <div class="spotlight__data__value"><a href="https://data.vlaanderen.be/doc/applicatieprofiel/dienstencataloog/">Applicatieprofiel Dienstencataloog</a></div>
 		                </div>
 		              </article>
 		          </div> 
@@ -117,10 +117,13 @@
 		              <article class="spotlight">
 		                <h1 class="spotlight__title">Verslagen van werkgroepvergaderingen</h1>
 		                <div class="spotlight__data">
-		                  <div class="spotlight__data__value"><a href="https://drive.google.com/open?id=15rfUdtH7ZUaeGX9u7MnSBGN3-0r84t-XUaSVSGTidN4">Verslag PWG Organisatie 1 2017-01-27</a></div>
-		                  <div class="spotlight__data__value"><a href="https://drive.google.com/open?id=1xuyx1l0BMBfZoswP_DhrJlwXwZ_z7QVvwyum8jp4nvU">Verslag Thematische Werkgroep Organisatie 1 2016-06-16</a></div>
-		                  <div class="spotlight__data__value"><a href="https://drive.google.com/open?id=1uUQChRBJXSPdq8-e1amK1_0cjjyuMpwf6V40m7h8S-c">Verslag Thematische Werkgroep Organisatie 2 2016-10-12</a></div>
-		                  <div class="spotlight__data__value"><a href="https://drive.google.com/open?id=1uUQChRBJXSPdq8-e1amK1_0cjjyuMpwf6V40m7h8S-c">Verslag Thematische Werkgroep Organisatie 3 2016-11-21</a></div>
+		                  <div class="spotlight__data__value"><a href="https://drive.google.com/open?id=1DG5vTplTgPkdhndVhF-4gEjtSsDRKmN-G6O-sPJSnNI">Thematische Werkgroep Dienstverlening 2016-06-27</a></div>
+		                  <div class="spotlight__data__value"><a href="https://drive.google.com/open?id=1a-zmKBB1CqhMD7695-03NkmdEyeM9IxBEyWc5uBhgJc">Verslag Thematische Werkgroep Dienstverlening 2016-06-27</a></div>
+		                  <div class="spotlight__data__value"><a href="https://drive.google.com/open?id=1MhxFNv56sdtzw83tePXqNg_Zb6w4jwVt8fcCjax8I2k">Thematische Werkgroep Dienstverlening 2016-10-03</a></div>
+		                  <div class="spotlight__data__value"><a href="https://drive.google.com/open?id=1GWzwHhUi00NFoYL-9h1mfmPdD5gsnuiwErggq_F4o8I">Verslag Thematische Werkgroep Dienstverlening 2016-10-03</a></div>
+		                  <div class="spotlight__data__value"><a href="https://drive.google.com/open?id=1LZ_p7Sz59sUc8cR393nIEsadJE-8dDl9BUc8bkVdSLI">Verslag PWG Dienstverlening 2017-01-12</a></div>
+		                  <div class="spotlight__data__value"><a href="https://drive.google.com/open?id=19Nnx2PJb6TjoXKh9PRcRY9krs0Tzjjt7lIEZ6YhPMPo">Verslag PWG Dienstverlening 2017-02-22</a></div>
+		                  <div class="spotlight__data__value"><a href="https://drive.google.com/open?id=1XahB752-RPtaAuVGNIpUvaBDy0jogD10qSOy7vNuJWs">Werkgroep Charter OSLO-Dienst</a></div>
 		                </div>
 		              </article>
 		          </div> 
@@ -129,24 +132,22 @@
 		              <article class="spotlight">
 		                <h1 class="spotlight__title">Presentaties en ander materiaal</h1>
 		                <div class="spotlight__data">
-		                  <div class="spotlight__data__value"><a href="https://drive.google.com/open?id=1mV-TABere7egDN7mXORYO3bMk03-NkEsUJAM3MKdaHw">PWG Organisatie 2017-01-27</a></div>
-		                  <div class="spotlight__data__value"><a href="https://drive.google.com/open?id=1HnBY2VuR_jkwukCnLUqUd-rI3Z4NyU6NzI77XfKgjOE">Thematische Werkgroep Organisatie 1 2016-06-16</a></div>
-		                  <div class="spotlight__data__value"><a href="https://drive.google.com/open?id=0BxWU3ux2quItWWVEXy1XS3pXclE">Thematische Werkgroep Organisatie 2 2016-10-12</a></div>
-		                  <div class="spotlight__data__value"><a href="https://github.com/Informatievlaanderen/OSLO-Standaarden/blob/master/kandidaat-standaarden/applicatieprofiel-organisatie-basis/OSLO-Organisatie%20-%2009052018%20-%20finale%20versie.pptx?raw=true">Webcast Organisatie - 2018-05-09</a></div>
+		                  <div class="spotlight__data__value"><a href="https://github.com/Informatievlaanderen/OSLO-Standaarden/blob/master/kandidaat-standaarden/applicatieprofiel-dienstencataloog/Webcast%20OSLO-Dienst%20-%2009-05-2018%20-%20finale%20versie.pptx?raw=true">Webcast OSLO-Dienst 2018-05-09 - Presentatie</a></div>
+		                  <div class="spotlight__data__value"><a href="https://drive.google.com/open?id=1yRjnrZYArbQMwQNb_QU0g4TO3WSukNJyseJFRcrv_ig">Thematische Werkgroep Dienstverlening 2016-10-03 - Presentatie</a></div>
 		                </div>
-		              </article>
-		          </div> 
+		              </article
+>		          </div> 
 		        </div>
 		        <!-- end component -->
 		        <h2 class="h2">Detailinformatie</h3>
 				<div class="col--1-1 u-spacer--large">
 			        <ul class="bullet-list bullet-list--tag">
 			        				        	<!-- nog aan te passen -->
-			        	<li class="bullet-list__item"><strong>Functioneel toepassingsgebied:</strong> Semantische standaard voor informatie met betrekking tot organisaties</li>
+			        	<li class="bullet-list__item"><strong>Functioneel toepassingsgebied:</strong> Semantische standaard voor informatie m.b.t. publieke dienstverlening</li>
 			        	<li class="bullet-list__item"><strong>Organisatorisch werkingsgebied:</strong> alle entiteiten van de Vlaamse overheid</li>
-			        	<li class="bullet-list__item"><strong>Datum van aanmelding:</strong> 10 April 2018</li>
-			        	<li class="bullet-list__item"><strong>Erkenning door werkgroep datastandaarden:</strong> TBD</li>
-			        	<li class="bullet-list__item"><strong>Erkenning door stuurorgaan Vlaams Informatie- en ICT-beleid:</strong> TBD</li>
+			        	<li class="bullet-list__item"><strong>Datum van aanmelding:</strong> 10 April 2018 (retroactief)</li>
+			        	<li class="bullet-list__item"><strong>Erkenning door werkgroep datastandaarden:</strong> 29 Mei 2018</li>
+			        	<li class="bullet-list__item"><strong>Erkenning door stuurorgaan Vlaams Informatie- en ICT-beleid:</strong> 03 Juli 2018</li>
 			        </ul>
 			    </div>
 				<h2 class="h2">Vragen en feedback</h1>	

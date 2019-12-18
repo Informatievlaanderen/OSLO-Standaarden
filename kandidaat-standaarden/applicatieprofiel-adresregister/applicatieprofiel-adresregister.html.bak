@@ -62,7 +62,7 @@
 	    	<div class="layout layout--wide">
 	    		<!-- intro -->
 	    		<a class="button u-spacer--large" href="../../">Terug naar het overzicht</a> 
-	    		<h1 class="h1">Applicatieprofiel Organisatie basis</h1>
+	    		<h1 class="h1">Applicatieprofiel Adresregister</h1>
 		        <!-- component -->
 		        <div class="description-data u-spacer--large">
 		          <div class="grid grid--is-stacked">
@@ -87,7 +87,9 @@
 		        <!-- end component -->
 	    		<div id="introductie" class="introduction u-spacer--large">
 	    			<p>
-	    				Het OSLO-Organisatie applicatieprofiel is een profiel op bestaande vocabularia mbt organisaties waaronder het <a href="http://data.vlaanderen.be/ns/organisatie">OSLO-Organisatie vocabularium</a>.<br>Normaal brengt een applicatieprofiel termen samen nodig voor een bepaalde toepassing (incl. bijkomende constraints zoals kardinaliteiten en codelijsten). In dit geval hebben we echter geen bepaalde toepassing voor ogen, dit is m.a.w. een basisprofiel. Het geeft aan welke termen binnen OSLO relevant geacht worden voor het uitwisselen van informatie over organisaties.
+	    				Dit is een applicatieprofiel op bestaande vocabularia m.b.t. addressen waaronder het <a href="http://data.vlaanderen.be/ns/adres">OSLO-Adres vocabularium</a>.
+	    				Dit document beschrijft een applicatieprofiel, in dit geval Adresregister. Dit applicatieprofiel beantwoordt de vraag over hoe het corresponderende domeinmodel in de praktijk kan toegepast worden. Daarbij worden de beperkingen (kardinaliteit, codelijsten) toegelicht en de overeenkomstige (RDF) termen opgelijst.<br>
+
 	    			</p>
 	    		</div>
 	    		<!-- end intro -->
@@ -98,7 +100,7 @@
 		                <h1 class="spotlight__title">Specificatiedocument</h1>
 		                <h2 class="spotlight__subtitle">Normatief</h2>
 		                <div class="spotlight__data">
-		                  <div class="spotlight__data__value"><a href="https://data.vlaanderen.be/doc/applicatieprofiel/organisatie-basis/">Applicatieprofiel Organisatie basis</a></div>
+		                  <div class="spotlight__data__value"><a href="https://data.vlaanderen.be/doc/applicatieprofiel/adresregister/">Adresregister</a></div>
 		                </div>
 		              </article>
 		          </div> 
@@ -108,7 +110,7 @@
 		                <h1 class="spotlight__title">Aanvullende documentatie</h1>
 		                <h2 class="spotlight__subtitle">Niet-normatief</h2>
 		                <div class="spotlight__data">
-		                  <div class="spotlight__data__value"><a href="#">Niet Beschikbaar</a></div>		                  
+		                  <div class="spotlight__data__value">Niet beschikbaar</div>		                  
 		                </div>
 		              </article>
 		          </div>          
@@ -117,10 +119,7 @@
 		              <article class="spotlight">
 		                <h1 class="spotlight__title">Verslagen van werkgroepvergaderingen</h1>
 		                <div class="spotlight__data">
-		                  <div class="spotlight__data__value"><a href="https://drive.google.com/open?id=15rfUdtH7ZUaeGX9u7MnSBGN3-0r84t-XUaSVSGTidN4">Verslag PWG Organisatie 1 2017-01-27</a></div>
-		                  <div class="spotlight__data__value"><a href="https://drive.google.com/open?id=1xuyx1l0BMBfZoswP_DhrJlwXwZ_z7QVvwyum8jp4nvU">Verslag Thematische Werkgroep Organisatie 1 2016-06-16</a></div>
-		                  <div class="spotlight__data__value"><a href="https://drive.google.com/open?id=1uUQChRBJXSPdq8-e1amK1_0cjjyuMpwf6V40m7h8S-c">Verslag Thematische Werkgroep Organisatie 2 2016-10-12</a></div>
-		                  <div class="spotlight__data__value"><a href="https://drive.google.com/open?id=1uUQChRBJXSPdq8-e1amK1_0cjjyuMpwf6V40m7h8S-c">Verslag Thematische Werkgroep Organisatie 3 2016-11-21</a></div>
+		                  <div class="spotlight__data__value"><a href="http://informatievlaanderen.github.io/OSLO-Standaarden/adres-gebouw/2016-06-08/">Thematische werkgroep Adres en Gebouw 1 - 2016-06-08</a></div>
 		                </div>
 		              </article>
 		          </div> 
@@ -129,10 +128,7 @@
 		              <article class="spotlight">
 		                <h1 class="spotlight__title">Presentaties en ander materiaal</h1>
 		                <div class="spotlight__data">
-		                  <div class="spotlight__data__value"><a href="https://drive.google.com/open?id=1mV-TABere7egDN7mXORYO3bMk03-NkEsUJAM3MKdaHw">PWG Organisatie 2017-01-27</a></div>
-		                  <div class="spotlight__data__value"><a href="https://drive.google.com/open?id=1HnBY2VuR_jkwukCnLUqUd-rI3Z4NyU6NzI77XfKgjOE">Thematische Werkgroep Organisatie 1 2016-06-16</a></div>
-		                  <div class="spotlight__data__value"><a href="https://drive.google.com/open?id=0BxWU3ux2quItWWVEXy1XS3pXclE">Thematische Werkgroep Organisatie 2 2016-10-12</a></div>
-		                  <div class="spotlight__data__value"><a href="https://github.com/Informatievlaanderen/OSLO-Standaarden/blob/master/kandidaat-standaarden/applicatieprofiel-organisatie-basis/OSLO-Organisatie%20-%2009052018%20-%20finale%20versie.pptx?raw=true">Webcast Organisatie - 2018-05-09</a></div>
+		                  <div class="spotlight__data__value">Niet beschikbaar</div>
 		                </div>
 		              </article>
 		          </div> 
@@ -142,11 +138,11 @@
 				<div class="col--1-1 u-spacer--large">
 			        <ul class="bullet-list bullet-list--tag">
 			        				        	<!-- nog aan te passen -->
-			        	<li class="bullet-list__item"><strong>Functioneel toepassingsgebied:</strong> Semantische standaard voor informatie met betrekking tot organisaties</li>
+			        	<li class="bullet-list__item"><strong>Functioneel toepassingsgebied:</strong> Semantische standaard voor het bouwen van een adresregister.</li>
 			        	<li class="bullet-list__item"><strong>Organisatorisch werkingsgebied:</strong> alle entiteiten van de Vlaamse overheid</li>
-			        	<li class="bullet-list__item"><strong>Datum van aanmelding:</strong> 10 April 2018</li>
-			        	<li class="bullet-list__item"><strong>Erkenning door werkgroep datastandaarden:</strong> TBD</li>
-			        	<li class="bullet-list__item"><strong>Erkenning door stuurorgaan Vlaams Informatie- en ICT-beleid:</strong> TBD</li>
+			        	<li class="bullet-list__item"><strong>Datum van aanmelding:</strong> 10 April 2018 (retroactief)</li>
+			        	<li class="bullet-list__item"><strong>Erkenning door werkgroep datastandaarden:</strong> 29 Mei 2018</li>
+			        	<li class="bullet-list__item"><strong>Erkenning door stuurorgaan Vlaams Informatie- en ICT-beleid:</strong> 03 Juli 2018</li>
 			        </ul>
 			    </div>
 				<h2 class="h2">Vragen en feedback</h1>	
