@@ -365,7 +365,7 @@
                                             <td>Vocabularia en applicatieprofielen</td>
                                             <td><a href="http://data.vlaanderen.be/id/organisatie/OVO002949">Agentschap Informatie Vlaanderen</a></td>
                                             <td>Aanbevolen (vrijwillig)</td>
-                                            <td>2019-02-07</td>
+                                            <td>2018-02-07</td>
                                             <!-- datum Stuurgorgaan -->
                                         </tr>
                                         <tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
@@ -373,7 +373,7 @@
 					                <td>Vocabularia en applicatieprofielen</td>
 					                <td><a href="http://data.vlaanderen.be/id/organisatie/OVO002949">Agentschap Informatie Vlaanderen</a></td>
                                             <td>Aanbevolen (vrijwillig)</td>
-                                            <td>2019-02-07</td>
+                                            <td>2018-02-07</td>
                                             <!-- datum Stuurgorgaan -->
                                         </tr>
                                         <tr data-table-selectable class="Technische-standaard">
@@ -477,14 +477,14 @@
                                             <td>2018-09-30</td>
                                         </tr>
                                         <tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
-                                            <td><a href="kandidaat-standaarden/applicatieprofiel-toerisme-vlaanderen-logies/">Applicatieprofiel Toeristische Logies - basis</td>
+                                            <td><a href="kandidaat-standaarden/applicatieprofiel-toerisme-vlaanderen-logies/">Applicatieprofiel Logies - basis</td>
 					            <td>Vocabularia en applicatieprofielen</td>
 					            <td><a href="http://data.vlaanderen.be/id/organisatie/OVO000034">Toerisme Vlaanderen</a></td>
                                             <td>2019-02-12</td>
                                             <!-- datum webcast -->
                                         </tr>
                                         <tr data-table-selectable class="Vocabularia-en-applicatieprofielen">
-                                            <td><a href="kandidaat-standaarden/vocabularium-toerisme-vlaanderen-logies/">Vocabularium Toeristische Logies</td>
+                                            <td><a href="kandidaat-standaarden/vocabularium-toerisme-vlaanderen-logies/">Vocabularium Logies</td>
 					            <td>Vocabularia en applicatieprofielen</td>
 					            <td><a href="http://data.vlaanderen.be/id/organisatie/OVO000034">Toerisme Vlaanderen</a></td>
                                             <td>2019-02-12</td>

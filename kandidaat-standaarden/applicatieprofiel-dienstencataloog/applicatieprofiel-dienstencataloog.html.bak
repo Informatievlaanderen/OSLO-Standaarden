@@ -62,17 +62,17 @@
 	    	<div class="layout layout--wide">
 	    		<!-- intro -->
 	    		<a class="button u-spacer--large" href="../../">Terug naar het overzicht</a> 
-	    		<h1 class="h1">Applicatieprofiel Mandatendatabank</h1>
+	    		<h1 class="h1">Applicatieprofiel Dienstencataloog</h1>
 		        <!-- component -->
 		        <div class="description-data u-spacer--large">
 		          <div class="grid grid--is-stacked">
 		            <div class="col--1-4 col--1-3--s col--1-2--xs">
 		              <div class="description-data__label">Verantwoordelijke organisatie</div>
-		                <div class="description-data__value" itemprop="publisher" itemtype="http://schema.org/Organization" itemscope=""><a href="https://data.vlaanderen.be/doc/organisatie/OVO001835" itemprop="url" ><span itemprop="name">Agentschap Binnenlands Bestuur</span></a></div>
+		                <div class="description-data__value" itemprop="publisher" itemtype="http://schema.org/Organization" itemscope=""><a href="http://data.vlaanderen.be/id/organisatie/OVO002949" itemprop="url" ><span itemprop="name">Agentschap Informatie Vlaanderen</span></a></div>
 		              </div>
 		              <div class="col--1-4 col--1-3--s col--1-2--xs">
 		                <div class="description-data__label">Publicatiedatum</div>
-		                <div class="description-data__value" itemprop="datePublished" content="2017-03-23">2017-10-11</div>
+		                <div class="description-data__value" itemprop="datePublished" content="TBD">TBD</div>
 		              </div>
 		              <div class="col--1-4 col--1-3--s col--1-2--xs">
 		                <div class="description-data__label">Type toepassing</div>
@@ -87,7 +87,7 @@
 		        <!-- end component -->
 	    		<div id="introductie" class="introduction u-spacer--large">
 	    			<p>
-	    				Dit document beschrijft een applicatieprofiel, in dit geval Mandatendatabank AP. Het applicatieprofiel is ontwikkeld binnen het project <a href="http://lokaalbestuur.vlaanderen.be/lokale-besluiten-als-gelinkte-open-data"> Lokale Besluiten als Gelinkte Open Data</a> en laat toe om een gelinkte mandatendatabank op te zetten op basis van gelinkte besluiten. Het beantwoordt de vraag over hoe het corresponderende domeinmodel in de praktijk kan toegepast worden. Daarbij worden de beperkingen (kardinaliteit, codelijsten) toegelicht en de overeenkomstige (RDF) termen opgelijst.<br>
+	    				Dit is een applicatieprofiel op het <a href="https://data.vlaanderen.be/ns/dienst">OSLO-Dienst vocabularium</a>.<br>Een profiel voegt in principe termen samen uit verschillende RDF-vocabularia met het oog op een bepaalde toepassing (inclusief beperkingen en/of voorwaarden zoals kardinaliteiten en codelijsten). Voor het OSLO-Dienst vocabularium baseerden we ons echter volledig op het vocabularium dat door ISA werd gemaakt om het <a href="https://joinup.ec.europa.eu/release/core-public-service-vocabulary-application-profile-v20">Core Public Service applicatieprofiel</a> te ondersteunen. Dat is een applicatieprofiel voor het beschrijven van een dienstencataloog, meer concreet een cataloog voor publieke dienstverlening. Het OSLO-Dienst applicatieprofiel neemt het ISA applicatieprofiel over, d.w.z. dezelfde constraints zijn van toepassing.
 	    			</p>
 	    		</div>
 	    		<!-- end intro -->
@@ -98,7 +98,7 @@
 		                <h1 class="spotlight__title">Specificatiedocument</h1>
 		                <h2 class="spotlight__subtitle">Normatief</h2>
 		                <div class="spotlight__data">
-		                  <div class="spotlight__data__value"><a href="https://data.vlaanderen.be/doc/applicatieprofiel/mandatendatabank/">Mandatendatabank AP</a></div>
+		                  <div class="spotlight__data__value"><a href="https://data.vlaanderen.be/doc/applicatieprofiel/dienstencataloog/">Applicatieprofiel Dienstencataloog</a></div>
 		                </div>
 		              </article>
 		          </div> 
@@ -108,7 +108,7 @@
 		                <h1 class="spotlight__title">Aanvullende documentatie</h1>
 		                <h2 class="spotlight__subtitle">Niet-normatief</h2>
 		                <div class="spotlight__data">
-		                  <div class="spotlight__data__value"><a href="https://lokaalbestuur.vlaanderen.be/sites/default/files/public/in_de_kijker/lblod/Public_Review_Model_mandaat_20171010.pdf">Publieke review datamodel Mandaat (PDF)</a></div>		                  
+		                  <div class="spotlight__data__value"><a href="#">Niet Beschikbaar</a></div>		                  
 		                </div>
 		              </article>
 		          </div>          
@@ -117,9 +117,13 @@
 		              <article class="spotlight">
 		                <h1 class="spotlight__title">Verslagen van werkgroepvergaderingen</h1>
 		                <div class="spotlight__data">
-		                  <div class="spotlight__data__value"><a href="https://lokaalbestuur.vlaanderen.be/sites/default/files/public/in_de_kijker/lblod/LBLOD_ProcesMandatenWS1_verslag.pdf">Verslag Procesworkshop 1 Mandaten (PDF)</a></div>
-		                  <div class="spotlight__data__value"><a href="https://lokaalbestuur.vlaanderen.be/sites/default/files/public/in_de_kijker/lblod/LBLOD_ProcesMandatenWS2_verslag.pdf">Verslag Procesworkshop 2 Mandaten (PDF)</a></div>
-		                  <div class="spotlight__data__value"><a href="https://lokaalbestuur.vlaanderen.be/sites/default/files/public/in_de_kijker/lblod/LBLOD_WS3_procesGeneriekMandaten_verslag.pdf">Verslag Procesworkshop 3 Generiek en Mandaten (PDF)</a></div>
+		                  <div class="spotlight__data__value"><a href="https://drive.google.com/open?id=1DG5vTplTgPkdhndVhF-4gEjtSsDRKmN-G6O-sPJSnNI">Thematische Werkgroep Dienstverlening 2016-06-27</a></div>
+		                  <div class="spotlight__data__value"><a href="https://drive.google.com/open?id=1a-zmKBB1CqhMD7695-03NkmdEyeM9IxBEyWc5uBhgJc">Verslag Thematische Werkgroep Dienstverlening 2016-06-27</a></div>
+		                  <div class="spotlight__data__value"><a href="https://drive.google.com/open?id=1MhxFNv56sdtzw83tePXqNg_Zb6w4jwVt8fcCjax8I2k">Thematische Werkgroep Dienstverlening 2016-10-03</a></div>
+		                  <div class="spotlight__data__value"><a href="https://drive.google.com/open?id=1GWzwHhUi00NFoYL-9h1mfmPdD5gsnuiwErggq_F4o8I">Verslag Thematische Werkgroep Dienstverlening 2016-10-03</a></div>
+		                  <div class="spotlight__data__value"><a href="https://drive.google.com/open?id=1LZ_p7Sz59sUc8cR393nIEsadJE-8dDl9BUc8bkVdSLI">Verslag PWG Dienstverlening 2017-01-12</a></div>
+		                  <div class="spotlight__data__value"><a href="https://drive.google.com/open?id=19Nnx2PJb6TjoXKh9PRcRY9krs0Tzjjt7lIEZ6YhPMPo">Verslag PWG Dienstverlening 2017-02-22</a></div>
+		                  <div class="spotlight__data__value"><a href="https://drive.google.com/open?id=1XahB752-RPtaAuVGNIpUvaBDy0jogD10qSOy7vNuJWs">Werkgroep Charter OSLO-Dienst</a></div>
 		                </div>
 		              </article>
 		          </div> 
@@ -128,17 +132,18 @@
 		              <article class="spotlight">
 		                <h1 class="spotlight__title">Presentaties en ander materiaal</h1>
 		                <div class="spotlight__data">
-		                  <div class="spotlight__data__value"><a href="https://www.youtube.com/watch?v=lvTIzKJa_s8">Webinar Mandaat</a></div>
+		                  <div class="spotlight__data__value"><a href="https://github.com/Informatievlaanderen/OSLO-Standaarden/blob/master/kandidaat-standaarden/applicatieprofiel-dienstencataloog/Webcast%20OSLO-Dienst%20-%2009-05-2018%20-%20finale%20versie.pptx?raw=true">Webcast OSLO-Dienst 2018-05-09 - Presentatie</a></div>
+		                  <div class="spotlight__data__value"><a href="https://drive.google.com/open?id=1yRjnrZYArbQMwQNb_QU0g4TO3WSukNJyseJFRcrv_ig">Thematische Werkgroep Dienstverlening 2016-10-03 - Presentatie</a></div>
 		                </div>
-		              </article>
-		          </div> 
+		              </article
+>		          </div> 
 		        </div>
 		        <!-- end component -->
 		        <h2 class="h2">Detailinformatie</h3>
 				<div class="col--1-1 u-spacer--large">
 			        <ul class="bullet-list bullet-list--tag">
 			        				        	<!-- nog aan te passen -->
-			        	<li class="bullet-list__item"><strong>Functioneel toepassingsgebied:</strong> Semantische standaard voor het bouwen van een mandatendatabank</li>
+			        	<li class="bullet-list__item"><strong>Functioneel toepassingsgebied:</strong> Semantische standaard voor informatie m.b.t. publieke dienstverlening</li>
 			        	<li class="bullet-list__item"><strong>Organisatorisch werkingsgebied:</strong> alle entiteiten van de Vlaamse overheid</li>
 			        	<li class="bullet-list__item"><strong>Datum van aanmelding:</strong> 10 April 2018 (retroactief)</li>
 			        	<li class="bullet-list__item"><strong>Erkenning door werkgroep datastandaarden:</strong> 29 Mei 2018</li>
