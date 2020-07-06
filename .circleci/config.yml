@@ -21,8 +21,23 @@ jobs:
             - commit.json
             - tmp-register.txt
             - repositories/
+  markdown-to-html:
+    docker:
+      - image: ddvlanck/markdown-to-html:1.1
+    steps:
+      - checkout
+      - attach_workspace:
+          at: /tmp/workspace
+      - run: bash $PWD/scripts/markdown-transformer.sh /tmp/workspace
+      - persist_to_workspace:
+          root: /tmp/workspace
+          paths:
+            - descriptions/          -
 workflows:
   version: 2
   create_detail_page:
     jobs:
       - checkout
+      - markdown-to-html:
+          requires:
+            - checkout
