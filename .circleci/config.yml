@@ -1,0 +1,105 @@
+version: 2
+jobs:
+  checkout:
+    docker:
+      - image: circleci/python
+    steps:
+      - checkout
+      - run: mkdir -p workspace
+      - run: ls -al workspace
+      - run: bash $PWD/scripts/checkout.sh /tmp/workspace $PWD/standaardenregister.json
+      - run:
+          name: List the files which have been created
+          command: ls -al /tmp/workspace/*
+      - run:
+          name: List all standards that have been modified
+          command: if [ -e /tmp/workspace/changedstandards.json ] ; then cat /tmp/workspace/changedstandards.json ; fi
+      - persist_to_workspace:
+          root: /tmp/workspace
+          paths:
+            - changedstandards.json
+            - commit.json
+            - tmp-register.txt
+            - repositories/
+  markdown-to-html:
+    docker:
+      - image: ddvlanck/markdown-to-html:1.1
+    steps:
+      - checkout
+      - attach_workspace:
+          at: /tmp/workspace
+      - run: bash $PWD/scripts/markdown-transformer.sh /tmp/workspace
+      - persist_to_workspace:
+          root: /tmp/workspace
+          paths:
+            - descriptions/
+  render-html:
+    docker:
+      - image: ddvlanck/html-page-generator:1.2
+    steps:
+      - checkout
+      - attach_workspace:
+          at: /tmp/workspace
+      - run:
+          name: Creating HTML pages for modified or new standards
+          command: bash $PWD/scripts/generator.sh
+      - persist_to_workspace:
+          root: /tmp/workspace
+          paths:
+            - html_pages/
+  push-to-repository:
+    docker:
+      - image: circleci/node
+    steps:
+      - checkout
+      - attach_workspace:
+          at: /tmp/workspace
+      - add_ssh_keys:
+          fingerprints:
+            - "c1:60:33:1c:43:ce:00:5b:66:61:79:8b:67:d4:0c:28"
+      - run:
+          name: Checkout target repository
+          workdir: /tmp
+          command: |
+            rm -rf OSLO-StandaardenGenerated
+            git clone git@github.com:ddvlanck/OSLO-StandaardenGenerated.git
+      - run:
+          name: Clean the generated directory
+          workdir: /tmp/OSLO-StandaardenGenerated
+          command: |
+            git fetch origin
+      #            if [ "`cat /tmp/workspace/haschangedpublications.json`" == "false" ] ; then git rm -r --force * ; fi
+      - run: bash $PWD/scripts/clean-repository-generated.sh
+      - run:
+          name: Copy generated assets
+          workdir: /tmp/workspace
+          command: |
+            mkdir -p /tmp/OSLO-StandaardenGenerated/public/erkende-standaard
+            mkdir -p /tmp/OSLO-StandaardenGenerated/public/kandidaat-standaard
+            mkdir -p /tmp/OSLO-StandaardenGenerated/public/standaard-in-ontwikkeling
+            if [ -d html_pages/erkende-standaard ] ; then if [ ! "$(ls -A html_pages/erkende-standaard)" ] ; then echo "Directory html_pages/erkende-standaard is empty" ; else cp -R html_pages/erkende-standaard/* /tmp/OSLO-StandaardenGenerated/public/erkende-standaard/ ; fi fi
+            if [ -d html_pages/kandidaat-standaard ] ; then if [ ! "$(ls -A html_pages/kandidaat-standaard)" ] ; then echo "Directory html_pages/kandidaat-standaard is empty" ; else cp -R html_pages/kandidaat-standaard/* /tmp/OSLO-StandaardenGenerated/public/kandidaat-standaard/ ; fi fi
+            if [ -d html_pages/standaard-in-ontwikkeling ] ; then if [ ! "$(ls -A html_pages/standaard-in-ontwikkeling)" ] ; then echo "Directory html_pages/standaard-in-ontwikkeling is empty" ; else cp -R html_pages/standaard-in-ontwikkeling/* /tmp/OSLO-StandaardenGenerated/public/standaard-in-ontwikkeling/ ; fi fi
+      - run:
+          name: Insert the commit
+          command: |
+            export TAG=`echo "${CIRCLE_SHA1}"`
+            echo "{\"commit\" : \"$TAG\"}" > /tmp/OSLO-StandaardenGenerated/commit.json
+      - run:
+          name: Push results to Github repository OSLO-Generated
+          workdir: /tmp/OSLO-StandaardenGenerated
+          command: |
+            git config user.email "vanlanckdw@aocsw323"
+            git config user.name "Circle CI Builder"
+            git add .
+            git status
+            git commit -m "Applying changes from commit ${CIRCLE_SHA1}" --allow-empty
+            export TAG=`echo "${CIRCLE_SHA1}" | cut -c1-15`
+            git tag "${TAG}"
+            git push --force origin "${CIRCLE_BRANCH}"
+            git push --tags
+workflows:
+  version: 2
+  create_detail_page:
+    jobs:
+      - checkout
