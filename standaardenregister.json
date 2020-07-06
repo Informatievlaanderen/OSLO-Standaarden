@@ -3,6 +3,7 @@
     "repository" : "https://github.com/Informatievlaanderen/OSLOthema-persoon",
     "commitHash" : "",
     "status" : "erkende-standaard",
-    "configuration" : "voc-persoon-config.json"
+    "configuration" : "voc-persoon-config.json",
+    "dummy" : "1"
   }
 ]
