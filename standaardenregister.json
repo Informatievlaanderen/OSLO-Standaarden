@@ -4,5 +4,11 @@
     "commitHash" : "",
     "status" : "erkende-standaard",
     "configuration" : "voc-persoon-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-persoon",
+    "commitHash" : "",
+    "status" : "kandidaat-standaard",
+    "configuration" : "ap-persoon-basis-config.json"
   }
 ]
