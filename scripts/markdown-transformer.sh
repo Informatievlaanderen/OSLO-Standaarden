@@ -16,6 +16,8 @@ do
   DESCRIPTION_NAME=$(jq -r '.description_file' "$CONFIG_NAME")
   DESCRIPTION_PATH="descriptions/$DESCRIPTION_NAME"
 
+  cat $DESCRIPTION_PATH
+
   if test -f "$DESCRIPTION_PATH" ; then
     node /app/index.js -f "$DESCRIPTION_PATH" -o "$ROOTDIR/descriptions/$DESCRIPTION_NAME-description.html"
   fi
