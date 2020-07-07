@@ -10,13 +10,14 @@ mkdir -p "$ROOTDIR/descriptions"
 while IFS= read -r line
 do
   REPO_NAME=$(echo "$line" | cut -d ":" -f 1)
-  #DESCRIPTION_NAME=$(echo "$line" | cut -d ":" -f 4)
 
   cd "$REPODIR/$REPO_NAME"
 
   CONFIG_NAME=$(echo "$line" | cut -d ":" -f 2 | cut -d "." -f 1)
   DESCRIPTION_NAME=$(grep "$CONFIG_NAME" "$DESCRIPTION_NAMES" | cut -d ":" -f 2)
   DESCRIPTION_NAME_NO_EXTENSION=$(echo "$DESCRIPTION_NAME" | cut -d "." -f 1)
+
+  echo "Found following file name: $DESCRIPTION_NAME"
 
   if test -f "$DECRIPTION_NAME" ; then
     echo "Creating HTML page for $DESCRIPTION_NAME"
