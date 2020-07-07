@@ -44,7 +44,7 @@ jobs:
       - persist_to_workspace:
           root: /tmp/workspace
           paths:
-            - descriptions/      -
+            - .   -
 workflows:
   version: 2
   create_detail_page:
