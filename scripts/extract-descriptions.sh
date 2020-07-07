@@ -3,9 +3,6 @@
 ROOTDIR=$1
 REPODIR=$ROOTDIR/repositories
 
-mkdir -p "$ROOTDIR/descriptions"
-
-
 while IFS= read -r line
 do
   REPO_NAME=$(echo "$line" | cut -d ":" -f 1)
@@ -13,8 +10,7 @@ do
   cd "$REPODIR/$REPO_NAME"
   CONFIG_NAME=$(echo "$line" | cut -d ":" -f 2 | cut -d "." -f 1)
   echo "$CONFIG_NAME"
-  echo "Listing all files in $REPO_NAME"
-  ls
+  echo "Current directory: $PWD"
 
   #DESCRIPTION_NAME=$(jq -r '.description_file' "$CONFIG_NAME")
   #DESCRIPTION_NAME_NO_EXTENSION=$(echo "$DESCRIPTION_NAME" | cut -d '.' -f 1)
