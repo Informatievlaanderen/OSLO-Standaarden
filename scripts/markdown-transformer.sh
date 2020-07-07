@@ -17,10 +17,7 @@ do
   DESCRIPTION_NAME=$(grep "$CONFIG_NAME" "$DESCRIPTION_NAMES" | cut -d ":" -f 2)
   DESCRIPTION_NAME_NO_EXTENSION=$(echo "$DESCRIPTION_NAME" | cut -d "." -f 1)
 
-  echo "Found following file name: $DESCRIPTION_NAME"
-
-  if test -f "$DECRIPTION_NAME" ; then
-    echo "Creating HTML page for $DESCRIPTION_NAME"
+  if test -f "$DESCRIPTION_NAME" ; then
     node /app/index.js -f "descriptions/$DESCRIPTION_NAME" -o "$ROOTDIR/descriptions/$DESCRIPTION_NAME_NO_EXTENSION-description.html"
   fi
 done < "$ROOTDIR/tmp-register.txt"
