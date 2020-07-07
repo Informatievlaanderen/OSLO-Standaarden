@@ -1,6 +1,7 @@
 #!/bin/bash
 
 ROOTDIR=$1
+REPODIR=$ROOTDIR/repositories
 
 while IFS= read -r line
 do
