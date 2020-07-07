@@ -19,6 +19,7 @@ do
   DESCRIPTION_NAME_NO_EXTENSION=$(echo "$DESCRIPTION_NAME" | cut -d "." -f 1)
 
   if test -f "$DECRIPTION_NAME" ; then
+    echo "Creating HTML page for $DESCRIPTION_NAME"
     node /app/index.js -f "descriptions/$DESCRIPTION_NAME" -o "$ROOTDIR/descriptions/$DESCRIPTION_NAME_NO_EXTENSION-description.html"
   fi
 done < "$ROOTDIR/tmp-register.txt"
