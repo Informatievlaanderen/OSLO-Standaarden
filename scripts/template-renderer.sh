@@ -23,18 +23,14 @@ do
 
   FULL_REPO_PATH="$REPODIR/$REPO_NAME"
 
-  echo "DESCRIPTION_NAME: $DESCRIPTION_NAME"
-  echo "DESCRIPTION_NAME_NO_EXTENSION: $DESCRIPTION_NAME_NO_EXTENSION"
-  echo "DESCRIPTION: $DESCRIPTION"
-
   ## Go to HTML-page-generator
   cd /app
   if test -f "$DESCRIPTION" ; then
     echo "A description was provided for repository: $REPO_NAME"
-    node html_page_generator.js -f "$FULL_REPO_PATH/$CONFIG-extended.json" -o "$RESULTDIR/$STATUS/$DESCRIPTION_NAME-index.html" -t "$DESCRIPTION"
+    node html_page_generator.js -f "$FULL_REPO_PATH/$CONFIG-extended.json" -o "$RESULTDIR/$STATUS/$DESCRIPTION_NAME_NO_EXTENSION-index.html" -t "$DESCRIPTION"
   else
     echo "No description was provided for repository: $REPO_NAME"
-    node html_page_generator.js -f "$FULL_REPO_PATH/$CONFIG-extended.json" -o "$RESULTDIR/$STATUS/$DESCRIPTION_NAME-index.html"
+    node html_page_generator.js -f "$FULL_REPO_PATH/$CONFIG-extended.json" -o "$RESULTDIR/$STATUS/$DESCRIPTION_NAME_NO_EXTENSION-index.html"
   fi
 
 done < "$ROOTDIR/tmp-register.txt"
