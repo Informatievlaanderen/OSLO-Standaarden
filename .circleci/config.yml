@@ -101,7 +101,7 @@ jobs:
           name: Push results to Github repository OSLO-StandaardenregisterGenerated
           workdir: /tmp/OSLO-StandaardenregisterGenerated
           command: |
-            git config user.email "vanlanckdw@aocsw323"
+            git config user.email "dwight.vanlancker@hotmail.com"
             git config user.name "Circle CI Builder"
             git add .
             git status
