@@ -1,0 +1,33 @@
+#!/bin/bash
+
+ROOTDIR=/tmp/workspace
+RESULTDIR=/tmp/workspace/html_pages
+REPODIR=/tmp/workspace/repositories
+
+mkdir -p "$RESULTDIR/erkende-standaard"
+mkdir -p "$RESULTDIR/standaard-in-ontwikkeling"
+mkdir -p "$RESULTDIR/kandidaat-standaard"
+
+mkdir -p "$RESULTDIR"
+
+while IFS= read -r line
+do
+  REPO_NAME=$(echo "$line" | cut -d ":" -f 1)
+  CONFIG=$(echo "$line" | cut -d ":" -f 2)
+  CONFIG_NAME=$(echo "$CONFIG" | cut -d "." -f 1)
+  DESCRIPTION="$ROOTDIR/descriptions/$CONFIG_NAME-description.html"
+  STATUS=$(echo "$line" | cut -d ":" -f 3)
+
+  FULL_REPO_PATH="$REPODIR/$REPO_NAME"
+
+  ## Go to HTML-page-generator
+  cd /app
+  if test -f "$DESCRIPTION" ; then
+    echo "A description was provided for repository: $REPO_NAME"
+    node html_page_generator.js -f "$FULL_REPO_PATH/$CONFIG-extended.json" -o "$RESULTDIR/$STATUS/$CONFIG_NAME-index.html" -t "$DESCRIPTION"
+  else
+    echo "No description was provided for repository: $REPO_NAME"
+    node html_page_generator.js -f "$FULL_REPO_PATH/$CONFIG-extended.json" -o "$RESULTDIR/$STATUS/$CONFIG_NAME-index.html"
+  fi
+
+done < "$ROOTDIR/tmp-register.txt"

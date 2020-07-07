@@ -45,6 +45,20 @@ jobs:
           root: /tmp/workspace
           paths:
             - descriptions/
+  render-html:
+    docker:
+      - image: ddvlanck/html-page-generator:1.2
+    steps:
+      - checkout
+      - attach_workspace:
+          at: /tmp/workspace
+      - run:
+          name: Creating HTML pages for modified or new standards
+          command: bash $PWD/scripts/generator.sh
+      - persist_to_workspace:
+          root: /tmp/workspace
+          paths:
+            - html_pages/
 workflows:
   version: 2
   create_detail_page:
@@ -56,3 +70,6 @@ workflows:
       - markdown-to-html:
           requires:
             - extract-descriptions
+      - render-html:
+          requires:
+            - markdown-to-html
