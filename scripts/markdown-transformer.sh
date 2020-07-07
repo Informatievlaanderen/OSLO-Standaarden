@@ -2,7 +2,7 @@
 
 ROOTDIR=$1
 REPODIR=$ROOTDIR/repositories
-DESCRIPTION_PATHS="description-paths.txt"
+DESCRIPTION_PATHS="$ROOTDIR/description-paths.txt"
 
 mkdir -p "$ROOTDIR/descriptions"
 
