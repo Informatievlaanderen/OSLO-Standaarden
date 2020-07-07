@@ -1,3 +1,5 @@
+#!/bin/bash
+
 ROOTDIR=$1
 REPODIR=$ROOTDIR/repositories
 
@@ -13,12 +15,9 @@ do
   cd "$REPODIR/$REPO_NAME"
 
   CONFIG_NAME=$(echo "$line" | cut -d ":" -f 2 | cut -d "." -f 1)
-  DESCRIPTION_NAME=$(jq -r '.description_file' "$CONFIG_NAME")
-  DESCRIPTION_PATH="descriptions/$DESCRIPTION_NAME"
 
-  cat $DESCRIPTION_PATH
 
   if test -f "$DESCRIPTION_PATH" ; then
-    node /app/index.js -f "$DESCRIPTION_PATH" -o "$ROOTDIR/descriptions/$DESCRIPTION_NAME-description.html"
+    node /app/index.js -f "$DESCRIPTION_PATH" -o "$ROOTDIR/descriptions/$DESCRIPTION_NAME_NO_EXTENSION-description.html"
   fi
 done < "$ROOTDIR/tmp-register.txt"

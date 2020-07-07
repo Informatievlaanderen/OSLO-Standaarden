@@ -21,6 +21,18 @@ jobs:
             - commit.json
             - tmp-register.txt
             - repositories/
+  extract-descriptions:
+    docker:
+      - image: circleci/python
+    steps:
+      - checkout
+      - attach_workspace:
+          at: /tmp/workspace
+      - run: bash $PWD/scripts/extract-descriptions.sh /tmp/workspace
+      - persist_to_workspace:
+          root: /tmp/workspace
+          paths:
+            - description-paths.txt
   markdown-to-html:
     docker:
       - image: ddvlanck/markdown-to-html:1.1
@@ -38,6 +50,6 @@ workflows:
   create_detail_page:
     jobs:
       - checkout
-      - markdown-to-html:
+      - extract-descriptions:
           requires:
             - checkout
