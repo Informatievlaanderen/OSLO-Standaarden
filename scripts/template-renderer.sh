@@ -3,6 +3,7 @@
 ROOTDIR=/tmp/workspace
 RESULTDIR=/tmp/workspace/html_pages
 REPODIR=/tmp/workspace/repositories
+DESCRIPTION_NAMES="$ROOTDIR/description-paths.txt"
 
 mkdir -p "$RESULTDIR/erkende-standaard"
 mkdir -p "$RESULTDIR/standaard-in-ontwikkeling"
