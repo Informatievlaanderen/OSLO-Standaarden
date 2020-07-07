@@ -15,7 +15,9 @@ do
   REPO_NAME=$(echo "$line" | cut -d ":" -f 1)
   CONFIG=$(echo "$line" | cut -d ":" -f 2)
   CONFIG_NAME=$(echo "$CONFIG" | cut -d "." -f 1)
-  DESCRIPTION="$ROOTDIR/descriptions/$CONFIG_NAME-description.html"
+  DESCRIPTION_NAME=$(grep "$CONFIG_NAME" "$DESCRIPTION_NAMES" | cut -d ":" -f 2)
+  DESCRIPTION_NAME_NO_EXTENSION=$(echo "$DESCRIPTION_NAME" | cut -d "." -f 1)
+  DESCRIPTION="$ROOTDIR/descriptions/$DESCRIPTION_NAME_NO_EXTENSION-description.html"
   STATUS=$(echo "$line" | cut -d ":" -f 3)
 
   FULL_REPO_PATH="$REPODIR/$REPO_NAME"
@@ -24,10 +26,10 @@ do
   cd /app
   if test -f "$DESCRIPTION" ; then
     echo "A description was provided for repository: $REPO_NAME"
-    node html_page_generator.js -f "$FULL_REPO_PATH/$CONFIG-extended.json" -o "$RESULTDIR/$STATUS/$CONFIG_NAME-index.html" -t "$DESCRIPTION"
+    node html_page_generator.js -f "$FULL_REPO_PATH/$CONFIG-extended.json" -o "$RESULTDIR/$STATUS/$DESCRIPTION_NAME-index.html" -t "$DESCRIPTION"
   else
     echo "No description was provided for repository: $REPO_NAME"
-    node html_page_generator.js -f "$FULL_REPO_PATH/$CONFIG-extended.json" -o "$RESULTDIR/$STATUS/$CONFIG_NAME-index.html"
+    node html_page_generator.js -f "$FULL_REPO_PATH/$CONFIG-extended.json" -o "$RESULTDIR/$STATUS/$DESCRIPTION_NAME-index.html"
   fi
 
 done < "$ROOTDIR/tmp-register.txt"

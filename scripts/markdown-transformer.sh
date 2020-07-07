@@ -21,5 +21,3 @@ do
   node /app/index.js -f "descriptions/$DESCRIPTION_NAME" -o "$ROOTDIR/descriptions/$DESCRIPTION_NAME_NO_EXTENSION-description.html"
 done < "$ROOTDIR/tmp-register.txt"
 
-# Delete the temporary file
-rm -f "$DESCRIPTION_NAMES"
