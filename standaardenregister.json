@@ -22,5 +22,29 @@
     "commitHash" : "",
     "status" : "kandidaat-standaard",
     "configuration" : "ap-wegenregister-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-dienst",
+    "commitHash" : "",
+    "status" : "erkende-standaard",
+    "configuration" : "ap-dienst-transactiemodel-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-dienst",
+    "commitHash" : "",
+    "status" : "erkende-standaard",
+    "configuration" : "voc-transactie-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-dienst",
+    "commitHash" : "",
+    "status" : "erkende-standaard",
+    "configuration" : "voc-dienst-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-dienst",
+    "commitHash" : "",
+    "status" : "kandidaat-standaard",
+    "configuration" : "ap-dienstencataloog-config.json"
   }
 ]
