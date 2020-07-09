@@ -10,5 +10,17 @@
     "commitHash" : "",
     "status" : "kandidaat-standaard",
     "configuration" : "ap-persoon-basis-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-weg",
+    "commitHash" : "",
+    "status" : "erkende-standaard",
+    "configuration" : "voc-weg-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-weg",
+    "commitHash" : "",
+    "status" : "kandidaat-standaard",
+    "configuration" : "ap-wegenregister-config.json"
   }
 ]
