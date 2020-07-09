@@ -46,5 +46,11 @@
     "commitHash" : "",
     "status" : "kandidaat-standaard",
     "configuration" : "ap-dienstencataloog-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-VlaamseCodex",
+    "commitHash" : "",
+    "status" : "erkende-standaard",
+    "configuration" : "ap-vlaamse-codex-config.json"
   }
 ]
