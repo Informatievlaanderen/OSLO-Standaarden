@@ -52,5 +52,17 @@
     "commitHash" : "",
     "status" : "erkende-standaard",
     "configuration" : "ap-vlaamse-codex-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-organisatie",
+    "commitHash" : "",
+    "status" : "erkende-standaard",
+    "configuration" : "voc-organisatie-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-organisatie",
+    "commitHash" : "",
+    "status" : "kandidaat-standaard",
+    "configuration" : "ap-organisatie-basis-config.json"
   }
 ]
