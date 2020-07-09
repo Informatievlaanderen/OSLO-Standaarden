@@ -76,5 +76,29 @@
     "commitHash" : "",
     "status" : "erkende-standaard",
     "configuration" : "voc-logies-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-gebouwEnAdres",
+    "commitHash" : "",
+    "status" : "kandidaat-standaard",
+    "configuration" : "ap-adresregister-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-gebouwEnAdres",
+    "commitHash" : "",
+    "status" : "erkende-standaard",
+    "configuration" : "voc-adres-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-gebouwEnAdres",
+    "commitHash" : "",
+    "status" : "kandidaat-standaard",
+    "configuration" : "ap-gebouwenregister-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-gebouwEnAdres",
+    "commitHash" : "",
+    "status" : "kandidaat-standaard",
+    "configuration" : "voc-gebouw-config.json"
   }
 ]
