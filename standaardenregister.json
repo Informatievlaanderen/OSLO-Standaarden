@@ -64,5 +64,17 @@
     "commitHash" : "",
     "status" : "kandidaat-standaard",
     "configuration" : "ap-organisatie-basis-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-logies",
+    "commitHash" : "",
+    "status" : "erkende-standaard",
+    "configuration" : "ap-logies-basis-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-logies",
+    "commitHash" : "",
+    "status" : "erkende-standaard",
+    "configuration" : "voc-logies-config.json"
   }
 ]
