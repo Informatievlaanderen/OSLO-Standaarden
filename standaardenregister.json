@@ -190,5 +190,29 @@
     "commitHash" : "",
     "status" : "erkende-standaard",
     "configuration" : "ap-contactvoorkeuren-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-perceel",
+    "commitHash" : "",
+    "status" : "kandidaat-standaard",
+    "configuration" : "voc-percelen-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-perceel",
+    "commitHash" : "",
+    "status" : "kandidaat-standaard",
+    "configuration" : "ap-percelen-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-perceel",
+    "commitHash" : "",
+    "status" : "kandidaat-standaard",
+    "configuration" : "voc-bedrijventerrein-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-perceel",
+    "commitHash" : "",
+    "status" : "kandidaat-standaard",
+    "configuration" : "ap-bedrijventerrein-config.json"
   }
 ]
