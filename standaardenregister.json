@@ -118,5 +118,23 @@
     "commitHash" : "",
     "status" : "erkende-standaard",
     "configuration" : "voc-notificatie-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-melding",
+    "commitHash" : "",
+    "status" : "erkende-standaard",
+    "configuration" : "voc-melding-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-melding",
+    "commitHash" : "",
+    "status" : "erkende-standaard",
+    "configuration" : "ap-issue-tracking-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-melding",
+    "commitHash" : "",
+    "status" : "erkende-standaard",
+    "configuration" : "ap-generieke-terugmeldfaciliteit-config.json"
   }
 ]
