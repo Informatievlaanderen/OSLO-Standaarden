@@ -214,5 +214,35 @@
     "commitHash" : "",
     "status" : "kandidaat-standaard",
     "configuration" : "ap-bedrijventerrein-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-lokaleBesluiten",
+    "commitHash" : "",
+    "status" : "erkende-standaard",
+    "configuration" : "voc-mandaat-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-lokaleBesluiten",
+    "commitHash" : "",
+    "status" : "erkende-standaard",
+    "configuration" : "ap-mandatendatabank-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-lokaleBesluiten",
+    "commitHash" : "",
+    "status" : "erkende-standaard",
+    "configuration" : "voc-besluit-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-lokaleBesluiten",
+    "commitHash" : "",
+    "status" : "erkende-standaard",
+    "configuration" : "ap-besluit-publicatie-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-lokaleBesluiten",
+    "commitHash" : "",
+    "status" : "erkende-standaard",
+    "configuration" : "voc-bestuur-config.json"
   }
 ]
