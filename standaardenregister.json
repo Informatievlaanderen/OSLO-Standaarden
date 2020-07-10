@@ -136,5 +136,17 @@
     "commitHash" : "",
     "status" : "erkende-standaard",
     "configuration" : "ap-generieke-terugmeldfaciliteit-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-dossier",
+    "commitHash" : "",
+    "status" : "kandidaat-standaard",
+    "configuration" : "ap-dossier-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-dossier",
+    "commitHash" : "",
+    "status" : "",
+    "configuration" : ""
   }
 ]
