@@ -106,5 +106,17 @@
     "commitHash" : "",
     "status" : "kandidaat-standaard",
     "configuration" : "ap-inname-openbaar-domein-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-notificatie",
+    "commitHash" : "",
+    "status" : "erkende-standaard",
+    "configuration" : "ap-notificatie-basis-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-notificatie",
+    "commitHash" : "",
+    "status" : "erkende-standaard",
+    "configuration" : "voc-notificatie-config.json"
   }
 ]
