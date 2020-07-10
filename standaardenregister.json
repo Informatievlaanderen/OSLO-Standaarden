@@ -178,5 +178,17 @@
     "commitHash" : "",
     "status" : "erkende-standaard",
     "configuration" : "generieke-hypermedia-api-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-contactvoorkeuren",
+    "commitHash" : "",
+    "status" : "erkende-standaard",
+    "configuration" : "voc-toestemming-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-contactvoorkeuren",
+    "commitHash" : "",
+    "status" : "erkende-standaard",
+    "configuration" : "ap-contactvoorkeuren-config.json"
   }
 ]
