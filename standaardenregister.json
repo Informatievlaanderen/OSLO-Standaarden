@@ -147,7 +147,8 @@
     "repository" : "https://github.com/Informatievlaanderen/OSLOthema-subsidies",
     "commitHash" : "",
     "status" : "kandidaat-standaard",
-    "configuration" : "ap-besluit-subsidie-config.json"
+    "configuration" : "ap-besluit-subsidie-config.json",
+    "dummy" : "1"
   },
   {
     "repository" : "https://github.com/Informatievlaanderen/OSLOthema-subsidies",
