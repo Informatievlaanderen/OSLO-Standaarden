@@ -28,7 +28,7 @@ if [ $? -eq 0 ]; then
 
 else
   # No previous commit
-  # Assumes full rebuild of all standards
+  # Doing full rebuild of all standards
   echo "No previous commit was made."
   echo "Processing all standards in standaardenregister.json"
   cp "$PUBCONFIG" "$ROOTDIR/changedstandards.json"
