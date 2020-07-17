@@ -249,6 +249,6 @@
     "repository" : "https://github.com/Informatievlaanderen/OSLOthema-procesEnMethode",
     "commitHash" : "",
     "status" : "erkende-standaard",
-    "configuration": 'proces-en-methode-config.json'
+    "configuration": "proces-en-methode-config.json"
   }
 ]
