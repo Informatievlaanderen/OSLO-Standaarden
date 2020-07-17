@@ -250,5 +250,11 @@
     "commitHash" : "",
     "status" : "erkende-standaard",
     "configuration": "proces-en-methode-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-vlaamseUriStandaard",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "vlaamse-uri-standaard-config.json"
   }
 ]
