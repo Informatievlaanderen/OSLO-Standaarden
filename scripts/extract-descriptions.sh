@@ -3,6 +3,8 @@
 ROOTDIR=$1
 REPODIR=$ROOTDIR/repositories
 
+ls "$ROOTDIR"
+
 while IFS= read -r line
 do
   REPO_NAME=$(echo "$line" | cut -d ":" -f 1)
