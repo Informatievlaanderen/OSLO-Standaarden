@@ -3,8 +3,6 @@
 PUBCONFIG=$2
 ROOTDIR=$1
 
-echo "I'm currently here $PWD"
-
 # Determine the last changed files
 mkdir -p "$ROOTDIR"
 curl -o "$ROOTDIR/commit.json" https://raw.githubusercontent.com/Informatievlaanderen/OSLO-StandaardenregisterGenerated/master/commit.json
@@ -70,5 +68,5 @@ if cat "$ROOTDIR/changedstandards.json" | jq -e . >/dev/null 2>&1; then
 
   done
 else
-  echo "Problem processing following file: ${PUBCONFIG}"
+  echo "Problem processing following file: $ROOTDIR/changedstandards.json"
 fi
