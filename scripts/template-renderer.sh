@@ -30,10 +30,10 @@ do
   cd /app
   if test -f "$DESCRIPTION" ; then
     echo "A description was provided for repository: $REPO_NAME"
-    node html_page_generator.js -f "$FULL_REPO_PATH/$CONFIG-extended.json" -o "$RESULTDIR/$STATUS/$FILENAME.html" -t "$DESCRIPTION"
+    node html_page_generator.js -f "$FULL_REPO_PATH/$CONFIG-extended.json" -o "$RESULTDIR/$STATUS/${FILENAME,,}.html" -t "$DESCRIPTION"
   else
     echo "No description was provided for repository: $REPO_NAME"
-    node html_page_generator.js -f "$FULL_REPO_PATH/$CONFIG-extended.json" -o "$RESULTDIR/$STATUS/$FILENAME.html"
+    node html_page_generator.js -f "$FULL_REPO_PATH/$CONFIG-extended.json" -o "$RESULTDIR/$STATUS/${FILENAME,,}.html"
   fi
 
 done < "$ROOTDIR/tmp-register.txt"
