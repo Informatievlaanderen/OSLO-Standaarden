@@ -16,4 +16,12 @@ do
 
   echo "$CONFIG_NAME:$DESCRIPTION_NAME" >> "$ROOTDIR/description-paths.txt"
 
+  #### Constructing file name ####
+  SPEC_NAME=$(jq -r '.naam' "$CONFIG_NAME.json")
+  SPECIAL_CHARACTERS_REMOVED="${SPEC_NAME//[:&]/}"
+  MULTI_SPACE_REMOVED="${SPECIAL_CHARACTERS_REMOVED//  /}"
+  SPACE_REPLACED="${MULTI_SPACE_REMOVED// /-}"
+
+  echo "$CONFIG_NAME:$SPACE_REPLACED" >> "$ROOTDIR/filenames.txt"
+
 done < "$ROOTDIR/tmp-register.txt"

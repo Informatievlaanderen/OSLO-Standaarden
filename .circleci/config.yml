@@ -33,6 +33,7 @@ jobs:
           root: /tmp/workspace
           paths:
             - description-paths.txt
+            - filenames.txt
   markdown-to-html:
     docker:
       - image: ddvlanck/markdown-to-html:1.1
