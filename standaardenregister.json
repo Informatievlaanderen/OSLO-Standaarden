@@ -127,7 +127,7 @@
   },
   {
     "repository" : "https://github.com/Informatievlaanderen/OSLOthema-melding",
-    "commitHash" : "",
+    "commitHash" : "1",
     "status" : "erkende-standaard",
     "configuration" : "ap-issue-tracking-config.json"
   },
@@ -163,7 +163,7 @@
   },
   {
     "repository" : "https://github.com/Informatievlaanderen/OSLOthema-mobiliteit-trips-en-aanbod",
-    "commitHash" : "",
+    "commitHash" : "1",
     "status" : "erkende-standaard",
     "configuration" : "ap-mobiliteit-trips-en-aanbod-config.json"
   },
