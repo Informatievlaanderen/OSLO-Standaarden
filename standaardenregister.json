@@ -144,6 +144,12 @@
     "configuration" : "ap-dossier-config.json"
   },
   {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-dossier",
+    "commitHash" : "",
+    "status": "kandidaat-standaard",
+    "configuration" : "voc-dossier-config.json"
+  },
+  {
     "repository" : "https://github.com/Informatievlaanderen/OSLOthema-subsidies",
     "commitHash" : "",
     "status" : "kandidaat-standaard",
