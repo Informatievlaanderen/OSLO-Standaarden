@@ -48,7 +48,7 @@ jobs:
             - descriptions/
   render-html:
     docker:
-      - image: ddvlanck/html-page-generator:1.3
+      - image: ddvlanck/html-page-generator:1.4
     steps:
       - checkout
       - attach_workspace:
