@@ -274,5 +274,17 @@
     "commitHash": "",
     "status" : "kandidaat-standaard",
     "configuration" : "ap-verkeersborden-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-besluitvorming",
+    "commitHash" : "",
+    "status" : "kandidaat-standaard",
+    "configuration" : "ap-besluitvorming-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-besluitvorming",
+    "commitHash" : "",
+    "status" : "kandidaat-standaard",
+    "configuration" : "voc-besluitvorming-config.json"
   }
 ]
