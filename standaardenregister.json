@@ -286,5 +286,17 @@
     "commitHash" : "",
     "status" : "kandidaat-standaard",
     "configuration" : "voc-besluitvorming-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-cultureelErfgoed",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration" : "ap-cultureel-erfgoed-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-cultureelErfgoed",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration" : "voc-cultureel-erfgoed-config.json"
   }
 ]
