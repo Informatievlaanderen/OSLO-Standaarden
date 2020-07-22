@@ -61,7 +61,7 @@
   },
   {
     "repository" : "https://github.com/Informatievlaanderen/OSLOthema-organisatie",
-    "commitHash" : "",
+    "commitHash" : "1",
     "status" : "kandidaat-standaard",
     "configuration" : "ap-organisatie-basis-config.json"
   },
