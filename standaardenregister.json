@@ -298,5 +298,17 @@
     "commitHash": "",
     "status": "kandidaat-standaard",
     "configuration" : "voc-cultureel-erfgoed-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-mobiliteit",
+    "commitHash" : "",
+    "status" : "kandidaat-standaard",
+    "configuration" : "ap-besluit-mobiliteit-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-mobiliteit",
+    "commitHash" : "",
+    "status" : "kandidaat-standaard",
+    "configuration" : "voc-mobiliteit-config.json"
   }
 ]
