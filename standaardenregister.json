@@ -103,7 +103,7 @@
   },
   {
     "repository" : "https://github.com/Informatievlaanderen/OSLOthema-innameOpenbaarDomein",
-    "commitHash" : "",
+    "commitHash" : "1",
     "status" : "kandidaat-standaard",
     "configuration" : "ap-inname-openbaar-domein-config.json"
   },
