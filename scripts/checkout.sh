@@ -59,7 +59,7 @@ if cat "$ROOTDIR/changedstandards.json" | jq -e . >/dev/null 2>&1; then
     cd "$ROOTDIR/repositories/$THEME_NAME"
     git checkout standaardenregister
 
-    # We extend the the configuration file for a specific file in a theme with the baseURL
+    ### We extend the the configuration file for a specific file in a theme with the baseURL
     BASE_URL="https://github.com/Informatievlaanderen/$THEME_NAME/raw/standaardenregister"
     jq --arg BASE_URL "$BASE_URL" '. |= . + {"baseURL" : $BASE_URL}' "$CONFIG" > "$CONFIG-extended.json"
 
