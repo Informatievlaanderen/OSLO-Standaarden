@@ -5,6 +5,10 @@ REPODIR=$ROOTDIR/repositories
 
 ls "$ROOTDIR"
 
+## Creating statistics config file
+touch "$ROOTDIR/statistics_config.json"
+echo "[]" > "$ROOTDIR/statistics_config.json"
+
 while IFS= read -r line
 do
   REPO_NAME=$(echo "$line" | cut -d ":" -f 1)
@@ -18,9 +22,9 @@ do
   echo "$SPEC_NAME --> $REPORT_FILE"
 
   if [ "$REPORT_FILE" == "" ]; then
-     jq --arg NAAM "$SPEC_NAME" --arg REPORT "$REPORT_FILE" '. += [{"naam": $NAAM, "report" : "null"}]' "$STATISTICS_CONFIG"
+     jq --arg NAAM "$SPEC_NAME" --arg REPORT "$REPORT_FILE" '. += [{"name": $NAAM, "report" : "null"}]' "$ROOTDIR/statistics_config.json" > "$ROOTDIR/statistics_config.json.tmp" && mv "$ROOTDIR/statistics_config.json.tmp" "$ROOTDIR/statistics_config.json"
   else
-    jq --arg NAAM "$SPEC_NAME" --arg REPORT "$REPORT_FILE" '. += [{"naam": $NAAM, "report" : "$REPORT_FILE"}]' "$STATISTICS_CONFIG"
+    jq --arg NAAM "$SPEC_NAME" --arg REPORT "$REPORT_FILE" '. += [{"name": $NAAM, "report" : "$REPORT_FILE"}]' "$ROOTDIR/statistics_config.json" > "$ROOTDIR/statistics_config.json.tmp" && mv "$ROOTDIR/statistics_config.json.tmp" "$ROOTDIR/statistics_config.json"
   fi
 
   ## Extract information about the files containing the description for the detail page
@@ -37,6 +41,5 @@ do
 
 done < "$ROOTDIR/tmp-register.txt"
 
-echo "$STATISTICS_CONFIG" > "$ROOTDIR/statistics_config.json"
 echo "[extract-info.sh]: this is the output of the statistics_config.json file:"
 cat "$ROOTDIR/statistics_config.json"
