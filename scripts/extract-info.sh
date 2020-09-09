@@ -18,9 +18,9 @@ do
   echo "$SPEC_NAME --> $REPORT_FILE"
 
   if [ "$REPORT_FILE" == "" ]; then
-     jq --arg NAAM "$STANDARD_NAME" --arg REPORT "$REPORT_FILE" '. += [{"naam": $NAAM, "report" : "null"}]' "$STATISTICS_CONFIG"
+     jq --arg NAAM "$SPEC_NAME" --arg REPORT "$REPORT_FILE" '. += [{"naam": $NAAM, "report" : "null"}]' "$STATISTICS_CONFIG"
   else
-    jq --arg NAAM "$STANDARD_NAME" --arg REPORT "$REPORT_FILE" '. += [{"naam": $NAAM, "report" : "$REPORT_FILE"}]' "$STATISTICS_CONFIG"
+    jq --arg NAAM "$SPEC_NAME" --arg REPORT "$REPORT_FILE" '. += [{"naam": $NAAM, "report" : "$REPORT_FILE"}]' "$STATISTICS_CONFIG"
   fi
 
   ## Extract information about the files containing the description for the detail page
