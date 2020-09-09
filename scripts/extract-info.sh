@@ -19,7 +19,6 @@ do
 
   ## Extract information about the statistics
   REPORT_FILE=$(jq -r '.rapport' "$CONFIG_NAME.json")
-  echo "$SPEC_NAME --> $REPORT_FILE"
 
   if [ "$REPORT_FILE" == "" ]; then
      jq --arg NAAM "$SPEC_NAME" --arg REPORT "$REPORT_FILE" '. += [{"name": $NAAM, "report" : null}]' "$ROOTDIR/statistics_config.json" > "$ROOTDIR/statistics_config.json.tmp" && mv "$ROOTDIR/statistics_config.json.tmp" "$ROOTDIR/statistics_config.json"
