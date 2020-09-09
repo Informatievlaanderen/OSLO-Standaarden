@@ -14,7 +14,7 @@ do
   CONFIG_NAME=$(echo "$line" | cut -d ":" -f 2 | cut -d "." -f 1)
 
   ## Extract information about the statistics
-  REPORT_FILE=$(jq -r '.report' "$CONFIG_NAME.json")
+  REPORT_FILE=$(jq -r '.rapport' "$CONFIG_NAME.json")
 
   if [ "$REPORT_FILE" == null ] || [ "$REPORT_FILE" == "" ]; then
      jq --arg NAAM "$STANDARD_NAME" --arg REPORT "$REPORT_FILE" '. += [{"naam": $NAAM, "report" : "$REPORT"}]' "$STATISTICS_CONFIG"
