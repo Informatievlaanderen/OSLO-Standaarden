@@ -16,7 +16,7 @@ do
   ## Extract information about the statistics
   REPORT_FILE=$(jq -r '.report' "$CONFIG_NAME.json")
 
-  if [ "$STATISTICS_FILE" == null ] || [ "$STATISTICS_FILE" == "" ]; then
+  if [ "$REPORT_FILE" == null ] || [ "$REPORT_FILE" == "" ]; then
      jq --arg NAAM "$STANDARD_NAME" --arg REPORT "$REPORT_FILE" '. += [{"naam": $NAAM, "report" : "$REPORT"}]' "$STATISTICS_CONFIG"
   fi
 
@@ -36,4 +36,4 @@ done < "$ROOTDIR/tmp-register.txt"
 
 echo "$STATISTICS_CONFIG" > "$ROOTDIR/statistics_config.json"
 echo "[extract-info.sh]: this is the output of the statistics_config.json file:"
-echo "$ROOTDIR/statistics_config.json"
+cat "$ROOTDIR/statistics_config.json"
