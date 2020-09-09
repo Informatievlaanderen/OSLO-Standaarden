@@ -21,14 +21,14 @@ jobs:
             - commit.json
             - tmp-register.txt
             - repositories/
-  extract-descriptions:
+  extract-info:
     docker:
       - image: circleci/python
     steps:
       - checkout
       - attach_workspace:
           at: /tmp/workspace
-      - run: bash $PWD/scripts/extract-descriptions.sh /tmp/workspace
+      - run: bash $PWD/scripts/extract-info.sh /tmp/workspace
       - persist_to_workspace:
           root: /tmp/workspace
           paths:
@@ -60,6 +60,16 @@ jobs:
           root: /tmp/workspace
           paths:
             - html_pages/
+  create-statistics:
+    docker:
+      - image: ddvlanck/oslo-contributors:1.0
+    steps:
+      - checkout
+      - attach_workspace:
+          at: /tmp/workspace
+      - run:
+          name: Creating JSON file with statistics for all standards
+          command: bash $PWD/scripts/statistics.sh
   push-to-repository:
     docker:
       - image: circleci/node
@@ -115,15 +125,19 @@ workflows:
   create_detail_page:
     jobs:
       - checkout
-      - extract-descriptions:
+      - extract-info:
           requires:
             - checkout
       - markdown-to-html:
           requires:
-            - extract-descriptions
+            - extract-info
       - render-html:
           requires:
             - markdown-to-html
+      - create-statistics:
+          requires:
+            - extract-info
       - push-to-repository:
           requires:
             - render-html
+            - create-statistics
