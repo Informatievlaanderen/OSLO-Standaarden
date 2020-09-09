@@ -8,10 +8,10 @@ ls "$ROOTDIR"
 while IFS= read -r line
 do
   REPO_NAME=$(echo "$line" | cut -d ":" -f 1)
-  SPEC_NAME=$(jq -r '.naam' "$CONFIG_NAME.json")
 
   cd "$REPODIR/$REPO_NAME"
   CONFIG_NAME=$(echo "$line" | cut -d ":" -f 2 | cut -d "." -f 1)
+  SPEC_NAME=$(jq -r '.naam' "$CONFIG_NAME.json")
 
   ## Extract information about the statistics
   REPORT_FILE=$(jq -r '.rapport' "$CONFIG_NAME.json")
