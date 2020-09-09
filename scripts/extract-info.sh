@@ -15,9 +15,12 @@ do
 
   ## Extract information about the statistics
   REPORT_FILE=$(jq -r '.rapport' "$CONFIG_NAME.json")
+  echo "$SPEC_NAME --> $REPORT_FILE"
 
-  if [ "$REPORT_FILE" == null ] || [ "$REPORT_FILE" == "" ]; then
-     jq --arg NAAM "$STANDARD_NAME" --arg REPORT "$REPORT_FILE" '. += [{"naam": $NAAM, "report" : "$REPORT"}]' "$STATISTICS_CONFIG"
+  if [ "$REPORT_FILE" == "" ]; then
+     jq --arg NAAM "$STANDARD_NAME" --arg REPORT "$REPORT_FILE" '. += [{"naam": $NAAM, "report" : "null"}]' "$STATISTICS_CONFIG"
+  else
+    jq --arg NAAM "$STANDARD_NAME" --arg REPORT "$REPORT_FILE" '. += [{"naam": $NAAM, "report" : "$REPORT_FILE"}]' "$STATISTICS_CONFIG"
   fi
 
   ## Extract information about the files containing the description for the detail page
