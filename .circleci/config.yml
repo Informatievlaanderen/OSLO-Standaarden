@@ -34,6 +34,7 @@ jobs:
           paths:
             - description-paths.txt
             - filenames.txt
+            - statistics_config.json
   markdown-to-html:
     docker:
       - image: ddvlanck/markdown-to-html:1.1
@@ -69,7 +70,7 @@ jobs:
           at: /tmp/workspace
       - run:
           name: Creating JSON file with statistics for all standards
-          command: bash $PWD/scripts/statistics.sh
+          command: bash $PWD/scripts/statistics.sh /tmp/workspace
   push-to-repository:
     docker:
       - image: circleci/node
