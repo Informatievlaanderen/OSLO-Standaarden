@@ -106,7 +106,7 @@ jobs:
             mkdir -p /tmp/OSLO-StandaardenregisterGenerated/public/kandidaat-standaard
             mkdir -p /tmp/OSLO-StandaardenregisterGenerated/public/standaard-in-ontwikkeling
             mkdir -p /tmp/OSLO-StandaardenregisterGenerated/data
-            cp statistics.json /tmp/OSLO-StandaardenregisterGenerated/data/statistics.json
+            cp statistics.json /tmp/OSLO-StandaardenregisterGenerated/public/data/statistics.json
             if [ -d html_pages/erkende-standaard ] ; then if [ ! "$(ls -A html_pages/erkende-standaard)" ] ; then echo "Directory html_pages/erkende-standaard is empty" ; else cp -R html_pages/erkende-standaard/* /tmp/OSLO-StandaardenregisterGenerated/public/erkende-standaard/ ; fi fi
             if [ -d html_pages/kandidaat-standaard ] ; then if [ ! "$(ls -A html_pages/kandidaat-standaard)" ] ; then echo "Directory html_pages/kandidaat-standaard is empty" ; else cp -R html_pages/kandidaat-standaard/* /tmp/OSLO-StandaardenregisterGenerated/public/kandidaat-standaard/ ; fi fi
             if [ -d html_pages/standaard-in-ontwikkeling ] ; then if [ ! "$(ls -A html_pages/standaard-in-ontwikkeling)" ] ; then echo "Directory html_pages/standaard-in-ontwikkeling is empty" ; else cp -R html_pages/standaard-in-ontwikkeling/* /tmp/OSLO-StandaardenregisterGenerated/public/standaard-in-ontwikkeling/ ; fi fi
