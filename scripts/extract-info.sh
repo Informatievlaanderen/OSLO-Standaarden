@@ -27,7 +27,7 @@ do
   fi
 
   ## Extract information about the files containing the description for the detail page
-  DESCRIPTION_NAME=$(jq -r '.description_file' "$CONFIG_NAME.json")
+  DESCRIPTION_NAME=$(jq -r '.beschrijving' "$CONFIG_NAME.json")
 
   echo "$CONFIG_NAME:$DESCRIPTION_NAME" >> "$ROOTDIR/description-paths.txt"
 
