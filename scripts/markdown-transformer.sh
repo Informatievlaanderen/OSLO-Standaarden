@@ -3,9 +3,7 @@
 ROOTDIR=$1
 REPODIR=$ROOTDIR/repositories
 DESCRIPTION_NAMES="$ROOTDIR/description-paths.txt"
-
 mkdir -p "$ROOTDIR/descriptions"
-
 
 while IFS= read -r line
 do
