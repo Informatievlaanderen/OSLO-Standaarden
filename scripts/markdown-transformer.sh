@@ -22,7 +22,7 @@ do
   else
     DESCRIPTION_NAME_NO_EXTENSION=$(echo "$DESCRIPTION_NAME" | cut -d "." -f 1)
 
-    echo "Executing script for file $DESCRIPTION_NAME"
+    echo "Executing script for file $DESCRIPTION_NAME retrieved from config $CONFIG_NAME"
 
     # Execute the transform script
     node /app/index.js -f "descriptions/$DESCRIPTION_NAME" -o "$ROOTDIR/descriptions/$DESCRIPTION_NAME_NO_EXTENSION-description.html"
