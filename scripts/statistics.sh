@@ -2,7 +2,7 @@
 
 ## We always recreate the statistics file ##
 
-FILENAME="project/standaardenregister.json"
+FILENAME="/root/project/standaardenregister.json"
 REPOSITORY_DIR="/tmp/workspace/repositories"
 ROOTDIR=$1
 
@@ -10,7 +10,7 @@ ROOTDIR=$1
 touch "$ROOTDIR/statistics_config.json"
 echo "[]" > "$ROOTDIR/statistics_config.json"
 
-if cat "$FILENAME" | jq -e ? >/dev/null 2>&1; then
+if cmd "$FILENAME" | jq -e . >/dev/null 2>&1; then
   for row in $(jq -r '.[] | @base64 ' "$FILENAME"); do
     _jq() {
       echo "${row}" | base64 --decode | jq -r "${1}"
