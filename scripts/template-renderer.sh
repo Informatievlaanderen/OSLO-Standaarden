@@ -17,12 +17,13 @@ do
   REPO_NAME=$(echo "$line" | cut -d ":" -f 1)
   CONFIG=$(echo "$line" | cut -d ":" -f 2)
   CONFIG_NAME=$(echo "$CONFIG" | cut -d "." -f 1)
-  DESCRIPTION_NAME=$(grep "$CONFIG_NAME" "$DESCRIPTION_NAMES" | cut -d ":" -f 2)
+  DESCRIPTION_NAME=$(grep -w ^"$CONFIG_NAME" "$DESCRIPTION_NAMES" | cut -d ":" -f 2)
   DESCRIPTION_NAME_NO_EXTENSION=$(echo "$DESCRIPTION_NAME" | cut -d "." -f 1)
   DESCRIPTION="$ROOTDIR/descriptions/$DESCRIPTION_NAME_NO_EXTENSION-description.html"
   STATUS=$(echo "$line" | cut -d ":" -f 3)
 
   FILENAME=$(cat "$FILENAMES" | grep "$CONFIG_NAME" | cut -d ":" -f 2)
+  echo "Printing filename: $FILENAME"
 
   FULL_REPO_PATH="$REPODIR/$REPO_NAME"
 
