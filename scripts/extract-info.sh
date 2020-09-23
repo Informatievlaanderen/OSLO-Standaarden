@@ -52,7 +52,7 @@ if cat "$2" | jq -e . >/dev/null 2>&1; then
     cd "$REPODIR/$THEME_NAME"
     git checkout standaardenregister
     NAME=$(jq -r '.naam' $CONFIG)
-    REPORT_FILE=(jq -r '.rapport' $CONFIG)
+    REPORT_FILE=$(jq -r '.rapport' $CONFIG)
 
 
     if [ -z "$REPORT_FILE" ]; then
