@@ -310,5 +310,17 @@
     "commitHash" : "",
     "status" : "kandidaat-standaard",
     "configuration" : "voc-mobiliteit-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-generiek",
+    "commitHash" : "",
+    "status" : "zonder-status",
+    "configuration" : "ap-generiek-basis-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-generiek",
+    "commitHash" : "",
+    "status" : "zonder-status",
+    "configuration" : "voc-generiek-config.json"
   }
 ]

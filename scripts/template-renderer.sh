@@ -9,6 +9,7 @@ FILENAMES="$ROOTDIR/filenames.txt"
 mkdir -p "$RESULTDIR/erkende-standaard"
 mkdir -p "$RESULTDIR/standaard-in-ontwikkeling"
 mkdir -p "$RESULTDIR/kandidaat-standaard"
+mkdir -p "$RESULTDIR/zonder-status"
 
 mkdir -p "$RESULTDIR"
 
