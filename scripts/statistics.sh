@@ -6,6 +6,8 @@ FILENAME="/root/project/standaardenregister.json"
 REPOSITORY_DIR="/tmp/workspace/repositories"
 ROOTDIR=$1
 
+cat "$FILENAME"
+
 ## Creating statistics config file
 touch "$ROOTDIR/statistics_config.json"
 echo "[]" > "$ROOTDIR/statistics_config.json"
