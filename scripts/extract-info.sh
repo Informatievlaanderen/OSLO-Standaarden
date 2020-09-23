@@ -31,12 +31,14 @@ done < "$ROOTDIR/tmp-register.txt"
 echo "Creating statistics configuration file"
 
 ## Constructing statistics configuration file
-#if cat "$FILENAME" | jq -e . >/dev/null 2>&1; then
-#  for row in $(jq -r '.[] | select(.repository)  | @base64 ' "$FILENAME"); do
-#    _jq() {
-#      echo "${row}" | base64 --decode | jq -r "${1}"
-#    }
-#
+if cat "$FILENAME" | jq -e . >/dev/null 2>&1; then
+  for row in $(jq -r '.[] | @base64 ' "$FILENAME"); do
+    _jq() {
+      echo "${row}" | base64 --decode | jq -r "${1}"
+    }
+
+    echo "OK"
+
 #    REPOSITORY=$(_jq '.repository')
 #    THEME_NAME=$(echo "$REPOSITORY" | cut -d '/' -f 5)
 #    CONFIG=$(_jq '.configuration')
@@ -57,8 +59,8 @@ echo "Creating statistics configuration file"
 #    else
 #      jq --arg NAAM "$SPEC_NAME" --arg REPORT "$REPORT_FILE" '. += [{"name": $NAAM, "report" : $REPORT}]' "$ROOTDIR/statistics_config.json" > "$ROOTDIR/statistics_config.json.tmp" && mv "$ROOTDIR/statistics_config.json.tmp" "$ROOTDIR/statistics_config.json"
 #    fi
-#  done
-#fi
+  done
+fi
 
 echo "Done creating statistics configuration file"
 #cat "$ROOTDIR/statistics_config.json"
