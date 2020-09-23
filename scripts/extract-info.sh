@@ -41,9 +41,9 @@ if cat "$2" | jq -e . >/dev/null 2>&1; then
       echo "${row}" | base64 --decode | jq -r "${1}"
     }
 
-    REPOSITORY=$(_jq -r '.repository')
+    REPOSITORY=$(_jq '.repository')
     THEME_NAME=$(echo "$REPOSITORY" | cut -d '/' -f 5)
-    CONFIG=$(_jq -r '.configuration')
+    CONFIG=$(_jq '.configuration')
 
     echo "$REPOSITORY"
     echo "$CONFIG"
