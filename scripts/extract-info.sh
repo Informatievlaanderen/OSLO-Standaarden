@@ -51,11 +51,11 @@ if cat "$2" | jq -e . >/dev/null 2>&1; then
 
     cd "$REPODIR/$THEME_NAME"
     git checkout standaardenregister
-    NAME=$(jq -r '.naam' $CONFIG)
-    REPORT_FILE=$(jq -r '.rapport' $CONFIG)
+    NAME=$(cat "$CONFIG" | jq -r '.naam')
+    REPORT_FILE=$(cat "$CONFIG" | jq -r '.rapport')
 
 
-    if [ -z "$REPORT_FILE" ]; then
+    if [ -z "$REPORT_FILE"  ]; then
       jq --arg NAAM "$NAME" --arg REPORT "$REPORT_FILE" '. += [{"name": $NAAM, "report" : null}]' "$ROOTDIR/statistics_config.json" > "$ROOTDIR/statistics_config.json.tmp" && mv "$ROOTDIR/statistics_config.json.tmp" "$ROOTDIR/statistics_config.json"
     else
       jq --arg NAAM "$NAME" --arg REPORT "$REPORT_FILE" '. += [{"name": $NAAM, "report" : $REPORT}]' "$ROOTDIR/statistics_config.json" > "$ROOTDIR/statistics_config.json.tmp" && mv "$ROOTDIR/statistics_config.json.tmp" "$ROOTDIR/statistics_config.json"
