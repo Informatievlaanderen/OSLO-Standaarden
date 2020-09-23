@@ -28,6 +28,3 @@ do
   echo "$CONFIG_NAME:$SPACE_REPLACED" >> "$ROOTDIR/filenames.txt"
 
 done < "$ROOTDIR/tmp-register.txt"
-
-echo "[extract-info.sh]: this is the output of the statistics_config.json file:"
-cat "$ROOTDIR/statistics_config.json"
