@@ -265,9 +265,99 @@
   },
   {
     "repository" : "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
-    "commitHash": "1",
+    "commitHash": "",
     "status": "erkende-standaard",
-    "configuration": "openbaar-domein-config.json"
+    "configuration": "voc-conceptueel-gegevensmodel-openbaar-domein-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "voc-uitbreiding-gebieden-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "voc-uitbreiding-infrastructuurelementen-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "voc-uitbreiding-vegetatie-elementen-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "voc-uitbreiding-terreindelen-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "voc-uitbreiding-waterdelen-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "voc-uitbreiding-begraafplaats-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "ap-openbaar-domein-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "ap-infrastructuurelementen-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "ap-vegetatie-elementen-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "ap-terreindelen-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "ap-begroeid-voorkomen-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "ap-onbegroeid-voorkomen-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "ap-waterdelen-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "ap-water-voorkomen-config.json"
+  },
+  {
+    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "ap-begraafplaatsenbeheer-config.json"
   },
   {
     "repository" : "https://github.com/Informatievlaanderen/OSLOthema-verkeersborden",
