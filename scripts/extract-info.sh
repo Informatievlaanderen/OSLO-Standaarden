@@ -1,6 +1,7 @@
 #!/bin/bash
 
 ROOTDIR=$1
+REGISTER=$2
 REPODIR=$ROOTDIR/repositories
 #FILENAME="/root/project/standaardenregister.json"
 
@@ -31,8 +32,8 @@ done < "$ROOTDIR/tmp-register.txt"
 echo "Creating statistics configuration file"
 
 ## Constructing statistics configuration file
-if cat standaardenregister.json | jq -e . >/dev/null 2>&1; then
-  for row in $(jq -r '.[] | @base64 ' standaardenregister.json); do
+if cat "$2" | jq -e . >/dev/null 2>&1; then
+  for row in $(jq -r '.[] | @base64 ' "$2"); do
     _jq() {
       echo "${row}" | base64 --decode | jq -r "${1}"
     }

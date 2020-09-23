@@ -28,7 +28,7 @@ jobs:
       - checkout
       - attach_workspace:
           at: /tmp/workspace
-      - run: bash $PWD/scripts/extract-info.sh /tmp/workspace
+      - run: bash $PWD/scripts/extract-info.sh /tmp/workspace $PWD/standaardenregister.json
       - persist_to_workspace:
           root: /tmp/workspace
           paths:
