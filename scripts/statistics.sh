@@ -10,7 +10,7 @@ ROOTDIR=$1
 touch "$ROOTDIR/statistics_config.json"
 echo "[]" > "$ROOTDIR/statistics_config.json"
 
-if cmd "$FILENAME" | jq -e . >/dev/null 2>&1; then
+if cat "$FILENAME" | jq -e . >/dev/null 2>&1; then
   for row in $(jq -r '.[] | @base64 ' "$FILENAME"); do
     _jq() {
       echo "${row}" | base64 --decode | jq -r "${1}"
@@ -25,8 +25,8 @@ if cmd "$FILENAME" | jq -e . >/dev/null 2>&1; then
     fi
 
     cd "$REPOSITORY_DIR/$THEME_NAME"
-    NAME=$(cmd "$CONFIG" | jq '.naam')
-    REPORT_FILE=$(cmd "$CONFIG" | jq '.rapport')
+    NAME=$(cat "$CONFIG" | jq '.naam')
+    REPORT_FILE=$(cat "$CONFIG" | jq '.rapport')
 
     if [ "$REPORT_FILE" == "" ]; then
       jq --arg NAAM "$SPEC_NAME" --arg REPORT "$REPORT_FILE" '. += [{"name": $NAAM, "report" : null}]' "$ROOTDIR/statistics_config.json" > "$ROOTDIR/statistics_config.json.tmp" && mv "$ROOTDIR/statistics_config.json.tmp" "$ROOTDIR/statistics_config.json"
