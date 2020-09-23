@@ -6,28 +6,26 @@ FILENAME="/root/project/standaardenregister.json"
 REPOSITORY_DIR="/tmp/workspace/repositories"
 ROOTDIR=$1
 
-cat "$FILENAME"
+cp "$FILENAME" "$ROOTDIR/register.json"
 
 ## Creating statistics config file
 touch "$ROOTDIR/statistics_config.json"
 echo "[]" > "$ROOTDIR/statistics_config.json"
 
-if cat "$FILENAME" | jq -e . >/dev/null 2>&1; then
   # Only iterate over those that have a repository
-  for row in $(jq -r '.[] | select(.repository)  | @base64 ' "$FILENAME"); do
-    _jq() {
-      echo "${row}" | base64 --decode | jq -r "${1}"
-    }
+for row in $(jq -r '.[] | select(.repository)  | @base64 ' "$ROOTDIR/register.json"); do
+  _jq() {
+    echo "${row}" | base64 --decode | jq -r "${1}"
+  }
 
-    # Get name of repository to create a directory with the same name
-    REPOSITORY=$(_jq '.repository')
-    CONFIG=$(_jq '.configuration')
-    THEME_NAME=$(echo "$REPOSITORY" | cut -d '/' -f 5)
+  # Get name of repository to create a directory with the same name
+  REPOSITORY=$(_jq '.repository')
+  CONFIG=$(_jq '.configuration')
+  THEME_NAME=$(echo "$REPOSITORY" | cut -d '/' -f 5)
 
-    echo "$THEME_NAME"
+  echo "$THEME_NAME"
 
-  done
-fi
+done
 
 #if cat "$FILENAME" | jq -e . >/dev/null 2>&1; then
 #  echo "OKE"
