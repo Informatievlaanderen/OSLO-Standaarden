@@ -45,14 +45,17 @@ if cat "$2" | jq -e . >/dev/null 2>&1; then
     THEME_NAME=$(echo "$REPOSITORY" | cut -d '/' -f 5)
     CONFIG=$(_jq -r '.configuration')
 
-    if [ ! -d "$REPODIR/$THEME_NAME" ]; then
-      git clone "$REPOSITORY" "$REPODIR/$THEME_NAME"
-    fi
+    echo "$REPOSITORY"
+    echo "$CONFIG"
+    echo "----------------------------------------------------"
 
-    cd "$REPODIR/$THEME_NAME"
-    git checkout standaardenregister
+#    if [ ! -d "$REPODIR/$THEME_NAME" ]; then
+#      git clone "$REPOSITORY" "$REPODIR/$THEME_NAME"
+#    fi
+#
+#    cd "$REPODIR/$THEME_NAME"
+#    git checkout standaardenregister
 
-    echo "$PWD"
 #    NAME=$(cat "$CONFIG" | jq -r '.naam')
 #    REPORT_FILE=$(cat "$CONFIG" | jq -r '.rapport')
 #
