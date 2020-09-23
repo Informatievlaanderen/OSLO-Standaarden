@@ -28,9 +28,10 @@ do
   echo "$CONFIG_NAME:$SPACE_REPLACED" >> "$ROOTDIR/filenames.txt"
 done < "$ROOTDIR/tmp-register.txt"
 
+echo "Creating statistics configuration file"
+
 ## Constructing statistics configuration file
 if cat "$FILENAME" | jq -e . >/dev/null 2>&1; then
-  echo "OKE"
   for row in $(jq -r '.[] | select(.repository)  | @base64 ' "$FILENAME"); do
     _jq() {
       echo "${row}" | base64 --decode | jq -r "${1}"
