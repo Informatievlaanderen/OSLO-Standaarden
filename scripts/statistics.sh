@@ -25,8 +25,11 @@ if cat "$FILENAME" | jq -e . >/dev/null 2>&1; then
     fi
 
     cd "$REPOSITORY_DIR/$THEME_NAME"
+    git checkout standaardenregister
     NAME=$(cat "$CONFIG" | jq '.naam')
     REPORT_FILE=$(cat "$CONFIG" | jq '.rapport')
+
+    echo "$NAME ---> $REPORT_FILE"
 
     if [ "$REPORT_FILE" == "" ]; then
       jq --arg NAAM "$SPEC_NAME" --arg REPORT "$REPORT_FILE" '. += [{"name": $NAAM, "report" : null}]' "$ROOTDIR/statistics_config.json" > "$ROOTDIR/statistics_config.json.tmp" && mv "$ROOTDIR/statistics_config.json.tmp" "$ROOTDIR/statistics_config.json"
