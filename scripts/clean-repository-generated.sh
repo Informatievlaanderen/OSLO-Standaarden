@@ -1,8 +1,6 @@
 PAGES=/tmp/workspace/html_pages
 GENERATED=/tmp/OSLO-StandaardenregisterGenerated/public
 
-
-
 ## A theme moves from candidate-standard to standard
 
 if [ -d "$PAGES/erkende-standaard" ]
