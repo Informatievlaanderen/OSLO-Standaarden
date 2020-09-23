@@ -29,7 +29,10 @@ do
   echo "$CONFIG_NAME:$SPACE_REPLACED" >> "$ROOTDIR/filenames.txt"
 done < "$ROOTDIR/tmp-register.txt"
 
+## Creating statistics config file
 echo "Creating statistics configuration file"
+touch "$ROOTDIR/statistics_config.json"
+echo "[]" > "$ROOTDIR/statistics_config.json"
 
 ## Constructing statistics configuration file
 if cat "$2" | jq -e . >/dev/null 2>&1; then
