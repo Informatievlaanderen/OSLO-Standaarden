@@ -22,8 +22,7 @@ do
   DESCRIPTION="$ROOTDIR/descriptions/$DESCRIPTION_NAME_NO_EXTENSION-description.html"
   STATUS=$(echo "$line" | cut -d ":" -f 3)
 
-  FILENAME=$(cat "$FILENAMES" | grep "$CONFIG_NAME" | cut -d ":" -f 2)
-  echo "Printing filename: $FILENAME"
+  FILENAME=$(cat "$FILENAMES" | grep  -w ^"$CONFIG_NAME" | cut -d ":" -f 2)
 
   FULL_REPO_PATH="$REPODIR/$REPO_NAME"
 
