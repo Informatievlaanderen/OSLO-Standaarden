@@ -35,7 +35,7 @@ touch "$ROOTDIR/statistics_config.json"
 echo "[]" > "$ROOTDIR/statistics_config.json"
 
 ## Constructing statistics configuration file
-if cat "$2" | jq -e . >/dev/null 2>&1; then
+if cat "$REGISTER" | jq -e . >/dev/null 2>&1; then
   for row in $(jq -r '.[] | @base64 ' "$2"); do
     _jq() {
       echo "${row}" | base64 --decode | jq -r "${1}"
@@ -44,6 +44,7 @@ if cat "$2" | jq -e . >/dev/null 2>&1; then
     REPOSITORY=$(_jq '.repository')
     THEME_NAME=$(echo "$REPOSITORY" | cut -d '/' -f 5)
     CONFIG=$(_jq '.configuration')
+    STATUS=$(_jq '.status')
 
     if [ ! -d "$REPODIR/$THEME_NAME" ]; then
       git clone "$REPOSITORY" "$REPODIR/$THEME_NAME"
@@ -57,9 +58,9 @@ if cat "$2" | jq -e . >/dev/null 2>&1; then
 
 
     if [ -z "$REPORT_FILE"  ]; then
-      jq --arg NAAM "$NAME" --arg REPORT "$REPORT_FILE" '. += [{"name": $NAAM, "report" : null}]' "$ROOTDIR/statistics_config.json" > "$ROOTDIR/statistics_config.json.tmp" && mv "$ROOTDIR/statistics_config.json.tmp" "$ROOTDIR/statistics_config.json"
+      jq --arg NAAM "$NAME" --arg STATUS "$STATUS" --arg REPORT "$REPORT_FILE" '. += [{"name": $NAAM, "report" : null, "status" : $STATUS}]' "$ROOTDIR/statistics_config.json" > "$ROOTDIR/statistics_config.json.tmp" && mv "$ROOTDIR/statistics_config.json.tmp" "$ROOTDIR/statistics_config.json"
     else
-      jq --arg NAAM "$NAME" --arg REPORT "$REPORT_FILE" '. += [{"name": $NAAM, "report" : $REPORT}]' "$ROOTDIR/statistics_config.json" > "$ROOTDIR/statistics_config.json.tmp" && mv "$ROOTDIR/statistics_config.json.tmp" "$ROOTDIR/statistics_config.json"
+      jq --arg NAAM "$NAME" --arg STATUS "$STATUS" --arg REPORT "$REPORT_FILE" '. += [{"name": $NAAM, "report" : $REPORT, "status" : "$STATUS"}]' "$ROOTDIR/statistics_config.json" > "$ROOTDIR/statistics_config.json.tmp" && mv "$ROOTDIR/statistics_config.json.tmp" "$ROOTDIR/statistics_config.json"
     fi
   done
 fi
