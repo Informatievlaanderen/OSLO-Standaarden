@@ -60,7 +60,7 @@ if cat "$REGISTER" | jq -e . >/dev/null 2>&1; then
     if [ -z "$REPORT_FILE"  ]; then
       jq --arg NAAM "$NAME" --arg STATUS "$STATUS" --arg REPORT "$REPORT_FILE" '. += [{"name": $NAAM, "report" : null, "status" : $STATUS}]' "$ROOTDIR/statistics_config.json" > "$ROOTDIR/statistics_config.json.tmp" && mv "$ROOTDIR/statistics_config.json.tmp" "$ROOTDIR/statistics_config.json"
     else
-      jq --arg NAAM "$NAME" --arg STATUS "$STATUS" --arg REPORT "$REPORT_FILE" '. += [{"name": $NAAM, "report" : $REPORT, "status" : "$STATUS"}]' "$ROOTDIR/statistics_config.json" > "$ROOTDIR/statistics_config.json.tmp" && mv "$ROOTDIR/statistics_config.json.tmp" "$ROOTDIR/statistics_config.json"
+      jq --arg NAAM "$NAME" --arg STATUS "$STATUS" --arg REPORT "$REPORT_FILE" '. += [{"name": $NAAM, "report" : $REPORT, "status" : $STATUS}]' "$ROOTDIR/statistics_config.json" > "$ROOTDIR/statistics_config.json.tmp" && mv "$ROOTDIR/statistics_config.json.tmp" "$ROOTDIR/statistics_config.json"
     fi
   done
 fi
