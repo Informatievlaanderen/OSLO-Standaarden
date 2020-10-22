@@ -74,7 +74,7 @@ jobs:
       - persist_to_workspace:
           root: /tmp/workspace
           paths:
-            statistics.json
+            - statistics.json
   push-to-repository:
     docker:
       - image: circleci/node
