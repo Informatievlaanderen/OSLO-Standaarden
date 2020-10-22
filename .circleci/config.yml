@@ -63,7 +63,7 @@ jobs:
             - html_pages/
   create-statistics:
     docker:
-      - image: ddvlanck/oslo-contributors:1.1
+      - image: ddvlanck/oslo-contributors:1.2
     steps:
       - checkout
       - attach_workspace:
