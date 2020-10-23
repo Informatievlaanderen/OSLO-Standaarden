@@ -55,12 +55,13 @@ if cat "$REGISTER" | jq -e . >/dev/null 2>&1; then
 
     NAME=$(cat "$CONFIG" | jq -r '.naam')
     REPORT_FILE=$(cat "$CONFIG" | jq -r '.rapport')
+    PUB_DATE=$(cat "$CONFIG" | jq -r ".publicatiedatum")
 
 
     if [ -z "$REPORT_FILE"  ]; then
-      jq --arg NAAM "$NAME" --arg STATUS "$STATUS" --arg REPORT "$REPORT_FILE" '. += [{"name": $NAAM, "report" : null, "status" : $STATUS}]' "$ROOTDIR/statistics_config.json" > "$ROOTDIR/statistics_config.json.tmp" && mv "$ROOTDIR/statistics_config.json.tmp" "$ROOTDIR/statistics_config.json"
+      jq --arg NAAM "$NAME" --arg STATUS "$STATUS" --arg REPORT "$REPORT_FILE" --arg PUB_DATE "$PUB_DATE" '. += [{"name": $NAAM, "report" : null, "status" : $STATUS, "publicationDate" : $PUB_DATE}]' "$ROOTDIR/statistics_config.json" > "$ROOTDIR/statistics_config.json.tmp" && mv "$ROOTDIR/statistics_config.json.tmp" "$ROOTDIR/statistics_config.json"
     else
-      jq --arg NAAM "$NAME" --arg STATUS "$STATUS" --arg REPORT "$REPORT_FILE" '. += [{"name": $NAAM, "report" : $REPORT, "status" : $STATUS}]' "$ROOTDIR/statistics_config.json" > "$ROOTDIR/statistics_config.json.tmp" && mv "$ROOTDIR/statistics_config.json.tmp" "$ROOTDIR/statistics_config.json"
+      jq --arg NAAM "$NAME" --arg STATUS "$STATUS" --arg REPORT "$REPORT_FILE" --arg PUB_DATE "$PUB_DATE" '. += [{"name": $NAAM, "report" : $REPORT, "status" : $STATUS, "publicationDate" : $PUB_DATE}]' "$ROOTDIR/statistics_config.json" > "$ROOTDIR/statistics_config.json.tmp" && mv "$ROOTDIR/statistics_config.json.tmp" "$ROOTDIR/statistics_config.json"
     fi
   done
 fi
