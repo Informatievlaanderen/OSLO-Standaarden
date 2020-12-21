@@ -476,7 +476,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "commitHash": "",
-    "status": "erkende-standaard",
+    "status": "kandidaat-standaard",
     "configuration": "ap-openbaar-domein-2-config.json"
   },
   {
