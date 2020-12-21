@@ -505,7 +505,7 @@
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
-    "commitHash": "",
+    "commitHash": "1",
     "status": "kandidaat-standaard",
     "configuration": "openbaar-domein-2-config.json"
   },
@@ -565,7 +565,7 @@
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLO-Standaarden",
-    "commitHash": "",
+    "commitHash": "1",
     "status": "standaard-in-ontwikkeling",
     "configuration": "api-guidelines-config.json"
   },
