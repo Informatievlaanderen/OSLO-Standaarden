@@ -1,18 +1,12 @@
 {
-  "naam": "Vocabularia en Applicatieprofielen Bodem en Ondergrond",
+  "naam": "API guidelines",
   "rapport": "",
-  "verantwoordelijke_organisatie": [
-    "Databank Ondergrond Vlaanderen",
-    "OVAM"
-  ],
-  "identificator_organisatie": [
-    "http://data.vlaanderen.be/id/organisatie/OVO037637",
-    "http://data.vlaanderen.be/id/organisatie/OVO000091"
-  ],
+  "verantwoordelijke_organisatie":     "Agentschap Informatie Vlaanderen",
+  "identificator_organisatie": "http://data.vlaanderen.be/id/organisatie/OVO002949",
   "publicatiedatum": "TBD",
   "type_toepassing": "TBD",
-  "categorie": "Vocabularium & applicatieprofielen",
-  "beschrijving": "ap-bodemenondergrond.md",
+  "categorie": "Technische standaard",
+  "beschrijving": "api-guidelines.md",
   "specificatiedocument": [
   ],
   "documentatie": [],
@@ -42,9 +36,9 @@
       "waarde": "09062020 - API guidelines WS3.pptx"
     }
   ],
-  "functioneel_toepassingsgebied": "Semantische standaard voor informatie over bodem en ondergrond",
+  "functioneel_toepassingsgebied": "Richtlijnen rond het ontwikkelen van API's.",
   "organisatorisch_werkingsgebied": "Alle entiteiten van de Vlaamse overheid",
-  "datum_van_aanmelding": "18 juni 2020",
+  "datum_van_aanmelding": "TDB",
   "erkenning_werkgroep_datastandaarden": "TBD",
   "erkenning_stuurgroep": "TBD"
 }
