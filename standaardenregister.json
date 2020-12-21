@@ -1,261 +1,285 @@
 [
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-persoon",
-    "commitHash" : "",
-    "status" : "erkende-standaard",
-    "configuration" : "voc-persoon-config.json"
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-persoon",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "voc-persoon-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-persoon",
-    "commitHash" : "",
-    "status" : "kandidaat-standaard",
-    "configuration" : "ap-persoon-basis-config.json"
-  },
-  {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-weg",
-    "commitHash" : "",
-    "status" : "erkende-standaard",
-    "configuration" : "voc-weg-config.json"
-  },
-  {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-weg",
-    "commitHash" : "",
-    "status" : "kandidaat-standaard",
-    "configuration" : "ap-wegenregister-config.json"
-  },
-  {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-dienst",
-    "commitHash" : "",
-    "status" : "erkende-standaard",
-    "configuration" : "ap-dienst-transactiemodel-config.json"
-  },
-  {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-dienst",
-    "commitHash" : "",
-    "status" : "erkende-standaard",
-    "configuration" : "voc-transactie-config.json"
-  },
-  {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-dienst",
-    "commitHash" : "",
-    "status" : "erkende-standaard",
-    "configuration" : "voc-dienst-config.json"
-  },
-  {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-dienst",
-    "commitHash" : "",
-    "status" : "kandidaat-standaard",
-    "configuration" : "ap-dienstencataloog-config.json"
-  },
-  {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-VlaamseCodex",
-    "commitHash" : "",
-    "status" : "erkende-standaard",
-    "configuration" : "ap-vlaamse-codex-config.json"
-  },
-  {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-organisatie",
-    "commitHash" : "",
-    "status" : "erkende-standaard",
-    "configuration" : "voc-organisatie-config.json"
-  },
-  {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-organisatie",
-    "commitHash" : "1",
-    "status" : "kandidaat-standaard",
-    "configuration" : "ap-organisatie-basis-config.json"
-  },
-  {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-logies",
-    "commitHash" : "",
-    "status" : "erkende-standaard",
-    "configuration" : "ap-logies-basis-config.json"
-  },
-  {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-logies",
-    "commitHash" : "",
-    "status" : "erkende-standaard",
-    "configuration" : "voc-logies-config.json"
-  },
-  {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-gebouwEnAdres",
-    "commitHash" : "",
-    "status" : "kandidaat-standaard",
-    "configuration" : "ap-adresregister-config.json"
-  },
-  {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-gebouwEnAdres",
-    "commitHash" : "",
-    "status" : "erkende-standaard",
-    "configuration" : "voc-adres-config.json"
-  },
-  {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-gebouwEnAdres",
-    "commitHash" : "",
-    "status" : "kandidaat-standaard",
-    "configuration" : "ap-gebouwenregister-config.json"
-  },
-  {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-gebouwEnAdres",
-    "commitHash" : "",
-    "status" : "kandidaat-standaard",
-    "configuration" : "voc-gebouw-config.json"
-  },
-  {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-innameOpenbaarDomein",
-    "commitHash" : "1",
-    "status" : "kandidaat-standaard",
-    "configuration" : "ap-inname-openbaar-domein-config.json"
-  },
-  {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-notificatie",
-    "commitHash" : "",
-    "status" : "erkende-standaard",
-    "configuration" : "ap-notificatie-basis-config.json"
-  },
-  {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-notificatie",
-    "commitHash" : "",
-    "status" : "erkende-standaard",
-    "configuration" : "voc-notificatie-config.json"
-  },
-  {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-melding",
-    "commitHash" : "",
-    "status" : "erkende-standaard",
-    "configuration" : "voc-melding-config.json"
-  },
-  {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-melding",
-    "commitHash" : "1",
-    "status" : "erkende-standaard",
-    "configuration" : "ap-issue-tracking-config.json"
-  },
-  {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-melding",
-    "commitHash" : "",
-    "status" : "erkende-standaard",
-    "configuration" : "ap-generieke-terugmeldfaciliteit-config.json"
-  },
-  {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-dossier",
-    "commitHash" : "",
-    "status" : "kandidaat-standaard",
-    "configuration" : "ap-dossier-config.json"
-  },
-  {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-dossier",
-    "commitHash" : "",
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-persoon",
+    "commitHash": "",
     "status": "kandidaat-standaard",
-    "configuration" : "voc-dossier-config.json"
+    "configuration": "ap-persoon-basis-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-subsidies",
-    "commitHash" : "",
-    "status" : "kandidaat-standaard",
-    "configuration" : "ap-besluit-subsidie-config.json"
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-weg",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "voc-weg-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-subsidies",
-    "commitHash" : "",
-    "status" : "kandidaat-standaard",
-    "configuration" : "voc-subsidie-config.json"
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-weg",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "ap-wegenregister-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-mobiliteit-trips-en-aanbod",
-    "commitHash" : "1",
-    "status" : "erkende-standaard",
-    "configuration" : "ap-mobiliteit-trips-en-aanbod-config.json"
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-dienst",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "ap-dienst-transactiemodel-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-mobiliteit-trips-en-aanbod",
-    "commitHash" : "",
-    "status" : "erkende-standaard",
-    "configuration" : "voc-mobiliteit-trips-en-aanbod-config.json"
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-dienst",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "voc-transactie-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-DCATAPVlaanderen",
-    "commitHash" : "",
-    "status" : "erkende-standaard",
-    "configuration" : "ap-dcat-ap-vl-config.json"
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-dienst",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "voc-dienst-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-GeneriekeHypermediaAPI",
-    "commitHash" : "",
-    "status" : "erkende-standaard",
-    "configuration" : "generieke-hypermedia-api-config.json"
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-dienst",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "ap-dienstencataloog-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-contactvoorkeuren",
-    "commitHash" : "",
-    "status" : "erkende-standaard",
-    "configuration" : "voc-toestemming-config.json"
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-VlaamseCodex",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "ap-vlaamse-codex-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-contactvoorkeuren",
-    "commitHash" : "",
-    "status" : "erkende-standaard",
-    "configuration" : "ap-contactvoorkeuren-config.json"
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-organisatie",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "voc-organisatie-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-perceel",
-    "commitHash" : "",
-    "status" : "kandidaat-standaard",
-    "configuration" : "voc-percelen-config.json"
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-organisatie",
+    "commitHash": "1",
+    "status": "kandidaat-standaard",
+    "configuration": "ap-organisatie-basis-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-perceel",
-    "commitHash" : "",
-    "status" : "kandidaat-standaard",
-    "configuration" : "ap-percelen-config.json"
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-logies",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "ap-logies-basis-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-perceel",
-    "commitHash" : "",
-    "status" : "kandidaat-standaard",
-    "configuration" : "voc-bedrijventerrein-config.json"
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-logies",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "voc-logies-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-perceel",
-    "commitHash" : "",
-    "status" : "kandidaat-standaard",
-    "configuration" : "ap-bedrijventerrein-config.json"
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-gebouwEnAdres",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "ap-adresregister-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-lokaleBesluiten",
-    "commitHash" : "",
-    "status" : "erkende-standaard",
-    "configuration" : "voc-mandaat-config.json"
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-gebouwEnAdres",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "voc-adres-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-lokaleBesluiten",
-    "commitHash" : "",
-    "status" : "erkende-standaard",
-    "configuration" : "ap-mandatendatabank-config.json"
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-gebouwEnAdres",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "ap-gebouwenregister-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-lokaleBesluiten",
-    "commitHash" : "",
-    "status" : "erkende-standaard",
-    "configuration" : "voc-besluit-config.json"
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-gebouwEnAdres",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "voc-gebouw-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-lokaleBesluiten",
-    "commitHash" : "",
-    "status" : "erkende-standaard",
-    "configuration" : "ap-besluit-publicatie-config.json"
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-innameOpenbaarDomein",
+    "commitHash": "1",
+    "status": "kandidaat-standaard",
+    "configuration": "ap-inname-openbaar-domein-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-lokaleBesluiten",
-    "commitHash" : "",
-    "status" : "erkende-standaard",
-    "configuration" : "voc-bestuur-config.json"
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-notificatie",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "ap-notificatie-basis-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-procesEnMethode",
-    "commitHash" : "",
-    "status" : "erkende-standaard",
-    "configuration": "proces-en-methode-config.json"
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-notificatie",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "voc-notificatie-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-melding",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "voc-melding-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-melding",
+    "commitHash": "1",
+    "status": "erkende-standaard",
+    "configuration": "ap-issue-tracking-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-melding",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "ap-generieke-terugmeldfaciliteit-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-dossier",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "ap-dossier-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-dossier",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "voc-dossier-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-dossier",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "voc-dossier-2-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-subsidies",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "ap-besluit-subsidie-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-subsidies",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "voc-subsidie-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-mobiliteit-trips-en-aanbod",
+    "commitHash": "1",
+    "status": "erkende-standaard",
+    "configuration": "ap-mobiliteit-trips-en-aanbod-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-mobiliteit-trips-en-aanbod",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "voc-mobiliteit-trips-en-aanbod-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-mobiliteit-trips-en-aanbod",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "voc-netwerk-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-mobiliteit-trips-en-aanbod",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "voc-transportnetwerk-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-DCATAPVlaanderen",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "ap-dcat-ap-vl-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-GeneriekeHypermediaAPI",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "generieke-hypermedia-api-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-contactvoorkeuren",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "voc-toestemming-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-contactvoorkeuren",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "ap-contactvoorkeuren-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-perceel",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "voc-percelen-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-perceel",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "ap-percelen-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-perceel",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "voc-bedrijventerrein-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-perceel",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "ap-bedrijventerrein-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-lokaleBesluiten",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "voc-mandaat-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-lokaleBesluiten",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "ap-mandatendatabank-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-lokaleBesluiten",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "voc-besluit-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-lokaleBesluiten",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "ap-besluit-publicatie-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-lokaleBesluiten",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "voc-bestuur-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-procesEnMethode",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "proces-en-methode-oslo-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-procesEnMethode",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "proces-en-methode-awv-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-vlaamseUriStandaard",
@@ -264,153 +288,297 @@
     "configuration": "vlaamse-uri-standaard-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "commitHash": "",
     "status": "erkende-standaard",
     "configuration": "voc-conceptueel-gegevensmodel-openbaar-domein-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "commitHash": "",
     "status": "erkende-standaard",
     "configuration": "voc-uitbreiding-gebieden-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "commitHash": "",
     "status": "erkende-standaard",
     "configuration": "voc-uitbreiding-infrastructuurelementen-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "commitHash": "",
     "status": "erkende-standaard",
     "configuration": "voc-uitbreiding-vegetatie-elementen-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "commitHash": "",
     "status": "erkende-standaard",
     "configuration": "voc-uitbreiding-terreindelen-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "commitHash": "",
     "status": "erkende-standaard",
     "configuration": "voc-uitbreiding-waterdelen-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "commitHash": "",
     "status": "erkende-standaard",
     "configuration": "voc-uitbreiding-begraafplaats-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "commitHash": "",
     "status": "erkende-standaard",
     "configuration": "ap-openbaar-domein-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "commitHash": "",
     "status": "erkende-standaard",
     "configuration": "ap-infrastructuurelementen-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "commitHash": "",
     "status": "erkende-standaard",
     "configuration": "ap-vegetatie-elementen-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "commitHash": "",
     "status": "erkende-standaard",
     "configuration": "ap-terreindelen-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "commitHash": "",
     "status": "erkende-standaard",
     "configuration": "ap-begroeid-voorkomen-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "commitHash": "",
     "status": "erkende-standaard",
     "configuration": "ap-onbegroeid-voorkomen-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "commitHash": "",
     "status": "erkende-standaard",
     "configuration": "ap-waterdelen-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "commitHash": "",
     "status": "erkende-standaard",
     "configuration": "ap-water-voorkomen-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "commitHash": "",
     "status": "erkende-standaard",
     "configuration": "ap-begraafplaatsenbeheer-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-verkeersborden",
-    "commitHash": "",
-    "status" : "kandidaat-standaard",
-    "configuration" : "ap-verkeersborden-config.json"
-  },
-  {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-besluitvorming",
-    "commitHash" : "",
-    "status" : "kandidaat-standaard",
-    "configuration" : "ap-besluitvorming-config.json"
-  },
-  {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-besluitvorming",
-    "commitHash" : "",
-    "status" : "kandidaat-standaard",
-    "configuration" : "voc-besluitvorming-config.json"
-  },
-  {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-cultureelErfgoed",
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-verkeersborden",
     "commitHash": "",
     "status": "kandidaat-standaard",
-    "configuration" : "ap-cultureel-erfgoed-config.json"
+    "configuration": "ap-verkeersborden-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-cultureelErfgoed",
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-besluitvorming",
     "commitHash": "",
     "status": "kandidaat-standaard",
-    "configuration" : "voc-cultureel-erfgoed-config.json"
+    "configuration": "ap-besluitvorming-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-mobiliteit",
-    "commitHash" : "",
-    "status" : "kandidaat-standaard",
-    "configuration" : "ap-besluit-mobiliteit-config.json"
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-besluitvorming",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "voc-besluitvorming-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-mobiliteit",
-    "commitHash" : "",
-    "status" : "kandidaat-standaard",
-    "configuration" : "voc-mobiliteit-config.json"
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-cultureelErfgoed",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "ap-cultureel-erfgoed-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-generiek",
-    "commitHash" : "",
-    "status" : "zonder-status",
-    "configuration" : "ap-generiek-basis-config.json"
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-cultureelErfgoed",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "voc-cultureel-erfgoed-config.json"
   },
   {
-    "repository" : "https://github.com/Informatievlaanderen/OSLOthema-generiek",
-    "commitHash" : "",
-    "status" : "zonder-status",
-    "configuration" : "voc-generiek-config.json"
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-mobiliteit",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "ap-besluit-mobiliteit-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-mobiliteit",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "voc-mobiliteit-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-generiek",
+    "commitHash": "",
+    "status": "zonder-status",
+    "configuration": "ap-generiek-basis-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-generiek",
+    "commitHash": "",
+    "status": "zonder-status",
+    "configuration": "voc-generiek-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "ap-begraafplaatesenbeheer-2-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "ap-begraafplaatsen-2-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "ap-begroeid-voorkomen-2-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "ap-gebieden-2-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "ap-infrastructuurelementen-2-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "ap-onbegroeid-voorkomen-2-config.json,"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "commitHash": "",
+    "status": "erkende-standaard",
+    "configuration": "ap-openbaar-domein-2-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "ap-terreindelen-2-config.json,"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "ap-vegetatie-elementen-2-config.json,"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "ap-waterdelen-2-config.json,"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "ap-watervoorkomen-2-config.json,"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "openbaar-domein-2-config.json,"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "voc-uitbreiding-begraafplaats-2-config.json,"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "voc-uitbreiding-begroeid-voorkomen-2-config.json,"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "voc-uitbreiding-gebied-2-config.json,"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "voc-uitbreiding-infrastructuur-2-config.json,"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "voc-uitbreiding-onbegroeid-voorkomen-2-config.json,"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "voc-uitbreiding-terreindeel-2-config.json,"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "voc-uitbreiding-vegetatie-2-config.json,"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "voc-uitbreiding-waterdeel-2-config.json,"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "voc-uitbreiding-watervoorkomen-2-config.json,"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLO-Standaarden",
+    "commitHash": "",
+    "status": "standaard-in-ontwikkeling",
+    "configuration": "api-guidelines-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices",
+    "commitHash": "",
+    "status": "standaard-in-ontwikkeling",
+    "configuration": "conformiteitsraamwerk-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemenondergrond",
+    "commitHash": "",
+    "status": "standaard-in-ontwikkeling",
+    "configuration": "bodemenondergrond-config.json"
   }
 ]
