@@ -1,0 +1,44 @@
+{
+  "naam": "Applicatieprofiel Subsidieregister",
+  "rapport" : "",
+  "verantwoordelijke_organisatie": "Agentschap Binnenlands Bestuur",
+  "identificator_organisatie": "https://data.vlaanderen.be/doc/organisatie/OVO001835",
+  "publicatiedatum": "2018-02-05",
+  "type_toepassing": "TBD",
+  "categorie": "Vocabularium & applicatieprofielen",
+  "beschrijving" : "ap-besluit-subsidie.md",
+  "specificatiedocument": [
+    {
+      "naam": "Subsidieregister",
+      "waarde": "https://data.vlaanderen.be/doc/applicatieprofiel/subsidieregister/"
+    }
+  ],
+  "documentatie": [],
+  "charter": [
+    {
+      "naam": "Werkgroep Charter OSLO Subsidies",
+      "waarde": "Werkgroep Charter OSLO Subsidies.pdf"
+    }
+  ],
+  "verslagen": [
+    {
+      "naam" : "Verslag eerste overleg Slimme Subsidies 2017-08-31",
+      "waarde" : "Verslag eerste overleg Slimme Subsidies dd31082017.docx"
+    },
+    {
+      "naam" : "Verslag derde overleg Slimme Subsidies 2017-10-05",
+      "waarde" : "Verslag derde overleg Slimme Subsidies dd05102017.docx"
+    },
+    {
+      "naam" : "Verslag vierde overleg Slimme Subsidies 2017-11-14",
+      "waarde" : "Verslag vierde overleg Slimme Subsidies dd14112017.docx"
+    }
+  ],
+  "presentaties": [
+  ],
+  "functioneel_toepassingsgebied": "Semantische standaard voor het bouwen van een subsidieregister",
+  "organisatorisch_werkingsgebied": "Alle entiteiten van de Vlaamse overheid",
+  "datum_van_aanmelding": "Nog niet aangemeld",
+  "erkenning_werkgroep_datastandaarden": "TBD",
+  "erkenning_stuurgroep": "TBD"
+}

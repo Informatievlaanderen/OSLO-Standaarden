@@ -1,0 +1,50 @@
+{
+  "naam": "Vocabularia en Applicatieprofielen Bodem en Ondergrond",
+  "rapport": "",
+  "verantwoordelijke_organisatie": [
+    "Databank Ondergrond Vlaanderen",
+    "OVAM"
+  ],
+  "identificator_organisatie": [
+    "http://data.vlaanderen.be/id/organisatie/OVO037637",
+    "http://data.vlaanderen.be/id/organisatie/OVO000091"
+  ],
+  "publicatiedatum": "TBD",
+  "type_toepassing": "TBD",
+  "categorie": "Vocabularium & applicatieprofielen",
+  "beschrijving": "ap-bodemenondergrond.md",
+  "specificatiedocument": [
+  ],
+  "documentatie": [],
+  "charter": [
+  ],
+  "verslagen": [
+    {
+      "naam": "Thematische Werkgroep API guidelines 1 - 2020-02-18",
+      "waarde": "OSLO API Guidelines - Workshop 1 18_02_20 - Verslag.pdf"
+    },
+    {
+      "naam": "Thematische Werkgroep API guidelines 2 - 2020-03-19",
+      "waarde": "OSLO API Guidelines - Workshop 2 19_03_20 - Verslag.docx"
+    }
+  ],
+  "presentaties": [
+    {
+      "naam": "Presentatie thematische werkgroep 1 - 18 februari 2020",
+      "waarde": "18022020 - API guidelines WS1.pptx"
+    },
+    {
+      "naam": "Presentatie thematische werkgroep 2 - 19 maart 2020",
+      "waarde": "19032020 - API guidelines WS2.pptx"
+    },
+    {
+      "naam": "Presentatie thematische werkgroep 3 (herhaling sessie 1, online) - 9 juni 2020",
+      "waarde": "09062020 - API guidelines WS3.pptx"
+    }
+  ],
+  "functioneel_toepassingsgebied": "Semantische standaard voor informatie over bodem en ondergrond",
+  "organisatorisch_werkingsgebied": "Alle entiteiten van de Vlaamse overheid",
+  "datum_van_aanmelding": "18 juni 2020",
+  "erkenning_werkgroep_datastandaarden": "TBD",
+  "erkenning_stuurgroep": "TBD"
+}

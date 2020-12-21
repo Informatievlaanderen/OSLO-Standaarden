@@ -1,0 +1,42 @@
+{
+  "naam": "Vocabularium Subsidieregister",
+  "rapport" : "",
+  "verantwoordelijke_organisatie": "Agentschap Informatie Vlaanderen",
+  "identificator_organisatie": "http://data.vlaanderen.be/id/organisatie/OVO002949",
+  "publicatiedatum": "2018-09-04",
+  "type_toepassing": "TBD",
+  "categorie": "Vocabularium & applicatieprofielen",
+  "beschrijving" : "ap-besluit-subsidie.md",
+  "specificatiedocument": [
+    {
+      "naam": "Vocabularium Subsidieregister",
+      "waarde": "https://data.vlaanderen.be/ns/subsidie"
+    }
+  ],
+  "documentatie": [],
+  "charter": [
+
+  ],
+  "verslagen": [
+    {
+      "naam" : "Verslag eerste overleg Slimme Subsidies 2017-08-31",
+      "waarde" : "Verslag eerste overleg Slimme Subsidies dd31082017.docx"
+    },
+    {
+      "naam" : "Verslag derde overleg Slimme Subsidies 2017-10-05",
+      "waarde" : "Verslag derde overleg Slimme Subsidies dd05102017.docx"
+    },
+    {
+      "naam" : "Verslag vierde overleg Slimme Subsidies 2017-11-14",
+      "waarde" : "Verslag vierde overleg Slimme Subsidies dd14112017.docx"
+    }
+  ],
+  "presentaties": [
+
+  ],
+  "functioneel_toepassingsgebied": "Semantische standaard voor informatie met betrekking tot subsidies",
+  "organisatorisch_werkingsgebied": "Alle entiteiten van de Vlaamse overheid",
+  "datum_van_aanmelding": "Nog niet aangemeld",
+  "erkenning_werkgroep_datastandaarden": "TBD",
+  "erkenning_stuurgroep": "TBD"
+}
