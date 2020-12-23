@@ -104,12 +104,14 @@ jobs:
           command: |
             mkdir -p /tmp/OSLO-StandaardenregisterGenerated/public/erkende-standaard
             mkdir -p /tmp/OSLO-StandaardenregisterGenerated/public/kandidaat-standaard
+            mkdir -p /tmp/OSLO-StandaardenregisterGenerated/public/geregistreerde-standaard
             mkdir -p /tmp/OSLO-StandaardenregisterGenerated/public/standaard-in-ontwikkeling
             mkdir -p /tmp/OSLO-StandaardenregisterGenerated/public/zonder-status
             mkdir -p /tmp/OSLO-StandaardenregisterGenerated/data
             cp statistics.json /tmp/OSLO-StandaardenregisterGenerated/public/data/statistics.json
             if [ -d html_pages/erkende-standaard ] ; then if [ ! "$(ls -A html_pages/erkende-standaard)" ] ; then echo "Directory html_pages/erkende-standaard is empty" ; else cp -R html_pages/erkende-standaard/* /tmp/OSLO-StandaardenregisterGenerated/public/erkende-standaard/ ; fi fi
             if [ -d html_pages/kandidaat-standaard ] ; then if [ ! "$(ls -A html_pages/kandidaat-standaard)" ] ; then echo "Directory html_pages/kandidaat-standaard is empty" ; else cp -R html_pages/kandidaat-standaard/* /tmp/OSLO-StandaardenregisterGenerated/public/kandidaat-standaard/ ; fi fi
+            if [ -d html_pages/geregistreerde-standaard ] ; then if [ ! "$(ls -A html_pages/geregistreerde-standaard)" ] ; then echo "Directory html_pages/geregistreerde-standaard is empty" ; else cp -R html_pages/geregistreerde-standaard/* /tmp/OSLO-StandaardenregisterGenerated/public/geregistreerde-standaard/ ; fi fi
             if [ -d html_pages/standaard-in-ontwikkeling ] ; then if [ ! "$(ls -A html_pages/standaard-in-ontwikkeling)" ] ; then echo "Directory html_pages/standaard-in-ontwikkeling is empty" ; else cp -R html_pages/standaard-in-ontwikkeling/* /tmp/OSLO-StandaardenregisterGenerated/public/standaard-in-ontwikkeling/ ; fi fi
             if [ -d html_pages/zonder-status ] ; then if [ ! "$(ls -A html_pages/zonder-status)" ] ; then echo "Directory html_pages/zonder-status is empty" ; else cp -R html_pages/zonder-status/* /tmp/OSLO-StandaardenregisterGenerated/public/zonder-status/; fi fi
       - run:

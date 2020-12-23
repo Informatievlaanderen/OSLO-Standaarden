@@ -592,5 +592,251 @@
     "commitHash": "",
     "status": "standaard-in-ontwikkeling",
     "configuration": "bodemenondergrond-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "impl-AIM-Object-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "impl-ANPR-en-trajectcontrole-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "impl-Brandleiding-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "impl-Camerainstallatie-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "impl-Complexe-datatypes-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "impl-Draagconstructies-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "impl-Dynamische-borden-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "impl-Ecologische-maatregelen-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "impl-Eenvoudige-datatypes-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "impl-Elektrische-componenten-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "impl-Fietstelinstallatie-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "impl-Hulpposten-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "impl-Inbreuken-zwaar-vervoer-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "impl-Kasten-cabines-behuizing-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "impl-Lijnvormige-elementen-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "impl-Luchtkwaliteit-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "impl-Luidsprekers-en-intercom-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "impl-Master-implementatiemodel-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "impl-Meten-in-Vlaanderen-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "impl-Optisch-transport-netwerk-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "impl-Proeven-en-metingen-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "impl-Relaties-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "impl-Riolering-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "impl-Signalisatie-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "impl-Slagbomen-en-doorsteken-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "impl-Software-en-hardware-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "impl-Tunnelevacuatie-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "impl-Union-datatypes-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "impl-Vegetatie-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "impl-Ventilatie-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "impl-Verharding-en-wegfundering-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "impl-Verkeersregelinstallatie-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "impl-Verlichtingsinstallatie-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "impl-Zone-30-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "voc-abstracten-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "voc-implementatieelementen-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "voc-installatie-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "voc-levenscyclus-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "voc-onderdeel-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "voc-proefmeting-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
+    "commitHash": "",
+    "status": "geregistreerde-standaard",
+    "configuration": "wegen-en-verkeer-config.json"
   }
 ]
