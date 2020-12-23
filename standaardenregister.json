@@ -181,13 +181,13 @@
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-mobiliteit-trips-en-aanbod",
-    "commitHash": "",
+    "commitHash": "1",
     "status": "erkende-standaard",
     "configuration": "voc-netwerk-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-mobiliteit-trips-en-aanbod",
-    "commitHash": "",
+    "commitHash": "1",
     "status": "erkende-standaard",
     "configuration": "voc-transportnetwerk-config.json"
   },
@@ -571,9 +571,21 @@
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices",
-    "commitHash": "",
+    "commitHash": "1",
     "status": "standaard-in-ontwikkeling",
     "configuration": "conformiteitsraamwerk-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "ap-metadata-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices",
+    "commitHash": "",
+    "status": "kandidaat-standaard",
+    "configuration": "voc-metadata-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemenondergrond",
