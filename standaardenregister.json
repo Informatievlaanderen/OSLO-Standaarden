@@ -271,13 +271,13 @@
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-procesEnMethode",
-    "commitHash": "",
+    "commitHash": "1",
     "status": "erkende-standaard",
     "configuration": "proces-en-methode-oslo-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-procesEnMethode",
-    "commitHash": "",
+    "commitHash": "1",
     "status": "erkende-standaard",
     "configuration": "proces-en-methode-awv-config.json"
   },
@@ -577,13 +577,13 @@
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices",
-    "commitHash": "",
+    "commitHash": "1",
     "status": "kandidaat-standaard",
     "configuration": "ap-metadata-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices",
-    "commitHash": "",
+    "commitHash": "1",
     "status": "kandidaat-standaard",
     "configuration": "voc-metadata-config.json"
   },
