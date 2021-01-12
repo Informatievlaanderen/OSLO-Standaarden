@@ -61,7 +61,7 @@
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-organisatie",
-    "commitHash": "1",
+    "commitHash": "2",
     "status": "kandidaat-standaard",
     "configuration": "ap-organisatie-basis-config.json"
   },
@@ -103,7 +103,7 @@
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-innameOpenbaarDomein",
-    "commitHash": "1",
+    "commitHash": "2",
     "status": "kandidaat-standaard",
     "configuration": "ap-inname-openbaar-domein-config.json"
   },
@@ -127,7 +127,7 @@
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-melding",
-    "commitHash": "1",
+    "commitHash": "2",
     "status": "erkende-standaard",
     "configuration": "ap-issue-tracking-config.json"
   },
@@ -169,25 +169,25 @@
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-mobiliteit-trips-en-aanbod",
-    "commitHash": "1",
+    "commitHash": "2",
     "status": "erkende-standaard",
     "configuration": "ap-mobiliteit-trips-en-aanbod-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-mobiliteit-trips-en-aanbod",
-    "commitHash": "",
+    "commitHash": "2",
     "status": "erkende-standaard",
     "configuration": "voc-mobiliteit-trips-en-aanbod-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-mobiliteit-trips-en-aanbod",
-    "commitHash": "1",
+    "commitHash": "2",
     "status": "erkende-standaard",
     "configuration": "voc-netwerk-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-mobiliteit-trips-en-aanbod",
-    "commitHash": "1",
+    "commitHash": "2",
     "status": "erkende-standaard",
     "configuration": "voc-transportnetwerk-config.json"
   },
@@ -475,7 +475,7 @@
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
-    "commitHash": "",
+    "commitHash": "2",
     "status": "kandidaat-standaard",
     "configuration": "ap-openbaar-domein-2-config.json"
   },
@@ -799,37 +799,37 @@
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
-    "commitHash": "",
+    "commitHash": "1",
     "status": "erkende-standaard",
     "configuration": "voc-abstracten-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
-    "commitHash": "",
+    "commitHash": "1",
     "status": "erkende-standaard",
     "configuration": "voc-implementatieelementen-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
-    "commitHash": "",
+    "commitHash": "1",
     "status": "erkende-standaard",
     "configuration": "voc-installatie-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
-    "commitHash": "",
+    "commitHash": "1",
     "status": "erkende-standaard",
     "configuration": "voc-levenscyclus-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
-    "commitHash": "",
+    "commitHash": "1",
     "status": "erkende-standaard",
     "configuration": "voc-onderdeel-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
-    "commitHash": "",
+    "commitHash": "1",
     "status": "erkende-standaard",
     "configuration": "voc-proefmeting-config.json"
   },
