@@ -839,16 +839,16 @@
     "status": "erkende-standaard",
     "configuration": "wegen-en-verkeer-config.json"
   },
-
   {
-    "repository": "https://github.com/Informatievlaanderen/OSLO-Standaarden",
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-vastgoed",
     "commitHash": "",
     "status": "standaard-in-ontwikkeling",
     "configuration": "vastgoed-config.json"
-  },{
-  "repository": "https://github.com/Informatievlaanderen/OSLOthema-airandwater",
-  "commitHash": "",
-  "status": "standaard-in-ontwikkeling",
-  "configuration": "airandwater-config.json"
-}
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-airandwater",
+    "commitHash": "",
+    "status": "standaard-in-ontwikkeling",
+    "configuration": "airandwater-config.json"
+  }
 ]
