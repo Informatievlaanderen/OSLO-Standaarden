@@ -668,33 +668,38 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 1,
+    "rebuild": 2,
     "configuration": "voc-abstracten-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 1,"configuration": "voc-implementatieelementen-config.json"
+    "rebuild": 1,
+    "configuration": "voc-implementatieelementen-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 1,"configuration": "voc-installatie-config.json"
+    "rebuild": 1,
+    "configuration": "voc-installatie-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 1,"configuration": "voc-levenscyclus-config.json"
+    "rebuild": 1,
+    "configuration": "voc-levenscyclus-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 1,"configuration": "voc-onderdeel-config.json"
+    "rebuild": 1,
+    "configuration": "voc-onderdeel-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 1,"configuration": "voc-proefmeting-config.json"
+    "rebuild": 1,
+    "configuration": "voc-proefmeting-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
