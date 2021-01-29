@@ -498,205 +498,205 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 3,
+    "rebuild": 4,
     "configuration": "impl-AIM-Object-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 3,
+    "rebuild": 4,
     "configuration": "impl-ANPR-en-trajectcontrole-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 3,
+    "rebuild": 4,
     "configuration": "impl-Brandleiding-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 3,
+    "rebuild": 4,
     "configuration": "impl-Camerainstallatie-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 3,
+    "rebuild": 4,
     "configuration": "impl-Complexe-datatypes-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 3,
+    "rebuild": 4,
     "configuration": "impl-Draagconstructies-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 3,
+    "rebuild": 4,
     "configuration": "impl-Dynamische-borden-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 3,
+    "rebuild": 4,
     "configuration": "impl-Ecologische-maatregelen-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 3,
+    "rebuild": 4,
     "configuration": "impl-Eenvoudige-datatypes-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 3,
+    "rebuild": 4,
     "configuration": "impl-Elektrische-componenten-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 3,
+    "rebuild": 4,
     "configuration": "impl-Fietstelinstallatie-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 3,
+    "rebuild": 4,
     "configuration": "impl-Hulpposten-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 3,
+    "rebuild": 4,
     "configuration": "impl-Inbreuken-zwaar-vervoer-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 3,
+    "rebuild": 4,
     "configuration": "impl-Kasten-cabines-behuizing-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 3,
+    "rebuild": 4,
     "configuration": "impl-Lijnvormige-elementen-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 3,
+    "rebuild": 4,
     "configuration": "impl-Luchtkwaliteit-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 3,
+    "rebuild": 4,
     "configuration": "impl-Luidsprekers-en-intercom-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 3,
+    "rebuild": 4,
     "configuration": "impl-Master-implementatiemodel-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 3,
+    "rebuild": 4,
     "configuration": "impl-Meten-in-Vlaanderen-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 3,
+    "rebuild": 4,
     "configuration": "impl-Optisch-transport-netwerk-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 3,
+    "rebuild": 4,
     "configuration": "impl-Proeven-en-metingen-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 3,
+    "rebuild": 4,
     "configuration": "impl-Relaties-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 3,
+    "rebuild": 4,
     "configuration": "impl-Riolering-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 3,
+    "rebuild": 4,
     "configuration": "impl-Signalisatie-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 3,
+    "rebuild": 4,
     "configuration": "impl-Slagbomen-en-doorsteken-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 3,
+    "rebuild": 4,
     "configuration": "impl-Software-en-hardware-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 3,
+    "rebuild": 4,
     "configuration": "impl-Tunnelevacuatie-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 3,
+    "rebuild": 4,
     "configuration": "impl-Union-datatypes-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 3,
+    "rebuild": 4,
     "configuration": "impl-Vegetatie-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 3,
+    "rebuild": 4,
     "configuration": "impl-Ventilatie-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 3,
+    "rebuild": 4,
     "configuration": "impl-Verharding-en-wegfundering-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 3,
+    "rebuild": 4,
     "configuration": "impl-Verkeersregelinstallatie-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 3,
+    "rebuild": 4,
     "configuration": "impl-Verlichtingsinstallatie-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 3,
+    "rebuild": 4,
     "configuration": "impl-Zone-30-config.json"
   },
   {
