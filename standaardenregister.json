@@ -696,7 +696,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
     "status": "erkende-standaard",
-    "rebuild": 4,
+    "rebuild": 5,
     "configuration": "impl-Zone-30-config.json"
   },
   {
