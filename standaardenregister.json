@@ -500,6 +500,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices",
     "status": "standaard-in-ontwikkeling",
+    "rebuild": 1,
     "configuration": "conformiteitsraamwerk-config.json"
   },
   {
