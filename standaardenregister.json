@@ -328,12 +328,12 @@
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-besluitvorming",
-    "status": "kandidaat-standaard",
+    "status": "erkende-standaard",
     "configuration": "ap-besluitvorming-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-besluitvorming",
-    "status": "kandidaat-standaard",
+    "status": "erkende-standaard",
     "configuration": "voc-besluitvorming-config.json"
   },
   {
