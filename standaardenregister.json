@@ -504,12 +504,12 @@
     "configuration": "conformiteitsraamwerk-config.json"
   },
   {
-    "rebuild" : 3,
+    "rebuild" : 4,
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices",
     "status": "kandidaat-standaard",
     "configuration": "ap-metadata-config.json"
   },
-  {"rebuild" : 3,
+  {"rebuild" : 4,
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices",
     "status": "kandidaat-standaard",
     "configuration": "voc-metadata-config.json"
