@@ -1,5 +1,15 @@
 [
   {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-mobiliteitDienstregelingEnPlanning",
+    "status": "standaard-in-ontwikkeling",
+    "configuration": "ap-dienstregeling-en-planning-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-mobiliteitDienstregelingEnPlanning",
+    "status": "standaard-in-ontwikkeling",
+    "configuration": "voc-dienstregeling-en-planning-config.json"
+  },
+  {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-persoon",
     "status": "erkende-standaard",
     "configuration": "voc-persoon-config.json"
