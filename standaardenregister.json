@@ -528,7 +528,7 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemenondergrond",
     "status": "standaard-in-ontwikkeling",
     "configuration": "bodemenondergrond-config.json",
-    "rebuild" : 1
+    "rebuild" : 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
@@ -784,13 +784,13 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-airandwater",
     "status": "standaard-in-ontwikkeling",
-    "rebuild": 3,
+    "rebuild": 4,
     "configuration": "airandwater-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-fietsinfrastructuur",
     "status": "standaard-in-ontwikkeling",
-    "rebuild": 1,
+    "rebuild": 2,
     "configuration": "fietsinfrastructuur-config.json"
   }
 ]
