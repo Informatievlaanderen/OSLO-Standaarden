@@ -1,5 +1,10 @@
 [
   {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-feitelijkeVerenigingen",
+    "status": "standaard-in-ontwikkeling",
+    "configuration": "ap-feitelijke-verenigingen-config.json"
+  },
+  {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-mobiliteitDienstregelingEnPlanning",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-dienstregeling-en-planning-config.json"
