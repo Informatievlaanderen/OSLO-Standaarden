@@ -786,7 +786,7 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-vastgoed",
     "status": "standaard-in-ontwikkeling",
     "configuration": "vastgoed-config.json",
-    "rebuild" : 1
+    "rebuild" : 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-airandwater",
