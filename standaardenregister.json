@@ -58,7 +58,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-VlaamseCodex",
     "status": "erkende-standaard",
-    "rebuild": 1,
+    "rebuild": 2,
     "configuration": "ap-vlaamse-codex-config.json"
   },
   {
