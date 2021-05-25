@@ -531,10 +531,10 @@
     "configuration": "voc-metadata-config.json"
   },
   {
-    "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemenondergrond",
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnondergrond",
     "status": "standaard-in-ontwikkeling",
     "configuration": "bodemenondergrond-config.json",
-    "rebuild" : 2
+    "rebuild" : 3
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
