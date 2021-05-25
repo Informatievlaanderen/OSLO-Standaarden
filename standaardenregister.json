@@ -791,13 +791,13 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-airandwater",
     "status": "standaard-in-ontwikkeling",
-    "rebuild": 4,
+    "rebuild": 5,
     "configuration": "airandwater-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-fietsinfrastructuur",
     "status": "standaard-in-ontwikkeling",
-    "rebuild": 3,
+    "rebuild": 4,
     "configuration": "fietsinfrastructuur-config.json"
   }
 ]
