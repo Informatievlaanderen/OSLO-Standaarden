@@ -534,7 +534,7 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnondergrond",
     "status": "standaard-in-ontwikkeling",
     "configuration": "bodemenondergrond-config.json",
-    "rebuild" : 3
+    "rebuild" : 4
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
