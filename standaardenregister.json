@@ -799,5 +799,10 @@
     "status": "standaard-in-ontwikkeling",
     "rebuild": 4,
     "configuration": "fietsinfrastructuur-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-DCATAPVlaanderen",
+    "status": "standaard-in-ontwikkeling",
+    "configuration": "ap-dcat-ap-vl-v2.0-config.json"
   }
 ]
