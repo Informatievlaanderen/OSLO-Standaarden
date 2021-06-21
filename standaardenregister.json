@@ -516,18 +516,18 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices",
     "status": "standaard-in-ontwikkeling",
-    "rebuild": 1,
+    "rebuild": "XXX TODO This is in wrong repository",
     "configuration": "conformiteitsraamwerk-config.json"
   },
   {
     "rebuild" : 4,
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices",
-    "status": "kandidaat-standaard",
+    "status": "erkende-standaard",
     "configuration": "ap-metadata-config.json"
   },
   {"rebuild" : 4,
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices",
-    "status": "kandidaat-standaard",
+    "status": "erkende-standaard",
     "configuration": "voc-metadata-config.json"
   },
   {
