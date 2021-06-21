@@ -520,7 +520,7 @@
     "configuration": "conformiteitsraamwerk-config.json"
   },
   {
-    "rebuild" : 4,
+    "rebuild" : 5,
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices",
     "status": "erkende-standaard",
     "configuration": "ap-metadata-config.json"
