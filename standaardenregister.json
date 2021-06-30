@@ -797,7 +797,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-fietsinfrastructuur",
     "status": "standaard-in-ontwikkeling",
-    "rebuild": 4,
+    "rebuild": 5,
     "configuration": "fietsinfrastructuur-config.json"
   },
   {
