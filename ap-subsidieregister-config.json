@@ -1,12 +1,12 @@
 {
   "naam": "Applicatieprofiel Subsidieregister",
-  "rapport" : "",
+  "rapport": "",
   "verantwoordelijke_organisatie": "Agentschap Binnenlands Bestuur",
-  "identificator_organisatie": "https://data.vlaanderen.be/doc/organisatie/OVO001835",
+  "identificator_organisatie": "https://data.vlaanderen.be/id/organisatie/OVO001835",
   "publicatiedatum": "2018-02-05",
   "type_toepassing": "TBD",
   "categorie": "Applicatieprofiel",
-  "beschrijving" : "ap-besluit-subsidie.md",
+  "beschrijving": "ap-besluit-subsidie.md",
   "specificatiedocument": [
     {
       "naam": "Subsidieregister",

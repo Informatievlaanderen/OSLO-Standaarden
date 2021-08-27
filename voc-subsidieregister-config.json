@@ -1,12 +1,12 @@
 {
   "naam": "Vocabularium Subsidieregister",
-  "rapport" : "",
-  "verantwoordelijke_organisatie": "Agentschap Informatie Vlaanderen",
+  "rapport": "",
+  "verantwoordelijke_organisatie": "Agentschap Digitaal Vlaanderen",
   "identificator_organisatie": "http://data.vlaanderen.be/id/organisatie/OVO002949",
   "publicatiedatum": "2018-09-04",
   "type_toepassing": "TBD",
   "categorie": "Vocabularium",
-  "beschrijving" : "ap-besluit-subsidie.md",
+  "beschrijving": "ap-besluit-subsidie.md",
   "specificatiedocument": [
     {
       "naam": "Vocabularium Subsidieregister",
