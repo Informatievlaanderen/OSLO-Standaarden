@@ -805,5 +805,10 @@
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-dcat-ap-vl-v20-config.json",
     "rebuild": 10
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-consent",
+    "status": "standaard-in-ontwikkeling",
+    "configuration": "ap-or-voc-core-concept-config.json"
   }
 ]
