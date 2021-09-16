@@ -102,7 +102,7 @@
     "configuration": "voc-gebouw-config.json"
   },
   {
-    "repository": "https://github.com/Informatievlaanderen/OSLOthema-inmeOpenbaarDomein",
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-innameOpenbaarDomein",
     "status": "kandidaat-standaard",
     "configuration": "ap-inname-openbaar-domein-config.json"
   },
@@ -804,7 +804,7 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-DCATAPVlaanderen",
     "status": "kandidaat-standaard",
     "configuration": "ap-dcat-ap-vl-v20-config.json",
-    "rebuild": 11
+    "rebuild": 12
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-consent",
