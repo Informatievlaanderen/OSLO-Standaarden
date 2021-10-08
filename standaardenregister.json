@@ -820,6 +820,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-Waterkwaliteit",
     "status": "standaard-in-ontwikkeling",
-    "configuration": "ap-or-voc-core-waterkwaliteit-config.json"
+    "configuration": "ap-or-voc-core-waterkwaliteit-config.json",
+    "rebuild": 1
   }
 ]
