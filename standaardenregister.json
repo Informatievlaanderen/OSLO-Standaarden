@@ -372,12 +372,17 @@
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-cultureelErfgoed",
-    "status": "kandidaat-standaard",
-    "configuration": "ap-cultureel-erfgoed-config.json"
+    "status": "erkende-standaard",
+    "configuration": "ap-cultureel-erfgoed-event-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-cultureelErfgoed",
-    "status": "kandidaat-standaard",
+    "status": "erkende-standaard",
+    "configuration": "ap-cultureel-erfgoed-object-config.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-cultureelErfgoed",
+    "status": "erkende-standaard",
     "configuration": "voc-cultureel-erfgoed-config.json"
   },
   {
