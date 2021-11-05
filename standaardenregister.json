@@ -1,4 +1,4 @@
-[  
+[
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-DoelgerichtDigitaalTransformeren",
     "status": "standaard-in-ontwikkeling",
@@ -849,6 +849,13 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-GEODCATAPVlaanderen",
     "status": "standaard-in-ontwikkeling",
-    "configuration": "ap-geodcat-ap-vl-config.json"
+    "configuration": "ap-geodcat-ap-vl-config.json",
+    "rebuild": 1
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-hoppinPunten",
+    "status": "standaard-in-ontwikkeling",
+    "configuration": "ap-or-voc-config.json",
+    "rebuild": 1
   }
 ]
