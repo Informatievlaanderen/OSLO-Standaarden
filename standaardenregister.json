@@ -32,7 +32,8 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-mobiliteitDienstregelingEnPlanning",
     "status": "standaard-in-ontwikkeling",
-    "configuration": "ap-dienstregeling-en-planning-config.json"
+    "configuration": "ap-dienstregeling-en-planning-config.json",
+    "dummy": 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-mobiliteitDienstregelingEnPlanning",
