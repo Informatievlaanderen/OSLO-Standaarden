@@ -839,7 +839,8 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-consent",
     "status": "standaard-in-ontwikkeling",
-    "configuration": "ap-or-voc-core-concept-config.json"
+    "configuration": "ap-or-voc-core-concept-config.json",
+    "rebuild": 1
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-Waterkwaliteit",
