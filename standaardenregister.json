@@ -865,11 +865,5 @@
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-or-voc-config.json",
     "rebuild": 1
-  },
-  {
-    "repository": "https://github.com/Informatievlaanderen/OSLOthema-DoelgerichtDigitaalTransformeren",
-    "status": "standaard-in-ontwikkeling",
-    "configuration": "ap-doelgericht-digitaal-transformeren-config",
-    "rebuild": 1
   }
 ]
