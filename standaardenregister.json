@@ -852,7 +852,7 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-GEODCATAPVlaanderen",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-geodcat-ap-vl-config.json",
-    "rebuild": 3
+    "rebuild": 4
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-hoppinPunten",
