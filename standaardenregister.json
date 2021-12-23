@@ -869,7 +869,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-cultuurandjeugdinfrastructuur",
     "status": "standaard-in-ontwikkeling",
-    "configuration": "ap-or-voc-config.json",
-    "rebuild": 2
+    "configuration": "ap-cultuur-en-jeugdinfrastructuur-config.json",
+    "rebuild": 3
   }
 ]
