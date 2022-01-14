@@ -138,7 +138,7 @@ jobs:
       - checkout
       - attach_workspace:
           at: /tmp/workspace
-      - run: bash $PWD/scripts/copy-nuxt.sh /tmp/workspace
+      - run: bash $PWD/scripts/copy-to-nuxt.sh /tmp/workspace
       - persist_to_workspace:
           root: /tmp/workspace
           paths:
