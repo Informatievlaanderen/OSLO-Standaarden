@@ -18,11 +18,9 @@ do
   DESCRIPTION_NAME=$(jq -r '.beschrijving' "$CONFIG_NAME.json")
 
   ## Normalizing spec name to be used as directory name
-  SPECIAL_CHARACTERS_REMOVED="${SPEC_NAME//[:&]/}"
-  MULTI_SPACE_REMOVED="${SPECIAL_CHARACTERS_REMOVED//  /}"
-  NORMALIZED_SPEC_NAME="${MULTI_SPACE_REMOVED// /-}"
+  NORMALIZED_SPEC_NAME="$(echo $SPEC_NAME | tr -c '[:alnum:]\n\r' '-' | tr -s '-' | tr '[:upper:]' '[:lower:]')"
 
   mkdir -p "$NUXTDIR/$NORMALIZED_SPEC_NAME"
 
-  cp "$CONFIG_NAME.json" "descriptions/$DESCRIPTION_NAME" "$NUXTDIR/$NORMALIZED_SPEC_NAME"
+  cp "$CONFIG_NAME-extended.json" "descriptions/$DESCRIPTION_NAME" "$NUXTDIR/$NORMALIZED_SPEC_NAME"
 done < "$ROOTDIR/tmp-register.txt"
