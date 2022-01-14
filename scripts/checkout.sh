@@ -64,7 +64,7 @@ if cat "$ROOTDIR/changedstandards.json" | jq -e . >/dev/null 2>&1; then
     jq --arg BASE_URL "$BASE_URL" '. |= . + {"baseURL" : $BASE_URL}' "$CONFIG" > "$CONFIG-extended.json"
 
     ## Nuxt and correct filename
-    jq --arg BASE_URL "$BASE_URL" '. |= . + {"baseURL" : $BASE_URL}' "$CONFIG" > "$CONFIG_NAME-extended.json"
+    jq --arg BASE_URL "$BASE_URL" --arg STATUS "$STATUS" '. |= . + {"baseURL" : $BASE_URL , "status": $STATUS}' "$CONFIG" > "$CONFIG_NAME-extended.json"
 
     echo "Done processing"
 
