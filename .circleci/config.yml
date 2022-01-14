@@ -131,6 +131,44 @@ jobs:
             export TAG=`echo "${CIRCLE_SHA1}" | cut -c1-15`
             git tag "${TAG}"
             git push --force origin master
+  push-to-nuxt:
+    docker:
+      - image: circleci/node
+    steps:
+      - checkout
+      - attach_workspace:
+          at: /tmp/workspace
+      - add_ssh_keys:
+          fingerprints:
+            - "b4:3b:99:71:b3:d7:97:ad:7a:97:15:44:c0:66:9a:b9"
+      - run:
+          name: Switch to nuxt branch in target repository
+          workdir: /tmp/OSLO-StandaardenregisterGenerated
+          command: |
+            git checkout nuxt
+            git fetch origin
+      - run:
+          name: Copy new content to Nuxt content folder
+          workdir: /tmp/workspace
+          command: |
+            cp -a nuxt/ /tmp/OSLO-StandaardenregisterGenerated/content
+      - run:
+          name: Insert the commit on the Nuxt branch
+          command: |
+            export TAG=`echo "${CIRCLE_SHA1}"`
+            echo "{\"commit\" : \"$TAG\"}" > /tmp/OSLO-StandaardenregisterGenerated/commit.json
+      - run:
+          name: Push results to 'nuxt' branch of OSLO-StandaardenregisterGenerated
+          workdir: /tmp/OSLO-StandaardenregisterGenerated
+          command: |
+            git config user.email "oslo@oslo"
+            git config user.name "Circle CI Builder"
+            git add .
+            git status
+            git commit -m "Applying changes from commit ${CIRCLE_SHA1}" --allow-empty
+            export TAG=`echo "${CIRCLE_SHA1}" | cut -c1-15`
+            git tag "${TAG}"
+            git push --force origin nuxt
 workflows:
   version: 2
   create_detail_page:
@@ -152,4 +190,11 @@ workflows:
           requires:
             - render-html
             - create-statistics
+      - copy-nuxt:
+          requires:
+            - checkout
+      - push-to-nuxt:
+          required:
+            - push-to-repository
+            - copy-nuxt
 
