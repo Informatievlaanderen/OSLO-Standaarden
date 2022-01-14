@@ -26,5 +26,3 @@ do
 
   cp "$CONFIG_NAME.json" "descriptions/$DESCRIPTION_NAME" "$NUXTDIR/$NORMALIZED_SPEC_NAME"
 done < "$ROOTDIR/tmp-register.txt"
-
-## TODO: copy statistics

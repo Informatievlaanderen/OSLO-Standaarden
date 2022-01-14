@@ -154,6 +154,12 @@ jobs:
           fingerprints:
             - "b4:3b:99:71:b3:d7:97:ad:7a:97:15:44:c0:66:9a:b9"
       - run:
+          name: Checkout target repository
+          workdir: /tmp
+          command: |
+            rm -rf OSLO-StandaardenregisterGenerated
+            git clone git@github.com:Informatievlaanderen/OSLO-StandaardenregisterGenerated.git
+      - run:
           name: Switch to nuxt branch in target repository
           workdir: /tmp/OSLO-StandaardenregisterGenerated
           command: |
@@ -163,7 +169,12 @@ jobs:
           name: Copy new content to Nuxt content folder
           workdir: /tmp/workspace
           command: |
-            cp -a nuxt/ /tmp/OSLO-StandaardenregisterGenerated/content
+            cp -r nuxt/* /tmp/OSLO-StandaardenregisterGenerated/content
+      - run:
+          name: Copy statistics to Nuxt content folder
+          workdir: /tmp/workspace
+          command: |
+            cp statistics.json /tmp/OSLO-StandaardenregisterGenerated/content/statistics.json
       - run:
           name: Insert the commit on the Nuxt branch
           command: |
@@ -205,6 +216,7 @@ workflows:
       - prepare-nuxt:
           requires:
             - checkout
+            - create-statistics
       - push-to-nuxt:
           requires:
             - push-to-repository
