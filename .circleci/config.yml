@@ -206,7 +206,7 @@ workflows:
           requires:
             - checkout
       - push-to-nuxt:
-          required:
+          requires:
             - push-to-repository
             - prepare-nuxt
 
