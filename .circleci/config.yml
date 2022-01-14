@@ -131,6 +131,18 @@ jobs:
             export TAG=`echo "${CIRCLE_SHA1}" | cut -c1-15`
             git tag "${TAG}"
             git push --force origin master
+  prepare-nuxt:
+    docker:
+      - image: circleci/python
+    steps:
+      - checkout
+      - attach_workspace:
+          at: /tmp/workspace
+      - run: bash $PWD/scripts/copy-nuxt.sh /tmp/workspace
+      - persist_to_workspace:
+          root: /tmp/workspace
+          paths:
+            - nuxt/
   push-to-nuxt:
     docker:
       - image: circleci/node
@@ -190,11 +202,11 @@ workflows:
           requires:
             - render-html
             - create-statistics
-      - copy-nuxt:
+      - prepare-nuxt:
           requires:
             - checkout
       - push-to-nuxt:
           required:
             - push-to-repository
-            - copy-nuxt
+            - prepare-nuxt
 
