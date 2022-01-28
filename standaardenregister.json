@@ -857,13 +857,13 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-hoppinPunten",
     "status": "standaard-in-ontwikkeling",
-    "configuration": "ap-or-voc-config.json",
+    "configuration": "ap-or-voc-hopping-config.json",
     "rebuild": 5
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-ldes",
     "status": "standaard-in-ontwikkeling",
-    "configuration": "ap-or-voc-config.json",
+    "configuration": "ap-or-voc-ldes-config.json",
     "rebuild": 5
   },
   {
