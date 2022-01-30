@@ -832,7 +832,7 @@
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-DCATAPVlaanderen",
-    "status": "kandidaat-standaard",
+    "status": "erkende-standaard",
     "configuration": "ap-dcat-ap-vl-v20-config.json",
     "rebuild": 12
   },
