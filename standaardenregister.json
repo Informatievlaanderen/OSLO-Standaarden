@@ -206,7 +206,7 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-DCATAPVlaanderen",
     "status": "herroepen-standaard",
     "configuration": "ap-dcat-ap-vl-config.json",
-    "rebuild": 1
+    "rebuild": 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-GeneriekeHypermediaAPI",
