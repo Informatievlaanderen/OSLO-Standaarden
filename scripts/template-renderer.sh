@@ -10,6 +10,7 @@ mkdir -p "$RESULTDIR/erkende-standaard"
 mkdir -p "$RESULTDIR/standaard-in-ontwikkeling"
 mkdir -p "$RESULTDIR/kandidaat-standaard"
 mkdir -p "$RESULTDIR/geregistreerde-standaard"
+mkdir -p "$RESULTDIR/herroepen-standaard"
 mkdir -p "$RESULTDIR/zonder-status"
 
 mkdir -p "$RESULTDIR"
