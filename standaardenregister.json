@@ -129,13 +129,13 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-loongegevens",
     "status": "standaard-in-ontwikkeling",
     "configuration": "voc-loongegevens-config.json",
-    "dummy": 4
+    "dummy": 5
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-loongegevens",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-loongegevens-config.json",
-    "dummy": 4
+    "dummy": 5
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-feitelijkeVerenigingen",
