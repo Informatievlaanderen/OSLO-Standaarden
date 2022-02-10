@@ -990,7 +990,7 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-ldes",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-or-voc-ldes-config.json",
-    "rebuild": 5
+    "rebuild": 6
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-cultuurandjeugdinfrastructuur",
