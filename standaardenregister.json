@@ -279,22 +279,25 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-dossier",
     "status": "erkende-standaard",
-    "configuration": "ap-dossier-config.json"
+    "configuration": "ap-dossier-config.json",
+    "rebuild": 1
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-dossier",
     "status": "kandidaat-standaard",
-    "configuration": "ap-dossier-2-config.json"
+    "configuration": "ap-dossier-2-config.json",
+    "rebuild": 1
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-dossier",
     "status": "erkende-standaard",
-    "configuration": "voc-dossier-config.json"
+    "configuration": "voc-dossier-config.json",
+    "rebuild": 1
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-dossier",
     "status": "kandidaat-standaard",
-    "rebuild": 1,
+    "rebuild": 2,
     "configuration": "voc-dossier-2-config.json"
   },
   {
