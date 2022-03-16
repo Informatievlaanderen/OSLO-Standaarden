@@ -956,7 +956,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-fietsinfrastructuur",
     "status": "standaard-in-ontwikkeling",
-    "rebuild": 5,
+    "rebuild": 6,
     "configuration": "fietsinfrastructuur-config.json"
   },
   {
@@ -975,7 +975,7 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-Waterkwaliteit",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-or-voc-waterkwaliteit-config.json",
-    "rebuild": 7
+    "rebuild": 8
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-GEODCATAPVlaanderen",
@@ -985,7 +985,7 @@
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-hoppinPunten",
-    "status": "standaard-in-ontwikkeling",
+    "status": "kandidaat-standaard",
     "configuration": "ap-or-voc-hopping-config.json",
     "rebuild": 6
   },
