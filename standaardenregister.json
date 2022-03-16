@@ -151,14 +151,15 @@
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-mobiliteitDienstregelingEnPlanning",
-    "status": "standaard-in-ontwikkeling",
+    "status": "kandidaat-standaard",
     "configuration": "ap-dienstregeling-en-planning-config.json",
-    "dummy": 2
+    "rebuild" : 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-mobiliteitDienstregelingEnPlanning",
-    "status": "standaard-in-ontwikkeling",
-    "configuration": "voc-dienstregeling-en-planning-config.json"
+    "status": "kandidaat-standaard",
+    "configuration": "voc-dienstregeling-en-planning-config.json",
+    "rebuild" : 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-persoon",
