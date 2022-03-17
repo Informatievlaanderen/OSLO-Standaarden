@@ -127,13 +127,13 @@
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-loongegevens",
-    "status": "standaard-in-ontwikkeling",
+    "status": "kandidaat-standaard",
     "configuration": "voc-loongegevens-config.json",
     "dummy": 5
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-loongegevens",
-    "status": "standaard-in-ontwikkeling",
+    "status": "kandidaat-standaard",
     "configuration": "ap-loongegevens-config.json",
     "dummy": 5
   },
