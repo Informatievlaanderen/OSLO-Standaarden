@@ -1,5 +1,10 @@
 [
   {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-FinancieleData",
+    "status": "standaard-in-ontwikkeling",
+    "configuration": "ap-or-voc-config.json",
+  },
+  {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
     "status": "standaard-in-ontwikkeling",
     "configuration": "bodemenondergrond-AP-Bodem-config.json",
