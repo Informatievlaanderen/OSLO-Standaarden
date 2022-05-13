@@ -976,7 +976,7 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-consent",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-or-voc-core-concept-config.json",
-    "rebuild": 5
+    "rebuild": 6
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-Waterkwaliteit",
