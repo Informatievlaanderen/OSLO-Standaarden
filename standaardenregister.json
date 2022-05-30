@@ -129,7 +129,7 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-DoelgerichtDigitaalTransformeren",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-doelgericht-digitaal-transformeren-config.json",
-    "dummy": 12
+    "dummy": 13
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-loongegevens",
@@ -1006,6 +1006,6 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-cultuurandjeugdinfrastructuur",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-cultuur-en-jeugdinfrastructuur-config.json",
-    "rebuild": 4
+    "rebuild": 5
   }
 ]
