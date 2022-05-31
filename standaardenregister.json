@@ -3,7 +3,7 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-FinancieleData",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-or-voc-config.json",
-    "rebuild": 5
+    "rebuild": 6
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
