@@ -982,7 +982,7 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-Waterkwaliteit",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-or-voc-waterkwaliteit-config.json",
-    "rebuild": 9
+    "rebuild": 10
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-GEODCATAPVlaanderen",
