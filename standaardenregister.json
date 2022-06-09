@@ -19,15 +19,15 @@
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
-    "status": "standaard-in-ontwikkeling",
+    "status": "kandidaat-standaard",
     "configuration": "bodemenondergrond-AP-BodemEnOndergrond-config.json",
-    "rebuild" : 2
+    "rebuild" : 3
   },
     {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
-    "status": "standaard-in-ontwikkeling",
+    "status": "kandidaat-standaard",
     "configuration": "bodemenondergrond-VOC-BodemEnOndergrond-config.json",
-    "rebuild" : 2
+    "rebuild" : 3
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
@@ -103,27 +103,27 @@
   },
    {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
-    "status": "standaard-in-ontwikkeling",
+    "status": "kandidaat-standaard",
     "configuration": "bodemenondergrond-AP-SensorenEnBemonstering-config.json",
-    "rebuild" : 2
+    "rebuild" : 3
   },
    {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
-    "status": "standaard-in-ontwikkeling",
+    "status": "kandidaat-standaard",
     "configuration": "bodemenondergrond-VOC-SensorenEnBemonstering-config.json",
-    "rebuild" : 2
+    "rebuild" : 3
   },
    {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
-    "status": "standaard-in-ontwikkeling",
+    "status": "kandidaat-standaard",
     "configuration": "bodemenondergrond-AP-ObservatiesEnMetingen-config.json",
-    "rebuild" : 2
+    "rebuild" : 3
   },
     {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
-    "status": "standaard-in-ontwikkeling",
+    "status": "kandidaat-standaard",
     "configuration": "bodemenondergrond-VOC-ObservatiesEnMetingen-config.json",
-    "rebuild" : 2
+    "rebuild" : 3
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-DoelgerichtDigitaalTransformeren",
