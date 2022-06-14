@@ -1007,5 +1007,17 @@
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-cultuur-en-jeugdinfrastructuur-config.json",
     "rebuild": 5
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-bestuurlijkSanctieregister",
+    "status": "standaard-in-ontwikkeling",
+    "configuration": "bestuurlijkSanctieregister-AP-config.json",
+    "rebuild": 1
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-bestuurlijkSanctieregister",
+    "status": "standaard-in-ontwikkeling",
+    "configuration": "bestuurlijkSanctieregister-VOC-config.json",
+    "rebuild": 1
   }
 ]
