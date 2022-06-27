@@ -1,9 +1,9 @@
 [
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-FinancieleData",
-    "status": "standaard-in-ontwikkeling",
+    "status": "kandidaat-standaard",
     "configuration": "ap-or-voc-config.json",
-    "rebuild": 9
+    "rebuild": 1
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
