@@ -1010,13 +1010,13 @@
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bestuurlijkSanctieregister",
-    "status": "standaard-in-ontwikkeling",
+    "status": "kandidaat-standaard",
     "configuration": "bestuurlijkSanctieregister-AP-config.json",
     "rebuild": 1
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bestuurlijkSanctieregister",
-    "status": "standaard-in-ontwikkeling",
+    "status": "kandidaat-standaard",
     "configuration": "bestuurlijkSanctieregister-VOC-config.json",
     "rebuild": 1
   }
