@@ -1006,7 +1006,7 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-cultuurandjeugdinfrastructuur",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-cultuur-en-jeugdinfrastructuur-config.json",
-    "rebuild": 5
+    "rebuild": 6
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bestuurlijkSanctieregister",
