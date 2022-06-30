@@ -1019,5 +1019,17 @@
     "status": "kandidaat-standaard",
     "configuration": "bestuurlijkSanctieregister-VOC-config.json",
     "rebuild": 1
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-passengerTransportHubs",
+    "status": "standaard-in-ontwikkeling",
+    "configuration": "ap-config.json",
+    "rebuild": 1
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-passengerTransportHubs",
+    "status": "standaard-in-ontwikkeling",
+    "configuration": "voc-config.json",
+    "rebuild": 1
   }
 ]
