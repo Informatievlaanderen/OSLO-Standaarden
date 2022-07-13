@@ -1041,14 +1041,14 @@
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-passengerTransportHubs",
-    "status": "standaard-in-ontwikkeling",
+    "status": "kandidaat-standaard",
     "configuration": "ap-config.json",
-    "rebuild": 4
+    "rebuild": 5
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-passengerTransportHubs",
-    "status": "standaard-in-ontwikkeling",
+    "status": "kandidaat-standaard",
     "configuration": "voc-config.json",
-    "rebuild": 4
+    "rebuild": 5
   }
 ]
