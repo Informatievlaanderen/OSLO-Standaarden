@@ -1043,12 +1043,12 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-passengerTransportHubs",
     "status": "kandidaat-standaard",
     "configuration": "ap-config.json",
-    "rebuild": 5
+    "rebuild": 6
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-passengerTransportHubs",
     "status": "kandidaat-standaard",
     "configuration": "voc-config.json",
-    "rebuild": 5
+    "rebuild": 6
   }
 ]
