@@ -976,7 +976,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-airandwater",
     "status": "standaard-in-ontwikkeling",
-    "rebuild": 5,
+    "rebuild": 6,
     "configuration": "airandwater-config.json"
   },
   {
