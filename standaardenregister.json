@@ -1012,8 +1012,8 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-hoppinPunten",
     "status": "kandidaat-standaard",
-    "configuration": "ap-or-voc-hopping-config.json",
-    "rebuild": 7
+    "configuration": "ap-or-voc-vervoersknooppunten-config.json",
+    "rebuild": 8
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-ldes",
