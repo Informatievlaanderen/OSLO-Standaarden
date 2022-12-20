@@ -1031,7 +1031,7 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-ldes",
     "status": "erkende-standaard",
     "configuration": "voc-ldes-config.json",
-    "rebuild": 1
+    "rebuild": 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-cultuurandjeugdinfrastructuur",
