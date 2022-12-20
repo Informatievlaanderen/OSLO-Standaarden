@@ -1011,9 +1011,15 @@
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-hoppinPunten",
-    "status": "kandidaat-standaard",
-    "configuration": "ap-or-voc-vervoersknooppunten-config.json",
-    "rebuild": 8
+    "status": "erkende-standaard",
+    "configuration": "ap-vervoersknooppunten-config.json",
+    "rebuild": 9
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-hoppinPunten",
+    "status": "erkende-standaard",
+    "configuration": "voc-vervoersknooppunten-config.json",
+    "rebuild": 1
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-ldes",
