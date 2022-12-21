@@ -1062,5 +1062,11 @@
     "status": "erkende-standaard",
     "configuration": "voc-config.json",
     "rebuild": 7
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-Leercredential",
+    "status": "standaard-in-ontwikkeling",
+    "configuration": "ap-or-voc-leercredential-config.json",
+    "rebuild": 1
   }
 ]
