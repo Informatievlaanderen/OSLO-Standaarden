@@ -1068,5 +1068,11 @@
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-or-voc-leercredential-config.json",
     "rebuild": 2
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-visualo",
+    "status": "standaard-in-ontwikkeling",
+    "configuration": "ap-or-voc-config.json",
+    "rebuild": 1
   }
 ]
