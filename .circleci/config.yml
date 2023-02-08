@@ -214,12 +214,4 @@ workflows:
           requires:
             - render-html
             - create-statistics
-      - prepare-nuxt:
-          requires:
-            - checkout
-            - create-statistics
-      - push-to-nuxt:
-          requires:
-            - push-to-repository
-            - prepare-nuxt
 
