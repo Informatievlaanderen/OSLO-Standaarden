@@ -135,7 +135,7 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-DoelgerichtDigitaalTransformeren",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-doelgericht-digitaal-transformeren-config.json",
-    "dummy": 14
+    "dummy": 15
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-loongegevens",
@@ -1079,6 +1079,6 @@
     "repository": "https://github.com/Informatievlaanderen/ipdc-lpdc",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-or-voc-config.json",
-    "rebuild": 2
+    "rebuild": 3
   }
 ]
