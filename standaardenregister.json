@@ -1074,5 +1074,11 @@
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-or-voc-config.json",
     "rebuild": 1
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/ipdc-lpdc",
+    "status": "standaard-in-ontwikkeling",
+    "configuration": "ap-or-voc-config.json",
+    "rebuild": 1
   }
 ]
