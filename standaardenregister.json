@@ -1080,5 +1080,11 @@
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-or-voc-config.json",
     "rebuild": 4
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-slimmeStadsdistributie",
+    "status": "standaard-in-ontwikkeling",
+    "configuration": "ap-or-voc-config.json",
+    "rebuild": 1
   }
 ]
