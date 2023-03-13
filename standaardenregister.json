@@ -1073,7 +1073,7 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-visualo",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-or-voc-config.json",
-    "rebuild": 3
+    "rebuild": 4
   },
   {
     "repository": "https://github.com/Informatievlaanderen/ipdc-lpdc",
