@@ -8,7 +8,7 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-verkeersmetingen",
     "status": "standaard-in-ontwikkeling",
     "configuration": "voc-config.json"
-  }
+  },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-FinancieleData",
     "status": "kandidaat-standaard",
