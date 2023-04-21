@@ -276,7 +276,8 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-gebouwEnAdres",
     "status": "kandidaat-standaard",
-    "configuration": "ap-gebouwenregister-config.json"
+    "configuration": "ap-gebouwenregister-config.json",
+    "rebuild": 1
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-gebouwEnAdres",
