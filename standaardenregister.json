@@ -1086,13 +1086,13 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-visualo",
     "status": "kandidaat-standaard",
     "configuration": "ap-config.json",
-    "rebuild": 3
+    "rebuild": 4
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-visualo",
     "status": "kandidaat-standaard",
     "configuration": "voc-config.json",
-    "rebuild": 3
+    "rebuild": 4
   },
   {
     "repository": "https://github.com/Informatievlaanderen/ipdc-lpdc",
