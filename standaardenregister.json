@@ -1086,7 +1086,7 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-visualo",
     "status": "kandidaat-standaard",
     "configuration": "ap-or-voc-config.json",
-    "rebuild": 1
+    "rebuild": 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/ipdc-lpdc",
