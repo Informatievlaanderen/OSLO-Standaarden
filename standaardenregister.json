@@ -1026,7 +1026,7 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-hoppinPunten",
     "status": "erkende-standaard",
     "configuration": "ap-vervoersknooppunten-config.json",
-    "rebuild": 9
+    "rebuild": 10
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-hoppinPunten",
