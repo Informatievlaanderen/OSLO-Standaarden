@@ -153,13 +153,13 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-loongegevens",
     "status": "kandidaat-standaard",
     "configuration": "voc-loongegevens-config.json",
-    "dummy": 9
+    "dummy": 10
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-loongegevens",
     "status": "kandidaat-standaard",
     "configuration": "ap-loongegevens-config.json",
-    "dummy": 9
+    "dummy": 10
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-feitelijkeVerenigingen",
@@ -1014,7 +1014,7 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-Waterkwaliteit",
     "status": "kandidaat-standaard",
     "configuration": "ap-or-voc-waterkwaliteit-config.json",
-    "rebuild": 1
+    "rebuild": 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-GEODCATAPVlaanderen",
