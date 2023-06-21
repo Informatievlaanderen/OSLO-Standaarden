@@ -2,7 +2,7 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-incentiveringsplatform",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-config.json",
-    "rebuild": 4
+    "rebuild": 5
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-verkeersmetingen",
