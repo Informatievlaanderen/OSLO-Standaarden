@@ -156,9 +156,9 @@
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-DoelgerichtDigitaalTransformeren",
-    "status": "kandidaat-standaard",
+    "status": "erkende-standaard",
     "configuration": "ap-cultuurparticipatie-config.json",
-    "dummy": 25
+    "dummy": 26
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-loongegevens",
