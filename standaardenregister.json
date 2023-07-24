@@ -1132,7 +1132,12 @@
     {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenEnWegmarkeringen",
     "status": "standaard-in-ontwikkeling",
-    "configuration": "ap-or-voc-config.json",
-    "rebuild": 2
-  }
+    "configuration": "ap-config.json",
+    "rebuild": 3
+  },
+    {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenEnWegmarkeringen",
+    "status": "standaard-in-ontwikkeling",
+    "configuration": "voc-config.json",
+    "rebuild": 3
 ]
