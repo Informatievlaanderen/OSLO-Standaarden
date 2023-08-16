@@ -8,13 +8,13 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-incentiveringsplatform",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-config.json",
-    "rebuild": 8
+    "rebuild": 9
   },
       {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-incentiveringsplatform",
     "status": "standaard-in-ontwikkeling",
     "configuration": "voc-config.json",
-    "rebuild": 2
+    "rebuild": 3
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-verkeersmetingen",
