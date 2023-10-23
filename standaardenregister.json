@@ -1097,7 +1097,7 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-Leercredential",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-or-voc-leercredential-config.json",
-    "rebuild": 4
+    "rebuild": 5
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-visualo",
