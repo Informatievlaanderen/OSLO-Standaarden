@@ -1,24 +1,35 @@
-[   
-    {
+[
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-vastgoed",
+    "status": "standaard-in-ontwikkeling",
+    "configuration": "ap-config.json",
+    "rebuild": 1
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-vastgoed",
+    "status": "standaard-in-ontwikkeling",
+    "configuration": "voc-config.json",
+    "rebuild": 1
+  },
+  {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-slimRuimtelijkPlannen",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-or-voc-config.json",
     "rebuild": 2
   },
-    
-    {
+  {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-voorwaarden-dienstverlening",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-config.json",
     "rebuild": 1
   },
-    {
+  {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-incentiveringsplatform",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-config.json",
     "rebuild": 10
   },
-      {
+  {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-incentiveringsplatform",
     "status": "standaard-in-ontwikkeling",
     "configuration": "voc-config.json",
@@ -1137,13 +1148,13 @@
     "configuration": "ap-or-voc-config.json",
     "rebuild": 2
   },
-    {
+  {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenEnWegmarkeringen",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-config.json",
     "rebuild": 9
   },
-    {
+  {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenEnWegmarkeringen",
     "status": "standaard-in-ontwikkeling",
     "configuration": "voc-config.json",
