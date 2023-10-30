@@ -3,13 +3,13 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-vastgoed",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-config.json",
-    "rebuild": 1
+    "rebuild": 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-vastgoed",
     "status": "standaard-in-ontwikkeling",
     "configuration": "voc-config.json",
-    "rebuild": 1
+    "rebuild": 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-slimRuimtelijkPlannen",
@@ -1015,12 +1015,6 @@
     "status": "erkende-standaard",
     "rebuild": 3,
     "configuration": "wegen-en-verkeer-config.json"
-  },
-  {
-    "repository": "https://github.com/Informatievlaanderen/OSLOthema-vastgoed",
-    "status": "standaard-in-ontwikkeling",
-    "configuration": "vastgoed-config.json",
-    "rebuild": 4
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-airandwater",
