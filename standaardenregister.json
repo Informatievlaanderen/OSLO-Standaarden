@@ -1104,13 +1104,13 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-visualo",
     "status": "erkende-standaard",
     "configuration": "mijn-applicatieprofiel-ap.json",
-    "rebuild": 8
+    "rebuild": 9
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-visualo",
     "status": "erkende-standaard",
     "configuration": "mijn-vocabularium-voc.json",
-    "rebuild": 8
+    "rebuild": 9
   },
   {
     "repository": "https://github.com/Informatievlaanderen/ipdc-lpdc",
