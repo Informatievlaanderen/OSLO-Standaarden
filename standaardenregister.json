@@ -1141,5 +1141,10 @@
     "status": "standaard-in-ontwikkeling",
     "configuration": "voc-config.json",
     "rebuild": 9
+  }, {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-slimmeRaadpleegOmgeving",
+    "status": "standaard-in-ontwikkeling",
+    "configuration": "ap-cultuurparticipatie-config.json",
+    "rebuild": 1
   }
 ]
