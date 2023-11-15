@@ -1111,7 +1111,7 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-visualo",
     "status": "erkende-standaard",
     "configuration": "voc-config.json",
-    "rebuild": 10
+    "rebuild": 11
   },
   {
     "repository": "https://github.com/Informatievlaanderen/ipdc-lpdc",
