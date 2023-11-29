@@ -1,5 +1,11 @@
 [
   {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-imkl",
+    "status": "standaard-in-ontwikkeling",
+    "configuration": "ap-or-voc-config.json",
+    "rebuild": 1
+  },
+  {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-vastgoed",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-config.json",
@@ -1142,7 +1148,8 @@
     "status": "standaard-in-ontwikkeling",
     "configuration": "voc-config.json",
     "rebuild": 9
-  }, {
+  },
+  {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-slimmeRaadpleegOmgeving",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-slimme-raadpleegomgeving-config.json",
