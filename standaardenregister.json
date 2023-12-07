@@ -27,7 +27,7 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-voorwaarden-dienstverlening",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-config.json",
-    "rebuild": 2
+    "rebuild": 4
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-incentiveringsplatform",
@@ -43,15 +43,15 @@
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-verkeersmetingen",
-    "status": "standaard-in-ontwikkeling",
+    "status": "kandidaat-standaard",
     "configuration": "ap-config.json",
-    "rebuild": 9
+    "rebuild": 11
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-verkeersmetingen",
-    "status": "standaard-in-ontwikkeling",
+    "status": "kandidaat-standaard",
     "configuration": "voc-config.json",
-    "rebuild": 5
+    "rebuild": 7
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-FinancieleData",
