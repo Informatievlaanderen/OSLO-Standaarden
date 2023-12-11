@@ -2,8 +2,14 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-imkl",
     "status": "standaard-in-ontwikkeling",
-    "configuration": "ap-or-voc-config.json",
-    "rebuild": 3
+    "configuration": "ap-nutsvoorzieningen-config.json",
+    "rebuild": 1
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-imkl",
+    "status": "standaard-in-ontwikkeling",
+    "configuration": "voc-nutsvoorzieningen-config.json",
+    "rebuild": 1
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-vastgoed",
