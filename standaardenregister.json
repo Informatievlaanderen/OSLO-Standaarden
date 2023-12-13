@@ -1158,7 +1158,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-slimmeRaadpleegOmgeving",
     "status": "standaard-in-ontwikkeling",
-    "configuration": "slimme-raadpleegomgeving-ap.json",
+    "configuration": "ap-slimme-raadpleegomgeving-config.json",
     "rebuild": 7
   }
 ]
