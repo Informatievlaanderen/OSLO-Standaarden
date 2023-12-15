@@ -3,13 +3,13 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-imkl",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-kabels-en-leidingen-config.json",
-    "rebuild": 2
+    "rebuild": 3
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-imkl",
     "status": "standaard-in-ontwikkeling",
     "configuration": "voc-nutsvoorzieningen-config.json",
-    "rebuild": 2
+    "rebuild": 3
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-vastgoed",
