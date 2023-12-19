@@ -1160,5 +1160,11 @@
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-slimme-raadpleegomgeving-config.json",
     "rebuild": 9
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-lokaleEconomie",
+    "status": "standaard-in-ontwikkeling",
+    "configuration": "ap-lokale-economie-config.json",
+    "rebuild": 1
   }
 ]
