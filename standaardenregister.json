@@ -1159,7 +1159,13 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-slimmeRaadpleegOmgeving",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-slimme-raadpleegomgeving-config.json",
-    "rebuild": 11
+    "rebuild": 12
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-slimmeRaadpleegOmgeving",
+    "status": "standaard-in-ontwikkeling",
+    "configuration": "voc-slimme-raadpleegomgeving-config.json",
+    "rebuild": 01
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-lokaleEconomie",
