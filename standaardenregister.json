@@ -26,8 +26,14 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-slimRuimtelijkPlannen",
     "status": "standaard-in-ontwikkeling",
-    "configuration": "ap-or-voc-config.json",
-    "rebuild": 11
+    "configuration": "ap-config.json",
+    "rebuild": 12
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-slimRuimtelijkPlannen",
+    "status": "standaard-in-ontwikkeling",
+    "configuration": "voc-config.json",
+    "rebuild": 01
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-voorwaarden-dienstverlening",
