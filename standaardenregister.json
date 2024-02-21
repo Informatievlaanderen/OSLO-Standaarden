@@ -1177,7 +1177,7 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-lokaleEconomie",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-lokale-economie-config.json",
-    "rebuild": 6
+    "rebuild": 7
   },
    {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-overlijdensaangifte",
