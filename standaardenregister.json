@@ -1061,7 +1061,7 @@
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-GEODCATAPVlaanderen",
-    "status": "standaard-in-ontwikkeling",
+    "status": "erkende-standaard",
     "configuration": "ap-geodcat-ap-vl-config.json",
     "rebuild": 6
   },
