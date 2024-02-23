@@ -1032,13 +1032,13 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-fietsinfrastructuur",
     "status": "standaard-in-ontwikkeling",
-    "rebuild": 7,
+    "rebuild": 8,
     "configuration": "ap-fietsinfrastructuur-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-fietsinfrastructuur",
     "status": "standaard-in-ontwikkeling",
-    "rebuild": 7,
+    "rebuild": 8,
     "configuration": "voc-fietsinfrastructuur-config.json"
   },
   {
