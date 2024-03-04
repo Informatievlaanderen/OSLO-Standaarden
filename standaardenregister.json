@@ -1195,12 +1195,12 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-overlijdensaangifte",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-overlijdensaangifte-config.json",
-    "rebuild": 3
+    "rebuild": 4
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-overlijdensaangifte",
     "status": "standaard-in-ontwikkeling",
     "configuration": "voc-overlijdensaangifte-config.json",
-    "rebuild": 3
+    "rebuild": 4
   }
 ]
