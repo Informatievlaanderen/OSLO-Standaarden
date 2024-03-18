@@ -1,5 +1,17 @@
 [
   {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-omgevingsvergunning",
+    "status": "kandidaat-standaard",
+    "configuration": "ap-omgevingsvergunning-config.json",
+    "rebuild": 1
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-omgevingsvergunning",
+    "status": "kandidaat-standaard",
+    "configuration": "voc-omgevingsvergunning-config.json",
+    "rebuild": 1
+  },
+  {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-imkl",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-kabels-en-leidingen-config.json",
