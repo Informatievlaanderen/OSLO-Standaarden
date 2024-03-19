@@ -1219,6 +1219,6 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-kindFiche",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-config.json",
-    "rebuild": 1
+    "rebuild": 2
   }
 ]
