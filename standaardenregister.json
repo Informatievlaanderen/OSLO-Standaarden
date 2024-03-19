@@ -1202,8 +1202,8 @@
     "status": "standaard-in-ontwikkeling",
     "configuration": "voc-lokale-economie-config.json",
     "rebuild": 5
-   },
-   {
+  },
+  {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-overlijdensaangifte",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-overlijdensaangifte-config.json",
@@ -1214,5 +1214,11 @@
     "status": "standaard-in-ontwikkeling",
     "configuration": "voc-overlijdensaangifte-config.json",
     "rebuild": 4
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-kindFiche",
+    "status": "standaard-in-ontwikkeling",
+    "configuration": "ap-config.json",
+    "rebuild": 1
   }
 ]
