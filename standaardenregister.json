@@ -69,13 +69,13 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-verkeersmetingen",
     "status": "kandidaat-standaard",
     "configuration": "ap-config.json",
-    "rebuild": 11
+    "rebuild": 12
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-verkeersmetingen",
     "status": "kandidaat-standaard",
     "configuration": "voc-config.json",
-    "rebuild": 7
+    "rebuild": 8
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-FinancieleData",
