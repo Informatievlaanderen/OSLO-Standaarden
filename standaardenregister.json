@@ -1066,12 +1066,6 @@
     "rebuild": 7
   },
   {
-    "repository": "https://github.com/Informatievlaanderen/OSLOthema-Waterkwaliteit",
-    "status": "kandidaat-standaard",
-    "configuration": "ap-or-voc-waterkwaliteit-config.json",
-    "rebuild": 3
-  },
-  {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-GEODCATAPVlaanderen",
     "status": "erkende-standaard",
     "configuration": "ap-geodcat-ap-vl-config.json",
@@ -1220,5 +1214,41 @@
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-config.json",
     "rebuild": 2
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-Waterkwaliteit",
+    "status": "kandidaat-standaard",
+    "configuration": "voc-statistiek-config.json",
+    "rebuild": 1
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-Waterkwaliteit",
+    "status": "kandidaat-standaard",
+    "configuration": "ap-statistiek-config.json",
+    "rebuild": 1
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-Waterkwaliteit",
+    "status": "kandidaat-standaard",
+    "configuration": "voc-datakwaliteit-config.json",
+    "rebuild": 1
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-Waterkwaliteit",
+    "status": "kandidaat-standaard",
+    "configuration": "ap-datakwaliteit-config.json",
+    "rebuild": 1
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-Waterkwaliteit",
+    "status": "kandidaat-standaard",
+    "configuration": "ap-waterkwaliteit-config.json",
+    "rebuild": 1
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-Waterkwaliteit",
+    "status": "kandidaat-standaard",
+    "configuration": "voc-waterkwaliteit-config.json",
+    "rebuild": 1
   }
 ]
