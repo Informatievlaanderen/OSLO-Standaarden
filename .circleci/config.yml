@@ -157,33 +157,33 @@ jobs:
           name: Checkout target repository
           workdir: /tmp
           command: |
-            rm -rf OSLO-StandaardenregisterGenerated
-            git clone git@github.com:Informatievlaanderen/OSLO-StandaardenregisterGenerated.git
+            rm -rf OSLO-Standaardenregister
+            git clone git@github.com:Informatievlaanderen/OSLO-Standaardenregister.git
       - run:
-          name: Switch to nuxt branch in target repository
-          workdir: /tmp/OSLO-StandaardenregisterGenerated
+          name: Switch to circleCI branch in target repository
+          workdir: /tmp/OSLO-Standaardenregister
           command: |
-            git checkout nuxt
+            git checkout circleCI
             git fetch origin
       - run:
           name: Copy new content to Nuxt content folder
           workdir: /tmp/workspace
           command: |
-            mkdir -p /tmp/OSLO-StandaardenregisterGenerated/content/standards
-            cp -r nuxt/* /tmp/OSLO-StandaardenregisterGenerated/content/standards
+            mkdir -p /tmp/OSLO-Standaardenregister/content/standaarden
+            cp -r nuxt/* /tmp/OSLO-Standaardenregister/content/standaarden
       - run:
           name: Copy statistics to Nuxt content folder
           workdir: /tmp/workspace
           command: |
-            cp statistics.json /tmp/OSLO-StandaardenregisterGenerated/content/statistics.json
+            cp statistics.json /tmp/OSLO-Standaardenregister/content/statistics.json
       - run:
           name: Insert the commit on the Nuxt branch
           command: |
             export TAG=`echo "${CIRCLE_SHA1}"`
-            echo "{\"commit\" : \"$TAG\"}" > /tmp/OSLO-StandaardenregisterGenerated/commit.json
+            echo "{\"commit\" : \"$TAG\"}" > /tmp/OSLO-Standaardenregister/commit.json
       - run:
-          name: Push results to 'nuxt' branch of OSLO-StandaardenregisterGenerated
-          workdir: /tmp/OSLO-StandaardenregisterGenerated
+          name: Push results to 'CircleCI' branch of OSLO-Standaardenregister
+          workdir: /tmp/OSLO-Standaardenregister
           command: |
             git config user.email "oslo@oslo"
             git config user.name "Circle CI Builder"
@@ -192,7 +192,7 @@ jobs:
             git commit -m "Applying changes from commit ${CIRCLE_SHA1}" --allow-empty
             export TAG=`echo "${CIRCLE_SHA1}" | cut -c1-15`
             git tag "${TAG}"
-            git push --force origin nuxt
+            git push --force origin circleCI
 workflows:
   version: 2
   create_detail_page:
@@ -214,4 +214,3 @@ workflows:
           requires:
             - render-html
             - create-statistics
-
