@@ -1219,36 +1219,36 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-Waterkwaliteit",
     "status": "kandidaat-standaard",
     "configuration": "voc-statistiek-config.json",
-    "rebuild": 1
+    "rebuild": 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-Waterkwaliteit",
     "status": "kandidaat-standaard",
     "configuration": "ap-statistiek-config.json",
-    "rebuild": 1
+    "rebuild": 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-Waterkwaliteit",
     "status": "kandidaat-standaard",
     "configuration": "voc-datakwaliteit-config.json",
-    "rebuild": 1
+    "rebuild": 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-Waterkwaliteit",
     "status": "kandidaat-standaard",
     "configuration": "ap-datakwaliteit-config.json",
-    "rebuild": 1
+    "rebuild": 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-Waterkwaliteit",
     "status": "kandidaat-standaard",
     "configuration": "ap-waterkwaliteit-config.json",
-    "rebuild": 1
+    "rebuild": 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-Waterkwaliteit",
     "status": "kandidaat-standaard",
     "configuration": "voc-waterkwaliteit-config.json",
-    "rebuild": 1
+    "rebuild": 2
   }
 ]
