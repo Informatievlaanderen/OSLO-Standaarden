@@ -14,12 +14,14 @@ do
   REPO_NAME=$(echo "$line" | cut -d ":" -f 1)
   CONFIG_NAME=$(echo "$line" | cut -d ":" -f 2 | cut -d "." -f 1)
 
-  echo "REPONAME: $REPO_NAME"
-  echo "CONFIgNAME: $CONFIG_NAME"
+  echo "REPO_NAME: $REPO_NAME"
+  echo "CONFIG_NAME: $CONFIG_NAME"
 
   cd "$REPODIR/$REPO_NAME"
 
   SPEC_NAME=$(jq -r '.title' "$CONFIG_NAME.json")
+
+  echo "SPEC_NAME: $SPEC_NAME"
   ## DESCRIPTION_NAME=$(jq -r '.beschrijving' "$CONFIG_NAME.json")
 
   ## Normalizing spec name to be used as directory name

@@ -212,9 +212,11 @@ workflows:
             - extract-info
       - prepare-nuxt:
           requires:
+            - create-statistics
             - extract-info
       - push-to-nuxt:
           requires:
+            - create-statistics
             - prepare-nuxt
       - push-to-repository:
           requires:
