@@ -210,6 +210,12 @@ workflows:
       - create-statistics:
           requires:
             - extract-info
+      - prepare-nuxt:
+          requires:
+            - extract-info
+      - push-to-nuxt:
+          requires:
+            - prepare-nuxt
       - push-to-repository:
           requires:
             - render-html
