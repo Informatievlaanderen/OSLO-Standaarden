@@ -19,7 +19,9 @@ do
 
   cd "$REPODIR/$REPO_NAME"
 
-  SPEC_NAME=$(jq -r '.title' "$CONFIG_NAME.json")
+
+  ## this needs to change to .title if the new json structure is used
+  SPEC_NAME=$(jq -r '.naam' "$CONFIG_NAME.json")
 
   echo "SPEC_NAME: $SPEC_NAME"
   ## DESCRIPTION_NAME=$(jq -r '.beschrijving' "$CONFIG_NAME.json")
