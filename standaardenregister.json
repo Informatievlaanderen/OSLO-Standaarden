@@ -1250,5 +1250,11 @@
     "status": "kandidaat-standaard",
     "configuration": "voc-waterkwaliteit-config.json",
     "rebuild": 3
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-studentenattesten",
+    "status": "ontwerp-standaard",
+    "configuration": "ap-studentenattesten-config.json",
+    "rebuild": 1
   }
 ]
