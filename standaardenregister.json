@@ -12,6 +12,12 @@
     "rebuild": 4
   },
   {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-schuldbeheer",
+    "status": "standaard-in-ontwikkeling",
+    "configuration": "ap-schuldbeheer-config.json",
+    "rebuild": 1
+  },
+  {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-imkl",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-kabels-en-leidingen-config.json",
