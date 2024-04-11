@@ -1255,6 +1255,6 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-studentenattesten",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-studentenattesten-config.json",
-    "rebuild": 4
+    "rebuild": 5
   }
 ]
