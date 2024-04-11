@@ -1201,13 +1201,19 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-overlijdensaangifte",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-overlijdensaangifte-config.json",
-    "rebuild": 4
+    "rebuild": 5
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-overlijdensaangifte",
     "status": "standaard-in-ontwikkeling",
     "configuration": "voc-overlijdensaangifte-config.json",
-    "rebuild": 4
+    "rebuild": 5
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-overlijdensaangifte",
+    "status": "standaard-in-ontwikkeling",
+    "configuration": "voc-gezondheidstoestand-config.json",
+    "rebuild": 1
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-kindFiche",
