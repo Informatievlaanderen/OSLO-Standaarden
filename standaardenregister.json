@@ -15,7 +15,7 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-schuldbeheer",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-schuldbeheer-config.json",
-    "rebuild": 2
+    "rebuild": 3
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-imkl",
