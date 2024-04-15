@@ -7,6 +7,7 @@ PUBLISHEDIMAGE := $(shell if [ -f PUBLISHED ]; then cat PUBLISHED; else echo $(D
 
 prepare:
 	mkdir -p content
+	echo ${Dpwd} | docker login -u ${DUser} ${Dregistry} --password-stdin
 
 
 # first build-base should have been run
