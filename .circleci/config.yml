@@ -151,6 +151,9 @@ workflows:
   create_detail_page:
     jobs:
       - checkout
+      - build-state:
+          requires:
+            - checkout
       - extract-info:
           requires:
             - checkout
@@ -166,9 +169,9 @@ workflows:
       - prepare-nuxt:
           requires:
             - create-statistics
-      - build-state:
-          requires:
-            - prepare-nuxt
+#      - build-state:
+#          requires:
+#            - prepare-nuxt
 #      - push-to-nuxt:
 #          requires:
 #            - prepare-nuxt
