@@ -267,7 +267,7 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-mobiliteitDienstregelingEnPlanning",
     "status": "erkende-standaard",
     "configuration": "voc-dienstregeling-en-planning-config.json",
-    "rebuild": 1
+    "rebuild": 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-persoon",
