@@ -643,37 +643,37 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "status": "erkende-standaard",
-    "rebuild": 1,
+    "rebuild": 2,
     "configuration": "ap-begraafplaatesenbeheer-2-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "status": "erkende-standaard",
-    "rebuild": 1,
+    "rebuild": 2,
     "configuration": "ap-begraafplaatsen-2-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "status": "erkende-standaard",
-    "rebuild": 1,
+    "rebuild": 2,
     "configuration": "ap-begroeid-voorkomen-2-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "status": "erkende-standaard",
-    "rebuild": 1,
+    "rebuild": 2,
     "configuration": "ap-gebieden-2-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "status": "erkende-standaard",
-    "rebuild": 1,
+    "rebuild": 2,
     "configuration": "ap-infrastructuurelementen-2-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "status": "erkende-standaard",
-    "rebuild": 1,
+    "rebuild": 2,
     "configuration": "ap-onbegroeid-voorkomen-2-config.json"
   },
   {
