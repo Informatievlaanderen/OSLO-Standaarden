@@ -1165,7 +1165,7 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-moBurgers",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-or-voc-config.json",
-    "rebuild": 3
+    "rebuild": 4
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenEnWegmarkeringen",
