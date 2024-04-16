@@ -237,13 +237,13 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-feitelijkeVerenigingen",
     "status": "kandidaat-standaard",
     "configuration": "voc-feitelijke-verenigingen-config.json",
-    "dummy": 3
+    "dummy": 4
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-feitelijkeVerenigingen",
     "status": "kandidaat-standaard",
     "configuration": "ap-feitelijke-verenigingen-config.json",
-    "dummy": 2
+    "dummy": 3
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-mobiliteitDienstregelingEnPlanning",
