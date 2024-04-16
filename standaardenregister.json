@@ -1164,8 +1164,14 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-moBurgers",
     "status": "standaard-in-ontwikkeling",
-    "configuration": "ap-or-voc-config.json",
-    "rebuild": 7
+    "configuration": "ap-mobiliteitsbudget-config.json",
+    "rebuild": 8
+  },
+   {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-moBurgers",
+    "status": "standaard-in-ontwikkeling",
+    "configuration": "voc-mobiliteitsbudget-config.json",
+    "rebuild": 8
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenEnWegmarkeringen",
