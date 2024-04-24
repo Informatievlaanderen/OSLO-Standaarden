@@ -75,6 +75,68 @@ jobs:
           root: /tmp/workspace
           paths:
             - statistics.json
+  prepare-nuxt:
+    docker:
+      - image: circleci/python
+    steps:
+      - checkout
+      - attach_workspace:
+          at: /tmp/workspace
+      - run: bash $PWD/scripts/copy-to-nuxt.sh /tmp/workspace
+      - persist_to_workspace:
+          root: /tmp/workspace
+          paths:
+            - nuxt/
+  push-to-nuxt:
+    docker:
+      - image: circleci/node
+    steps:
+      - checkout
+      - attach_workspace:
+          at: /tmp/workspace
+      - add_ssh_keys:
+          fingerprints:
+            - "81:37:0b:68:3b:e9:c9:64:b8:f2:1f:c9:03:46:74:b0"
+      - run:
+          name: Checkout target repository
+          workdir: /tmp
+          command: |
+            rm -rf OSLO-Standaardenregister
+            git clone git@github.com:Informatievlaanderen/OSLO-Standaardenregister.git
+      - run:
+          name: Switch to circleCI branch in target repository
+          workdir: /tmp/OSLO-Standaardenregister
+          command: |
+            git checkout circleCI
+            git fetch origin
+      - run:
+          name: Copy new content to Nuxt content folder
+          workdir: /tmp/workspace
+          command: |
+            mkdir -p /tmp/OSLO-Standaardenregister/content/standaarden
+            cp -r nuxt/* /tmp/OSLO-Standaardenregister/content/standaarden
+      - run:
+          name: Copy statistics to Nuxt content folder
+          workdir: /tmp/workspace
+          command: |
+            cp statistics.json /tmp/OSLO-Standaardenregister/content/statistics.json
+      - run:
+          name: Insert the commit on the Nuxt branch
+          command: |
+            export TAG=`echo "${CIRCLE_SHA1}"`
+            echo "{\"commit\" : \"$TAG\"}" > /tmp/OSLO-Standaardenregister/commit.json
+      - run:
+          name: Push results to 'CircleCI' branch of OSLO-Standaardenregister
+          workdir: /tmp/OSLO-Standaardenregister
+          command: |
+            git config user.email "oslo@oslo"
+            git config user.name "Circle CI Builder"
+            git add .
+            git status
+            git commit -m "Applying changes from commit ${CIRCLE_SHA1}" --allow-empty
+            export TAG=`echo "${CIRCLE_SHA1}" | cut -c1-15`
+            git tag "${TAG}"
+            git push --force origin circleCI
   build-state:
     docker:
       - image: cimg/deploy:2024.03
@@ -90,6 +152,9 @@ jobs:
       - run:
           name: prepare content (TODO )
           command: mkdir -p /tmp/workspace/content/standaarden
+      - run:
+          name: list content
+          command: ls -l /tmp/workspace/content/standaarden
       - run:
           name: Checkout target repository
           workdir: /tmp
@@ -169,68 +234,6 @@ jobs:
             export TAG=`echo "${CIRCLE_SHA1}" | cut -c1-15`
             git tag "${TAG}"
             git push --force origin master
-  prepare-nuxt:
-    docker:
-      - image: circleci/python
-    steps:
-      - checkout
-      - attach_workspace:
-          at: /tmp/workspace
-      - run: bash $PWD/scripts/copy-to-nuxt.sh /tmp/workspace
-      - persist_to_workspace:
-          root: /tmp/workspace
-          paths:
-            - nuxt/
-  push-to-nuxt:
-    docker:
-      - image: circleci/node
-    steps:
-      - checkout
-      - attach_workspace:
-          at: /tmp/workspace
-      - add_ssh_keys:
-          fingerprints:
-            - "81:37:0b:68:3b:e9:c9:64:b8:f2:1f:c9:03:46:74:b0"
-      - run:
-          name: Checkout target repository
-          workdir: /tmp
-          command: |
-            rm -rf OSLO-Standaardenregister
-            git clone git@github.com:Informatievlaanderen/OSLO-Standaardenregister.git
-      - run:
-          name: Switch to circleCI branch in target repository
-          workdir: /tmp/OSLO-Standaardenregister
-          command: |
-            git checkout circleCI
-            git fetch origin
-      - run:
-          name: Copy new content to Nuxt content folder
-          workdir: /tmp/workspace
-          command: |
-            mkdir -p /tmp/OSLO-Standaardenregister/content/standaarden
-            cp -r nuxt/* /tmp/OSLO-Standaardenregister/content/standaarden
-      - run:
-          name: Copy statistics to Nuxt content folder
-          workdir: /tmp/workspace
-          command: |
-            cp statistics.json /tmp/OSLO-Standaardenregister/content/statistics.json
-      - run:
-          name: Insert the commit on the Nuxt branch
-          command: |
-            export TAG=`echo "${CIRCLE_SHA1}"`
-            echo "{\"commit\" : \"$TAG\"}" > /tmp/OSLO-Standaardenregister/commit.json
-      - run:
-          name: Push results to 'CircleCI' branch of OSLO-Standaardenregister
-          workdir: /tmp/OSLO-Standaardenregister
-          command: |
-            git config user.email "oslo@oslo"
-            git config user.name "Circle CI Builder"
-            git add .
-            git status
-            git commit -m "Applying changes from commit ${CIRCLE_SHA1}" --allow-empty
-            export TAG=`echo "${CIRCLE_SHA1}" | cut -c1-15`
-            git tag "${TAG}"
-            git push --force origin circleCI
 workflows:
   version: 2
   create_detail_page:
