@@ -6,7 +6,7 @@ VERSION := $(shell cat VERSION)
 PUBLISHEDIMAGE := $(shell if [ -f PUBLISHED ]; then cat PUBLISHED; else echo $(DOCKER_IMAGE); fi)
 
 prepare:
-	mkdir -p content
+	mkdir -p content/standaarden
 	echo ${Dpwd} | docker login -u ${DUser} ${Dregistry} --password-stdin
 
 
