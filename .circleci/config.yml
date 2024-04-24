@@ -89,10 +89,27 @@ jobs:
           command: make prepare
       - run:
           name: prepare content (TODO )
-          command: mkdir -p /tmp/workspace/content
+          command: mkdir -p /tmp/workspace/content/standaarden
+      - run:
+          name: Checkout target repository
+          workdir: /tmp
+          command: |
+            rm -rf OSLO-Standaardenregister
+            git clone git@github.com:Informatievlaanderen/OSLO-Standaardenregister.git
+      - run:
+          name: Switch to circleCI branch in target repository
+          workdir: /tmp/OSLO-Standaardenregister
+          command: |
+            git checkout circleCI
+            git fetch origin
+      - run:
+          name: Copy new content to Nuxt content folder
+          workdir: /tmp/workspace
+          command: |
+            cp -r /tmp/OSLO-Standaardenregister/content/standaarden /tmp/workspace/content/standaarden
       - run:
           name: build image
-          command: make build 
+          command: make build
       - run:
           name: push new image
           command: make publish
@@ -219,9 +236,6 @@ workflows:
   create_detail_page:
     jobs:
       - checkout
-      - build-state:
-          requires:
-            - checkout
       - extract-info:
           requires:
             - checkout
@@ -231,9 +245,11 @@ workflows:
       - prepare-nuxt:
           requires:
             - create-statistics
-#      - build-state:
-#          requires:
-#            - prepare-nuxt
-#      - push-to-nuxt:
-#          requires:
-#            - prepare-nuxt
+      - push-to-nuxt:
+          requires:
+            - prepare-nuxt
+      - build-state:
+          requires:
+            - checkout
+            - prepare-nuxt
+            - push-to-nuxt
