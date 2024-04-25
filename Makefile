@@ -6,9 +6,16 @@ VERSION := $(shell cat VERSION)
 PUBLISHEDIMAGE := $(shell if [ -f PUBLISHED ]; then cat PUBLISHED; else echo $(DOCKER_IMAGE); fi)
 
 prepare:
-	mkdir -p content/standaarden
 	echo ${Dpwd} | docker login -u ${DUser} ${Dregistry} --password-stdin
+	mkdir -p content/standaarden
 
+content:
+	git clone git@github.com:Informatievlaanderen/OSLO-Standaardenregister.git && \
+    cd OSLO-Standaardenregister && \
+    git checkout circleCI && \
+    ls && \
+    cp -R ./content/standaarden/* ../content/standaarden/
+	rm -rf OSLO-Standaardenregister
 
 # first build-base should have been run
 build:
@@ -27,3 +34,7 @@ publish:
 publish-latest:
 	docker tag informatievlaanderen/standaardenregister-run:latest ${PUBLISHEDIMAGE}:latest
 	docker push ${PUBLISHEDIMAGE}:latest
+
+cleanup:
+	rm -rf OSLO-Standaardenregister
+	rm -rf content
