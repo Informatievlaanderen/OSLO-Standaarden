@@ -187,6 +187,9 @@ jobs:
           name: list content
           command: ls -l /tmp/OSLO-Standaardenregister/content/standaarden
       - run:
+          name: list root content
+          command: ls -l ./
+      - run:
           name: build image
           command: make build
       - run:
