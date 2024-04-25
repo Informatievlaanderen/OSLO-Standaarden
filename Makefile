@@ -4,9 +4,9 @@ export
 VERSION := $(shell cat VERSION)
 # PUBLISHED is a file that contains the docker image to publish to. If it doesn't exist, use the default DOCKER_IMAGE which is an enviorment variable in CI
 PUBLISHEDIMAGE := $(shell if [ -f PUBLISHED ]; then cat PUBLISHED; else echo $(DOCKER_IMAGE); fi)
-# echo ${Dpwd} | docker login -u ${DUser} ${Dregistry} --password-stdin
 
 prepare:
+	echo ${Dpwd} | docker login -u ${DUser} ${Dregistry} --password-stdin
 	mkdir -p content/standaarden
 
 fetch-content:
