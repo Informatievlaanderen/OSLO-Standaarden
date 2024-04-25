@@ -171,7 +171,7 @@ jobs:
           name: Copy new content to Nuxt content folder
           workdir: /tmp/workspace
           command: |
-            cp -r /tmp/OSLO-Standaardenregister/content/standaarden /tmp/workspace/content/standaarden
+            cp -R /tmp/OSLO-Standaardenregister/content/standaarden/* /tmp/workspace/content/standaarden/
       - run:
           name: list content
           command: ls -l /tmp/workspace/content/standaarden
