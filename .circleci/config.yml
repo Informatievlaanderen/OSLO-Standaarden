@@ -151,7 +151,7 @@ jobs:
           command: make prepare
       - run:
           name: fetch all the content
-          command: make content
+          command: make fetch-content
       - run:
           name: build image
           command: make build
