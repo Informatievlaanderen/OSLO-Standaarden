@@ -150,58 +150,17 @@ jobs:
           name: prepare environment image
           command: make prepare
       - run:
-          name: prepare content (TODO )
-          command: mkdir -p /tmp/workspace/content/standaarden
-      - run:
-          name: prepare content (TODO )
-          command: mkdir -p /content/standaarden
-      - run:
-          name: list content
-          command: ls -l /tmp/
-      - run:
-          name: Checkout target repository
-          workdir: /tmp
-          command: |
-            rm -rf OSLO-Standaardenregister
-            git clone git@github.com:Informatievlaanderen/OSLO-Standaardenregister.git
-      - run:
-          name: Switch to circleCI branch in target repository
-          workdir: /tmp/OSLO-Standaardenregister
-          command: |
-            git checkout circleCI
-            git fetch origin
-      - run:
-          name: Copy new content to Nuxt content folder
-          workdir: /tmp/workspace
-          command: |
-            cp -R /tmp/OSLO-Standaardenregister/content/standaarden/* /tmp/workspace/content/standaarden/
-      - run:
-          name: Copy new content to the root folder
-          workdir: /tmp/workspace
-          command: |
-            cp -R /tmp/OSLO-Standaardenregister/content/standaarden/* /content/standaarden/
-      - run:
-          name: list content
-          command: ls -l /tmp/workspace/content/standaarden
-      - run:
-          name: list content
-          command: ls -l /tmp/OSLO-Standaardenregister/content/standaarden
-      - run:
-          name: list root content
-          command: ls -l ./
+          name: fetch all the content
+          command: make content
       - run:
           name: build image
           command: make build
       - run:
-          working_directory: /tmp/workspace
-          name: list content
-          command: ls ./content
-      - run:
-          name: list content
-          command: ls ./content/standaarden
-      - run:
           name: push new image
           command: make publish
+      - run:
+          name: cleanup after build and push
+          command: make cleanup
   push-to-repository:
     docker:
       - image: circleci/node
