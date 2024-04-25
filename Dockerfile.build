@@ -5,6 +5,10 @@ WORKDIR /app
 
 ADD ./content /app/content
 
+# List the content of the ./content directory
+RUN ls -la /app/content
+RUN ls -la ./content
+
 RUN npm run build
 
 FROM node:20-alpine
