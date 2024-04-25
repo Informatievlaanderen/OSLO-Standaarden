@@ -179,8 +179,21 @@ jobs:
           name: list content
           command: ls -l /tmp/OSLO-Standaardenregister/content/standaarden
       - run:
+          working_directory: /tmp/workspace
           name: build image
           command: make build
+      - run:
+          working_directory: /tmp/workspace
+          name: list content
+          command: ls -l ./
+      - run:
+          working_directory: /tmp/workspace
+          name: list content
+          command: ls -l ./content
+      - run:
+          working_directory: /tmp/workspace
+          name: list content
+          command: ls -l ./content/standaarden
       - run:
           name: push new image
           command: make publish
