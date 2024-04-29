@@ -105,6 +105,9 @@ jobs:
       - run:
           name: List the files which have been created
           command: ls -al /tmp/workspace
+      - run:
+          name: List the files which have been created
+          command: ls -al /tmp/workspace/nuxt
       - run: bash $PWD/scripts/sanitize-configurations.sh /tmp/workspace/nuxt
       - persist_to_workspace:
           root: /tmp/workspace
