@@ -4,7 +4,7 @@ FROM terraformtestcontainerregistry.azurecr.io/oslo2/standaardenregister-base:${
 WORKDIR /app
 
 # Remove existing directories (if any from base image)
-RUN rm -rf /app/content/standaarden
+RUN if [ -d "/app/content/standaarden" ]; then rm -rf /app/content/standaarden; fi
 
 # Copy all items from the content/standaarden directory
 COPY content/standaarden /app/content/standaarden
