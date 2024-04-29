@@ -29,7 +29,7 @@ do
   echo "DESCRIPTION_NAME: $DESCRIPTION_NAME"
 
   ## Normalizing spec name to be used as directory name
-  NORMALIZED_SPEC_NAME="$(echo $SPEC_NAME | tr -c '[:alnum:]\n\r' '-' | tr -s '-' | tr '[:upper:]' '[:lower:]')"
+  NORMALIZED_SPEC_NAME="$(echo $SPEC_NAME | iconv -f utf8 -t ascii//TRANSLIT | tr -c '[:alnum:]\n\r' '-' | tr -s '-' | tr '[:upper:]' '[:lower:]')"
 
   echo "NORMALIZED_SPEC_NAME: $NORMALIZED_SPEC_NAME"
 
