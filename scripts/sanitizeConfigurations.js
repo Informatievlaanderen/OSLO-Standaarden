@@ -61,7 +61,7 @@ const sanitizeConfiguration = (configuration) => {
     return sanitizedConfiguration;
 };
 const writeSanitizedConfiguration = (sanitizedConfiguration, dir, innerFile) => __awaiter(void 0, void 0, void 0, function* () {
-    const directoryPath = path_1.default.join(__dirname, 'nuxt-sanitized/standaarden', dir);
+    const directoryPath = path_1.default.join(__dirname, '/tmp/workspace/nuxt-sanitized', dir);
     try {
         // Ensure the directory exists
         yield fs_1.default.promises.mkdir(directoryPath, { recursive: true });
@@ -78,7 +78,7 @@ const sanitizeAndReadConfigurations = () => __awaiter(void 0, void 0, void 0, fu
     try {
         console.log('Sanitizing configurations...');
         let sanitizedConfigurations = [];
-        const directoryPath = path_1.default.join(__dirname, 'nuxt/');
+        const directoryPath = path_1.default.join(__dirname, '/tmp/workspace/nuxt');
         const dirs = yield fs_1.default.promises.readdir(directoryPath);
         const promises = dirs.map((dir) => __awaiter(void 0, void 0, void 0, function* () {
             const fullPath = path_1.default.join(directoryPath, dir);
@@ -87,7 +87,7 @@ const sanitizeAndReadConfigurations = () => __awaiter(void 0, void 0, void 0, fu
                 const innerFiles = yield fs_1.default.promises.readdir(fullPath);
                 for (const innerFile of innerFiles) {
                     const fullPathToFile = path_1.default.join(fullPath, innerFile);
-                    const destinationPath = path_1.default.join(__dirname, 'nuxt-sanitized/standaarden', dir, innerFile);
+                    const destinationPath = path_1.default.join(__dirname, '/tmp/workspace/nuxt-sanitized', dir, innerFile);
                     if (path_1.default.extname(innerFile) === '.json') {
                         const data = yield fs_1.default.promises.readFile(fullPathToFile, 'utf8');
                         try {
