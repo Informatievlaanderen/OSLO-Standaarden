@@ -93,10 +93,13 @@ jobs:
     docker:
       - image: circleci/node
     steps:
+      - run:
+          name: List the files which have been created
+          command: ls -al /tmp/workspace/*
       - checkout
       - attach_workspace:
           at: /tmp/workspace
-      - run: bash $PWD/scripts/sanitize-configurations.sh /tmp/workspace
+      - run: bash $PWD/scripts/sanitize-configurations.sh /tmp/workspace/nuxt
       - persist_to_workspace:
           root: /tmp/workspace
           paths:
@@ -250,6 +253,7 @@ workflows:
             - prepare-nuxt
       - push-to-nuxt:
           requires:
+            - convert-nuxt
             - prepare-nuxt
       - build-state:
           requires:
