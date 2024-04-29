@@ -78,7 +78,7 @@ const sanitizeAndReadConfigurations = () => __awaiter(void 0, void 0, void 0, fu
     try {
         console.log('Sanitizing configurations...');
         let sanitizedConfigurations = [];
-        const directoryPath = path_1.default.join(__dirname, 'content/standaarden');
+        const directoryPath = path_1.default.join(__dirname, 'nuxt/');
         const dirs = yield fs_1.default.promises.readdir(directoryPath);
         const promises = dirs.map((dir) => __awaiter(void 0, void 0, void 0, function* () {
             const fullPath = path_1.default.join(directoryPath, dir);
