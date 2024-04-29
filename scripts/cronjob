@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Define the image and service
+IMAGE_NAME="terraformtestcontainerregistry.azurecr.io/oslo2/oslo-standaardenregister-run"
+SERVICE_NAME="oslo_dev-standardsregister"
+
+# Get the SHA of the current image
+CURRENT_IMAGE=$(docker service inspect --format '{{ (.Spec.TaskTemplate.ContainerSpec.Image) }}' $SERVICE_NAME)
+CURRENT_IMAGE_SHA=$(docker inspect --format='{{.Id}}' $CURRENT_IMAGE)
+
+# Pull the latest version of the image
+docker pull $IMAGE_NAME:latest
+
+LATEST_IMAGE_SHA=$(docker inspect --format='{{.Id}}' $IMAGE_NAME:latest)
+
+echo $CURRENT_IMAGE_SHA
+echo $LATEST_IMAGE_SHA
+
+# If the SHAs are different, update the service
+if [ "$CURRENT_IMAGE_SHA" != "$LATEST_IMAGE_SHA" ]; then
+  docker service update --image $IMAGE_NAME:latest $SERVICE_NAME --force
+fi
