@@ -14,6 +14,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const fs_1 = __importDefault(require("fs"));
 const path_1 = __importDefault(require("path"));
+const GITHUB_BASE_URL = "https://raw.githubusercontent.com/Informatievlaanderen";
+const STANDAARDENREGISTER_BRANCH = "standaardenregister";
+const DOCUMENTS = "documents";
+const REPORTS = "reports";
+const PRESENTATIONS = "presentations";
+const CHARTER = "charter";
 const sanitizeDocument = (document) => {
     try {
         const sanitizedDocument = {};
@@ -30,6 +36,55 @@ const cleanupConfig = (config) => {
     delete config.fileName;
     delete config.status;
     return config;
+};
+const convertFileToUri = (resourceReference, folder, path) => {
+    const parts = path === null || path === void 0 ? void 0 : path.split("/");
+    const standardName = parts === null || parts === void 0 ? void 0 : parts[parts.length - 2];
+    let uri = `${GITHUB_BASE_URL}/${standardName}/${STANDAARDENREGISTER_BRANCH}/${folder}/${resourceReference}`;
+    return uri;
+};
+const isUrl = (str) => {
+    try {
+        if (!str)
+            return false;
+        const regex = /^https?:\/\/([a-z\d-]+(\.[a-z\d-]+)*\.[a-z]{2,}|(\d{1,3}\.){3}\d{1,3})(:\d+)?(\/\S*)?$/i;
+        return regex.test(str);
+    }
+    catch (error) {
+        console.error("Error: unable to validate the url", error);
+        throw error;
+    }
+};
+const convertResourceReferenceToUri = (document, folder, path) => {
+    var _a;
+    const navigationLink = {
+        name: document === null || document === void 0 ? void 0 : document.name,
+        resourceReference: isUrl(document === null || document === void 0 ? void 0 : document.resourceReference)
+            ? document === null || document === void 0 ? void 0 : document.resourceReference
+            : convertFileToUri((_a = document.resourceReference) !== null && _a !== void 0 ? _a : "", folder, path),
+    };
+    return navigationLink;
+};
+const convertToStandard = (configuration) => {
+    var _a, _b, _c, _d, _e;
+    const standard = {
+        title: configuration === null || configuration === void 0 ? void 0 : configuration.title,
+        category: configuration === null || configuration === void 0 ? void 0 : configuration.category,
+        usage: configuration === null || configuration === void 0 ? void 0 : configuration.usage,
+        status: (_a = configuration.status) !== null && _a !== void 0 ? _a : "TBD",
+        descriptionFileName: configuration === null || configuration === void 0 ? void 0 : configuration.descriptionFileName,
+        responsibleOrganisation: configuration === null || configuration === void 0 ? void 0 : configuration.responsibleOrganisation,
+        publicationDate: configuration === null || configuration === void 0 ? void 0 : configuration.publicationDate,
+        specificationDocuments: ((_b = configuration === null || configuration === void 0 ? void 0 : configuration.specificationDocuments) === null || _b === void 0 ? void 0 : _b.map((document) => convertResourceReferenceToUri(document, DOCUMENTS, configuration.fileName))) || [],
+        documentation: ((_c = configuration === null || configuration === void 0 ? void 0 : configuration.documentation) === null || _c === void 0 ? void 0 : _c.map((document) => convertResourceReferenceToUri(document, DOCUMENTS, configuration.fileName))) || [],
+        reports: ((_d = configuration === null || configuration === void 0 ? void 0 : configuration.reports) === null || _d === void 0 ? void 0 : _d.map((document) => convertResourceReferenceToUri(document, REPORTS, configuration.fileName))) || [],
+        charter: convertResourceReferenceToUri(configuration === null || configuration === void 0 ? void 0 : configuration.charter, CHARTER, configuration.fileName),
+        presentations: ((_e = configuration === null || configuration === void 0 ? void 0 : configuration.presentations) === null || _e === void 0 ? void 0 : _e.map((document) => convertResourceReferenceToUri(document, PRESENTATIONS, configuration.fileName))) || [],
+        dateOfRegistration: configuration === null || configuration === void 0 ? void 0 : configuration.dateOfRegistration,
+        dateOfAcknowledgementByWorkingGroup: configuration === null || configuration === void 0 ? void 0 : configuration.dateOfAcknowledgementByWorkingGroup,
+        dateOfAcknowledgementBySteeringCommittee: configuration === null || configuration === void 0 ? void 0 : configuration.dateOfAcknowledgementBySteeringCommittee,
+    };
+    return standard;
 };
 // Convert values into TRUE/FALSE statements for validation of the fields
 // TODO: Can this be done cleaner?
@@ -60,13 +115,13 @@ const sanitizeConfiguration = (configuration) => {
     };
     return sanitizedConfiguration;
 };
-const writeSanitizedConfiguration = (sanitizedConfiguration, dir, innerFile) => __awaiter(void 0, void 0, void 0, function* () {
+const writeStandard = (standard, dir, innerFile) => __awaiter(void 0, void 0, void 0, function* () {
     const directoryPath = path_1.default.join('/tmp/workspace/nuxt-sanitized', dir);
     try {
         // Ensure the directory exists
         yield fs_1.default.promises.mkdir(directoryPath, { recursive: true });
         // Convert the object to a JSON string with indentation
-        const data = JSON.stringify(sanitizedConfiguration, null, 2);
+        const data = JSON.stringify(standard, null, 2);
         // Write the data to a file in the new directory
         yield fs_1.default.promises.writeFile(path_1.default.join(directoryPath, innerFile), data, 'utf8');
     }
@@ -77,7 +132,7 @@ const writeSanitizedConfiguration = (sanitizedConfiguration, dir, innerFile) => 
 const sanitizeAndReadConfigurations = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
         console.log('Sanitizing configurations...');
-        let sanitizedConfigurations = [];
+        let standards = [];
         const directoryPath = '/tmp/workspace/nuxt';
         const dirs = yield fs_1.default.promises.readdir(directoryPath);
         const promises = dirs.map((dir) => __awaiter(void 0, void 0, void 0, function* () {
@@ -92,9 +147,9 @@ const sanitizeAndReadConfigurations = () => __awaiter(void 0, void 0, void 0, fu
                         const data = yield fs_1.default.promises.readFile(fullPathToFile, 'utf8');
                         try {
                             const configuration = JSON.parse(data);
-                            const sanitizedConfiguration = cleanupConfig(sanitizeConfiguration(configuration));
-                            sanitizedConfigurations.push(sanitizedConfiguration);
-                            yield writeSanitizedConfiguration(sanitizedConfiguration, dir, innerFile);
+                            const standard = convertToStandard(cleanupConfig(sanitizeConfiguration(configuration)));
+                            standards.push(standard);
+                            yield writeStandard(standard, dir, innerFile);
                         }
                         catch (err) {
                             console.error('Error parsing JSON:', err);
@@ -112,7 +167,7 @@ const sanitizeAndReadConfigurations = () => __awaiter(void 0, void 0, void 0, fu
             }
         }));
         yield Promise.all(promises);
-        console.log(sanitizedConfigurations);
+        console.log(standards);
     }
     catch (err) {
         console.error('An error occurred:', err);
