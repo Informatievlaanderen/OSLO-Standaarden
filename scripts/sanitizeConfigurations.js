@@ -38,7 +38,9 @@ const cleanupConfig = (config) => {
     return config;
 };
 const convertFileToUri = (resourceReference, folder, path) => {
+    console.log(path);
     const parts = path === null || path === void 0 ? void 0 : path.split("/");
+    console.log(parts);
     const standardName = parts === null || parts === void 0 ? void 0 : parts[parts.length - 2];
     let uri = `${GITHUB_BASE_URL}/${standardName}/${STANDAARDENREGISTER_BRANCH}/${folder}/${resourceReference}`;
     return uri;
