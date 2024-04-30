@@ -118,10 +118,10 @@ jobs:
             rm -rf OSLO-Standaardenregister
             git clone git@github.com:Informatievlaanderen/OSLO-Standaardenregister.git
       - run:
-          name: Switch to circleCI branch in target repository
+          name: Switch to dev branch in target repository
           working_directory: /tmp/OSLO-Standaardenregister
           command: |
-            git checkout circleCI
+            git checkout dev
             git fetch origin
       - run:
           name: Copy new content to Nuxt content folder
@@ -140,7 +140,7 @@ jobs:
             export TAG=`echo "${CIRCLE_SHA1}"`
             echo "{\"commit\" : \"$TAG\"}" > /tmp/OSLO-Standaardenregister/commit.json
       - run:
-          name: Push results to 'CircleCI' branch of OSLO-Standaardenregister
+          name: Push results to 'dev' branch of OSLO-Standaardenregister
           working_directory: /tmp/OSLO-Standaardenregister
           command: |
             git config user.email "oslo@oslo"
@@ -150,7 +150,7 @@ jobs:
             git commit -m "Applying changes from commit ${CIRCLE_SHA1}" --allow-empty
             export TAG=`echo "${CIRCLE_SHA1}" | cut -c1-15`
             git tag "${TAG}"
-            git push --force origin circleCI
+            git push --force origin dev
   build-state:
     docker:
       - image: cimg/deploy:2024.03
