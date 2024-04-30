@@ -12,7 +12,7 @@ prepare:
 fetch-content:
 	git clone git@github.com:Informatievlaanderen/OSLO-Standaardenregister.git && \
     cd OSLO-Standaardenregister && \
-    git checkout circleCI && \
+    git checkout dev && \
     ls && \
     cp -R ./content/standaarden/* ../content/standaarden/
 	rm -rf OSLO-Standaardenregister
