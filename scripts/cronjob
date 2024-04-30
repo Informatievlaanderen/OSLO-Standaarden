@@ -2,6 +2,9 @@
 
 #!/bin/bash
 
+# Print the current date and time
+echo "Cron job run at: $(date)"
+
 # Define the image and service
 IMAGE_NAME="terraformtestcontainerregistry.azurecr.io/oslo2/oslo-standaardenregister-run"
 SERVICE_NAME="oslo_dev-standardsregister"
