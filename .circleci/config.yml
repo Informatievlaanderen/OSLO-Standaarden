@@ -2,7 +2,7 @@ version: 2
 jobs:
   checkout:
     docker:
-      - image: circleci/python
+      - image: circleci/node
     steps:
       - checkout
       - run: mkdir -p workspace
@@ -23,7 +23,7 @@ jobs:
             - repositories/
   extract-info:
     docker:
-      - image: circleci/python
+      - image: circleci/node
     steps:
       - checkout
       - attach_workspace:
