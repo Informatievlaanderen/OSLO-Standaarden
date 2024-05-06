@@ -32,6 +32,16 @@ const sanitizeDocument = (document) => {
         throw error;
     }
 };
+const getGithubFileName = (path) => {
+    try {
+        const splitURL = path.split("/");
+        return `${splitURL[4]}/${splitURL[6]}`;
+    }
+    catch (error) {
+        console.error("Error: unable to get the file name", error);
+        throw error;
+    }
+};
 const cleanupConfig = (config) => {
     delete config.fileName;
     delete config.status;
@@ -92,7 +102,7 @@ const convertToStandard = (configuration) => {
 // TODO: Can this be done cleaner?
 const sanitizeConfiguration = (configuration) => {
     var _a, _b, _c, _d, _e;
-    console.log(configuration.fileName);
+    console.log(configuration.fileName, "filename");
     const sanitizedConfiguration = {
         title: configuration === null || configuration === void 0 ? void 0 : configuration.naam,
         category: configuration === null || configuration === void 0 ? void 0 : configuration.categorie,
@@ -119,61 +129,64 @@ const sanitizeConfiguration = (configuration) => {
     return sanitizedConfiguration;
 };
 const writeStandard = (standard, dir, innerFile) => __awaiter(void 0, void 0, void 0, function* () {
-    const directoryPath = path_1.default.join('/tmp/workspace/nuxt-sanitized', dir);
+    const directoryPath = path_1.default.join("/tmp/workspace/nuxt-sanitized", dir);
     try {
         // Ensure the directory exists
         yield fs_1.default.promises.mkdir(directoryPath, { recursive: true });
         // Convert the object to a JSON string with indentation
         const data = JSON.stringify(standard, null, 2);
         // Write the data to a file in the new directory
-        yield fs_1.default.promises.writeFile(path_1.default.join(directoryPath, innerFile), data, 'utf8');
+        yield fs_1.default.promises.writeFile(path_1.default.join(directoryPath, innerFile), data, "utf8");
     }
     catch (err) {
-        console.error('An error occurred:', err);
+        console.error("An error occurred:", err);
     }
 });
 const sanitizeAndReadConfigurations = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        console.log('Sanitizing configurations...');
+        console.log("Sanitizing configurations...");
         let standards = [];
-        const directoryPath = '/tmp/workspace/nuxt';
+        const directoryPath = "/tmp/workspace/nuxt";
         const dirs = yield fs_1.default.promises.readdir(directoryPath);
+        console.log(dirs, "dirs");
         const promises = dirs.map((dir) => __awaiter(void 0, void 0, void 0, function* () {
+            console.log(dir, "dir");
             const fullPath = path_1.default.join(directoryPath, dir);
+            console.log(fullPath, "fullPath");
             const stats = yield fs_1.default.promises.stat(fullPath);
             if (stats.isDirectory()) {
                 const innerFiles = yield fs_1.default.promises.readdir(fullPath);
                 for (const innerFile of innerFiles) {
                     const fullPathToFile = path_1.default.join(fullPath, innerFile);
-                    const destinationPath = path_1.default.join('/tmp/workspace/nuxt-sanitized', dir, innerFile);
-                    if (path_1.default.extname(innerFile) === '.json') {
-                        const data = yield fs_1.default.promises.readFile(fullPathToFile, 'utf8');
+                    const destinationPath = path_1.default.join("/tmp/workspace/nuxt-sanitized", dir, innerFile);
+                    if (path_1.default.extname(innerFile) === ".json") {
+                        const data = yield fs_1.default.promises.readFile(fullPathToFile, "utf8");
                         try {
                             const configuration = JSON.parse(data);
+                            // const fileName = getGithubFileName(url);
                             const standard = convertToStandard(sanitizeConfiguration(configuration));
                             standards.push(standard);
                             yield writeStandard(standard, dir, innerFile);
                         }
                         catch (err) {
-                            console.error('Error parsing JSON:', err);
+                            console.error("Error parsing JSON:", err);
                         }
                     }
-                    else if (path_1.default.extname(innerFile) === '.md') {
+                    else if (path_1.default.extname(innerFile) === ".md") {
                         try {
                             yield fs_1.default.promises.copyFile(fullPathToFile, destinationPath);
                         }
                         catch (err) {
-                            console.error('Error copying .md file:', err);
+                            console.error("Error copying .md file:", err);
                         }
                     }
                 }
             }
         }));
         yield Promise.all(promises);
-        console.log(standards);
     }
     catch (err) {
-        console.error('An error occurred:', err);
+        console.error("An error occurred:", err);
     }
 });
 sanitizeAndReadConfigurations();
