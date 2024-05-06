@@ -75,6 +75,19 @@ jobs:
           root: /tmp/workspace
           paths:
             - statistics.json
+  build-state:
+    docker:
+      - image: cimg/deploy:2024.03
+    steps:
+      - checkout
+      - attach_workspace:
+          at: /tmp/workspace
+      - run:
+          name: build image
+          command: make build 
+      - run:
+          name: push new image
+          command: make publish
   push-to-repository:
     docker:
       - image: circleci/node
@@ -139,16 +152,22 @@ workflows:
       - extract-info:
           requires:
             - checkout
-      - markdown-to-html:
-          requires:
-            - extract-info
-      - render-html:
-          requires:
-            - markdown-to-html
       - create-statistics:
           requires:
             - extract-info
+<<<<<<< HEAD
       - push-to-repository:
           requires:
             - render-html
             - create-statistics
+=======
+      - prepare-nuxt:
+          requires:
+            - create-statistics
+      - build-state:
+          requires:
+            - prepare-nuxt
+#      - push-to-nuxt:
+#          requires:
+#            - prepare-nuxt
+>>>>>>> a4c331e (example flow)

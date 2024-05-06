@@ -1,0 +1,14 @@
+ARG VERSION
+FROM terraformtestcontainerregistry.azurecr.io/oslo2/standaardenregister-base:${VERSION} as BUILD
+
+WORKDIR /app
+
+ADD ./content /app/content
+
+RUN npm run build
+
+FROM node:20-alpine
+WORKDIR /app
+EXPOSE 3000
+COPY --from=BUILD /app/.output /app
+CMD ["node", "./server/index.mjs"]
