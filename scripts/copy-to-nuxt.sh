@@ -35,6 +35,9 @@ do
 
   mkdir -p "$NUXTDIR/$NORMALIZED_SPEC_NAME"
 
+  # Store the repository name in the configuration file
+  jq --arg repo "$REPO_VALUE" '. + {"repository":"$repo"}' "$CONFIG_NAME.json" > "temp.json" && mv "temp.json" "$CONFIG_NAME.json"
+
   ## Copy the generated configuration file and description file to the nuxt directory
   cp "$CONFIG_NAME.json" "$NUXTDIR/$NORMALIZED_SPEC_NAME/configuration.json"
   cp "descriptions/$DESCRIPTION_NAME" "$NUXTDIR/$NORMALIZED_SPEC_NAME/description.md"
