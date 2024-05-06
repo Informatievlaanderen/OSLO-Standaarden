@@ -7,21 +7,29 @@ echo "Cron job run at: $(date)"
 
 # Define the image and service
 IMAGE_NAME="terraformtestcontainerregistry.azurecr.io/oslo2/oslo-standaardenregister-run"
-SERVICE_NAME="oslo_dev-standardsregister"
 
-# Get the SHA of the current image
-CURRENT_IMAGE=$(docker service inspect --format '{{ (.Spec.TaskTemplate.ContainerSpec.Image) }}' $SERVICE_NAME)
-CURRENT_IMAGE_SHA=$(docker inspect --format='{{.Id}}' $CURRENT_IMAGE)
+# Define an array of service names
+SERVICE_NAMES=("oslo_dev-standardsregister" "oslo_test-standardsregister")
 
-# Pull the latest version of the image
-docker pull $IMAGE_NAME:latest
+# Loop over the array of service names
+for SERVICE_NAME in "${SERVICE_NAMES[@]}"; do
+  echo "Checking service: $SERVICE_NAME"
 
-LATEST_IMAGE_SHA=$(docker inspect --format='{{.Id}}' $IMAGE_NAME:latest)
+  # Get the SHA of the current image
+  CURRENT_IMAGE=$(docker service inspect --format '{{ (.Spec.TaskTemplate.ContainerSpec.Image) }}' $SERVICE_NAME)
+  CURRENT_IMAGE_SHA=$(docker inspect --format='{{.Id}}' $CURRENT_IMAGE)
 
-echo $CURRENT_IMAGE_SHA
-echo $LATEST_IMAGE_SHA
+  # Pull the latest version of the image
+  docker pull $IMAGE_NAME:latest
 
-# If the SHAs are different, update the service
-if [ "$CURRENT_IMAGE_SHA" != "$LATEST_IMAGE_SHA" ]; then
-  docker service update --image $IMAGE_NAME:latest $SERVICE_NAME --force
-fi
+  LATEST_IMAGE_SHA=$(docker inspect --format='{{.Id}}' $IMAGE_NAME:latest)
+
+  echo $CURRENT_IMAGE_SHA
+  echo $LATEST_IMAGE_SHA
+
+  # If the SHAs are different, update the service
+  if [ "$CURRENT_IMAGE_SHA" != "$LATEST_IMAGE_SHA" ]; then
+    echo "Updating service: $SERVICE_NAME"
+    docker service update --image $IMAGE_NAME:latest $SERVICE_NAME --force
+  fi
+done
