@@ -92,6 +92,7 @@ const convertToStandard = (configuration) => {
 // TODO: Can this be done cleaner?
 const sanitizeConfiguration = (configuration) => {
     var _a, _b, _c, _d, _e;
+    console.log(configuration.fileName);
     const sanitizedConfiguration = {
         title: configuration === null || configuration === void 0 ? void 0 : configuration.naam,
         category: configuration === null || configuration === void 0 ? void 0 : configuration.categorie,
@@ -149,7 +150,7 @@ const sanitizeAndReadConfigurations = () => __awaiter(void 0, void 0, void 0, fu
                         const data = yield fs_1.default.promises.readFile(fullPathToFile, 'utf8');
                         try {
                             const configuration = JSON.parse(data);
-                            const standard = convertToStandard(cleanupConfig(sanitizeConfiguration(configuration)));
+                            const standard = convertToStandard(sanitizeConfiguration(configuration));
                             standards.push(standard);
                             yield writeStandard(standard, dir, innerFile);
                         }
