@@ -1219,13 +1219,13 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-overlijdensaangifte",
     "status": "standaard-in-ontwikkeling",
     "configuration": "voc-overlijdensaangifte-config.json",
-    "rebuild": 8
+    "rebuild": 9
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-overlijdensaangifte",
     "status": "standaard-in-ontwikkeling",
     "configuration": "voc-gezondheidstoestand-config.json",
-    "rebuild": 4
+    "rebuild": 5
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-kindFiche",
