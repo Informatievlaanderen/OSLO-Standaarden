@@ -257,4 +257,3 @@ workflows:
             - checkout
             - prepare-nuxt
             - push-to-nuxt
-
