@@ -239,9 +239,19 @@ workflows:
       - extract-info:
           requires:
             - checkout
+      - markdown-to-html:
+          requires:
+            - extract-info
+      - render-html:
+          requires:
+            - markdown-to-html
       - create-statistics:
           requires:
             - extract-info
+      - push-to-repository:
+          requires:
+            - render-html
+            - create-statistics
       - prepare-nuxt:
           requires:
             - create-statistics
