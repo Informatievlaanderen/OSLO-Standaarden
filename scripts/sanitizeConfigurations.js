@@ -374,4 +374,5 @@ const sanitizeAndReadConfigurations = () =>
       console.error("An error occurred:", err);
     }
   });
+  
 sanitizeAndReadConfigurations();
