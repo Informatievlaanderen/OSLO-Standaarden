@@ -21,6 +21,10 @@ fetch-content:
 build:
 	docker build -f Dockerfile.build --build-arg "VERSION=${VERSION}" -t informatievlaanderen/standaardenregister-run:${VERSION} .
 
+# first build-base should have been run
+build-linux:
+	docker build --platform=linux/amd64 -f Dockerfile.build --build-arg "VERSION=${VERSION}" -t informatievlaanderen/standaardenregister-run:${VERSION} .
+
 run:
 	docker run -d --rm --name standaardenregister -p 3000:3000 informatievlaanderen/standaardenregister-run:${VERSION}
 

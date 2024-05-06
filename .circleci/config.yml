@@ -77,7 +77,7 @@ jobs:
             - statistics.json
   prepare-nuxt:
     docker:
-      - image: circleci/python
+      - image: circleci/node
     steps:
       - checkout
       - attach_workspace:
@@ -87,6 +87,20 @@ jobs:
           root: /tmp/workspace
           paths:
             - nuxt/
+  # This is a temporary solution to convert the old config file to a new config file with different keys
+  # Eventually this should be deleted once the new config file can be used inside each individual thema repository
+  convert-nuxt:
+    docker:
+      - image: circleci/node
+    steps:
+      - checkout
+      - attach_workspace:
+          at: /tmp/workspace
+      - run: bash $PWD/scripts/sanitize-configurations.sh /tmp/workspace
+      - persist_to_workspace:
+          root: /tmp/workspace
+          paths:
+            - nuxt-sanitized/
   push-to-nuxt:
     docker:
       - image: circleci/node
@@ -114,7 +128,7 @@ jobs:
           workdir: /tmp/workspace
           command: |
             mkdir -p /tmp/OSLO-Standaardenregister/content/standaarden
-            cp -r nuxt/* /tmp/OSLO-Standaardenregister/content/standaarden
+            cp -r nuxt-sanitized/* /tmp/OSLO-Standaardenregister/content/standaarden
       - run:
           name: Copy statistics to Nuxt content folder
           workdir: /tmp/workspace
@@ -228,6 +242,12 @@ workflows:
       - create-statistics:
           requires:
             - extract-info
+      - prepare-nuxt:
+          requires:
+            - create-statistics
+      - convert-nuxt:
+          requires:
+            - prepare-nuxt
       - push-to-nuxt:
           requires:
             - prepare-nuxt
@@ -236,4 +256,4 @@ workflows:
             - checkout
             - prepare-nuxt
             - push-to-nuxt
->>>>>>> e8c7217 (New and improved config file for standaardenregister)
+
