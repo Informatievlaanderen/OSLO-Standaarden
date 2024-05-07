@@ -11,6 +11,10 @@ IMAGE_NAME="terraformtestcontainerregistry.azurecr.io/oslo2/oslo-standaardenregi
 # Define an array of service names
 SERVICE_NAMES=("oslo_dev-standardsregister" "oslo_test-standardsregister")
 
+# Pull the latest version of the image
+docker pull $IMAGE_NAME:latest
+LATEST_IMAGE_SHA=$(docker inspect --format='{{.Id}}' $IMAGE_NAME:latest)
+
 # Loop over the array of service names
 for SERVICE_NAME in "${SERVICE_NAMES[@]}"; do
   echo "Checking service: $SERVICE_NAME"
@@ -18,11 +22,6 @@ for SERVICE_NAME in "${SERVICE_NAMES[@]}"; do
   # Get the SHA of the current image
   CURRENT_IMAGE=$(docker service inspect --format '{{ (.Spec.TaskTemplate.ContainerSpec.Image) }}' $SERVICE_NAME)
   CURRENT_IMAGE_SHA=$(docker inspect --format='{{.Id}}' $CURRENT_IMAGE)
-
-  # Pull the latest version of the image
-  docker pull $IMAGE_NAME:latest
-
-  LATEST_IMAGE_SHA=$(docker inspect --format='{{.Id}}' $IMAGE_NAME:latest)
 
   echo $CURRENT_IMAGE_SHA
   echo $LATEST_IMAGE_SHA
