@@ -40,7 +40,6 @@ var __importDefault =
 Object.defineProperty(exports, "__esModule", { value: true });
 const fs_1 = __importDefault(require("fs"));
 const path_1 = __importDefault(require("path"));
-const utils_1 = require("./utils/utils");
 const GITHUB_BASE_URL =
   "https://raw.githubusercontent.com/Informatievlaanderen";
 const STANDAARDENREGISTER_BRANCH = "standaardenregister";
@@ -60,6 +59,23 @@ const sanitizeDocument = (document) => {
     console.error("Error: unable to sanitize the document", error);
     throw error;
   }
+};
+const sanitizeOrganisation = (organisatie, identificator) => {
+  let sanitized = [];
+  if (Array.isArray(organisatie) && Array.isArray(identificator)) {
+    for (let i = 0; i < organisatie.length; i++) {
+      sanitized.push({
+        name: organisatie[i],
+        resourceReference: identificator[i],
+      });
+    }
+  } else {
+    sanitized.push({
+      name: organisatie,
+      resourceReference: identificator,
+    });
+  }
+  return sanitized;
 };
 const cleanupConfig = (config) => {
   delete config.fileName;
@@ -221,7 +237,7 @@ const sanitizeConfiguration = (configuration) => {
       configuration === null || configuration === void 0
         ? void 0
         : configuration.type_toepassing,
-    responsibleOrganisation: (0, utils_1.sanitizeOrganisation)(
+    responsibleOrganisation: sanitizeOrganisation(
       configuration.verantwoordelijke_organisatie,
       configuration.identificator_organisatie
     ),
