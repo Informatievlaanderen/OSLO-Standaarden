@@ -1201,13 +1201,13 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-lokaleEconomie",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-lokale-economie-config.json",
-    "rebuild": 19
+    "rebuild": 20
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-lokaleEconomie",
     "status": "standaard-in-ontwikkeling",
     "configuration": "voc-lokale-economie-config.json",
-    "rebuild": 13
+    "rebuild": 14
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-overlijdensaangifte",
