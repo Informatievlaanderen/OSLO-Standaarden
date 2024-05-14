@@ -40,6 +40,7 @@ var __importDefault =
 Object.defineProperty(exports, "__esModule", { value: true });
 const fs_1 = __importDefault(require("fs"));
 const path_1 = __importDefault(require("path"));
+const utils_1 = require("./utils/utils");
 const GITHUB_BASE_URL =
   "https://raw.githubusercontent.com/Informatievlaanderen";
 const STANDAARDENREGISTER_BRANCH = "standaardenregister";
@@ -220,16 +221,10 @@ const sanitizeConfiguration = (configuration) => {
       configuration === null || configuration === void 0
         ? void 0
         : configuration.type_toepassing,
-    responsibleOrganisation: {
-      name:
-        configuration === null || configuration === void 0
-          ? void 0
-          : configuration.verantwoordelijke_organisatie,
-      uri:
-        configuration === null || configuration === void 0
-          ? void 0
-          : configuration.identificator_organisatie,
-    },
+    responsibleOrganisation: (0, utils_1.sanitizeOrganisation)(
+      configuration.verantwoordelijke_organisatie,
+      configuration.identificator_organisatie
+    ),
     publicationDate:
       configuration === null || configuration === void 0
         ? void 0
@@ -295,7 +290,6 @@ const sanitizeConfiguration = (configuration) => {
         ? void 0
         : configuration.fileName,
     status: configuration.status,
-    repository: configuration.repository,
   };
   return sanitizedConfiguration;
 };
@@ -374,5 +368,4 @@ const sanitizeAndReadConfigurations = () =>
       console.error("An error occurred:", err);
     }
   });
-  
 sanitizeAndReadConfigurations();
