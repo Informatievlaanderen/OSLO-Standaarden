@@ -158,6 +158,7 @@ const sanitizeAndReadConfigurations = () => __awaiter(void 0, void 0, void 0, fu
                 const innerFiles = yield fs_1.default.promises.readdir(fullPath);
                 for (const innerFile of innerFiles) {
                     const fullPathToFile = path_1.default.join(fullPath, innerFile);
+                    console.log("Processing file:", fullPathToFile);
                     const destinationPath = path_1.default.join("/tmp/workspace/nuxt-sanitized", dir, innerFile);
                     if (path_1.default.extname(innerFile) === ".json") {
                         const data = yield fs_1.default.promises.readFile(fullPathToFile, "utf8");
