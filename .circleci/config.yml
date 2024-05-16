@@ -158,6 +158,8 @@ jobs:
       - checkout
       - attach_workspace:
           at: /tmp/workspace
+      - setup_remote_docker:
+          docker_layer_caching: true
       - run:
           name: prepare environment image
           command: make prepare
