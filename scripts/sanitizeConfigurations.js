@@ -150,6 +150,7 @@ const sanitizeAndReadConfigurations = () => __awaiter(void 0, void 0, void 0, fu
         let standards = [];
         const directoryPath = "/tmp/workspace/nuxt";
         const dirs = yield fs_1.default.promises.readdir(directoryPath);
+        console.log(dirs, "directories");
         const promises = dirs.map((dir) => __awaiter(void 0, void 0, void 0, function* () {
             const fullPath = path_1.default.join(directoryPath, dir);
             const stats = yield fs_1.default.promises.stat(fullPath);
