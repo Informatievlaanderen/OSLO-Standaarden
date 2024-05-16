@@ -144,7 +144,6 @@ const writeStandard = (standard, dir, innerFile) => __awaiter(void 0, void 0, vo
         console.error("An error occurred:", err);
     }
 });
-
 const sanitizeAndReadConfigurations = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
         console.log("Sanitizing configurations...");
