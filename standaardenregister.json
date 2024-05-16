@@ -1264,12 +1264,6 @@
     "rebuild": 3
   },
   {
-    "repository": "https://github.com/Informatievlaanderen/OSLOthema-Leerinschrijfcredential",
-    "status": "standaard-in-ontwikkeling",
-    "configuration": "ap-leerinschrijfcredential-config.json",
-    "rebuild": 10
-  },
-  {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-Waterkwaliteit",
     "status": "kandidaat-standaard",
     "configuration": "voc-waterkwaliteit-config.json",
