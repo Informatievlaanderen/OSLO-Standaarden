@@ -1273,6 +1273,6 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-leerinschrijfcredential",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-leerinschrijfcredential-config.json",
-    "rebuild": 6
+    "rebuild": 7
   }
 ]
