@@ -1270,9 +1270,9 @@
     "rebuild": 3
   },
   {
-    "repository": "https://github.com/Informatievlaanderen/OSLOthema-studentenattesten",
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-leerinschrijfcredential",
     "status": "standaard-in-ontwikkeling",
-    "configuration": "ap-studentenattesten-config.json",
-    "rebuild": 5
+    "configuration": "ap-leerinschrijfcredential-config.json",
+    "rebuild": 6
   }
 ]
