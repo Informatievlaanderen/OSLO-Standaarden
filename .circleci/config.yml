@@ -124,6 +124,11 @@ jobs:
             git checkout standaarden
             git fetch origin
       - run:
+          name: List folder structure of nuxt-sanitized/
+          working_directory: /tmp/workspace
+          command: |
+            ls -al nuxt-sanitized/
+      - run:
           name: Copy new content to Nuxt content folder
           working_directory: /tmp/workspace
           command: |
