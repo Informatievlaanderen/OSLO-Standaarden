@@ -1278,13 +1278,13 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-DigitaleWatermeter",
     "status": "standaard-in-ontwikkeling",
-    "configuration": "voc-digitalewatermeter-config.json",
-    "rebuild": 2
+    "configuration": "ap-digitalewatermeter-config.json",
+    "rebuild": 3
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-DigitaleWatermeter",
     "status": "standaard-in-ontwikkeling",
     "configuration": "voc-digitalewatermeter-config.json",
-    "rebuild": 2
+    "rebuild": 3
   }
 ]
