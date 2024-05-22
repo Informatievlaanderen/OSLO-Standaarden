@@ -150,6 +150,11 @@ jobs:
             export TAG=`echo "${CIRCLE_SHA1}"`
             echo "{\"commit\" : \"$TAG\"}" > /tmp/OSLO-Standaardenregister/commit.json
       - run:
+          name: List folder structure of tmp/OSLO-Standaardenregister/content/standaarden/
+          working_directory: /tmp/workspace
+          command: |
+            ls -al /tmp/OSLO-Standaardenregister/content/standaarden/
+      - run:
           name: Push results to 'standaarden' branch of OSLO-Standaardenregister
           working_directory: /tmp/OSLO-Standaardenregister
           command: |
