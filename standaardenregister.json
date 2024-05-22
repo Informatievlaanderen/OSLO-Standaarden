@@ -277,7 +277,8 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-persoon",
     "status": "kandidaat-standaard",
-    "configuration": "ap-persoon-basis-config.json"
+    "configuration": "ap-persoon-basis-config.json",
+    "rebuild": 1
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-weg",
