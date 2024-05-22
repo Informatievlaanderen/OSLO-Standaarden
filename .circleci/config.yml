@@ -158,6 +158,7 @@ jobs:
           name: Push results to 'standaarden' branch of OSLO-Standaardenregister
           working_directory: /tmp/OSLO-Standaardenregister
           command: |
+            ls
             git config user.email "oslo@oslo"
             git config user.name "Circle CI Builder"
             git add .
