@@ -1113,13 +1113,13 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bestuurlijkSanctieregister",
     "status": "kandidaat-standaard",
     "configuration": "bestuurlijkSanctieregister-AP-config.json",
-    "rebuild": 1
+    "rebuild": 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bestuurlijkSanctieregister",
     "status": "kandidaat-standaard",
     "configuration": "bestuurlijkSanctieregister-VOC-config.json",
-    "rebuild": 3
+    "rebuild": 4
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-passengerTransportHubs",
