@@ -1231,7 +1231,7 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-kindFiche",
     "status": "standaard-in-ontwikkeling",
     "configuration": "ap-config.json",
-    "rebuild": 2
+    "rebuild": 3
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-Waterkwaliteit",
