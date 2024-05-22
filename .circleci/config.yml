@@ -135,6 +135,11 @@ jobs:
             mkdir -p /tmp/OSLO-Standaardenregister/content/standaarden
             cp -r nuxt-sanitized/* /tmp/OSLO-Standaardenregister/content/standaarden
       - run:
+          name: List folder structure of tmp/OSLO-Standaardenregister/content/standaarden/
+          working_directory: /tmp/workspace
+          command: |
+            ls -al tmp/OSLO-Standaardenregister/content/standaarden/
+      - run:
           name: Copy statistics to Nuxt content folder
           working_directory: /tmp/workspace
           command: |
