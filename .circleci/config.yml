@@ -138,7 +138,7 @@ jobs:
           name: List folder structure of tmp/OSLO-Standaardenregister/content/standaarden/
           working_directory: /tmp/workspace
           command: |
-            ls -al /tmp/OSLO-Standaardenregister/content/
+            ls -al /tmp/OSLO-Standaardenregister/content/standaarden/
       - run:
           name: Copy statistics to Nuxt content folder
           working_directory: /tmp/workspace
