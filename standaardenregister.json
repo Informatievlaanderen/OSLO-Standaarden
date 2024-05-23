@@ -219,7 +219,13 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-DoelgerichtDigitaalTransformeren",
     "status": "erkende-standaard",
     "configuration": "ap-cultuurparticipatie-config.json",
-    "dummy": 29
+    "dummy": 30
+  },
+   {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-DoelgerichtDigitaalTransformeren",
+    "status": "erkende-standaard",
+    "configuration": "voc-cultuurparticipatie-config.json",
+    "dummy": 01
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-loongegevens",
