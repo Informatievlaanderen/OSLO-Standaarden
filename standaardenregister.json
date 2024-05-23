@@ -85,15 +85,15 @@
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-FinancieleData",
-    "status": "kandidaat-standaard",
+    "status": "erkende-standaard",
     "configuration": "ap-config.json",
     "rebuild": 6
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-FinancieleData",
-    "status": "kandidaat-standaard",
+    "status": "erkende-standaard",
     "configuration": "voc-config.json",
-    "rebuild": 5
+    "rebuild": 6
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
