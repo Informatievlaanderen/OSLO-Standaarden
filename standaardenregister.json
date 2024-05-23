@@ -308,6 +308,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-dienst",
     "status": "kandidaat-standaard",
+    "rebuild": 1
     "configuration": "ap-dienstencataloog-config.json"
   },
   {
