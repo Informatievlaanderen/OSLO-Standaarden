@@ -1240,19 +1240,19 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-Waterkwaliteit",
     "status": "kandidaat-standaard",
     "configuration": "voc-statistiek-config.json",
-    "rebuild": 4
+    "rebuild": 5
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-Waterkwaliteit",
     "status": "kandidaat-standaard",
     "configuration": "ap-statistiek-config.json",
-    "rebuild": 4
+    "rebuild": 5
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-Waterkwaliteit",
     "status": "kandidaat-standaard",
     "configuration": "voc-datakwaliteit-config.json",
-    "rebuild": 4
+    "rebuild": 5
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-Leerinschrijfcredential",
@@ -1264,19 +1264,19 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-Waterkwaliteit",
     "status": "kandidaat-standaard",
     "configuration": "ap-datakwaliteit-config.json",
-    "rebuild": 4
+    "rebuild": 5
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-Waterkwaliteit",
     "status": "kandidaat-standaard",
     "configuration": "ap-waterkwaliteit-config.json",
-    "rebuild": 3
+    "rebuild": 4
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-Waterkwaliteit",
     "status": "kandidaat-standaard",
     "configuration": "voc-waterkwaliteit-config.json",
-    "rebuild": 3
+    "rebuild": 4
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-DigitaleWatermeter",
