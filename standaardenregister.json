@@ -617,19 +617,19 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-cultureelErfgoed",
     "status": "erkende-standaard",
-    "rebuild": 2,
+    "rebuild": 3,
     "configuration": "ap-cultureel-erfgoed-event-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-cultureelErfgoed",
     "status": "erkende-standaard",
-    "rebuild": 2,
+    "rebuild": 3,
     "configuration": "ap-cultureel-erfgoed-object-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-cultureelErfgoed",
     "status": "erkende-standaard",
-    "rebuild": 2,
+    "rebuild": 3,
     "configuration": "voc-cultureel-erfgoed-config.json"
   },
   {
