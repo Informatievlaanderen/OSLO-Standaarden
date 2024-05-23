@@ -165,7 +165,6 @@ jobs:
             git status
             git commit -m "Applying changes from commit ${CIRCLE_SHA1}" --allow-empty
             export TAG=`echo "${CIRCLE_SHA1}" | cut -c1-15`
-            git tag "${TAG}"
             git push --force origin standaarden
   build-state:
     docker:
