@@ -370,7 +370,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-innameOpenbaarDomein",
     "status": "kandidaat-standaard",
-    "rebuild": 2
+    "rebuild": 2,
     "configuration": "ap-inname-openbaar-domein-config.json"
   },
   {
