@@ -328,6 +328,7 @@ const sanitizeConfiguration = (configuration) => {
   };
   return sanitizedConfiguration;
 };
+
 const writeStandard = (standard, dir, innerFile) =>
   __awaiter(void 0, void 0, void 0, function* () {
     const directoryPath = path_1.default.join(
