@@ -294,6 +294,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-weg",
     "status": "kandidaat-standaard",
+    "rebuild": 2,
     "configuration": "ap-wegenregister-config.json"
   },
   {
@@ -326,6 +327,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-organisatie",
     "status": "erkende-standaard",
+    "rebuild": 2,
     "configuration": "voc-organisatie-config.json"
   },
   {
@@ -368,6 +370,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-innameOpenbaarDomein",
     "status": "kandidaat-standaard",
+    "rebuild": 2
     "configuration": "ap-inname-openbaar-domein-config.json"
   },
   {
@@ -602,6 +605,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-verkeersborden",
     "status": "kandidaat-standaard",
+    "rebuild": 2,
     "configuration": "ap-verkeersborden-config.json"
   },
   {
@@ -640,6 +644,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-mobiliteit",
     "status": "kandidaat-standaard",
+    "rebuild": 2,
     "configuration": "voc-mobiliteit-config.json"
   },
   {
