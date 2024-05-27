@@ -221,11 +221,11 @@
     "configuration": "ap-cultuurparticipatie-config.json",
     "dummy": 30
   },
-   {
+  {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-DoelgerichtDigitaalTransformeren",
     "status": "erkende-standaard",
     "configuration": "voc-cultuurparticipatie-config.json",
-    "dummy": 01
+    "dummy": 1
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-loongegevens",
@@ -1124,7 +1124,7 @@
     "configuration": "ap-cultuur-en-jeugdinfrastructuur-config.json",
     "rebuild": 10
   },
-   {
+  {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-cultuurandjeugdinfrastructuur",
     "status": "kandidaat-standaard",
     "configuration": "voc-cultuur-en-jeugdinfrastructuur-config.json",
