@@ -21,9 +21,9 @@ do
 
 
   ## this needs to change to .title if the new json structure is used
-  SPEC_NAME=$(jq -r '.naam' "$CONFIG_NAME.json")
+  SPEC_NAME=$(jq -r '.title' "$CONFIG_NAME.json")
   ## this needs to change to .descriptionFileName if the new json structure is used
-  DESCRIPTION_NAME=$(jq -r '.beschrijving' "$CONFIG_NAME.json")
+  DESCRIPTION_NAME=$(jq -r '.descriptionFileName' "$CONFIG_NAME.json")
 
   echo "SPEC_NAME: $SPEC_NAME"
   echo "DESCRIPTION_NAME: $DESCRIPTION_NAME"
