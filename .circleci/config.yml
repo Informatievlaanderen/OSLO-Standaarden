@@ -163,6 +163,7 @@ workflows:
       #       - extract-info
       - prepare-nuxt:
           requires:
+            - extract-info
             - create-statistics
       - push-to-nuxt:
           requires:
