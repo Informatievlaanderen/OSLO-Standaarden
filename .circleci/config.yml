@@ -34,32 +34,32 @@ jobs:
             - description-paths.txt
             - filenames.txt
             - statistics_config.json
-  markdown-to-html:
-    docker:
-      - image: ddvlanck/markdown-to-html:1.1
-    steps:
-      - checkout
-      - attach_workspace:
-          at: /tmp/workspace
-      - run: bash $PWD/scripts/markdown-transformer.sh /tmp/workspace
-      - persist_to_workspace:
-          root: /tmp/workspace
-          paths:
-            - descriptions/
-  render-html:
-    docker:
-      - image: ddvlanck/html-page-generator:1.4.6
-    steps:
-      - checkout
-      - attach_workspace:
-          at: /tmp/workspace
-      - run:
-          name: Creating HTML pages for modified or new standards
-          command: bash $PWD/scripts/template-renderer.sh
-      - persist_to_workspace:
-          root: /tmp/workspace
-          paths:
-            - html_pages/
+  # markdown-to-html:
+  #   docker:
+  #     - image: ddvlanck/markdown-to-html:1.1
+  #   steps:
+  #     - checkout
+  #     - attach_workspace:
+  #         at: /tmp/workspace
+  #     - run: bash $PWD/scripts/markdown-transformer.sh /tmp/workspace
+  #     - persist_to_workspace:
+  #         root: /tmp/workspace
+  #         paths:
+  #           - descriptions/
+  # render-html:
+  #   docker:
+  #     - image: ddvlanck/html-page-generator:1.4.6
+  #   steps:
+  #     - checkout
+  #     - attach_workspace:
+  #         at: /tmp/workspace
+  #     - run:
+  #         name: Creating HTML pages for modified or new standards
+  #         command: bash $PWD/scripts/template-renderer.sh
+  #     - persist_to_workspace:
+  #         root: /tmp/workspace
+  #         paths:
+  #           - html_pages/
   create-statistics:
     docker:
       - image: ddvlanck/oslo-statistics:1.1
@@ -86,20 +86,6 @@ jobs:
           root: /tmp/workspace
           paths:
             - nuxt/
-  # This is a temporary solution to convert the old config file to a new config file with different keys
-  # Eventually this should be deleted once the new config file can be used inside each individual thema repository
-  convert-nuxt:
-    docker:
-      - image: circleci/node
-    steps:
-      - checkout
-      - attach_workspace:
-          at: /tmp/workspace
-      - run: bash $PWD/scripts/sanitize-configurations.sh /tmp/workspace/nuxt
-      - persist_to_workspace:
-          root: /tmp/workspace
-          paths:
-            - nuxt-sanitized/
   push-to-nuxt:
     docker:
       - image: circleci/node
@@ -123,16 +109,16 @@ jobs:
             git checkout standaarden
             git fetch origin
       - run:
-          name: List folder structure of nuxt-sanitized/
+          name: List folder structure of nuxt/
           working_directory: /tmp/workspace
           command: |
-            ls -al nuxt-sanitized/
+            ls -al nuxt/
       - run:
           name: Copy new content to Nuxt content folder
           working_directory: /tmp/workspace
           command: |
             mkdir -p /tmp/OSLO-Standaardenregister/content/standaarden
-            cp -r nuxt-sanitized/* /tmp/OSLO-Standaardenregister/content/standaarden
+            cp -r nuxt/* /tmp/OSLO-Standaardenregister/content/standaarden
       - run:
           name: List folder structure of tmp/OSLO-Standaardenregister/content/standaarden/
           working_directory: /tmp/workspace
@@ -189,62 +175,62 @@ jobs:
       - run:
           name: cleanup after build and push
           command: make cleanup
-  push-to-repository:
-    docker:
-      - image: circleci/node
-    steps:
-      - checkout
-      - attach_workspace:
-          at: /tmp/workspace
-      - add_ssh_keys:
-          fingerprints:
-            - "15:51:57:05:3f:2c:a3:23:44:2a:52:5a:a6:aa:4c:c5"
-      - run:
-          name: Checkout target repository
-          working_directory: /tmp
-          command: |
-            rm -rf OSLO-StandaardenregisterGenerated
-            git clone git@github.com:Informatievlaanderen/OSLO-StandaardenregisterGenerated.git
-      - run:
-          name: Clean the generated directory
-          working_directory: /tmp/OSLO-StandaardenregisterGenerated
-          command: |
-            git fetch origin
-      #            if [ "`cat /tmp/workspace/haschangedpublications.json`" == "false" ] ; then git rm -r --force * ; fi
-      - run: bash $PWD/scripts/clean-repository-generated.sh
-      - run:
-          name: Copy generated assets
-          working_directory: /tmp/workspace
-          command: |
-            mkdir -p /tmp/OSLO-StandaardenregisterGenerated/public/erkende-standaard
-            mkdir -p /tmp/OSLO-StandaardenregisterGenerated/public/kandidaat-standaard
-            mkdir -p /tmp/OSLO-StandaardenregisterGenerated/public/geregistreerde-standaard
-            mkdir -p /tmp/OSLO-StandaardenregisterGenerated/public/standaard-in-ontwikkeling
-            mkdir -p /tmp/OSLO-StandaardenregisterGenerated/public/zonder-status
-            mkdir -p /tmp/OSLO-StandaardenregisterGenerated/data
-            cp statistics.json /tmp/OSLO-StandaardenregisterGenerated/public/data/statistics.json
-            if [ -d html_pages/erkende-standaard ] ; then if [ ! "$(ls -A html_pages/erkende-standaard)" ] ; then echo "Directory html_pages/erkende-standaard is empty" ; else cp -R html_pages/erkende-standaard/* /tmp/OSLO-StandaardenregisterGenerated/public/erkende-standaard/ ; fi fi
-            if [ -d html_pages/kandidaat-standaard ] ; then if [ ! "$(ls -A html_pages/kandidaat-standaard)" ] ; then echo "Directory html_pages/kandidaat-standaard is empty" ; else cp -R html_pages/kandidaat-standaard/* /tmp/OSLO-StandaardenregisterGenerated/public/kandidaat-standaard/ ; fi fi
-            if [ -d html_pages/geregistreerde-standaard ] ; then if [ ! "$(ls -A html_pages/geregistreerde-standaard)" ] ; then echo "Directory html_pages/geregistreerde-standaard is empty" ; else cp -R html_pages/geregistreerde-standaard/* /tmp/OSLO-StandaardenregisterGenerated/public/geregistreerde-standaard/ ; fi fi
-            if [ -d html_pages/standaard-in-ontwikkeling ] ; then if [ ! "$(ls -A html_pages/standaard-in-ontwikkeling)" ] ; then echo "Directory html_pages/standaard-in-ontwikkeling is empty" ; else cp -R html_pages/standaard-in-ontwikkeling/* /tmp/OSLO-StandaardenregisterGenerated/public/standaard-in-ontwikkeling/ ; fi fi
-            if [ -d html_pages/zonder-status ] ; then if [ ! "$(ls -A html_pages/zonder-status)" ] ; then echo "Directory html_pages/zonder-status is empty" ; else cp -R html_pages/zonder-status/* /tmp/OSLO-StandaardenregisterGenerated/public/zonder-status/; fi fi
-      - run:
-          name: Insert the commit
-          command: |
-            export TAG=`echo "${CIRCLE_SHA1}"`
-            echo "{\"commit\" : \"$TAG\"}" > /tmp/OSLO-StandaardenregisterGenerated/commit.json
-      - run:
-          name: Push results to Github repository OSLO-StandaardenregisterGenerated
-          working_directory: /tmp/OSLO-StandaardenregisterGenerated
-          command: |
-            git config user.email "oslo@oslo"
-            git config user.name "Circle CI Builder"
-            git add .
-            git status
-            git commit -m "Applying changes from commit ${CIRCLE_SHA1}" --allow-empty
-            export TAG=`echo "${CIRCLE_SHA1}" | cut -c1-15`
-            git tag "${TAG}"
-            git push --force origin master
+  # push-to-repository:
+  #   docker:
+  #     - image: circleci/node
+  #   steps:
+  #     - checkout
+  #     - attach_workspace:
+  #         at: /tmp/workspace
+  #     - add_ssh_keys:
+  #         fingerprints:
+  #           - "15:51:57:05:3f:2c:a3:23:44:2a:52:5a:a6:aa:4c:c5"
+  #     - run:
+  #         name: Checkout target repository
+  #         working_directory: /tmp
+  #         command: |
+  #           rm -rf OSLO-StandaardenregisterGenerated
+  #           git clone git@github.com:Informatievlaanderen/OSLO-StandaardenregisterGenerated.git
+  #     - run:
+  #         name: Clean the generated directory
+  #         working_directory: /tmp/OSLO-StandaardenregisterGenerated
+  #         command: |
+  #           git fetch origin
+  #     #            if [ "`cat /tmp/workspace/haschangedpublications.json`" == "false" ] ; then git rm -r --force * ; fi
+  #     - run: bash $PWD/scripts/clean-repository-generated.sh
+  #     - run:
+  #         name: Copy generated assets
+  #         working_directory: /tmp/workspace
+  #         command: |
+  #           mkdir -p /tmp/OSLO-StandaardenregisterGenerated/public/erkende-standaard
+  #           mkdir -p /tmp/OSLO-StandaardenregisterGenerated/public/kandidaat-standaard
+  #           mkdir -p /tmp/OSLO-StandaardenregisterGenerated/public/geregistreerde-standaard
+  #           mkdir -p /tmp/OSLO-StandaardenregisterGenerated/public/standaard-in-ontwikkeling
+  #           mkdir -p /tmp/OSLO-StandaardenregisterGenerated/public/zonder-status
+  #           mkdir -p /tmp/OSLO-StandaardenregisterGenerated/data
+  #           cp statistics.json /tmp/OSLO-StandaardenregisterGenerated/public/data/statistics.json
+  #           if [ -d html_pages/erkende-standaard ] ; then if [ ! "$(ls -A html_pages/erkende-standaard)" ] ; then echo "Directory html_pages/erkende-standaard is empty" ; else cp -R html_pages/erkende-standaard/* /tmp/OSLO-StandaardenregisterGenerated/public/erkende-standaard/ ; fi fi
+  #           if [ -d html_pages/kandidaat-standaard ] ; then if [ ! "$(ls -A html_pages/kandidaat-standaard)" ] ; then echo "Directory html_pages/kandidaat-standaard is empty" ; else cp -R html_pages/kandidaat-standaard/* /tmp/OSLO-StandaardenregisterGenerated/public/kandidaat-standaard/ ; fi fi
+  #           if [ -d html_pages/geregistreerde-standaard ] ; then if [ ! "$(ls -A html_pages/geregistreerde-standaard)" ] ; then echo "Directory html_pages/geregistreerde-standaard is empty" ; else cp -R html_pages/geregistreerde-standaard/* /tmp/OSLO-StandaardenregisterGenerated/public/geregistreerde-standaard/ ; fi fi
+  #           if [ -d html_pages/standaard-in-ontwikkeling ] ; then if [ ! "$(ls -A html_pages/standaard-in-ontwikkeling)" ] ; then echo "Directory html_pages/standaard-in-ontwikkeling is empty" ; else cp -R html_pages/standaard-in-ontwikkeling/* /tmp/OSLO-StandaardenregisterGenerated/public/standaard-in-ontwikkeling/ ; fi fi
+  #           if [ -d html_pages/zonder-status ] ; then if [ ! "$(ls -A html_pages/zonder-status)" ] ; then echo "Directory html_pages/zonder-status is empty" ; else cp -R html_pages/zonder-status/* /tmp/OSLO-StandaardenregisterGenerated/public/zonder-status/; fi fi
+  #     - run:
+  #         name: Insert the commit
+  #         command: |
+  #           export TAG=`echo "${CIRCLE_SHA1}"`
+  #           echo "{\"commit\" : \"$TAG\"}" > /tmp/OSLO-StandaardenregisterGenerated/commit.json
+  #     - run:
+  #         name: Push results to Github repository OSLO-StandaardenregisterGenerated
+  #         working_directory: /tmp/OSLO-StandaardenregisterGenerated
+  #         command: |
+  #           git config user.email "oslo@oslo"
+  #           git config user.name "Circle CI Builder"
+  #           git add .
+  #           git status
+  #           git commit -m "Applying changes from commit ${CIRCLE_SHA1}" --allow-empty
+  #           export TAG=`echo "${CIRCLE_SHA1}" | cut -c1-15`
+  #           git tag "${TAG}"
+  #           git push --force origin master
 workflows:
   version: 2
   create_detail_page:
@@ -253,12 +239,12 @@ workflows:
       - extract-info:
           requires:
             - checkout
-      - markdown-to-html:
-          requires:
-            - extract-info
-      - render-html:
-          requires:
-            - markdown-to-html
+      # - markdown-to-html:
+      #     requires:
+      #       - extract-info
+      # - render-html:
+      #     requires:
+      #       - markdown-to-html
       - create-statistics:
           requires:
             - extract-info
@@ -269,12 +255,8 @@ workflows:
       - prepare-nuxt:
           requires:
             - create-statistics
-      - convert-nuxt:
-          requires:
-            - prepare-nuxt
       - push-to-nuxt:
           requires:
-            - convert-nuxt
             - prepare-nuxt
       - build-state:
           requires:
