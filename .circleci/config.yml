@@ -149,6 +149,7 @@ jobs:
       - run:
           name: cleanup after build and push
           command: make cleanup
+          
 workflows:
   version: 2
   create_detail_page:
