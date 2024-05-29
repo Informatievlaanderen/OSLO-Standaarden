@@ -98,11 +98,11 @@ jobs:
           working_directory: /tmp/workspace
           command: |
             ls -al /tmp/OSLO-Standaardenregister/content/standaarden/
-      - run:
-          name: Copy statistics to Nuxt content folder
-          working_directory: /tmp/workspace
-          command: |
-            cp statistics.json /tmp/OSLO-Standaardenregister/content/statistics.json
+      # - run:
+      #     name: Copy statistics to Nuxt content folder
+      #     working_directory: /tmp/workspace
+      #     command: |
+      #       cp statistics.json /tmp/OSLO-Standaardenregister/content/statistics.json
       - run:
           name: Insert the commit on the Nuxt branch
           command: |
