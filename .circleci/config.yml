@@ -164,7 +164,7 @@ workflows:
       - prepare-nuxt:
           requires:
             - extract-info
-            - create-statistics
+            # - create-statistics
       - push-to-nuxt:
           requires:
             - prepare-nuxt
