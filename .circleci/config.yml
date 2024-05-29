@@ -149,7 +149,7 @@ jobs:
       - run:
           name: cleanup after build and push
           command: make cleanup
-          
+
 workflows:
   version: 2
   create_detail_page:
@@ -158,9 +158,9 @@ workflows:
       - extract-info:
           requires:
             - checkout
-      - create-statistics:
-          requires:
-            - extract-info
+      # - create-statistics:
+      #     requires:
+      #       - extract-info
       - prepare-nuxt:
           requires:
             - create-statistics
