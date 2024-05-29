@@ -1046,7 +1046,7 @@
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenEnWegmarkeringen",
-    "configuration": "ap-config.json",
+    "configuration": "impl-config.json",
     "rebuild": 10
   },
   {
