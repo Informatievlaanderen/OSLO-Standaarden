@@ -936,12 +936,12 @@
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-fietsinfrastructuur",
-    "rebuild": 10,
+    "rebuild": 11,
     "configuration": "ap-fietsinfrastructuur-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-fietsinfrastructuur",
-    "rebuild": 10,
+    "rebuild": 11,
     "configuration": "voc-fietsinfrastructuur-config.json"
   },
   {
