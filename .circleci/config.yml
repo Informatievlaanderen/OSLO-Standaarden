@@ -104,6 +104,11 @@ jobs:
       #     command: |
       #       cp statistics.json /tmp/OSLO-Standaardenregister/content/statistics.json
       - run:
+          name: List the content of the statistics.json file
+          working_directory: /tmp/workspace
+          command: |
+            cat statistics.json
+      - run:
           name: Insert the commit on the Nuxt branch
           command: |
             export TAG=`echo "${CIRCLE_SHA1}"`
