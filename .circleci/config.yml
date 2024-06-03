@@ -158,13 +158,13 @@ workflows:
       - extract-info:
           requires:
             - checkout
-      # - create-statistics:
-      #     requires:
-      #       - extract-info
+      - create-statistics:
+          requires:
+            - extract-info
       - prepare-nuxt:
           requires:
             - extract-info
-            # - create-statistics
+            - create-statistics
       - push-to-nuxt:
           requires:
             - prepare-nuxt
