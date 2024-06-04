@@ -59,7 +59,7 @@ if cat "$REGISTER" | jq -e . >/dev/null 2>&1; then
     echo PUB_DATE: "$PUB_DATE"
     echo STATUS: "$STATUS"
 
-    jq --arg REPOSITORY "$THEME_NAME" --arg NAAM "$NAME" --arg STATUS "$STATUS" --arg PUB_DATE "$PUB_DATE" '. += [{"name": $NAAM, "repository": $REPOSITORY, "report" : $REPORT, "status" : $STATUS, "publicationDate" : $PUB_DATE}]' "$ROOTDIR/statistics_config.json" >"$ROOTDIR/statistics_config.json.tmp" && mv "$ROOTDIR/statistics_config.json.tmp" "$ROOTDIR/statistics_config.json"
+    jq --arg REPOSITORY "$THEME_NAME" --arg NAAM "$NAME" --arg STATUS "$STATUS" --arg PUB_DATE "$PUB_DATE" '. += [{"name": $NAAM, "repository": $REPOSITORY, "status" : $STATUS, "publicationDate" : $PUB_DATE}]' "$ROOTDIR/statistics_config.json" >"$ROOTDIR/statistics_config.json.tmp" && mv "$ROOTDIR/statistics_config.json.tmp" "$ROOTDIR/statistics_config.json"
   done
 fi
 
