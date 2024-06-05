@@ -5,10 +5,6 @@ ROOTDIR=$1
 # Fetch the content from the URL
 content=$(curl -s "https://raw.githubusercontent.com/Informatievlaanderen/data.vlaanderen.be-statistics/production/aggr.stat")
 
-echo "$content"
-
-cat "$ROOTDIR/statistics.json"
-
 TOTAL_TERMS=$(echo "$content" | jq -r '.totalterms')
 
 echo "$TOTAL_TERMS"
@@ -20,5 +16,14 @@ json=$(echo "$content" | jq -r --argjson uc "$uniqueContributors" '{uniqueContri
 uniqueAffiliations=$(echo "$content" | jq -r '.totalorganisations | tonumber')
 json=$(echo "$json" | jq -r --argjson to "$uniqueAffiliations" '. + {totalOrganisations: $to}')
 
-# Store the result in statistics.json
-echo "$json" >"$ROOTDIR/statistics.json"
+
+# Read the existing content of statistics.json into a variable
+existingContent=$(cat "$ROOTDIR/statistics.json")
+
+# Add the new keys to the existing content
+updatedContent=$(echo "$existingContent" "$json" | jq -s add)
+
+# Write the updated content back to statistics.json
+echo "$updatedContent" >"$ROOTDIR/statistics.json"
+
+cat "$ROOTDIR/statistics.json"
