@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install jq
-sudo apt-get update && sudo apt-get install -y jq
+apt-get update && sudo apt-get install -y jq
 
 ROOTDIR=$1
 
