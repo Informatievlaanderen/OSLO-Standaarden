@@ -37,6 +37,7 @@ jobs:
   create-statistics:
     docker:
       - image: ddvlanck/oslo-statistics:1.1
+      - image: circleci/node
     steps:
       - checkout
       - attach_workspace:
