@@ -14,7 +14,7 @@ uniqueContributors=$(echo "$content" | jq -r '(.authors | tonumber) + (.editors 
 json=$(echo "$content" | jq -r --argjson uc "$uniqueContributors" '{uniqueContributors: $uc}')
 
 uniqueAffiliations=$(echo "$content" | jq -r '.totalorganisations | tonumber')
-json=$(echo "$json" | jq -r --argjson to "$uniqueAffiliations" '. + {totalOrganisations: $to}')
+json=$(echo "$json" | jq -r --argjson to "$uniqueAffiliations" '. + {uniqueAffiliations: $to}')
 
 
 # Read the existing content of statistics.json into a variable
@@ -25,5 +25,3 @@ updatedContent=$(echo "$existingContent" "$json" | jq -s add)
 
 # Write the updated content back to statistics.json
 echo "$updatedContent" >"$ROOTDIR/statistics.json"
-
-cat "$ROOTDIR/statistics.json"
