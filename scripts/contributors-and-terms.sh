@@ -12,8 +12,12 @@ TOTAL_TERMS=$(echo "$content" | jq -r '.totalterms')
 echo "$TOTAL_TERMS"
 
 # Query certain keys and concatenate them into a JSON object
-json=$(echo "$content" | jq -r '{uniqueContributors: (.authors | tonumber) + (.editors | tonumber) + (.contributors | tonumber) + (.participants | tonumber)}')
-json=$(echo "$content" | jq -r '{: (totalorganisations | tonumber)}')
+uniqueContributors=$(echo "$content" | jq -r '(.authors | tonumber) + (.editors | tonumber) + (.contributors | tonumber) + (.participants | tonumber)')
+json=$(echo "$content" | jq -r --argjson uc "$uniqueContributors" '{uniqueContributors: $uc}')
+
+totalOrganisations=$(echo "$content" | jq -r '.totalorganisations | tonumber')
+json=$(echo "$json" | jq -r --argjson to "$totalOrganisations" '. + {totalOrganisations: $to}')
+
 echo "$json"
 
 # Store the result in statistics.json
