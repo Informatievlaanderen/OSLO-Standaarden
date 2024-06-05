@@ -48,7 +48,7 @@ jobs:
           root: /tmp/workspace
           paths:
             - statistics.json
-  add- contributors:
+  add-contributors:
     docker:
       - image: circleci/node
     steps:
