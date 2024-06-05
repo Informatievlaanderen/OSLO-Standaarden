@@ -48,6 +48,20 @@ jobs:
           root: /tmp/workspace
           paths:
             - statistics.json
+  add- contributors:
+    docker:
+      - image: circleci/node
+    steps:
+      - checkout
+      - attach_workspace:
+          at: /tmp/workspace
+      - run:
+          name: Add contributors and terms to statistics from data.vlaanderen.be-statistics
+          command: bash $PWD/scripts/contributors-and-terms.sh /tmp/workspace
+      - persist_to_workspace:
+          root: /tmp/workspace
+          paths:
+            - statistics.json
   prepare-nuxt:
     docker:
       - image: circleci/node
@@ -161,10 +175,15 @@ workflows:
       - create-statistics:
           requires:
             - extract-info
+      - add-contributors:
+          requires:
+            - extract-info
+            - create-statistics
       - prepare-nuxt:
           requires:
             - extract-info
             - create-statistics
+            - add-contributors
       - push-to-nuxt:
           requires:
             - prepare-nuxt
