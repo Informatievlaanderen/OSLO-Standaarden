@@ -7,7 +7,7 @@ content=$(curl -s "https://raw.githubusercontent.com/Informatievlaanderen/data.v
 
 echo "$content"
 
-echo "$ROOTDIR/statistics.json"
+cat "$ROOTDIR/statistics.json"
 
 TOTAL_TERMS=$(echo "$content" | jq -r '.totalterms')
 
