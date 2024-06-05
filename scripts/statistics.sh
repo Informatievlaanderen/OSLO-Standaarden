@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Install jq
+sudo apt-get update && sudo apt-get install -y jq
+
 ROOTDIR=$1
 
 node /app/bin/contributors.js -f "$ROOTDIR/statistics_config.json" -o "$ROOTDIR/statistics.json"
