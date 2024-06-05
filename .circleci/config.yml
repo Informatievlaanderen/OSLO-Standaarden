@@ -37,11 +37,13 @@ jobs:
   create-statistics:
     docker:
       - image: ddvlanck/oslo-statistics:1.1
-      - image: circleci/node
     steps:
       - checkout
       - attach_workspace:
           at: /tmp/workspace
+      - run:
+          name: Install jq
+          command: sudo apt-get update && sudo apt-get install -y jq
       - run:
           name: Creating JSON file with statistics for all standards
           command: bash $PWD/scripts/statistics.sh /tmp/workspace
