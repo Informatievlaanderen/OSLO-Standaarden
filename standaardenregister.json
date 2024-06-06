@@ -469,82 +469,82 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "configuration": "voc-conceptueel-gegevensmodel-openbaar-domein-config.json",
-    "rebuild": 1
+    "rebuild": 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "configuration": "voc-uitbreiding-gebieden-config.json",
-    "rebuild": 1
+    "rebuild": 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "configuration": "voc-uitbreiding-infrastructuurelementen-config.json",
-    "rebuild": 1
+    "rebuild": 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "configuration": "voc-uitbreiding-vegetatie-elementen-config.json",
-    "rebuild": 1
+    "rebuild": 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "configuration": "voc-uitbreiding-terreindelen-config.json",
-    "rebuild": 1
+    "rebuild": 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "configuration": "voc-uitbreiding-waterdelen-config.json",
-    "rebuild": 1
+    "rebuild": 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "configuration": "voc-uitbreiding-begraafplaats-config.json",
-    "rebuild": 1
+    "rebuild": 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "configuration": "ap-openbaar-domein-config.json",
-    "rebuild": 1
+    "rebuild": 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "configuration": "ap-infrastructuurelementen-config.json",
-    "rebuild": 1
+    "rebuild": 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "configuration": "ap-vegetatie-elementen-config.json",
-    "rebuild": 1
+    "rebuild": 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "configuration": "ap-terreindelen-config.json",
-    "rebuild": 1
+    "rebuild": 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "configuration": "ap-begroeid-voorkomen-config.json",
-    "rebuild": 1
+    "rebuild": 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "configuration": "ap-onbegroeid-voorkomen-config.json",
-    "rebuild": 1
+    "rebuild": 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "configuration": "ap-waterdelen-config.json",
-    "rebuild": 1
+    "rebuild": 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "configuration": "ap-water-voorkomen-config.json",
-    "rebuild": 1
+    "rebuild": 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
     "configuration": "ap-begraafplaatsenbeheer-config.json",
-    "rebuild": 1
+    "rebuild": 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-verkeersborden",
@@ -598,107 +598,107 @@
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
-    "rebuild": 2,
+    "rebuild": 3,
     "configuration": "ap-begraafplaatesenbeheer-2-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
-    "rebuild": 2,
+    "rebuild": 3,
     "configuration": "ap-begraafplaatsen-2-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
-    "rebuild": 2,
+    "rebuild": 3,
     "configuration": "ap-begroeid-voorkomen-2-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
-    "rebuild": 2,
+    "rebuild": 3,
     "configuration": "ap-gebieden-2-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
-    "rebuild": 2,
+    "rebuild": 3,
     "configuration": "ap-infrastructuurelementen-2-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
-    "rebuild": 2,
+    "rebuild": 3,
     "configuration": "ap-onbegroeid-voorkomen-2-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
-    "rebuild": 2,
+    "rebuild": 3,
     "configuration": "ap-openbaar-domein-2-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
-    "rebuild": 2,
+    "rebuild": 3,
     "configuration": "ap-terreindelen-2-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
-    "rebuild": 2,
+    "rebuild": 3,
     "configuration": "ap-vegetatie-elementen-2-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
-    "rebuild": 2,
+    "rebuild": 3,
     "configuration": "ap-waterdelen-2-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
-    "rebuild": 2,
+    "rebuild": 3,
     "configuration": "ap-watervoorkomen-2-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
-    "rebuild": 2,
+    "rebuild": 3,
     "configuration": "openbaar-domein-2-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
-    "rebuild": 2,
+    "rebuild": 3,
     "configuration": "voc-uitbreiding-begraafplaats-2-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
-    "rebuild": 2,
+    "rebuild": 3,
     "configuration": "voc-uitbreiding-begroeid-voorkomen-2-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
-    "rebuild": 2,
+    "rebuild": 3,
     "configuration": "voc-uitbreiding-gebied-2-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
-    "rebuild": 2,
+    "rebuild": 3,
     "configuration": "voc-uitbreiding-infrastructuur-2-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
-    "rebuild": 2,
+    "rebuild": 3,
     "configuration": "voc-uitbreiding-onbegroeid-voorkomen-2-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
-    "rebuild": 2,
+    "rebuild": 3,
     "configuration": "voc-uitbreiding-terreindeel-2-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
-    "rebuild": 2,
+    "rebuild": 3,
     "configuration": "voc-uitbreiding-vegetatie-2-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
-    "rebuild": 2,
+    "rebuild": 3,
     "configuration": "voc-uitbreiding-waterdeel-2-config.json"
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
-    "rebuild": 2,
+    "rebuild": 3,
     "configuration": "voc-uitbreiding-watervoorkomen-2-config.json"
   },
   {
