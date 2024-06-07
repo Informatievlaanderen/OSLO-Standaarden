@@ -1013,8 +1013,13 @@
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-Leercredential",
-    "configuration": "ap-or-voc-leercredential-config.json",
-    "rebuild": 7
+    "configuration": "voc-leercredential-config.json",
+    "rebuild": 8
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-Leercredential",
+    "configuration": "ap-leerprestatiecredential-config.json",
+    "rebuild": 8
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-visualo",
@@ -1112,9 +1117,9 @@
     "rebuild": 5
   },
   {
-    "repository": "https://github.com/Informatievlaanderen/OSLOthema-Leerinschrijfcredential",
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-Leercredential",
     "configuration": "ap-leerinschrijfcredential-config.json",
-    "rebuild": 2
+    "rebuild": 4
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-Waterkwaliteit",
