@@ -1124,7 +1124,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-Leercredential",
     "configuration": "ap-leerinschrijfcredential-config.json",
-    "rebuild": 9
+    "rebuild": 10
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-Waterkwaliteit",
