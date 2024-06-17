@@ -1044,12 +1044,12 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-moBurgers",
     "configuration": "ap-mobiliteitsbudget-config.json",
-    "rebuild": 10
+    "rebuild": 11
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-moBurgers",
     "configuration": "voc-mobiliteitsbudget-config.json",
-    "rebuild": 10
+    "rebuild": 11
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenEnWegmarkeringen",
