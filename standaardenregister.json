@@ -984,12 +984,12 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-cultuurandjeugdinfrastructuur",
     "configuration": "ap-cultuur-en-jeugdinfrastructuur-config.json",
-    "rebuild": 11
+    "rebuild": 12
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-cultuurandjeugdinfrastructuur",
     "configuration": "voc-cultuur-en-jeugdinfrastructuur-config.json",
-    "rebuild": 3
+    "rebuild": 4
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bestuurlijkSanctieregister",
