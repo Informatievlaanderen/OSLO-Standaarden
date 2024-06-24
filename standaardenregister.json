@@ -1099,12 +1099,12 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-kindFiche",
     "configuration": "ap-config.json",
-    "rebuild": 5
+    "rebuild": 6
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-kindFiche",
     "configuration": "voc-config.json",
-    "rebuild": 1
+    "rebuild": 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-Waterkwaliteit",
