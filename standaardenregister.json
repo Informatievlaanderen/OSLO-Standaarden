@@ -389,7 +389,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-DCATAPVlaanderen",
     "configuration": "ap-dcat-ap-vl-config.json",
-    "rebuild": 3
+    "rebuild": 4
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-GeneriekeHypermediaAPI",
@@ -949,7 +949,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-DCATAPVlaanderen",
     "configuration": "ap-dcat-ap-vl-v20-config.json",
-    "rebuild": 12
+    "rebuild": 13
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-consent",
