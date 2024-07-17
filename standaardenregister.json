@@ -1039,7 +1039,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-slimmeStadsdistributie",
     "configuration": "ap-or-voc-config.json",
-    "rebuild": 4
+    "rebuild": 5
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-moBurgers",
