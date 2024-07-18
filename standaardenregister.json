@@ -14,12 +14,12 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-schuldbeheer",
     "configuration": "ap-schuldbeheer-config.json",
-    "rebuild": 6
+    "rebuild": 7
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-schuldbeheer",
     "configuration": "voc-schuldbeheer-config.json",
-    "rebuild": 0
+    "rebuild": 1
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-imkl",
