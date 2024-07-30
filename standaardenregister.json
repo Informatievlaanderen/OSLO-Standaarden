@@ -1155,5 +1155,15 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-DigitaleWatermeter",
     "configuration": "voc-digitalewatermeter-config.json",
     "rebuild": 8
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-vrachtwagenParkeren",
+    "configuration": "ap-vrachtwagenparkeren-config.json",
+    "rebuild": 1
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-vrachtwagenParkeren",
+    "configuration": "voc-vrachtwagenparkeren-config.json",
+    "rebuild": 1
   }
 ]
