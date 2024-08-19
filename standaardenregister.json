@@ -1045,13 +1045,13 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-slimmeStadsdistributie",
     "configuration": "ap-slimmestadsdistributie-config.json",
     "status": "kandidaat-standaard",
-    "rebuild": 5
+    "rebuild": 6
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-slimmeStadsdistributie",
     "configuration": "voc-slimmestadsdistributie-config.json",
     "status": "kandidaat-standaard",
-    "rebuild": 5
+    "rebuild": 6
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-moBurgers",
