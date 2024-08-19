@@ -1086,12 +1086,12 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-lokaleEconomie",
     "configuration": "ap-lokale-economie-config.json",
-    "rebuild": 20
+    "rebuild": 21
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-lokaleEconomie",
     "configuration": "voc-lokale-economie-config.json",
-    "rebuild": 14
+    "rebuild": 15
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-overlijdensaangifte",
