@@ -24,7 +24,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-imkl",
     "configuration": "ap-kabels-en-leidingen-config.json",
-    "rebuild": 5
+    "rebuild": 6
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-imkl",
