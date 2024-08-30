@@ -2,10 +2,10 @@ version: 2
 jobs:
   checkout:
     docker:
-      - image: circleci/node
+      - image: cimg/node:20.15.0
     steps:
       - checkout
-      - run: mkdir -p workspace
+      - run: mkdir -p /tmp/workspace
       - run: bash $PWD/scripts/checkout.sh /tmp/workspace $PWD/standaardenregister.json
       - run:
           name: List the files which have been created
@@ -22,12 +22,15 @@ jobs:
             - repositories/
   extract-info:
     docker:
-      - image: circleci/node
+      - image: cimg/node:20.15.0
     steps:
       - checkout
       - attach_workspace:
           at: /tmp/workspace
-      - run: bash $PWD/scripts/extract-info.sh /tmp/workspace $PWD/standaardenregister.json
+      - run: 
+          name: download all reporsitories and switch to their standaardregister branch
+          command: | 
+            bash $PWD/scripts/extract-info.sh /tmp/workspace $PWD/standaardenregister.json $PWD/config
       - persist_to_workspace:
           root: /tmp/workspace
           paths:
@@ -64,7 +67,7 @@ jobs:
             - statistics.json
   prepare-nuxt:
     docker:
-      - image: circleci/node
+      - image: cimg/node:20.15.0
     steps:
       - checkout
       - attach_workspace:
@@ -76,7 +79,7 @@ jobs:
             - nuxt/
   push-to-nuxt:
     docker:
-      - image: circleci/node
+      - image: cimg/node:20.15.0
     steps:
       - checkout
       - attach_workspace:
@@ -163,7 +166,62 @@ jobs:
       - run:
           name: cleanup after build and push
           command: make cleanup
-
+  push-to-repository:
+    docker:
+      - image: cimg/node:20.15.0
+    steps:
+      - checkout
+      - attach_workspace:
+          at: /tmp/workspace
+      - add_ssh_keys:
+          fingerprints:
+            - "15:51:57:05:3f:2c:a3:23:44:2a:52:5a:a6:aa:4c:c5"
+      - run:
+          name: Checkout target repository
+          working_directory: /tmp
+          command: |
+            rm -rf OSLO-StandaardenregisterGenerated
+            git clone git@github.com:Informatievlaanderen/OSLO-StandaardenregisterGenerated.git
+      - run:
+          name: Clean the generated directory
+          working_directory: /tmp/OSLO-StandaardenregisterGenerated
+          command: |
+            git fetch origin
+      #            if [ "`cat /tmp/workspace/haschangedpublications.json`" == "false" ] ; then git rm -r --force * ; fi
+      - run: bash $PWD/scripts/clean-repository-generated.sh
+      - run:
+          name: Copy generated assets
+          working_directory: /tmp/workspace
+          command: |
+            mkdir -p /tmp/OSLO-StandaardenregisterGenerated/public/erkende-standaard
+            mkdir -p /tmp/OSLO-StandaardenregisterGenerated/public/kandidaat-standaard
+            mkdir -p /tmp/OSLO-StandaardenregisterGenerated/public/geregistreerde-standaard
+            mkdir -p /tmp/OSLO-StandaardenregisterGenerated/public/standaard-in-ontwikkeling
+            mkdir -p /tmp/OSLO-StandaardenregisterGenerated/public/zonder-status
+            mkdir -p /tmp/OSLO-StandaardenregisterGenerated/data
+            cp statistics.json /tmp/OSLO-StandaardenregisterGenerated/public/data/statistics.json
+            if [ -d html_pages/erkende-standaard ] ; then if [ ! "$(ls -A html_pages/erkende-standaard)" ] ; then echo "Directory html_pages/erkende-standaard is empty" ; else cp -R html_pages/erkende-standaard/* /tmp/OSLO-StandaardenregisterGenerated/public/erkende-standaard/ ; fi fi
+            if [ -d html_pages/kandidaat-standaard ] ; then if [ ! "$(ls -A html_pages/kandidaat-standaard)" ] ; then echo "Directory html_pages/kandidaat-standaard is empty" ; else cp -R html_pages/kandidaat-standaard/* /tmp/OSLO-StandaardenregisterGenerated/public/kandidaat-standaard/ ; fi fi
+            if [ -d html_pages/geregistreerde-standaard ] ; then if [ ! "$(ls -A html_pages/geregistreerde-standaard)" ] ; then echo "Directory html_pages/geregistreerde-standaard is empty" ; else cp -R html_pages/geregistreerde-standaard/* /tmp/OSLO-StandaardenregisterGenerated/public/geregistreerde-standaard/ ; fi fi
+            if [ -d html_pages/standaard-in-ontwikkeling ] ; then if [ ! "$(ls -A html_pages/standaard-in-ontwikkeling)" ] ; then echo "Directory html_pages/standaard-in-ontwikkeling is empty" ; else cp -R html_pages/standaard-in-ontwikkeling/* /tmp/OSLO-StandaardenregisterGenerated/public/standaard-in-ontwikkeling/ ; fi fi
+            if [ -d html_pages/zonder-status ] ; then if [ ! "$(ls -A html_pages/zonder-status)" ] ; then echo "Directory html_pages/zonder-status is empty" ; else cp -R html_pages/zonder-status/* /tmp/OSLO-StandaardenregisterGenerated/public/zonder-status/; fi fi
+      - run:
+          name: Insert the commit
+          command: |
+            export TAG=`echo "${CIRCLE_SHA1}"`
+            echo "{\"commit\" : \"$TAG\"}" > /tmp/OSLO-StandaardenregisterGenerated/commit.json
+      - run:
+          name: Push results to Github repository OSLO-StandaardenregisterGenerated
+          working_directory: /tmp/OSLO-StandaardenregisterGenerated
+          command: |
+            git config user.email "oslo@oslo"
+            git config user.name "Circle CI Builder"
+            git add .
+            git status
+            git commit -m "Applying changes from commit ${CIRCLE_SHA1}" --allow-empty
+            export TAG=`echo "${CIRCLE_SHA1}" | cut -c1-15`
+            git tag "${TAG}"
+            git push --force origin master
 workflows:
   version: 2
   create_detail_page:
@@ -179,16 +237,20 @@ workflows:
           requires:
             - extract-info
             - create-statistics
+#      - push-to-repository:
+#          requires:
+#            - render-html
+#            - create-statistics
       - prepare-nuxt:
           requires:
-            - extract-info
             - create-statistics
             - add-contributors
-      - push-to-nuxt:
-          requires:
-            - prepare-nuxt
-      - build-state:
-          requires:
-            - checkout
-            - prepare-nuxt
-            - push-to-nuxt
+#      - push-to-nuxt:
+#          requires:
+#            - prepare-nuxt
+#      - build-state:
+#          requires:
+#            - checkout
+#            - prepare-nuxt
+#            - push-to-nuxt
+
