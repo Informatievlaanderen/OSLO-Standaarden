@@ -28,8 +28,8 @@ jobs:
       - attach_workspace:
           at: /tmp/workspace
       - run: 
-        name: download all reporsitories and switch to their standaardregister branch
-        command: | 
+          name: download all reporsitories and switch to their standaardregister branch
+          command: | 
             bash $PWD/scripts/extract-info.sh /tmp/workspace $PWD/standaardenregister.json $PWD/config
       - persist_to_workspace:
           root: /tmp/workspace
@@ -37,32 +37,6 @@ jobs:
             - description-paths.txt
             - filenames.txt
             - statistics_config.json
-  markdown-to-html:
-    docker:
-      - image: ddvlanck/markdown-to-html:1.1
-    steps:
-      - checkout
-      - attach_workspace:
-          at: /tmp/workspace
-      - run: bash $PWD/scripts/markdown-transformer.sh /tmp/workspace
-      - persist_to_workspace:
-          root: /tmp/workspace
-          paths:
-            - descriptions/
-  render-html:
-    docker:
-      - image: ddvlanck/html-page-generator:1.4.6
-    steps:
-      - checkout
-      - attach_workspace:
-          at: /tmp/workspace
-      - run:
-          name: Creating HTML pages for modified or new standards
-          command: bash $PWD/scripts/template-renderer.sh
-      - persist_to_workspace:
-          root: /tmp/workspace
-          paths:
-            - html_pages/
   create-statistics:
     docker:
       - image: ddvlanck/oslo-statistics:1.1
@@ -73,6 +47,20 @@ jobs:
       - run:
           name: Creating JSON file with statistics for all standards
           command: bash $PWD/scripts/statistics.sh /tmp/workspace
+      - persist_to_workspace:
+          root: /tmp/workspace
+          paths:
+            - statistics.json
+  add-contributors:
+    docker:
+      - image: circleci/node
+    steps:
+      - checkout
+      - attach_workspace:
+          at: /tmp/workspace
+      - run:
+          name: Add contributors and terms to statistics from data.vlaanderen.be-statistics
+          command: bash $PWD/scripts/contributors-and-terms.sh /tmp/workspace
       - persist_to_workspace:
           root: /tmp/workspace
           paths:
@@ -89,20 +77,6 @@ jobs:
           root: /tmp/workspace
           paths:
             - nuxt/
-  # This is a temporary solution to convert the old config file to a new config file with different keys
-  # Eventually this should be deleted once the new config file can be used inside each individual thema repository
-  convert-nuxt:
-    docker:
-      - image: cimg/node:20.15.0
-    steps:
-      - checkout
-      - attach_workspace:
-          at: /tmp/workspace
-      - run: bash $PWD/scripts/sanitize-configurations.sh /tmp/workspace/nuxt
-      - persist_to_workspace:
-          root: /tmp/workspace
-          paths:
-            - nuxt-sanitized/
   push-to-nuxt:
     docker:
       - image: cimg/node:20.15.0
@@ -126,11 +100,21 @@ jobs:
             git checkout standaarden
             git fetch origin
       - run:
+          name: List folder structure of nuxt/
+          working_directory: /tmp/workspace
+          command: |
+            ls -al nuxt/
+      - run:
           name: Copy new content to Nuxt content folder
           working_directory: /tmp/workspace
           command: |
             mkdir -p /tmp/OSLO-Standaardenregister/content/standaarden
-            cp -r nuxt-sanitized/* /tmp/OSLO-Standaardenregister/content/standaarden
+            cp -r nuxt/* /tmp/OSLO-Standaardenregister/content/standaarden
+      - run:
+          name: List folder structure of tmp/OSLO-Standaardenregister/content/standaarden/
+          working_directory: /tmp/workspace
+          command: |
+            ls -al /tmp/OSLO-Standaardenregister/content/standaarden/
       - run:
           name: Copy statistics to Nuxt content folder
           working_directory: /tmp/workspace
@@ -141,6 +125,11 @@ jobs:
           command: |
             export TAG=`echo "${CIRCLE_SHA1}"`
             echo "{\"commit\" : \"$TAG\"}" > /tmp/OSLO-Standaardenregister/commit.json
+      - run:
+          name: List folder structure of tmp/OSLO-Standaardenregister/content/standaarden/
+          working_directory: /tmp/workspace
+          command: |
+            ls -al /tmp/OSLO-Standaardenregister/content/standaarden/
       - run:
           name: Push results to 'standaarden' branch of OSLO-Standaardenregister
           working_directory: /tmp/OSLO-Standaardenregister
@@ -241,15 +230,13 @@ workflows:
       - extract-info:
           requires:
             - checkout
-      - markdown-to-html:
-          requires:
-            - extract-info
-      - render-html:
-          requires:
-            - markdown-to-html
       - create-statistics:
           requires:
             - extract-info
+      - add-contributors:
+          requires:
+            - extract-info
+            - create-statistics
 #      - push-to-repository:
 #          requires:
 #            - render-html
@@ -257,12 +244,9 @@ workflows:
       - prepare-nuxt:
           requires:
             - create-statistics
-      - convert-nuxt:
-          requires:
-            - prepare-nuxt
+            - add-contributors
 #      - push-to-nuxt:
 #          requires:
-#            - convert-nuxt
 #            - prepare-nuxt
 #      - build-state:
 #          requires:
