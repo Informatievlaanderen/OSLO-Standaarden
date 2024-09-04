@@ -5,16 +5,34 @@ ROOTDIR=$1
 
 # Determine the last changed files
 mkdir -p "$ROOTDIR"
-# if false; then
-#   # Previous commit was made
-# TODO: Implement the logic to determine the changed files rather than a full rebuild of the standards
-# else
-# No previous commit
-# Doing full rebuild of all standards
-echo "No previous commit was made."
-echo "Processing all standards in standaardenregister.json"
-cp "$PUBCONFIG" "$ROOTDIR/changedstandards.json"
-# fi
+curl -o "$ROOTDIR/commit.json" https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Standaardenregister/standaarden/commit.json
+sleep 5s
+jq . "$ROOTDIR/commit.json"
+
+echo "Checking for changes in the standards"
+if [ $? -eq 0 ]; then
+  PREV_COMMIT=$(jq -r .commit "$ROOTDIR/commit.json")
+  changedFiles=$(git diff --name-only "$PREV_COMMIT")
+  echo "Changed files: $changedFiles"
+  if [ "$changedFiles" == "standaardenregister.json" ]; then
+    echo "One or more standards seem to be modified"
+    echo "These standards were modified:"
+    git show "$PREV_COMMIT:standaardenregister.json" >previous_version
+    jq -s '.[0] - .[1]' standaardenregister.json previous_version
+    jq -s '.[0] - .[1]' standaardenregister.json previous_version >"$ROOTDIR/changedstandards.json"
+    cat "$ROOTDIR/changedstandards.json"
+  else
+    echo "One or more files were changed, possibly a script, so a full rebuild is necessary"
+    cp "${PUBCONFIG}" "$ROOTDIR/changedstandards.json"
+  fi
+
+else
+  # No previous commit
+  # Doing full rebuild of all standards
+  echo "No previous commit was made."
+  echo "Processing all standards in standaardenregister.json"
+  cp "$PUBCONFIG" "$ROOTDIR/changedstandards.json"
+fi
 
 #Process all standards that have been changed or were added
 echo "Start processing the standards"
