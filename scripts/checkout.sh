@@ -5,7 +5,6 @@ ROOTDIR=$1
 
 # Determine the last changed files
 mkdir -p "$ROOTDIR"
-jq . "$ROOTDIR/commit.json"
 if false; then
   # Previous commit was made
   # TODO: Implement the logic to determine the changed files rather than a full rebuild of the standards
