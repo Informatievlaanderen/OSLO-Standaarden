@@ -61,5 +61,6 @@ do
   else
     echo "Translation md: Files succesfully translated"
   fi
+  rm "$NUXTDIR/$NORMALIZED_SPEC_NAME/description.md"
   
 done < "$ROOTDIR/tmp-register.txt"
