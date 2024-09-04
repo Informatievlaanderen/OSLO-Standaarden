@@ -2,7 +2,7 @@ version: 2
 jobs:
   checkout:
     docker:
-      - image: circleci/node
+      - image: cimg/node:20.15.0
     steps:
       - checkout
       - run: mkdir -p workspace
@@ -22,7 +22,7 @@ jobs:
             - repositories/
   extract-info:
     docker:
-      - image: circleci/node
+      - image: cimg/node:20.15.0
     steps:
       - checkout
       - attach_workspace:
@@ -50,7 +50,7 @@ jobs:
             - statistics.json
   add-contributors:
     docker:
-      - image: circleci/node
+      - image: cimg/node:20.15.0
     steps:
       - checkout
       - attach_workspace:
@@ -64,7 +64,7 @@ jobs:
             - statistics.json
   prepare-nuxt:
     docker:
-      - image: circleci/node
+      - image: cimg/node:20.15.0
     steps:
       - checkout
       - attach_workspace:
@@ -76,7 +76,7 @@ jobs:
             - nuxt/
   push-to-nuxt:
     docker:
-      - image: circleci/node
+      - image: cimg/node:20.15.0
     steps:
       - checkout
       - attach_workspace:
