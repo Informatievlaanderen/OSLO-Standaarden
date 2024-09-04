@@ -67,7 +67,7 @@ jobs:
             - statistics.json
   prepare-nuxt:
     docker:
-      - image: cimg/node:20.15.0
+      - image: informatievlaanderen/oslo-specification-generator:multilingual-dev4.0
     steps:
       - checkout
       - attach_workspace:

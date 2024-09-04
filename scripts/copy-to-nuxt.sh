@@ -4,6 +4,10 @@ ROOTDIR=$1
 REPODIR=$ROOTDIR/repositories
 NUXTDIR=$ROOTDIR/nuxt
 
+# Define list of possible languages
+LANGUAGES=("en" "nl" "fr" "de")
+LANGUAGE_STRING=$(IFS=','; echo "${LANGUAGES[*]}")
+
 mkdir -p "$NUXTDIR"
 
 echo ls -a
@@ -38,8 +42,23 @@ do
   # Store the repository name in the configuration file
   jq --arg REPOSITORY "$REPO_NAME" '. + {"repository": $REPOSITORY}' "$CONFIG_NAME.json" > "temp.json" && mv "temp.json" "$CONFIG_NAME.json"
 
-  ## Copy the generated configuration file and description file to the nuxt directory
-  cp "$CONFIG_NAME.json" "$NUXTDIR/$NORMALIZED_SPEC_NAME/configuration.json"
+  ## Translate and copy the generated configuration file and description file to the nuxt directory
+  for lang in "${LANGUAGES[@]}"; do
+    # Execute node script using if 
+    if ! node /app/autotranslate-config.js -i "${CONFIG_NAME}.json" -m "nl" -g "${lang}" -s "${AZURETRANLATIONKEY}"; then
+        echo "Translation config: failed"
+    else
+        echo "Translation config: Files successfully translated"
+    fi
+    # Copy the translated file to the nuxt directory
+    cp "${CONFIG_NAME}.json" "$NUXTDIR/$NORMALIZED_SPEC_NAME/$lang/configuration.json"
+  done
+
   cp "descriptions/$DESCRIPTION_NAME" "$NUXTDIR/$NORMALIZED_SPEC_NAME/description.md"
+  if ! node /app/autotranslate-md.js -i "$NUXTDIR/$NORMALIZED_SPEC_NAME/description.md" -m "nl" -g "$LANGUAGE_STRING" -s "${AZURETRANLATIONKEY}" ; then
+    echo "Translation md: failed"
+  else
+    echo "Translation md: Files succesfully translated"
+  fi
   
 done < "$ROOTDIR/tmp-register.txt"
