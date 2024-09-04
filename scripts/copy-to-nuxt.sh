@@ -45,17 +45,18 @@ do
   ## Translate and copy the generated configuration file and description file to the nuxt directory
   for lang in "${LANGUAGES[@]}"; do
     # Execute node script using if 
-    if ! node /app/autotranslate-config.js -i "${CONFIG_NAME}.json" -m "nl" -g "${lang}" -s "${AZURETRANLATIONKEY}"; then
+    if ! node /app/autotranslate-config.js -i "${CONFIG_NAME}.json" -m "nl" -g "${lang}" -s "${AZURETRANSLATIONKEY}"; then
         echo "Translation config: failed"
     else
         echo "Translation config: Files successfully translated"
     fi
     # Copy the translated file to the nuxt directory
+    mkdir -p "$NUXTDIR/$NORMALIZED_SPEC_NAME/$lang"
     cp "${CONFIG_NAME}.json" "$NUXTDIR/$NORMALIZED_SPEC_NAME/$lang/configuration.json"
   done
 
   cp "descriptions/$DESCRIPTION_NAME" "$NUXTDIR/$NORMALIZED_SPEC_NAME/description.md"
-  if ! node /app/autotranslate-md.js -i "$NUXTDIR/$NORMALIZED_SPEC_NAME/description.md" -m "nl" -g "$LANGUAGE_STRING" -s "${AZURETRANLATIONKEY}" ; then
+  if ! node /app/autotranslate-md.js -i "$NUXTDIR/$NORMALIZED_SPEC_NAME/description.md" -m "nl" -g "$LANGUAGE_STRING" -s "${AZURETRANSLATIONKEY}" ; then
     echo "Translation md: failed"
   else
     echo "Translation md: Files succesfully translated"
