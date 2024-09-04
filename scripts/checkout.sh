@@ -5,16 +5,16 @@ ROOTDIR=$1
 
 # Determine the last changed files
 mkdir -p "$ROOTDIR"
-if false; then
-  # Previous commit was made
-  # TODO: Implement the logic to determine the changed files rather than a full rebuild of the standards
-else
-  # No previous commit
-  # Doing full rebuild of all standards
-  echo "No previous commit was made."
-  echo "Processing all standards in standaardenregister.json"
-  cp "$PUBCONFIG" "$ROOTDIR/changedstandards.json"
-fi
+# if false; then
+#   # Previous commit was made
+# TODO: Implement the logic to determine the changed files rather than a full rebuild of the standards
+# else
+# No previous commit
+# Doing full rebuild of all standards
+echo "No previous commit was made."
+echo "Processing all standards in standaardenregister.json"
+cp "$PUBCONFIG" "$ROOTDIR/changedstandards.json"
+# fi
 
 #Process all standards that have been changed or were added
 echo "Start processing the standards"
