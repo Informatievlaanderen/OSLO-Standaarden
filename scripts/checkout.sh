@@ -5,19 +5,18 @@ ROOTDIR=$1
 
 # Determine the last changed files
 mkdir -p "$ROOTDIR"
-curl -o "$ROOTDIR/commit.json" https://raw.githubusercontent.com/Informatievlaanderen/OSLO-StandaardenregisterGenerated/master/commit.json
+curl -o "$ROOTDIR/commit.json" https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Standaardenregister/standaarden/commit.json
 sleep 5s
 jq . "$ROOTDIR/commit.json"
 if [ $? -eq 0 ]; then
   PREV_COMMIT=$(jq -r .commit "$ROOTDIR/commit.json")
   changedFiles=$(git diff --name-only "$PREV_COMMIT")
-  if [ "$changedFiles" == "standaardenregister.json" ]
-  then
+  if [ "$changedFiles" == "standaardenregister.json" ]; then
     echo "One or more standards seem to be modified"
     echo "These standards were modified:"
-    git show "$PREV_COMMIT:standaardenregister.json" > previous_version
+    git show "$PREV_COMMIT:standaardenregister.json" >previous_version
     jq -s '.[0] - .[1]' standaardenregister.json previous_version
-    jq -s '.[0] - .[1]' standaardenregister.json previous_version > "$ROOTDIR/changedstandards.json"
+    jq -s '.[0] - .[1]' standaardenregister.json previous_version >"$ROOTDIR/changedstandards.json"
     cat "$ROOTDIR/changedstandards.json"
   else
     echo "One or more files were changed, possibly a script, so a full rebuild is necessary"
@@ -52,7 +51,7 @@ if cat "$ROOTDIR/changedstandards.json" | jq -e . >/dev/null 2>&1; then
     mkdir -p "$ROOTDIR/repositories/$THEME_NAME"
 
     ### We convert the standards register from JSON to a simple text file
-    echo "$THEME_NAME:$CONFIG:$STATUS" >> "$ROOTDIR/tmp-register.txt"
+    echo "$THEME_NAME:$CONFIG:$STATUS" >>"$ROOTDIR/tmp-register.txt"
 
     ### Cloning repository and checking out branch standaardenregister
     git clone "$REPOSITORY" "$ROOTDIR/repositories/$THEME_NAME"
@@ -61,10 +60,10 @@ if cat "$ROOTDIR/changedstandards.json" | jq -e . >/dev/null 2>&1; then
 
     ### We extend the the configuration file for a specific file in a theme with the baseURL
     BASE_URL="https://github.com/Informatievlaanderen/$THEME_NAME/raw/standaardenregister"
-    jq --arg BASE_URL "$BASE_URL" '. |= . + {"baseURL" : $BASE_URL}' "$CONFIG" > "$CONFIG-extended.json"
+    jq --arg BASE_URL "$BASE_URL" '. |= . + {"baseURL" : $BASE_URL}' "$CONFIG" >"$CONFIG-extended.json"
 
     ## Nuxt and correct filename
-    jq --arg BASE_URL "$BASE_URL" --arg STATUS "$STATUS" '. |= . + {"baseURL" : $BASE_URL , "status": $STATUS}' "$CONFIG" > "$CONFIG_NAME-extended.json"
+    jq --arg BASE_URL "$BASE_URL" --arg STATUS "$STATUS" '. |= . + {"baseURL" : $BASE_URL , "status": $STATUS}' "$CONFIG" >"$CONFIG_NAME-extended.json"
 
     echo "Done processing"
 
