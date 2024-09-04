@@ -8,9 +8,12 @@ mkdir -p "$ROOTDIR"
 curl -o "$ROOTDIR/commit.json" https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Standaardenregister/standaarden/commit.json
 sleep 5s
 jq . "$ROOTDIR/commit.json"
+
+echo "Checking for changes in the standards"
 if [ $? -eq 0 ]; then
   PREV_COMMIT=$(jq -r .commit "$ROOTDIR/commit.json")
   changedFiles=$(git diff --name-only "$PREV_COMMIT")
+  echo "Changed files: $changedFiles"
   if [ "$changedFiles" == "standaardenregister.json" ]; then
     echo "One or more standards seem to be modified"
     echo "These standards were modified:"
