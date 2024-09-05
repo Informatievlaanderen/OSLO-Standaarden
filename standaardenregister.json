@@ -149,7 +149,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
     "configuration": "bodemenondergrond-AP-RuimtelijkeBereiken-config.json",
-    "rebuild": 4
+    "rebuild": 5
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
