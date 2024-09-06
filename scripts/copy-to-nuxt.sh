@@ -88,7 +88,7 @@ do
   rm "$NUXTDIR/$NORMALIZED_SPEC_NAME/description.md"
 
   # Copy the translations to the memory
-  cp -r "$NUXTDIR/$NORMALIZED_SPEC_NAME/" "$NUXTMEMORYNORMALIZED_SPEC_NAME"
+  cp -r "$NUXTDIR/$NORMALIZED_SPEC_NAME/"* "$NUXTMEMORYNORMALIZED_SPEC_NAME"
 
 done < "$ROOTDIR/tmp-register.txt"
 
