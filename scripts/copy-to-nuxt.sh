@@ -43,7 +43,7 @@ do
   jq --arg REPOSITORY "$REPO_NAME" '. + {"repository": $REPOSITORY}' "$CONFIG_NAME.json" > "temp.json" && mv "temp.json" "$CONFIG_NAME.json"
 
   # Translate the configuration file (multilang)
-  if ! node /app/autotranslate-config.js -i "${CONFIG_NAME}-multilang.json" -m "nl" -g "${LANGUAGE_STRING}" -s "${AZURETRANSLATIONKEY}"; then
+  if ! node /app/autotranslate-config.js -i "${CONFIG_NAME}.json" -o "${CONFIG_NAME}-multilang.json" -m "nl" -g "${LANGUAGE_STRING}" -s "${AZURETRANSLATIONKEY}"; then
       echo "Translation config: failed"
   else
       echo "Translation config: Files successfully translated"
