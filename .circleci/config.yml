@@ -220,7 +220,7 @@ jobs:
           working_directory: /tmp/workspace
           command: |
             ls -1
-            if [ -d nuxtmemory ] ; then tar -zcf nuxtmemory.tgz nuxt ; cp nuxtmemory.tgz /tmp/OSLO-StandaardenregisterGenerated/nuxtmemory.tgz ; fi
+            if [ -d nuxtmemory ] ; then tar -zcf nuxtmemory.tgz nuxtmemory ; cp nuxtmemory.tgz /tmp/OSLO-StandaardenregisterGenerated/nuxtmemory.tgz ; fi
       - run:
           name: Insert the commit
           command: |
