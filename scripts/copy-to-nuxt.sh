@@ -42,24 +42,30 @@ do
   # Store the repository name in the configuration file
   jq --arg REPOSITORY "$REPO_NAME" '. + {"repository": $REPOSITORY}' "$CONFIG_NAME.json" > "temp.json" && mv "temp.json" "$CONFIG_NAME.json"
 
-  ## Translate and copy the generated configuration file and description file to the nuxt directory
+  # Translate the configuration file (multilang)
+  if ! node /app/autotranslate-config.js -i "${CONFIG_NAME}-multilang.json" -m "nl" -g "${LANGUAGE_STRING}" -s "${AZURETRANSLATIONKEY}"; then
+      echo "Translation config: failed"
+  else
+      echo "Translation config: Files successfully translated"
+  fi
+  cp "${CONFIG_NAME}-multilang.json" "$NUXTDIR/$NORMALIZED_SPEC_NAME/configuration.json"
+  
+  ## Convert config file to single language and copy the generated configuration file to the nuxt directory
   for lang in "${LANGUAGES[@]}"; do
-    # Execute node script using if 
-    if ! node /app/autotranslate-config.js -i "${CONFIG_NAME}.json" -m "nl" -g "${lang}" -s "${AZURETRANSLATIONKEY}"; then
-        echo "Translation config: failed"
-    else
-        echo "Translation config: Files successfully translated"
-    fi
-    # Copy the translated file to the nuxt directory
     mkdir -p "$NUXTDIR/$NORMALIZED_SPEC_NAME/$lang"
-    cp "${CONFIG_NAME}.json" "$NUXTDIR/$NORMALIZED_SPEC_NAME/$lang/configuration.json"
+    if ! node /app/convert-config.js -i "${CONFIG_NAME}-multilang.json" -l "${lang}" -o "$NUXTDIR/$NORMALIZED_SPEC_NAME/$lang/configuration.json"; then
+      echo "Convert config: failed"
+    else
+      echo "Convert config: Files successfully translated"
+    fi
   done
 
+  # Translate the description file
   cp "descriptions/$DESCRIPTION_NAME" "$NUXTDIR/$NORMALIZED_SPEC_NAME/description.md"
-  if ! node /app/autotranslate-md.js -i "$NUXTDIR/$NORMALIZED_SPEC_NAME/description.md" -m "nl" -g "$LANGUAGE_STRING" -s "${AZURETRANSLATIONKEY}" ; then
-    echo "Translation md: failed"
+  if ! node /app/autotranslate-md.js -i "$NUXTDIR/$NORMALIZED_SPEC_NAME/description.md" -m "nl" -g "{$LANGUAGE_STRING}" -s "${AZURETRANSLATIONKEY}" ; then
+    echo "Translation md description: failed"
   else
-    echo "Translation md: Files succesfully translated"
+    echo "Translation md description: Files succesfully translated"
   fi
   rm "$NUXTDIR/$NORMALIZED_SPEC_NAME/description.md"
   
