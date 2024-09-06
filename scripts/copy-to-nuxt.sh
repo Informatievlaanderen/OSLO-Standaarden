@@ -3,6 +3,7 @@
 ROOTDIR=$1
 REPODIR=$ROOTDIR/repositories
 NUXTDIR=$ROOTDIR/nuxt
+NUXTMEMORYDIR=$ROOTDIR/nuxtmemory
 
 # Define list of possible languages
 LANGUAGES=("en" "nl" "fr" "de")
@@ -34,6 +35,7 @@ do
 
   ## Normalizing spec name to be used as directory name
   NORMALIZED_SPEC_NAME="$(echo $SPEC_NAME | iconv -f utf8 -t ascii//TRANSLIT | tr -c '[:alnum:]\n\r' '-' | tr -s '-' | tr '[:upper:]' '[:lower:]')"
+  NUXTMEMORYNORMALIZED_SPEC_NAME="$NUXTMEMORYDIR/$NORMALIZED_SPEC_NAME"
 
   echo "NORMALIZED_SPEC_NAME: $NORMALIZED_SPEC_NAME"
 
@@ -60,13 +62,33 @@ do
     fi
   done
 
-  # Translate the description file
+  # Check if the description file exists and didn't change in the memory
   cp "descriptions/$DESCRIPTION_NAME" "$NUXTDIR/$NORMALIZED_SPEC_NAME/description.md"
-  if ! node /app/autotranslate-md.js -i "$NUXTDIR/$NORMALIZED_SPEC_NAME/description.md" -m "nl" -g "$LANGUAGE_STRING" -s "$AZURETRANSLATIONKEY" ; then
-    echo "Translation md description: failed"
+  DESCRIPTIONFILE="$NUXTDIR/$NORMALIZED_SPEC_NAME/description.md"
+  MD5SUMFILE="$NUXTMEMORYNORMALIZED_SPEC_NAME/nl/description.md.md5sum"
+  # Check if file is in memory
+  if [ -f "$NUXTMEMORYNORMALIZED_SPEC_NAME/nl/descriptions.md" ]; then
+    # Check if md5sum is the same
+    CURSUM=$(md5sum "$DESCRIPTIONFILE")
+    OLDSUM=$(cat "$MD5SUMFILE")
+    if [ "$CURSUM" == "$OLDSUM" ]; then
+       echo "Use old description file"
+       for lang in "${LANGUAGES[@]}"; do
+         cp "$NUXTMEMORYNORMALIZED_SPEC_NAME/$lang/description.md" "$NUXTDIR/$NORMALIZED_SPEC_NAME/$lang/description.md"
+       done
+    else
+      md5sum "$DESCRIPTIONFILE" > "$MD5SUMFILE"
+      node /app/autotranslate-md.js -i "$NUXTDIR/$NORMALIZED_SPEC_NAME/description.md" -m "nl" -g "$LANGUAGE_STRING" -s "$AZURETRANSLATIONKEY"
+    fi
   else
-    echo "Translation md description: Files succesfully translated"
+    md5sum "$DESCRIPTIONFILE" > "$MD5SUMFILE"
+    node /app/autotranslate-md.js -i "$NUXTDIR/$NORMALIZED_SPEC_NAME/description.md" -m "nl" -g "$LANGUAGE_STRING" -s "$AZURETRANSLATIONKEY"
   fi
+
+  # Copy the translations to the memory
+  mkdir -p "$NUXTMEMORYNORMALIZED_SPEC_NAME"
+  cp -r "$NUXTDIR/$NORMALIZED_SPEC_NAME" "$NUXTMEMORYNORMALIZED_SPEC_NAME"
+  
   rm "$NUXTDIR/$NORMALIZED_SPEC_NAME/description.md"
   
 done < "$ROOTDIR/tmp-register.txt"
