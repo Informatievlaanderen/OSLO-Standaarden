@@ -3,6 +3,7 @@
 ROOTDIR=$1
 REPODIR=$ROOTDIR/repositories
 NUXTDIR=$ROOTDIR/nuxt
+NUXTMEMORYDIR=$ROOTDIR/nuxtmemory
 
 
 CONFIGDIR_DEFAULT=$( eval echo "${CIRCLE_WORKING_DIRECTORY}" )
@@ -16,7 +17,7 @@ PRIMELANGUAGE=${3-${PRIMELANGUAGECONFIG}}
 GOALLANGUAGE=${4-${GOALLANGUAGECONFIG}}
 
 translate_and_copy_config() {
-  md5sum "$CONFIG_NAME.json" > "$CONFIGMD5SUM"
+  md5sum "$CONFIG_NAME.json" > ${CONFIGMD5SUM}
   node /app/autotranslate-config.js -i "$CONFIG_NAME.json" -o "$CONFIG_NAME-multilang.json" -m "nl" -g "$LANGUAGE_STRING" -s "$AZURETRANSLATIONKEY"
   cp "$CONFIG_NAME-multilang.json" "$NUXTDIR/$NORMALIZED_SPEC_NAME/configuration.json"
   ## Convert config file to single language and copy the generated configuration file to the nuxt directory
@@ -56,6 +57,7 @@ do
 
   ## Normalizing spec name to be used as directory name
   NORMALIZED_SPEC_NAME="$(echo $SPEC_NAME | iconv -f utf8 -t ascii//TRANSLIT | tr -c '[:alnum:]\n\r' '-' | tr -s '-' | tr '[:upper:]' '[:lower:]')"
+  NUXTMEMORYNORMALIZED_SPEC_NAME="$NUXTMEMORYDIR/$NORMALIZED_SPEC_NAME"
 
   echo "NORMALIZED_SPEC_NAME: $NORMALIZED_SPEC_NAME"
 
