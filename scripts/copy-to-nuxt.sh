@@ -15,6 +15,20 @@ GOALLANGUAGECONFIG=$(echo ${GOALLANGUAGECONFIG} | sed -e "s/'//g")
 PRIMELANGUAGE=${3-${PRIMELANGUAGECONFIG}}
 GOALLANGUAGE=${4-${GOALLANGUAGECONFIG}}
 
+translate_and_copy_config() {
+  md5sum "$CONFIG_NAME.json" > "$CONFIGMD5SUM"
+  node /app/autotranslate-config.js -i "$CONFIG_NAME.json" -o "$CONFIG_NAME-multilang.json" -m "nl" -g "$LANGUAGE_STRING" -s "$AZURETRANSLATIONKEY"
+  cp "$CONFIG_NAME-multilang.json" "$NUXTDIR/$NORMALIZED_SPEC_NAME/configuration.json"
+  ## Convert config file to single language and copy the generated configuration file to the nuxt directory
+  for lang in "${LANGUAGES[@]}"; do
+    mkdir -p "$NUXTDIR/$NORMALIZED_SPEC_NAME/$lang"
+    if ! node /app/convert-config.js -i "$CONFIG_NAME-multilang.json" -l "$lang" -o "$NUXTDIR/$NORMALIZED_SPEC_NAME/$lang/configuration.json"; then
+      echo "Convert config: failed"
+    else
+      echo "Convert config: Files successfully translated"
+    fi
+  done
+}
 
 mkdir -p "$NUXTDIR"
 
@@ -53,12 +67,53 @@ do
 
   ## Copy the generated configuration file and description file to the nuxt directory
 
-  for l in ${PRIMELANGUAGE} ; do
-  node /app/node convert-config.js -i <input> -l <languagecode>'
+#  cp "$CONFIG_NAME.json" "$NUXTDIR/$NORMALIZED_SPEC_NAME/configuration.json"
+#  cp "descriptions/$DESCRIPTION_NAME" "$NUXTDIR/$NORMALIZED_SPEC_NAME/description.md"
 
-  cp "$CONFIG_NAME.json" "$NUXTDIR/$NORMALIZED_SPEC_NAME/configuration.json"
+
+  CONFIGMD5SUM="$NUXTMEMORYNORMALIZED_SPEC_NAME/${PRIMELANGUAGE}/configuration.json.md5sum"
+  if [ -f "$NUXTMEMORYNORMALIZED_SPEC_NAME/${PRIMELANGUAGE}/configuration.json" ]; then
+    # Check if md5sum is the same
+    CURSUM=$(md5sum "$CONFIG_NAME.json")
+    OLDSUM=$(cat "$CONFIGMD5SUM")
+    if [ "$CURSUM" == "$OLDSUM" ]; then
+       echo "Use old configuration file"
+       for lang in ${GOALLANGUAGE}; do
+         cp "$NUXTMEMORYNORMALIZED_SPEC_NAME/$lang/configuration.json" "$NUXTDIR/$NORMALIZED_SPEC_NAME/$lang/configuration.json"
+       done
+    else
+      translate_and_copy_config
+    fi
+  else
+    translate_and_copy_config
+  fi  
+
+  # Check if the description file exists and didn't change in the memory
   cp "descriptions/$DESCRIPTION_NAME" "$NUXTDIR/$NORMALIZED_SPEC_NAME/description.md"
+  DESCRIPTIONFILE="$NUXTDIR/$NORMALIZED_SPEC_NAME/description.md"
+  MD5SUMFILE="$NUXTMEMORYNORMALIZED_SPEC_NAME/${PRIMELANGUAGE}/description.md.md5sum"
+  # Check if file is in memory
+  if [ -f "$NUXTMEMORYNORMALIZED_SPEC_NAME/${PRIMELANGUAGE}/descriptions.md" ]; then
+    # Check if md5sum is the same
+    CURSUM=$(md5sum "$DESCRIPTIONFILE")
+    OLDSUM=$(cat "$MD5SUMFILE")
+    if [ "$CURSUM" == "$OLDSUM" ]; then
+       echo "Use old description file"
+       for lang in ${GOALLANGUAGE}; do
+         cp "$NUXTMEMORYNORMALIZED_SPEC_NAME/$lang/description.md" "$NUXTDIR/$NORMALIZED_SPEC_NAME/$lang/description.md"
+       done
+    else
+      md5sum "$DESCRIPTIONFILE" > "$MD5SUMFILE"
+      node /app/autotranslate-md.js -i "$DESCRIPTIONFILE" -m ${PRIMELANGUAGE} -g "$LANGUAGE_STRING" -s "$AZURETRANSLATIONKEY"
+    fi
+  else
+    md5sum "$DESCRIPTIONFILE" > "$MD5SUMFILE"
+    node /app/autotranslate-md.js -i "$DESCRIPTIONFILE" -m ${PRIMELANGUAGE} -g "$LANGUAGE_STRING" -s "$AZURETRANSLATIONKEY"
+  fi
 
-  done 
+  rm "$NUXTDIR/$NORMALIZED_SPEC_NAME/description.md"
+
+  # Copy the translations to the memory
+  cp -r "$NUXTDIR/$NORMALIZED_SPEC_NAME/"* "$NUXTMEMORYNORMALIZED_SPEC_NAME"
   
 done < "$ROOTDIR/tmp-register.txt"
