@@ -5,7 +5,7 @@ jobs:
       - image: cimg/node:20.15.0
     steps:
       - checkout
-      - run: mkdir -p workspace
+      - run: mkdir -p /tmp/workspace
       - run: bash $PWD/scripts/checkout.sh /tmp/workspace $PWD/standaardenregister.json
       - run:
           name: List the files which have been created
@@ -27,7 +27,10 @@ jobs:
       - checkout
       - attach_workspace:
           at: /tmp/workspace
-      - run: bash $PWD/scripts/extract-info.sh /tmp/workspace $PWD/standaardenregister.json
+      - run: 
+          name: download all reporsitories and switch to their standaardregister branch
+          command: | 
+            bash $PWD/scripts/extract-info.sh /tmp/workspace $PWD/standaardenregister.json $PWD/config
       - persist_to_workspace:
           root: /tmp/workspace
           paths:
@@ -64,7 +67,7 @@ jobs:
             - statistics.json
   prepare-nuxt:
     docker:
-      - image: cimg/node:20.15.0
+      - image: informatievlaanderen/oslo-specification-generator:multilingual-dev4.0
     steps:
       - checkout
       - attach_workspace:
