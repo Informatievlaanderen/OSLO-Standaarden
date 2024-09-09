@@ -135,12 +135,13 @@ do
 done
   fi
 
+  # Filter the error file
+  filter_error_file "$ERROR_FILE"
+
   rm "$NUXTDIR/$NORMALIZED_SPEC_NAME/description.md"
 
   # Copy the translations to the memory
   cp -r "$NUXTDIR/$NORMALIZED_SPEC_NAME/"* "$NUXTMEMORYNORMALIZED_SPEC_NAME" || echo "Copy failed : cp -r $NUXTDIR/$NORMALIZED_SPEC_NAME/* $NUXTMEMORYNORMALIZED_SPEC_NAME" >> "$ERROR_FILE"
 
-  # Filter the error file
-  filter_error_file "$ERROR_FILE"
   
 done < "$ROOTDIR/tmp-register.txt"
