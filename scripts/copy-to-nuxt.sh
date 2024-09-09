@@ -32,7 +32,7 @@ translate_and_copy_config() {
 }
 
 filter_error_file() { 
-  local ERROR_FILE=$2
+  local ERROR_FILE=$1
   # Check if error file exists
   if [ -f "$ERROR_FILE" ]; then
     # Check if error file is empty
