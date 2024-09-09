@@ -57,8 +57,7 @@ while IFS= read -r line
 do
   REPO_NAME=$(echo "$line" | cut -d ":" -f 1)
   CONFIG_NAME=$(echo "$line" | cut -d ":" -f 2 | cut -d "." -f 1)
-  ERROR_FILE = "$NUXTDIR/$NORMALIZED_SPEC_NAME/error.txt"
-
+  ERROR_FILE="$NUXTDIR/$NORMALIZED_SPEC_NAME/error.txt"
   echo "Error repo name: $REPO_NAME" > "$ERROR_FILE"
 
   echo "REPO_NAME: $REPO_NAME"
