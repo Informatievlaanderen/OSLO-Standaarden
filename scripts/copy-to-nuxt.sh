@@ -21,18 +21,31 @@ translate_and_copy_config() {
 
   md5sum ${CONFIGURATIONFILE} > ${CONFIGMD5SUM}
   for lang in ${GOALLANGUAGE}; do
-     node /app/autotranslate-config.js -i ${CONFIGURATIONFILE} -o "$CONFIG_NAME-multilang.json" -m ${PRIMELANGUAGE} -g $lang -s "$AZURETRANSLATIONKEY"
+     node /app/autotranslate-config.js -i ${CONFIGURATIONFILE} -o "$CONFIG_NAME-multilang.json" -m ${PRIMELANGUAGE} -g $lang -s "$AZURETRANSLATIONKEY" >> "$ERROR_FILE"
   done
   cp "$CONFIG_NAME-multilang.json" "$NUXTDIR/$NORMALIZED_SPEC_NAME/configuration.json"
   ## Convert config file to single language and copy the generated configuration file to the nuxt directory
   for lang in ${GOALLANGUAGE}; do
     mkdir -p "$NUXTDIR/$NORMALIZED_SPEC_NAME/$lang"
-    if ! node /app/convert-config.js -i "$CONFIG_NAME-multilang.json" -l "$lang" -o "$NUXTDIR/$NORMALIZED_SPEC_NAME/$lang/configuration.json"; then
-      echo "Convert config: failed"
-    else
-      echo "Convert config: Files successfully translated"
-    fi
+    node /app/convert-config.js -i "$CONFIG_NAME-multilang.json" -l "$lang" -o "$NUXTDIR/$NORMALIZED_SPEC_NAME/$lang/configuration.json" >> "$ERROR_FILE"
   done
+}
+
+filter_error_file() { 
+  local ERROR_FILE=$2
+  # Check if error file exists
+  if [ -f "$ERROR_FILE" ]; then
+    # Check if error file is empty
+    if [ -s "$ERROR_FILE" ]; then
+      echo "Error file is not empty"
+      # Remove lines without "failed" or "Error" in the error file
+      sed -i '/failed\|Error/I!d' "$ERROR_FILE"
+    else
+      echo "Error file is empty"
+      rm "$ERROR_FILE"
+    fi
+  fi
+
 }
 
 mkdir -p "$NUXTDIR"
@@ -44,6 +57,9 @@ while IFS= read -r line
 do
   REPO_NAME=$(echo "$line" | cut -d ":" -f 1)
   CONFIG_NAME=$(echo "$line" | cut -d ":" -f 2 | cut -d "." -f 1)
+  ERROR_FILE = "$NUXTDIR/$NORMALIZED_SPEC_NAME/error.txt"
+
+  echo "Error repo name: $REPO_NAME" > "$ERROR_FILE"
 
   echo "REPO_NAME: $REPO_NAME"
   echo "CONFIG_NAME: $CONFIG_NAME"
@@ -82,7 +98,7 @@ do
     if [ "$CURSUM" == "$OLDSUM" ]; then
        echo "Use old configuration file"
        for lang in ${GOALLANGUAGE}; do
-         cp "$NUXTMEMORYNORMALIZED_SPEC_NAME/$lang/configuration.json" "$NUXTDIR/$NORMALIZED_SPEC_NAME/$lang/configuration.json"
+         cp "$NUXTMEMORYNORMALIZED_SPEC_NAME/$lang/configuration.json" "$NUXTDIR/$NORMALIZED_SPEC_NAME/$lang/configuration.json" || echo "Copy failed : cp $NUXTMEMORYNORMALIZED_SPEC_NAME/$lang/configuration.json $NUXTDIR/$NORMALIZED_SPEC_NAME/$lang/configuration.json" >> "$ERROR_FILE"
        done
     else
       translate_and_copy_config ${CONFIGURATIONFILE}
@@ -93,7 +109,7 @@ do
 
   # Check if the description file exists and didn't change in the memory
   DESCRIPTIONFILE=${NUXTDIR}/${NORMALIZED_SPEC_NAME}/description.md
-  cp "descriptions/$DESCRIPTION_NAME" "$DESCRIPTIONFILE"
+  cp "descriptions/$DESCRIPTION_NAME" "$DESCRIPTIONFILE" || echo "Copy failed : cp descriptions/$DESCRIPTION_NAME $DESCRIPTIONFILE" >> "$ERROR_FILE"
   MD5SUMFILE="$NUXTMEMORYNORMALIZED_SPEC_NAME/${PRIMELANGUAGE}/description.md.md5sum"
   # Check if file is in memory
   if [ -f "$NUXTMEMORYNORMALIZED_SPEC_NAME/${PRIMELANGUAGE}/description.md" ]; then
@@ -103,24 +119,27 @@ do
     if [ "$CURSUM" == "$OLDSUM" ]; then
        echo "Use old description file"
        for lang in ${GOALLANGUAGE}; do
-         cp "$NUXTMEMORYNORMALIZED_SPEC_NAME/$lang/description.md" "$NUXTDIR/$NORMALIZED_SPEC_NAME/$lang/description.md"
+         cp "$NUXTMEMORYNORMALIZED_SPEC_NAME/$lang/description.md" "$NUXTDIR/$NORMALIZED_SPEC_NAME/$lang/description.md" || echo "Copy failed : cp $NUXTMEMORYNORMALIZED_SPEC_NAME/$lang/description.md $NUXTDIR/$NORMALIZED_SPEC_NAME/$lang/description.md" >> "$ERROR_FILE"
        done
     else
       md5sum "$DESCRIPTIONFILE" > "$MD5SUMFILE"
        for lang in ${GOALLANGUAGE}; do
-          node /app/autotranslate-md.js -i "$DESCRIPTIONFILE" -m ${PRIMELANGUAGE} -g ${lang} -s "$AZURETRANSLATIONKEY"
+          node /app/autotranslate-md.js -i "$DESCRIPTIONFILE" -m ${PRIMELANGUAGE} -g ${lang} -s "$AZURETRANSLATIONKEY" >> "$ERROR_FILE"
      done
     fi
   else
     md5sum "$DESCRIPTIONFILE" > "$MD5SUMFILE"
        for lang in ${GOALLANGUAGE}; do
-    node /app/autotranslate-md.js -i "$DESCRIPTIONFILE" -m ${PRIMELANGUAGE} -g $lang  -s "$AZURETRANSLATIONKEY"
+    node /app/autotranslate-md.js -i "$DESCRIPTIONFILE" -m ${PRIMELANGUAGE} -g $lang  -s "$AZURETRANSLATIONKEY" >> "$ERROR_FILE"
 done
   fi
 
   rm "$NUXTDIR/$NORMALIZED_SPEC_NAME/description.md"
 
   # Copy the translations to the memory
-  cp -r "$NUXTDIR/$NORMALIZED_SPEC_NAME/"* "$NUXTMEMORYNORMALIZED_SPEC_NAME"
+  cp -r "$NUXTDIR/$NORMALIZED_SPEC_NAME/"* "$NUXTMEMORYNORMALIZED_SPEC_NAME" || echo "Copy failed : cp -r $NUXTDIR/$NORMALIZED_SPEC_NAME/* $NUXTMEMORYNORMALIZED_SPEC_NAME" >> "$ERROR_FILE"
+
+  # Filter the error file
+  filter_error_file "$ERROR_FILE"
   
 done < "$ROOTDIR/tmp-register.txt"
