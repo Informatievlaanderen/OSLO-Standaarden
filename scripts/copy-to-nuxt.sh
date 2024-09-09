@@ -36,12 +36,10 @@ filter_error_file() {
   # Check if error file exists
   if [ -f "$ERROR_FILE" ]; then
     # Check if error file is empty
-    if [ -s "$ERROR_FILE" ]; then
-      echo "Error file is not empty"
+    if test -s "$ERROR_FILE"; then
       # Remove lines without "failed" or "Error" in the error file
       sed -i '/failed\|Error/I!d' "$ERROR_FILE"
     else
-      echo "Error file is empty"
       rm "$ERROR_FILE"
     fi
   fi
