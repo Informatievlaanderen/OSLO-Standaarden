@@ -98,11 +98,11 @@ do
   fi  
 
   # Check if the description file exists and didn't change in the memory
-  cp descriptions/$DESCRIPTION_NAME.md "$NUXTDIR/$NORMALIZED_SPEC_NAME/description.md"
-  DESCRIPTIONFILE="$NUXTDIR/$NORMALIZED_SPEC_NAME/description.md"
+  DESCRIPTIONFILE=${NUXTDIR}/${NORMALIZED_SPEC_NAME}/description.md
+  cp "/descriptions/$DESCRIPTION_NAME" "$DESCRIPTIONFILE"
   MD5SUMFILE="$NUXTMEMORYNORMALIZED_SPEC_NAME/${PRIMELANGUAGE}/description.md.md5sum"
   # Check if file is in memory
-  if [ -f "$NUXTMEMORYNORMALIZED_SPEC_NAME/${PRIMELANGUAGE}/descriptions.md" ]; then
+  if [ -f "$NUXTMEMORYNORMALIZED_SPEC_NAME/${PRIMELANGUAGE}/description.md" ]; then
     # Check if md5sum is the same
     CURSUM=$(md5sum "$DESCRIPTIONFILE")
     OLDSUM=$(cat "$MD5SUMFILE")
