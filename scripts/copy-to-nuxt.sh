@@ -17,11 +17,15 @@ PRIMELANGUAGE=${3-${PRIMELANGUAGECONFIG}}
 GOALLANGUAGE=${4-${GOALLANGUAGECONFIG}}
 
 translate_and_copy_config() {
-  md5sum "$CONFIG_NAME.json" > ${CONFIGMD5SUM}
-  node /app/autotranslate-config.js -i "$CONFIG_NAME.json" -o "$CONFIG_NAME-multilang.json" -m "nl" -g "$LANGUAGE_STRING" -s "$AZURETRANSLATIONKEY"
+  local CONFIGURATIONFILE=$1
+
+  md5sum ${CONFIGURATIONFILE} > ${CONFIGMD5SUM}
+  for lang in ${GOALLANGUAGE}; do
+     node /app/autotranslate-config.js -i ${CONFIGURATIONFILE} -o "$CONFIG_NAME-multilang.json" -m ${PRIMELANGUAGE} -g $lang -s "$AZURETRANSLATIONKEY"
+  done
   cp "$CONFIG_NAME-multilang.json" "$NUXTDIR/$NORMALIZED_SPEC_NAME/configuration.json"
   ## Convert config file to single language and copy the generated configuration file to the nuxt directory
-  for lang in "${LANGUAGES[@]}"; do
+  for lang in ${GOALLANGUAGE}; do
     mkdir -p "$NUXTDIR/$NORMALIZED_SPEC_NAME/$lang"
     if ! node /app/convert-config.js -i "$CONFIG_NAME-multilang.json" -l "$lang" -o "$NUXTDIR/$NORMALIZED_SPEC_NAME/$lang/configuration.json"; then
       echo "Convert config: failed"
@@ -62,9 +66,11 @@ do
   echo "NORMALIZED_SPEC_NAME: $NORMALIZED_SPEC_NAME"
 
   mkdir -p "$NUXTDIR/$NORMALIZED_SPEC_NAME"
+  CONFIGURATIONFILE=${NUXTDIR}/${NORMALIZED_SPEC_NAME}/configuration.json
 
   # Store the repository name in the configuration file
-  jq --arg REPOSITORY "$REPO_NAME" '. + {"repository": $REPOSITORY}' "$CONFIG_NAME.json" > "temp.json" && mv "temp.json" "$CONFIG_NAME.json"
+  jq --arg REPOSITORY "$REPO_NAME" '. + {"repository": $REPOSITORY}' "$CONFIG_NAME.json" > /tmp/temp.json 
+  mv /tmp/temp.json ${CONFIGURATIONFILE}
 
 
   ## Copy the generated configuration file and description file to the nuxt directory
@@ -74,9 +80,10 @@ do
 
 
   CONFIGMD5SUM="$NUXTMEMORYNORMALIZED_SPEC_NAME/${PRIMELANGUAGE}/configuration.json.md5sum"
+  mkdir -p ${NUXTMEMORYNORMALIZED_SPEC_NAME}/${PRIMELANGUAGE}
   if [ -f "$NUXTMEMORYNORMALIZED_SPEC_NAME/${PRIMELANGUAGE}/configuration.json" ]; then
     # Check if md5sum is the same
-    CURSUM=$(md5sum "$CONFIG_NAME.json")
+    CURSUM=$(md5sum ${CONFIGURATIONFILE})
     OLDSUM=$(cat "$CONFIGMD5SUM")
     if [ "$CURSUM" == "$OLDSUM" ]; then
        echo "Use old configuration file"
@@ -84,10 +91,10 @@ do
          cp "$NUXTMEMORYNORMALIZED_SPEC_NAME/$lang/configuration.json" "$NUXTDIR/$NORMALIZED_SPEC_NAME/$lang/configuration.json"
        done
     else
-      translate_and_copy_config
+      translate_and_copy_config ${CONFIGURATIONFILE}
     fi
   else
-    translate_and_copy_config
+    translate_and_copy_config ${CONFIGURATIONFILE}
   fi  
 
   # Check if the description file exists and didn't change in the memory
@@ -106,11 +113,15 @@ do
        done
     else
       md5sum "$DESCRIPTIONFILE" > "$MD5SUMFILE"
-      node /app/autotranslate-md.js -i "$DESCRIPTIONFILE" -m ${PRIMELANGUAGE} -g "$LANGUAGE_STRING" -s "$AZURETRANSLATIONKEY"
+       for lang in ${GOALLANGUAGE}; do
+          node /app/autotranslate-md.js -i "$DESCRIPTIONFILE" -m ${PRIMELANGUAGE} -g ${lang} -s "$AZURETRANSLATIONKEY"
+     done
     fi
   else
     md5sum "$DESCRIPTIONFILE" > "$MD5SUMFILE"
-    node /app/autotranslate-md.js -i "$DESCRIPTIONFILE" -m ${PRIMELANGUAGE} -g "$LANGUAGE_STRING" -s "$AZURETRANSLATIONKEY"
+       for lang in ${GOALLANGUAGE}; do
+    node /app/autotranslate-md.js -i "$DESCRIPTIONFILE" -m ${PRIMELANGUAGE} -g $lang  -s "$AZURETRANSLATIONKEY"
+done
   fi
 
   rm "$NUXTDIR/$NORMALIZED_SPEC_NAME/description.md"
