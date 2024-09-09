@@ -91,10 +91,10 @@ jobs:
             rm -rf OSLO-Standaardenregister
             git clone git@github.com:Informatievlaanderen/OSLO-Standaardenregister.git
       - run:
-          name: Switch to standaarden branch in target repository
+          name: Switch to standaarden-tranlsations branch in target repository
           working_directory: /tmp/OSLO-Standaardenregister
           command: |
-            git checkout standaarden
+            git checkout standaarden-translations
             git fetch origin
       - run:
           name: List folder structure of nuxt/
@@ -138,7 +138,7 @@ jobs:
             git status
             git commit -m "Applying changes from commit ${CIRCLE_SHA1}" --allow-empty
             export TAG=`echo "${CIRCLE_SHA1}" | cut -c1-15`
-            git push --force origin standaarden
+            git push --force origin standaarden-translations
   build-state:
     docker:
       - image: cimg/deploy:2024.03
