@@ -57,8 +57,6 @@ while IFS= read -r line
 do
   REPO_NAME=$(echo "$line" | cut -d ":" -f 1)
   CONFIG_NAME=$(echo "$line" | cut -d ":" -f 2 | cut -d "." -f 1)
-  ERROR_FILE="$NUXTDIR/$NORMALIZED_SPEC_NAME/error.txt"
-  echo "Error repo name: $REPO_NAME" > "$ERROR_FILE"
 
   echo "REPO_NAME: $REPO_NAME"
   echo "CONFIG_NAME: $CONFIG_NAME"
@@ -81,6 +79,10 @@ do
   echo "NORMALIZED_SPEC_NAME: $NORMALIZED_SPEC_NAME"
 
   mkdir -p "$NUXTDIR/$NORMALIZED_SPEC_NAME"
+
+  ERROR_FILE="$NUXTDIR/$NORMALIZED_SPEC_NAME/error.txt"
+  echo "Error repo name: $REPO_NAME" > "$ERROR_FILE"
+
   CONFIGURATIONFILE=${NUXTDIR}/${NORMALIZED_SPEC_NAME}/configuration.json
 
   # Store the repository name in the configuration file
