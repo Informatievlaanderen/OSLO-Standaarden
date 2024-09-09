@@ -81,7 +81,8 @@ do
   mkdir -p "$NUXTDIR/$NORMALIZED_SPEC_NAME"
 
   ERROR_FILE="$NUXTDIR/$NORMALIZED_SPEC_NAME/error.txt"
-  echo "Error repo name: $REPO_NAME" > "$ERROR_FILE"
+  # Create an empty error file
+  touch "$ERROR_FILE"
 
   CONFIGURATIONFILE=${NUXTDIR}/${NORMALIZED_SPEC_NAME}/configuration.json
 
