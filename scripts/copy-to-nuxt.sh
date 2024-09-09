@@ -73,12 +73,6 @@ do
   mv /tmp/temp.json ${CONFIGURATIONFILE}
 
 
-  ## Copy the generated configuration file and description file to the nuxt directory
-
-#  cp "$CONFIG_NAME.json" "$NUXTDIR/$NORMALIZED_SPEC_NAME/configuration.json"
-#  cp "descriptions/$DESCRIPTION_NAME" "$NUXTDIR/$NORMALIZED_SPEC_NAME/description.md"
-
-
   CONFIGMD5SUM="$NUXTMEMORYNORMALIZED_SPEC_NAME/${PRIMELANGUAGE}/configuration.json.md5sum"
   mkdir -p ${NUXTMEMORYNORMALIZED_SPEC_NAME}/${PRIMELANGUAGE}
   if [ -f "$NUXTMEMORYNORMALIZED_SPEC_NAME/${PRIMELANGUAGE}/configuration.json" ]; then
