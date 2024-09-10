@@ -72,6 +72,16 @@ jobs:
       - checkout
       - attach_workspace:
           at: /tmp/workspace
+      - add_ssh_keys:
+          fingerprints:
+            - "81:37:0b:68:3b:e9:c9:64:b8:f2:1f:c9:03:46:74:b0"
+      - run:
+          name: download translation memory
+          working_directory: /tmp/workspace
+          command: |
+            export CIRCLEWKD=$( eval echo "${CIRCLE_WORKING_DIRECTORY}" )
+            GENERATEDREPO=$(jq --arg bt "${CIRCLE_BRANCH}" -r '.generatedrepository + {"filepath":"nuxtmemory.tgz", "branchtag":"\($bt)"}' ${CIRCLEWKD}/config/config.json)
+            if  ${CIRCLEWKD}/scripts/downloadFileGithub.sh "${GENERATEDREPO}" nuxtmemory.tgz ${TOOLCHAIN_TOKEN} ; then tar -xzf nuxtmemory.tgz ; fi
       - run: bash $PWD/scripts/copy-to-nuxt.sh /tmp/workspace
       - persist_to_workspace:
           root: /tmp/workspace
@@ -110,6 +120,12 @@ jobs:
           command: |
             mkdir -p /tmp/OSLO-Standaardenregister/content/standaarden
             cp -r nuxt/* /tmp/OSLO-Standaardenregister/content/standaarden
+      - run:
+          name: Create new autotranslate memory of the nuxt directory
+          working_directory: /tmp/workspace
+          command: |
+            ls -1
+            if [ -d nuxtmemory ] ; then tar -zcf nuxtmemory.tgz nuxtmemory ; cp nuxtmemory.tgz /tmp/OSLO-Standaardenregister/content/standaarden/nuxtmemory.tgz ; fi
       - run:
           name: List folder structure of tmp/OSLO-Standaardenregister/content/standaarden/
           working_directory: /tmp/workspace
