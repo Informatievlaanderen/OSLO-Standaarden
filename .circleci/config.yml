@@ -81,7 +81,7 @@ jobs:
           command: |
             export CIRCLEWKD=$( eval echo "${CIRCLE_WORKING_DIRECTORY}" )
             GENERATEDREPO="{\"organisation\":\"Informatievlaanderen\",\"repository\":\"OSLO-Standaarden\",\"filepath\":\"content/standaarden/nuxtmemory.tgz\",\"branchtag\":\"standaarden-translations\",\"private\":false}"
-            if  ${CIRCLEWKD}/scripts/downloadFileGithub.sh "${GENERATEDREPO}" nuxtmemory.tgz ${CIRCLE_SHA1} ; then tar -xzf nuxtmemory.tgz ; fi
+            if  ${CIRCLEWKD}/scripts/downloadFileGithub.sh "${GENERATEDREPO}" nuxtmemory.tgz ; then tar -xzf nuxtmemory.tgz ; fi
       - run: bash $PWD/scripts/copy-to-nuxt.sh /tmp/workspace
       - persist_to_workspace:
           root: /tmp/workspace

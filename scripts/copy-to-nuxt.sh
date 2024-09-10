@@ -23,7 +23,7 @@ translate_and_copy_config() {
   for lang in ${GOALLANGUAGE}; do
      node /app/autotranslate-config.js -i ${CONFIGURATIONFILE} -o "$CONFIG_NAME-multilang.json" -m ${PRIMELANGUAGE} -g $lang -s "$AZURETRANSLATIONKEY" >> "$ERROR_FILE"
   done
-  cp "$CONFIG_NAME-multilang.json" "$NUXTDIR/$NORMALIZED_SPEC_NAME/configuration.json"
+  cp "$CONFIG_NAME-multilang.json" "$NUXTDIR/$NORMALIZED_SPEC_NAME/multilang-configuration.json"
   ## Convert config file to single language and copy the generated configuration file to the nuxt directory
   for lang in ${GOALLANGUAGE}; do
     mkdir -p "$NUXTDIR/$NORMALIZED_SPEC_NAME/$lang"
@@ -82,7 +82,7 @@ do
   # Create an empty error file
   touch "$ERROR_FILE"
 
-  CONFIGURATIONFILE=${NUXTDIR}/${NORMALIZED_SPEC_NAME}/configuration.json
+  CONFIGURATIONFILE=${NUXTDIR}/${NORMALIZED_SPEC_NAME}/multilang-configuration.json
 
   # Store the repository name in the configuration file
   jq --arg REPOSITORY "$REPO_NAME" '. + {"repository": $REPOSITORY}' "$CONFIG_NAME.json" > /tmp/temp.json 
