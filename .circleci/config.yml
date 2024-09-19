@@ -33,10 +33,9 @@ jobs:
           paths:
             - description-paths.txt
             - filenames.txt
-            - statistics_config.json
   create-statistics:
     docker:
-      - image: ddvlanck/oslo-statistics:1.1
+      - image: cimg/node:20.15.0
     steps:
       - checkout
       - attach_workspace:
