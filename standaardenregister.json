@@ -1091,7 +1091,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-lokaleEconomie",
     "configuration": "voc-lokale-economie-config.json",
-    "rebuild": 15
+    "rebuild": 16
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-overlijdensaangifte",
