@@ -99,42 +99,42 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
     "configuration": "bodemenondergrond-AP-BodemEnOndergrond-config.json",
-    "rebuild":7
+    "rebuild":8
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
     "configuration": "bodemenondergrond-VOC-BodemEnOndergrond-config.json",
-    "rebuild": 7
+    "rebuild": 8
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
     "configuration": "bodemenondergrond-AP-BodemEnOndergrondObservaties-config.json",
-    "rebuild": 5
+    "rebuild": 6
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
     "configuration": "bodemenondergrond-VOC-BodemEnOndergrondObservaties-config.json",
-    "rebuild": 5
+    "rebuild": 6
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
     "configuration": "bodemenondergrond-AP-BodemEnOndergrondInterpretaties-config.json",
-    "rebuild": 5
+    "rebuild": 6
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
     "configuration": "bodemenondergrond-VOC-BodemEnOndergrondInterpretaties-config.json",
-    "rebuild": 4
+    "rebuild": 6
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
     "configuration": "bodemenondergrond-AP-Grondboringen-config.json",
-    "rebuild": 5
+    "rebuild": 6
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
     "configuration": "bodemenondergrond-VOC-Grondboringen-config.json",
-    "rebuild": 5
+    "rebuild": 6
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
@@ -149,12 +149,12 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
     "configuration": "bodemenondergrond-AP-RuimtelijkeBereiken-config.json",
-    "rebuild": 10
+    "rebuild": 11
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
     "configuration": "bodemenondergrond-VOC-RuimtelijkeBereiken-config.json",
-    "rebuild": 10
+    "rebuild": 11
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
@@ -169,22 +169,22 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
     "configuration": "bodemenondergrond-AP-SensorenEnBemonstering-config.json",
-    "rebuild": 7
+    "rebuild": 8
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
     "configuration": "bodemenondergrond-VOC-SensorenEnBemonstering-config.json",
-    "rebuild": 7
+    "rebuild": 8
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
     "configuration": "bodemenondergrond-AP-ObservatiesEnMetingen-config.json",
-    "rebuild": 7
+    "rebuild": 8
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
     "configuration": "bodemenondergrond-VOC-ObservatiesEnMetingen-config.json",
-    "rebuild": 7
+    "rebuild": 8
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-DoelgerichtDigitaalTransformeren",
@@ -725,11 +725,6 @@
     "rebuild": 4,
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices",
     "configuration": "voc-metadata-config.json"
-  },
-  {
-    "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
-    "configuration": "bodemenondergrond-config.json",
-    "rebuild": 7
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenenverkeer",
