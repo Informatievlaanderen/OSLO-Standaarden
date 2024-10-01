@@ -99,12 +99,12 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
     "configuration": "bodemenondergrond-AP-BodemEnOndergrond-config.json",
-    "rebuild": 4
+    "rebuild":6
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
     "configuration": "bodemenondergrond-VOC-BodemEnOndergrond-config.json",
-    "rebuild": 5
+    "rebuild": 6
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
@@ -149,12 +149,12 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
     "configuration": "bodemenondergrond-AP-RuimtelijkeBereiken-config.json",
-    "rebuild": 8
+    "rebuild": 9
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
     "configuration": "bodemenondergrond-VOC-RuimtelijkeBereiken-config.json",
-    "rebuild": 8
+    "rebuild": 9
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
@@ -169,22 +169,22 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
     "configuration": "bodemenondergrond-AP-SensorenEnBemonstering-config.json",
-    "rebuild": 5
+    "rebuild": 6
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
     "configuration": "bodemenondergrond-VOC-SensorenEnBemonstering-config.json",
-    "rebuild": 5
+    "rebuild": 6
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
     "configuration": "bodemenondergrond-AP-ObservatiesEnMetingen-config.json",
-    "rebuild": 5
+    "rebuild": 6
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
     "configuration": "bodemenondergrond-VOC-ObservatiesEnMetingen-config.json",
-    "rebuild": 5
+    "rebuild": 6
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-DoelgerichtDigitaalTransformeren",
