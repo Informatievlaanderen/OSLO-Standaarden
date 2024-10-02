@@ -581,6 +581,11 @@
     "rebuild": 3,
     "configuration": "voc-cultureel-erfgoed-config.json"
   },
+   {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-cultureelErfgoed",
+    "rebuild": 1,
+    "configuration": "imp-cultureel-erfgoed-basisregistratie-config.json"
+  },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-mobiliteit",
     "configuration": "ap-besluit-mobiliteit-config.json",
