@@ -104,7 +104,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
     "configuration": "bodemenondergrond-VOC-BodemEnOndergrond-config.json",
-    "rebuild": 8
+    "rebuild": 9
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-bodemEnOndergrond",
