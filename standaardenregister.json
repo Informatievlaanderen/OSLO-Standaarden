@@ -1096,12 +1096,12 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-moBurgers",
     "configuration": "ap-mobiliteitsbudget-config.json",
-    "rebuild": 13
+    "rebuild": 14
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-moBurgers",
     "configuration": "voc-mobiliteitsbudget-config.json",
-    "rebuild": 13
+    "rebuild": 14
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenEnWegmarkeringen",
