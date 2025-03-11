@@ -1152,7 +1152,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-kindFiche",
     "configuration": "ap-config.json",
-    "rebuild": 6
+    "rebuild": 7
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-kindFiche",
