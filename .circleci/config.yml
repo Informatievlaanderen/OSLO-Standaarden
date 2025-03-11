@@ -27,9 +27,9 @@ jobs:
       - checkout
       - attach_workspace:
           at: /tmp/workspace
-      - run: 
+      - run:
           name: download all reporsitories and switch to their standaardregister branch
-          command: | 
+          command: |
             bash $PWD/scripts/extract-info.sh /tmp/workspace $PWD/standaardenregister.json $PWD/config
       - persist_to_workspace:
           root: /tmp/workspace
@@ -80,7 +80,7 @@ jobs:
           working_directory: /tmp/workspace
           command: |
             export CIRCLEWKD=$( eval echo "${CIRCLE_WORKING_DIRECTORY}" )
-            GENERATEDREPO="{\"organisation\":\"Informatievlaanderen\",\"repository\":\"OSLO-Standaarden\",\"filepath\":\"content/standaarden/nuxtmemory.tgz\",\"branchtag\":\"standaarden-translations\",\"private\":false}"
+            GENERATEDREPO="{\"organisation\":\"Informatievlaanderen\",\"repository\":\"OSLO-Standaarden\",\"filepath\":\"content/standaarden/nuxtmemory.tgz\",\"branchtag\":\"standaarden\",\"private\":false}"
             if  ${CIRCLEWKD}/scripts/downloadFileGithub.sh "${GENERATEDREPO}" nuxtmemory.tgz ; then tar -xzf nuxtmemory.tgz ; fi
       - run: bash $PWD/scripts/copy-to-nuxt.sh /tmp/workspace
       - persist_to_workspace:
@@ -107,7 +107,7 @@ jobs:
           name: Switch to standaarden-tranlsations branch in target repository
           working_directory: /tmp/OSLO-Standaardenregister
           command: |
-            git checkout standaarden-translations
+            git checkout standaarden
             git fetch origin
       - run:
           name: List folder structure of nuxt/
@@ -157,7 +157,7 @@ jobs:
             git status
             git commit -m "Applying changes from commit ${CIRCLE_SHA1}" --allow-empty
             export TAG=`echo "${CIRCLE_SHA1}" | cut -c1-15`
-            git push --force origin standaarden-translations
+            git push --force origin standaarden
   build-state:
     docker:
       - image: cimg/deploy:2024.03
