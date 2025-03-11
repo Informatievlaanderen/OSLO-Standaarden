@@ -5,7 +5,7 @@ jobs:
       - image: cimg/node:20.15.0
     steps:
       - checkout
-      - run: mkdir -p workspace
+      - run: mkdir -p /tmp/workspace
       - run: bash $PWD/scripts/checkout.sh /tmp/workspace $PWD/standaardenregister.json
       - run:
           name: List the files which have been created
@@ -27,7 +27,10 @@ jobs:
       - checkout
       - attach_workspace:
           at: /tmp/workspace
-      - run: bash $PWD/scripts/extract-info.sh /tmp/workspace $PWD/standaardenregister.json
+      - run: 
+          name: download all reporsitories and switch to their standaardregister branch
+          command: | 
+            bash $PWD/scripts/extract-info.sh /tmp/workspace $PWD/standaardenregister.json $PWD/config
       - persist_to_workspace:
           root: /tmp/workspace
           paths:
@@ -64,11 +67,21 @@ jobs:
             - statistics.json
   prepare-nuxt:
     docker:
-      - image: cimg/node:20.15.0
+      - image: informatievlaanderen/oslo-specification-generator:multilingual-dev4.0
     steps:
       - checkout
       - attach_workspace:
           at: /tmp/workspace
+      - add_ssh_keys:
+          fingerprints:
+            - "81:37:0b:68:3b:e9:c9:64:b8:f2:1f:c9:03:46:74:b0"
+      - run:
+          name: download translation memory
+          working_directory: /tmp/workspace
+          command: |
+            export CIRCLEWKD=$( eval echo "${CIRCLE_WORKING_DIRECTORY}" )
+            GENERATEDREPO="{\"organisation\":\"Informatievlaanderen\",\"repository\":\"OSLO-Standaarden\",\"filepath\":\"content/standaarden/nuxtmemory.tgz\",\"branchtag\":\"standaarden-translations\",\"private\":false}"
+            if  ${CIRCLEWKD}/scripts/downloadFileGithub.sh "${GENERATEDREPO}" nuxtmemory.tgz ; then tar -xzf nuxtmemory.tgz ; fi
       - run: bash $PWD/scripts/copy-to-nuxt.sh /tmp/workspace
       - persist_to_workspace:
           root: /tmp/workspace
@@ -91,10 +104,10 @@ jobs:
             rm -rf OSLO-Standaardenregister
             git clone git@github.com:Informatievlaanderen/OSLO-Standaardenregister.git
       - run:
-          name: Switch to standaarden branch in target repository
+          name: Switch to standaarden-tranlsations branch in target repository
           working_directory: /tmp/OSLO-Standaardenregister
           command: |
-            git checkout standaarden
+            git checkout standaarden-translations
             git fetch origin
       - run:
           name: List folder structure of nuxt/
@@ -107,6 +120,12 @@ jobs:
           command: |
             mkdir -p /tmp/OSLO-Standaardenregister/content/standaarden
             cp -r nuxt/* /tmp/OSLO-Standaardenregister/content/standaarden
+      - run:
+          name: Create new autotranslate memory of the nuxt directory
+          working_directory: /tmp/workspace
+          command: |
+            ls -1
+            if [ -d nuxtmemory ] ; then tar -zcf nuxtmemory.tgz nuxtmemory ; cp nuxtmemory.tgz /tmp/OSLO-Standaardenregister/content/standaarden/nuxtmemory.tgz ; fi
       - run:
           name: List folder structure of tmp/OSLO-Standaardenregister/content/standaarden/
           working_directory: /tmp/workspace
@@ -138,7 +157,7 @@ jobs:
             git status
             git commit -m "Applying changes from commit ${CIRCLE_SHA1}" --allow-empty
             export TAG=`echo "${CIRCLE_SHA1}" | cut -c1-15`
-            git push --force origin standaarden
+            git push --force origin standaarden-translations
   build-state:
     docker:
       - image: cimg/deploy:2024.03

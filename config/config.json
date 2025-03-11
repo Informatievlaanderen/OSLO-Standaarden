@@ -1,0 +1,20 @@
+{
+  "primeLanguage": "nl",
+  "otherLanguages": ["en"],
+  "hostname": "https://data.vlaanderen.be",
+  "domain": "data.vlaanderen.be",
+  "generatedrepository": {
+    "organisation": "informatievlaanderen",
+    "repository": "OSLO-StandaardenregisterGenerated",
+    "private": false,
+    "gitEmail": "toolchain@data.vlaanderen.be",
+    "gitUser": "toolchain"
+  },
+  "toolchainversion": "4.0",
+  "toolchain": {
+    "strickness": "strict",
+    "version": 4,
+    "triggerall": true,
+    "autotranslate": true
+  }
+}
