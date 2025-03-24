@@ -626,7 +626,7 @@
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-cultureelErfgoed",
-    "rebuild": 4,
+    "rebuild": 5,
     "configuration": "imp-cultureel-erfgoed-basisregistratie-config.json"
   },
   {
