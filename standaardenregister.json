@@ -22,32 +22,32 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-hulpEnDienstverleningAanGedetineerden",
     "configuration": "voc-config.json",
-    "rebuild": 3
+    "rebuild": 4
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-hulpEnDienstverleningAanGedetineerden",
     "configuration": "ap-config.json",
-    "rebuild": 1
+    "rebuild": 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-modderstromen",
     "configuration": "ap-config.json",
-    "rebuild": 8
+    "rebuild": 9
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-modderstromen",
     "configuration": "voc-config.json",
-    "rebuild": 8
+    "rebuild": 9
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-citerra",
     "configuration": "ap-config.json",
-    "rebuild": 13
+    "rebuild": 14
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-citerra",
     "configuration": "voc-config.json",
-    "rebuild": 13
+    "rebuild": 14
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-omgevingsvergunning",
