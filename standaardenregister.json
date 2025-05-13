@@ -1,5 +1,14 @@
 [
   {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-thermai",
+    "configuration": "ap-config.json",
+    "rebuild": 1
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-thermai",
+    "configuration": "voc-config.json",
+    "rebuild": 1
+  },{
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-leermiddelen",
     "configuration": "ap-config.json",
     "rebuild": 7
