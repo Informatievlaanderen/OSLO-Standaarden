@@ -2,26 +2,26 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-EnergieManagementSystem",
     "configuration": "ap-energiemanagementsysteem-config.json",
-    "rebuild": 1
+    "rebuild": 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-thermai",
     "configuration": "ap-config.json",
-    "rebuild": 1
+    "rebuild": 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-thermai",
     "configuration": "voc-config.json",
-    "rebuild": 1
+    "rebuild": 2
   },{
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-leermiddelen",
     "configuration": "ap-config.json",
-    "rebuild": 7
+    "rebuild": 8
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-leermiddelen",
     "configuration": "voc-config.json",
-    "rebuild": 6
+    "rebuild": 8
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-energiehuis",
