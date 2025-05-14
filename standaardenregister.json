@@ -1211,12 +1211,12 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-DigitaleWatermeter",
     "configuration": "ap-digitalewatermeter-config.json",
-    "rebuild": 12
+    "rebuild": 14
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-DigitaleWatermeter",
     "configuration": "voc-digitalewatermeter-config.json",
-    "rebuild": 13
+    "rebuild": 14
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-vrachtwagenParkeren",
