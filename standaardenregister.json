@@ -41,7 +41,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-hulpEnDienstverleningAanGedetineerden",
     "configuration": "ap-config.json",
-    "rebuild": 5
+    "rebuild": 6
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-modderstromen",
@@ -86,22 +86,22 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-imkl",
     "configuration": "ap-kabels-en-leidingen-config.json",
-    "rebuild": 7
+    "rebuild": 8
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-imkl",
     "configuration": "voc-nutsvoorzieningen-config.json",
-    "rebuild": 4
+    "rebuild": 8
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-vastgoed",
     "configuration": "ap-config.json",
-    "rebuild": 4
+    "rebuild": 5
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-vastgoed",
     "configuration": "voc-config.json",
-    "rebuild": 3
+    "rebuild": 4
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-slimRuimtelijkPlannen",
@@ -116,7 +116,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-voorwaarden-dienstverlening",
     "configuration": "ap-config.json",
-    "rebuild": 7
+    "rebuild": 8
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-incentiveringsplatform",
@@ -1171,7 +1171,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-kindFiche",
     "configuration": "ap-config.json",
-    "rebuild": 8
+    "rebuild": 9
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-kindFiche",
