@@ -1,6 +1,6 @@
 {
   "title": "API guidelines",
-  "category": "Technische standaard",
+  "category": "https://data.vlaanderen.be/id/concept/StandaardType/TechnischeStandaard",
   "usage": "TBD",
   "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
   "descriptionFileName": "api-guidelines.md",
