@@ -1246,6 +1246,6 @@
 {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-shok",
     "configuration": "ap-shok-config.json",
-    "rebuild": 1
+    "rebuild": 2
   }
 ]
