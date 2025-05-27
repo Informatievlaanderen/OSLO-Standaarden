@@ -26,7 +26,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-energiehuis",
     "configuration": "ap-config.json",
-    "rebuild": 10
+    "rebuild": 11
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-energiehuis",
