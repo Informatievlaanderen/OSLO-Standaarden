@@ -2,7 +2,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-EnergieManagementSystem",
     "configuration": "ap-energiemanagementsysteem-config.json",
-    "rebuild": 2
+    "rebuild": 3
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-thermai",
@@ -26,12 +26,12 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-energiehuis",
     "configuration": "ap-config.json",
-    "rebuild": 13
+    "rebuild": 14
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-energiehuis",
     "configuration": "voc-config.json",
-    "rebuild": 12
+    "rebuild": 14
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-hulpEnDienstverleningAanGedetineerden",
