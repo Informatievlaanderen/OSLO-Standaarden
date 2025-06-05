@@ -1262,5 +1262,15 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-SmartInnovationFactory",
     "configuration": "voc-SIF-config.json",
     "rebuild": 2
+    },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-rooilijnplannen",
+    "configuration": "ap-rooilijnplannen-config.json",
+    "rebuild": 1
+    },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-rooilijnplannen",
+    "configuration": "voc-rooilijnplannen-config.json",
+    "rebuild": 1
     }
 ]
