@@ -776,7 +776,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLO-Standaarden",
     "configuration": "api-guidelines-config.json",
-    "rebuild": 1
+    "rebuild": 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices",
