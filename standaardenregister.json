@@ -1246,12 +1246,12 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-shok",
     "configuration": "ap-shok-config.json",
-    "rebuild": 9
+    "rebuild": 10
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-shok",
     "configuration": "voc-shok-config.json",
-    "rebuild": 9
+    "rebuild": 10
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-SmartInnovationFactory",
