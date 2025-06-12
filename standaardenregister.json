@@ -780,7 +780,7 @@
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices",
-    "rebuild": 2,
+    "rebuild": 3,
     "configuration": "conformiteitsraamwerk-config.json"
   },
   {
