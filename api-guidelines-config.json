@@ -1,8 +1,8 @@
 {
-  "title": "API guidelines",
+  "title": "API richtlijnen",
   "category": "https://data.vlaanderen.be/id/concept/StandaardType/TechnischeStandaard",
-  "usage": "TBD",
-  "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
+  "usage": "https://data.vlaanderen.be/id/concept/StandaardGebruik/Aanbevolen",
+  "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/NotaWerkgroep",
   "descriptionFileName": "api-guidelines.md",
   "responsibleOrganisation": [
     {
@@ -10,9 +10,14 @@
       "resourceReference": "http://data.vlaanderen.be/id/organisatie/OVO002949"
     }
   ],
-  "publicationDate": "TBD",
+  "publicationDate": "2020-02-01",
   "specificationDocuments": [],
-  "documentation": [],
+  "documentation": [
+     {
+      "name": "Generieke Hypermedia API richtlijnen",
+      "resourceReference": "https://github.com/Informatievlaanderen/generieke-hypermedia-api"
+    }
+  ],
   "reports": [
     {
       "name": "Thematische Werkgroep API guidelines 1 - 2020-02-18",
@@ -40,7 +45,7 @@
       "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Standaarden/standaardenregister/presentations/09062020 - API guidelines WS3.pptx"
     }
   ],
-  "dateOfRegistration": "TDB",
+  "dateOfRegistration": "2020-02-01",
   "dateOfAcknowledgementByWorkingGroup": "TBD",
   "dateOfAcknowledgementBySteeringCommittee": "TBD",
   "repository": "OSLO-Standaarden",
