@@ -1100,8 +1100,13 @@
   },
   {
     "repository": "https://github.com/Informatievlaanderen/ipdc-lpdc",
-    "configuration": "ap-or-voc-config.json",
-    "rebuild": 4
+    "configuration": "ap-ipdc-lpdc-config.json",
+    "rebuild": 5
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/ipdc-lpdc",
+    "configuration": "vocipdc-lpdc-config.json",
+    "rebuild": 5
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-slimmeStadsdistributie",
