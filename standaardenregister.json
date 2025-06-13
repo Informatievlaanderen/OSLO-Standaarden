@@ -661,12 +661,12 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-generiek",
     "configuration": "ap-generiek-basis-config.json",
-    "rebuild": 2
+    "rebuild": 3
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-generiek",
     "configuration": "voc-generiek-config.json",
-    "rebuild": 2
+    "rebuild": 3
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-openbaardomein",
