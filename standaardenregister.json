@@ -7,7 +7,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-thermai",
     "configuration": "ap-config.json",
-    "rebuild": 8
+    "rebuild": 9
   },{
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-leermiddelen",
     "configuration": "ap-config.json",
@@ -1246,7 +1246,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-shok",
     "configuration": "ap-shok-config.json",
-    "rebuild": 11
+    "rebuild": 12
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-SmartInnovationFactory",
