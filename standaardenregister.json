@@ -1261,11 +1261,11 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-rooilijnplannen",
     "configuration": "ap-rooilijnplannen-config.json",
-    "rebuild": 2
+    "rebuild": 3
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-rooilijnplannen",
     "configuration": "voc-rooilijnplannen-config.json",
-    "rebuild": 2
+    "rebuild": 3
   }
 ]
