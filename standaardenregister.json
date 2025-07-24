@@ -2,7 +2,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-EnergieManagementSystem",
     "configuration": "energiemanagementsysteem-ap.json",
-    "rebuild": 12
+    "rebuild": 13
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-thermai",
