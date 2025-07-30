@@ -50,5 +50,6 @@
   "dateOfAcknowledgementBySteeringCommittee": "TBD",
   "repository": "OSLO-Standaarden",
   "datePublicReviewStart": "",
-  "endOfPublicationDate": ""
+  "endOfPublicationDate": "",
+  "domain": "https://data.vlaanderen.be/id/concept/Domein/Technologie"
 }
