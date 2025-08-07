@@ -1011,7 +1011,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-DCATAPVlaanderen",
     "configuration": "ap-dcat-ap-vl-v20-config.json",
-    "rebuild": 13
+    "rebuild": 14
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-consent",
@@ -1021,7 +1021,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-GEODCATAPVlaanderen",
     "configuration": "ap-geodcat-ap-vl-config.json",
-    "rebuild": 7
+    "rebuild": 8
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-hoppinPunten",
