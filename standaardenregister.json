@@ -8,15 +8,16 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-thermai",
     "configuration": "ap-config.json",
     "rebuild": 16
-  },{
+  },
+  {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-leermiddelen",
     "configuration": "ap-config.json",
-    "rebuild": 17
+    "rebuild": 18
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-leermiddelen",
     "configuration": "voc-config.json",
-    "rebuild": 17
+    "rebuild": 18
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-energiehuis",
