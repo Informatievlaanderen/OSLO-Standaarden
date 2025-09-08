@@ -7,7 +7,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-thermai",
     "configuration": "ap-config.json",
-    "rebuild": 16
+    "rebuild": 17
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-leermiddelen",
