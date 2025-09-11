@@ -350,6 +350,16 @@
     "rebuild": 1
   },
   {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-organisatie",
+    "rebuild": 1,
+    "configuration": "organisatie-voc.json"
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-organisatie",
+    "rebuild": 1,
+    "configuration": "organisatie-ap.json"
+  },
+  {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-logies",
     "configuration": "ap-logies-basis-config.json",
     "rebuild": 1
