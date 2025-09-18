@@ -1102,7 +1102,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-visualo",
     "configuration": "voc-config.json",
-    "rebuild": 11
+    "rebuild": 12
   },
   {
     "repository": "https://github.com/Informatievlaanderen/ipdc-lpdc",
