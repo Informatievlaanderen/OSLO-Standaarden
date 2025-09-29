@@ -15,11 +15,6 @@
     "rebuild": 20
   },
   {
-    "repository": "https://github.com/Informatievlaanderen/OSLOthema-leermiddelen",
-    "configuration": "voc-config.json",
-    "rebuild": 20
-  },
-  {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-energiehuis",
     "configuration": "ap-config.json",
     "rebuild": 18
