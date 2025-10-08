@@ -1257,7 +1257,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-SmartInnovationFactory",
     "configuration": "impl-SIF-config.json",
-    "rebuild": 10
+    "rebuild": 11
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-rooilijnplannen",
