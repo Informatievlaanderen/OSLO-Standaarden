@@ -1242,12 +1242,12 @@
     {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-zaalreservatie",
     "configuration": "ap-zaalreservatie-config.json",
-    "rebuild": 12
+    "rebuild": 13
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-zaalreservatie",
     "configuration": "voc-zaalreservatie-config.json",
-    "rebuild": 11
+    "rebuild": 12
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-shok",
