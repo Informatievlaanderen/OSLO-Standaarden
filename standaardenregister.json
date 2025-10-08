@@ -785,12 +785,12 @@
     "configuration": "conformiteitsraamwerk-config.json"
   },
   {
-    "rebuild": 7,
+    "rebuild": 8,
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices",
     "configuration": "ap-metadata-config.json"
   },
   {
-    "rebuild": 6,
+    "rebuild": 8,
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices",
     "configuration": "voc-metadata-config.json"
   },
