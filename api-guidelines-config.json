@@ -11,11 +11,14 @@
     }
   ],
   "publicationDate": "2020-02-01",
-  "specificationDocuments": [],
+  "specificationDocuments": [
+     "name": "REST API richtlijnen",
+      "resourceReference": "https://data.vlaanderen.be/doc/richtlijnen/iv-rest-api-richtlijnen/"
+  ],
   "documentation": [
      {
       "name": "Generieke Hypermedia API richtlijnen",
-      "resourceReference": "https://github.com/Informatievlaanderen/generieke-hypermedia-api"
+      "resourceReference": "https://data.vlaanderen.be/standaarden/generieke-hypermedia-api"
     }
   ],
   "reports": [
