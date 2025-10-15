@@ -1242,12 +1242,12 @@
     {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-zaalreservatie",
     "configuration": "ap-zaalreservatie-config.json",
-    "rebuild": 13
+    "rebuild": 14
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-zaalreservatie",
     "configuration": "voc-zaalreservatie-config.json",
-    "rebuild": 12
+    "rebuild": 14
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-shok",
@@ -1257,16 +1257,16 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-SmartInnovationFactory",
     "configuration": "impl-SIF-config.json",
-    "rebuild": 11
+    "rebuild": 12
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-rooilijnplannen",
     "configuration": "ap-rooilijnplannen-config.json",
-    "rebuild": 10
+    "rebuild": 11
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-rooilijnplannen",
     "configuration": "voc-rooilijnplannen-config.json",
-    "rebuild": 10
+    "rebuild": 11
   }
 ]
