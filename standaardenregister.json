@@ -1268,5 +1268,10 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-rooilijnplannen",
     "configuration": "voc-rooilijnplannen-config.json",
     "rebuild": 11
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-KVS",
+    "configuration": "impl-KVS-config.json",
+    "rebuild": 1
   }
 ]
