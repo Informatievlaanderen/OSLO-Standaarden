@@ -781,16 +781,16 @@
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices",
-    "rebuild": 3,
+    "rebuild": 4,
     "configuration": "conformiteitsraamwerk-config.json"
   },
   {
-    "rebuild": 8,
+    "rebuild": 9,
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices",
     "configuration": "ap-metadata-config.json"
   },
   {
-    "rebuild": 8,
+    "rebuild": 9,
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices",
     "configuration": "voc-metadata-config.json"
   },
