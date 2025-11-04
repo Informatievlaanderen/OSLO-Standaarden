@@ -790,7 +790,7 @@
     "configuration": "ap-metadata-config.json"
   },
   {
-    "rebuild": 10,
+    "rebuild": 11,
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices",
     "configuration": "voc-metadata-config.json"
   },
