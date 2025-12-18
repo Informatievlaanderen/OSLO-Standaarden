@@ -12,7 +12,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-leermiddelen",
     "configuration": "ap-config.json",
-    "rebuild": 28
+    "rebuild": 29
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-energiehuis",
