@@ -47,12 +47,12 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-citerra",
     "configuration": "ap-config.json",
-    "rebuild": 17
+    "rebuild": 18
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-citerra",
     "configuration": "voc-config.json",
-    "rebuild": 17
+    "rebuild": 18
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-omgevingsvergunning",
