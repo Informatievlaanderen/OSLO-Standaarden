@@ -781,8 +781,8 @@
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices",
-    "rebuild": 5,
-    "configuration": "conformiteitsraamwerk-config.json"
+    "rebuild": 6,
+    "configuration": "ap-metadata-config.json"
   },
   {
     "rebuild": 11,
