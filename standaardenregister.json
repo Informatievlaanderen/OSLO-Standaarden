@@ -1277,6 +1277,6 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-SSNSOSA-VL",
     "configuration": "ap-SSNSOSA-config.json",
-    "rebuild": 2
+    "rebuild": 3
   }
 ]
