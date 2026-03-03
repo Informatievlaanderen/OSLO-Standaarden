@@ -1262,12 +1262,12 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-rooilijnplannen",
     "configuration": "ap-rooilijnplannen-config.json",
-    "rebuild": 12
+    "rebuild": 13
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-rooilijnplannen",
     "configuration": "voc-rooilijnplannen-config.json",
-    "rebuild": 12
+    "rebuild": 13
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-KVS",
