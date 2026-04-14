@@ -1278,5 +1278,9 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-SSNSOSA-VL",
     "configuration": "ap-SSNSOSA-config.json",
     "rebuild": 4
-  }
+  },
+ {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-NDNN",
+    "configuration": "impl-NDNN-config.json",
+    "rebuild": 1
 ]
