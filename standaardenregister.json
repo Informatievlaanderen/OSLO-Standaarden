@@ -1277,10 +1277,10 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-SSNSOSA-VL",
     "configuration": "ap-SSNSOSA-config.json",
-    "rebuild": 5
+    "rebuild": 6
   },
  {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-NDNN",
     "configuration": "impl-NDNN-config.json",
-    "rebuild": 4
+    "rebuild": 5
 ]
