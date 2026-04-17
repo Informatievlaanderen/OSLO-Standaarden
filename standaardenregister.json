@@ -1283,4 +1283,5 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-NDNN",
     "configuration": "impl-NDNN-config.json",
     "rebuild": 5
+ }
 ]
