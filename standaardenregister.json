@@ -1027,7 +1027,7 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-GEODCATAPVlaanderen",
     "configuration": "ap-geodcat-ap-vl-config.json",
-    "rebuild": 12
+    "rebuild": 13
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-hoppinPunten",
