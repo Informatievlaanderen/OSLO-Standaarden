@@ -22,12 +22,12 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-organisatie",
     "configuration": "voc-vkbo-onderneming.json",
-    "rebuild": 1
+    "rebuild": 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-organisatie",
     "configuration": "impl-vkbo-onderneming.json",
-    "rebuild": 1
+    "rebuild": 2
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-energiehuis",
