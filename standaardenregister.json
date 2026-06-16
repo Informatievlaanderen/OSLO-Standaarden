@@ -1190,11 +1190,6 @@
     "rebuild": 11
   },
   {
-    "repository": "https://github.com/Informatievlaanderen/OSLOthema-kindFiche",
-    "configuration": "voc-config.json",
-    "rebuild": 3
-  },
-  {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-Waterkwaliteit",
     "configuration": "voc-statistiek-config.json",
     "rebuild": 5
