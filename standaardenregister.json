@@ -1292,16 +1292,16 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-trajectcontrole",
     "configuration": "impl-voertuigregistraties-im.json",
-    "rebuild": 3
+    "rebuild": 4
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-trajectcontrole",
     "configuration": "voc-voertuigregistraties-im.json",
-    "rebuild": 3
+    "rebuild": 4
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-trajectcontrole",
     "configuration": "voc-voertuigregistraties.json",
-    "rebuild": 3
+    "rebuild": 4
   }
 ]
