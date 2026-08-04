@@ -1303,5 +1303,20 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-trajectcontrole",
     "configuration": "voc-voertuigregistraties.json",
     "rebuild": 4
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-landbouwgebruiksperceel",
+    "configuration": "impl-landbouwgebruiksperceel.json",
+    "rebuild": 1
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-landbouwgebruiksperceel",
+    "configuration": "voc-landbouwgebruiksperceel.json",
+    "rebuild": 1
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-landbouwgebruiksperceel",
+    "configuration": "voc-gebruiksperceel.json",
+    "rebuild": 1
   }
 ]
