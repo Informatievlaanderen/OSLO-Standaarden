@@ -1307,16 +1307,16 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-landbouwgebruiksperceel",
     "configuration": "impl-landbouwgebruiksperceel.json",
-    "rebuild": 2
+    "rebuild": 3
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-landbouwgebruiksperceel",
     "configuration": "voc-landbouwgebruiksperceel.json",
-    "rebuild": 2
+    "rebuild": 3
   },
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-landbouwgebruiksperceel",
     "configuration": "voc-gebruiksperceel.json",
-    "rebuild": 2
+    "rebuild": 3
   }
 ]
