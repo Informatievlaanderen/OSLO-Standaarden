@@ -1317,6 +1317,6 @@
   {
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-landbouwgebruiksperceel",
     "configuration": "voc-gebruiksperceel.json",
-    "rebuild": 3
+    "rebuild": 4
   }
 ]
