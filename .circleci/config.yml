@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   checkout:
     docker:
-      - image: cimg/node:20.15.0
+      - image: cimg/node:24.11.0
     steps:
       - checkout
       - run: mkdir -p /tmp/workspace
@@ -22,7 +22,7 @@ jobs:
             - repositories/
   extract-info:
     docker:
-      - image: cimg/node:20.15.0
+      - image: cimg/node:24.11.0
     steps:
       - checkout
       - attach_workspace:
@@ -53,7 +53,7 @@ jobs:
             - statistics.json
   add-contributors:
     docker:
-      - image: cimg/node:20.15.0
+      - image: cimg/node:24.11.0
     steps:
       - checkout
       - attach_workspace:
@@ -89,7 +89,7 @@ jobs:
             - nuxt/
   push-to-nuxt:
     docker:
-      - image: cimg/node:20.15.0
+      - image: cimg/node:24.11.0
     steps:
       - checkout
       - attach_workspace:
