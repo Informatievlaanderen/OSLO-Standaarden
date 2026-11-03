@@ -1313,5 +1313,25 @@
     "repository": "https://github.com/Informatievlaanderen/OSLOthema-landbouwgebruiksperceel",
     "configuration": "voc-gebruiksperceel.json",
     "rebuild": 4
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-zwangerschapsregistratie",
+    "configuration": "impl-zwangerschapsregistratie.json",
+    "rebuild": 1
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-zwangerschapsregistratie",
+    "configuration": "voc-zwangerschapsregistratie.json",
+    "rebuild": 1
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenvignetregistratie",
+    "configuration": "impl-wegenvignetregistratie.json",
+    "rebuild": 1
+  },
+  {
+    "repository": "https://github.com/Informatievlaanderen/OSLOthema-wegenvignetregistratie",
+    "configuration": "voc-wegenvignetregistratie.json",
+    "rebuild": 1
   }
 ]
